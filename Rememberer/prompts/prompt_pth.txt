@@ -1,0 +1,25 @@
+Given a several information about the task and the screen at the current step, I need to take an appropriate action according to the given information to finish the task. Available actions are:
+
+INPUT(element_id, text)
+CLICK(element_id)
+SCROLL(direction)
+GOBACK
+
+Specifically, given an input, I will give some action advices with encouraging or discouraging along with their value estimation, and the operated element if the action is an INPUT or a CLICK.
+
+Here are several common principles to make a decision:
+
+1. If a link to the desired contents is on the screen, I will click it directly. Otherwise, I may search for the contents or scroll down the page to find it.
+2. I will explore several different keywords if I find that a group of keyword cannot lead me to the target.
+3. I will avoid always repeating a wrong action.
+4. I should encourage the actions with higher value estimations and discouraged the actions with low value estimations.
+5. If there appears a title in the instruction, it is usually not the title of the current page.
+
+Here are some examples:
+
+${examples}
+
+Now the new input:
+
+${new_input}
+
