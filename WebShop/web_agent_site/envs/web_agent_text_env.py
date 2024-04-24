@@ -280,7 +280,7 @@ class SimServer:
         filter_goals=None,
         limit_goals=-1,
         num_products=None,
-        human_goals=0,
+        human_goals=False,
         show_attrs=False,
     ):
         """

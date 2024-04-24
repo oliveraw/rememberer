@@ -1,0 +1,4728 @@
+? !!python/tuple
+- '
+
+  Instruction:
+
+  i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and
+  price lower than 40.00 dollars
+
+  [Back to Search]
+
+  Page 1 (Total results: 50)
+
+  [Next >]
+
+  [B078GWRC1J]
+
+  Bright Citrus Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy
+  and Breastfeeding, Contains Organic Calendula 3-Ounce
+
+  $10.99
+
+  [B078GTKVXY]
+
+  Ginger Fresh Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy
+  and Breastfeeding, Contains Organic Calendula 3-Ounce
+
+  $10.99
+
+  [B08KBVJ4XN]
+
+  Barrel and Oak - Aluminum-Free Deodorant, Deodorant for Men, Essential Oil-Based
+  Scent, 24-Hour Odor Protection, Cedar & Patchouli Blend, Gentle on Sensitive Skin
+  (Mountain Sage, 2.7 oz, 2-Pack)
+
+  $15.95
+
+  '
+- Instruction:i would like a 3 ounce bottle of bright citrus deodorant for sensitive
+  skin, and price lower than 40.00 dollars
+- 'back to search
+
+  next >
+
+  b078gwrc1j
+
+  b078gtkvxy
+
+  b08kbvj4xn'
+: action_dict:
+    ? &id002 !!python/tuple
+    - click[b078gwrc1j]
+    - b078gwrc1j and b078gtkvxy are bright citrus deodorant less then 50 dollars.
+      I can check b078gwrc1j first.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 1
+  other_info:
+    action_history:
+    - &id001 !!python/tuple
+      - search[3 ounce bottle bright citrus deodorant sensitive skin]
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- '
+
+  Instruction:
+
+  i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and
+  price lower than 40.00 dollars
+
+  [Back to Search]
+
+  [< Prev]
+
+  scent [assorted scents][bright citrus][calming lavender][ginger fresh][simply non-scents]
+
+  size [travel set (4-pack)][3 ounce (pack of 1)][3-ounce (2-pack)]
+
+  Bright Citrus Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy
+  and Breastfeeding, Contains Organic Calendula 3-Ounce
+
+  Price: $10.99
+
+  Rating: N.A.
+
+  [Description]
+
+  [Features]
+
+  [Reviews]
+
+  [Buy Now]
+
+  '
+- Instruction:i would like a 3 ounce bottle of bright citrus deodorant for sensitive
+  skin, and price lower than 40.00 dollars
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  assorted scents
+
+  bright citrus
+
+  calming lavender
+
+  ginger fresh
+
+  simply non-scents
+
+  travel set (4-pack)
+
+  3 ounce (pack of 1)
+
+  3-ounce (2-pack)'
+: action_dict:
+    ? &id003 !!python/tuple
+    - click[bright citrus]
+    - For 3 ounce bottle of bright citrus deodorant for sensitive skin, the item has
+      options 'bright citrus' and '3 ounce (pack of 1)' and seems good to buy.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 2
+  other_info:
+    action_history:
+    - *id001
+    - *id002
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- '
+
+  WebShop
+
+  Instruction:
+
+  i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and
+  price lower than 40.00 dollars
+
+  [Search]
+
+  '
+- Instruction:i would like a 3 ounce bottle of bright citrus deodorant for sensitive
+  skin, and price lower than 40.00 dollars
+- search
+: action_dict:
+    ? !!python/tuple
+    - click[search]
+    - The search button shouldn't be clicked.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+    *id001:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 0
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- '
+
+  You have clicked bright citrus.
+
+  Instruction:
+
+  i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and
+  price lower than 40.00 dollars
+
+  [Back to Search]
+
+  [< Prev]
+
+  scent [assorted scents][[bright citrus]][calming lavender][ginger fresh][simply
+  non-scents]
+
+  size [travel set (4-pack)][3 ounce (pack of 1)][3-ounce (2-pack)]
+
+  Bright Citrus Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy
+  and Breastfeeding, Contains Organic Calendula 3-Ounce
+
+  Price: $10.99
+
+  Rating: N.A.
+
+  [Description]
+
+  [Features]
+
+  [Reviews]
+
+  [Buy Now]
+
+  '
+- Instruction:i would like a 3 ounce bottle of bright citrus deodorant for sensitive
+  skin, and price lower than 40.00 dollars
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  assorted scents
+
+  bright citrus
+
+  calming lavender
+
+  ginger fresh
+
+  simply non-scents
+
+  travel set (4-pack)
+
+  3 ounce (pack of 1)
+
+  3-ounce (2-pack)'
+: action_dict:
+    ? !!python/tuple
+    - click[3 ounce (pack of 1)]
+    - I have clicked for 'bright citrus' and haven't clicked for '3 ounce (pack of
+      1)'. I need to first click '3 ounce (pack of 1)' and then buy this item.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 3
+  other_info:
+    action_history:
+    - *id001
+    - *id002
+    - *id003
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Auromere Ayurvedic Herbal Toothpaste, Classic Licorice Flavour - Vegan, Natural,
+  Non GMO, Fluoride Free, Gluten Free, with Neem & Peelu (4.16 oz), 1 Pack
+
+  Price: $6.76
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i want fluoride free ayurvedic herbal toothpaste, and price lower
+  than 40.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now'
+: action_dict:
+    ? !!python/tuple
+    - click[buy now]
+    - This is the most affordable option that meets all the requirements. Clicking
+      "buy now" will allow you to purchase the item.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 44
+  other_info:
+    action_history:
+    - &id007 !!python/tuple
+      - search[fluoride free ayurvedic herbal toothpaste]
+      - I can search for this specific item using the available search action.
+    - &id006 !!python/tuple
+      - click[b000774dqi]
+      - b000774dqi is a fluoride free ayurvedic herbal toothpaste priced at $6.76.
+        This meets all the requirements and is the most affordable option.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Canon PowerShot S200 2MP Digital ELPH Camera w/ 2x Optical Zoom
+
+  Price: $49.9
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for a camcorder that is easy to carry and have optical
+  zoom, and price lower than 170.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now'
+: action_dict:
+    ? !!python/tuple
+    - click[buy now]
+    - This is the most suitable option as it meets all the requirements and is within
+      the desired price range.
+    : number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+  id: 9
+  other_info:
+    action_history:
+    - &id005 !!python/tuple
+      - search[camcorder easy to carry optical zoom]
+      - I can search for this specific item using the available search action.
+    - &id004 !!python/tuple
+      - click[b0000645c9]
+      - b0000645c9 is a Canon PowerShot S200 2MP Digital ELPH Camera with 2x Optical
+        Zoom that is priced at $49.90. This meets all the requirements and is the
+        most affordable option.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Iberia Parboiled Brown, 10 Pounds, Rice, 160 Ounce
+
+  Price: $13.09
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i need a 10 pound back of parboiled brown rice that is easy to prepare,
+  and price lower than 50.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now'
+: action_dict:
+    ? !!python/tuple
+    - click[buy now]
+    - This is the most suitable option as it meets all the requirements and is within
+      the desired price range.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 6
+  other_info:
+    action_history:
+    - &id009 !!python/tuple
+      - search[10 pound bag parboiled brown rice easy to prepare]
+      - I can search for this specific item using the available search action.
+    - &id008 !!python/tuple
+      - click[b00m674k0g]
+      - b00m674k0g is a 10 pound bag of parboiled brown rice that is easy to prepare
+        and is priced at $13.09. This meets all the requirements and is the most affordable
+        option.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'PTZ Security Camera Outdoor 30X Optical Zoom Camera WiFi Wireless 5MP RTSP IP Camera
+  1000FT Night Vision Auto Tracking Emergency Strobe Light Alarm Human Detection 2-Way
+  Audio IP66 Waterproof
+
+  Price: $249.99
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i want to buy a waterproof security camera with an optical zoom and
+  motion detection, and price lower than 260.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now'
+: action_dict:
+    ? !!python/tuple
+    - click[PTZ Security Camera Outdoor 30X Optical Zoom Camera]
+    - This is the most suitable option for the desired commodity as it meets all the
+      requirements and is within the desired price range.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[buy now]
+    - This is the most suitable option as it meets all the requirements and is within
+      the desired price range.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 41
+  other_info:
+    action_history:
+    - &id011 !!python/tuple
+      - search[waterproof security camera optical zoom motion detection]
+      - I can search for this specific item using the available search action.
+    - &id010 !!python/tuple
+      - click[b08v134qwr]
+      - b08v134qwr is a PTZ Security Camera Outdoor with 30x Optical Zoom, WiFi Wireless,
+        and Motion Detection that is priced at $249.99. This meets all the requirements
+        and is the most affordable option.
+    last_reward: 0.0
+    number: 2
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B0000645C9 [button_]
+
+  Canon PowerShot S200 2MP Digital ELPH Camera w/ 2x Optical Zoom
+
+  $49.9
+
+
+  [button] B07J5WR4RR [button_]
+
+  Panasonic AG-AC30 Full HD Camcorder (AG-AC30PJ) with 64GB Memory Card, LED Light,
+  Case, Telephoto Lens, and More - Advanced Bundle
+
+  $1489.95
+
+
+  [button] B09RV3SFJM [button_]
+
+  Celestron 52238 C70 Mini Mak Spotting Scope, 25-75x, Black & NexYZ 3-Axis Smartphone
+  Adapter, Black
+
+  $190.89
+
+
+  [button] B071NF45HP [button_]
+
+  Nikon COOLPIX B500 Digital Camera (Black) 26506 + 32GB UHS-I SDHC Memory Card (Class
+  10) + Flexible 12" Tripod + Small Soft Carrying Case + HDMI Cable + Card Reader
+  + Memory Card Wallet Bundle
+
+  $468.49
+
+
+  [button] B004HO58L6 [button_]
+
+  Fujifilm FinePix Z90 14 MP Digital Camera with Fujinon 5x Wide Angle Optical Zoom
+  Lens and 3-Inch Touch-Screen LCD (Black)
+
+  $100.0
+
+
+  [button] B000AOFVZK [button_]
+
+  Konica Minolta Dimage Z6 6MP Digital Camera with 12x Anti-Shake Zoom
+
+  $69.95
+
+
+  [button] B08QD45PHZ [button_]
+
+  PTZ Camera Outdoor,Compatible with Hikvision, 4K PoE IP Camera Speed Dome for Home
+  Security,2022 Upgrade,18x Optical Zoom,4.7~84.6mm Motorized Lens, Auto Tracking,165ft
+  NightVision IP66 Waterproof
+
+  $269.0
+
+
+  [button] B07FYB92QR [button_]
+
+  Nikon (26522 COOLPIX P1000 16MP 125x Super-Zoom Digital Camera + 64GB Memory & Accessory
+  Bundle
+
+  $100.0
+
+
+  [button] B08V134QWR [button_]
+
+  PTZ Security Camera Outdoor 30X Optical Zoom Camera WiFi Wireless 5MP RTSP IP Camera
+  1000FT Night Vision Auto Tracking Emergency Strobe Light Alarm Human Detection 2-Way
+  Audio IP66 Waterproof
+
+  $249.99
+
+
+  [button] B09H5J9FGZ [button_]
+
+  4K Digital Camera 48MP Video Camcorder 16X Vlog Digital Zoom Camera with Flip Screen
+  WiFi Vlogging Compact 60FPS Video Camera for YouTube 32GB SD Card Wide Angle Lens
+  Macro Lens
+
+  $133.59
+
+  '
+- 'Instruction: i am looking for a camcorder that is easy to carry and have optical
+  zoom, and price lower than 170.00 dollars'
+- 'back to search
+
+  next >
+
+  b0000645c9
+
+  b07j5wr4rr
+
+  b09rv3sfjm
+
+  b071nf45hp
+
+  b004ho58l6
+
+  b000aofvzk
+
+  b08qd45phz
+
+  b07fyb92qr
+
+  b08v134qwr
+
+  b09h5j9fgz'
+: action_dict:
+    *id004:
+      number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+  id: 8
+  other_info:
+    action_history:
+    - *id005
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Page 1 (Total results: 50)\n\n[button] B000774DQI [button_]\nAuromere Ayurvedic\
+  \ Herbal Toothpaste, Classic Licorice Flavour - Vegan, Natural, Non GMO, Fluoride\
+  \ Free, Gluten Free, with Neem & Peelu (4.16 oz), 1 Pack\n$6.76\n\n[button] B0792N9J4S\
+  \ [button_]\nNatural Toothgel (Peppermint) by Herbal Choice Mari; 4 fl oz BPA-Free\
+  \ Plastic Bottle\n$11.99\n\n[button] B0791RWM8M [button_]\nHerbal Choice Mari Natural\
+  \ Toothgel, Ginger; 4floz\n$11.99\n\n[button] B07M7LDGXB [button_]\nCoral Nano Silver\
+  \ Mint Toothpaste, Natural Fluoride Free Teeth Whitening Toothpaste, Coral Calcium\
+  \ Nano Silver Infused SLS Free - 4 Ounces\n$9.95\n\n[button] B07MNM28ZN [button_]\n\
+  Hello Nature Apple Flavor Kids Fluoride Free Training Toothpaste and Toothbrush,\
+  \ For Kids Age 2 Months to 3 Years, Safe to Swallow for Baby and Toddlers, Vegan,\
+  \ SLS Free, Gluten Free, 1.5 Ounce\n$100.0\n\n[button] B09HTZZ45V [button_]\n60ML\
+  \ Kids Foam Toothpaste,Fluoride Free Natural Formula with Strawberry/Lemon Flavor,Children\
+  \ Foam Toothpaste,Provide Fresh Breath and Healthier Gums for Kids (Strawberry)\n\
+  $6.75\n\n[button] B08THNSP6N [button_]\nDiabetes Prevention Daily Homeopathic Toothpaste\
+  \ | Fluoride Free Natural | for Bleeding Gums and Calcus | 3.4 Ounce - INFANETIM\
+  \ Technology Brown Line (2 Pack)\n$69.99\n\n[button] B097GVR1ZK [button_]\nKids\
+  \ Foam Toothpaste, Fluoride Free Natural Formula\uFF0COrange Flavor, 3Pack for Toddler,\
+  \ Kids and Children\u2019s Teeth Cleaning\n$25.99\n\n[button] B00J7G0I8M [button_]\n\
+  Jason All-Natural Toothpaste, Sea Fresh - 6 oz - 2 pk\n$100.0\n\n[button] B09C1R93CH\
+  \ [button_]\nPalarn Brightify Deep Cleaning Foam Toothpaste Tooth-Cleaning Toothpaste\
+  \ Teeth Whitening Oral Hygiene Mousse Foam Toothpaste 60ml (B, 1PC)\n$1.68\n"
+- 'Instruction: i want fluoride free ayurvedic herbal toothpaste, and price lower
+  than 40.00 dollars'
+- 'back to search
+
+  next >
+
+  b000774dqi
+
+  b0792n9j4s
+
+  b0791rwm8m
+
+  b07m7ldgxb
+
+  b07mnm28zn
+
+  b09htzz45v
+
+  b08thnsp6n
+
+  b097gvr1zk
+
+  b00j7g0i8m
+
+  b09c1r93ch'
+: action_dict:
+    *id006:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 43
+  other_info:
+    action_history:
+    - *id007
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Page 1 (Total results: 50)\n\n[button] B00IH0FYJ2 [button_]\n2 Pack Trader Joe's\
+  \ Freeze Dried Mango, 2 Pack Freeze Dried Strawberries, 2 Pack Freeze Dried Blueberries,\
+  \ 2 Pack David Sunflower Seeds - 8 Items Total\n$100.0\n\n[button] B005M4G4LI [button_]\n\
+  Natierra Nature's Organic Freeze-Dried Strawberries | Gluten Free & Vegan | 1.2\
+  \ Ounce\n$5.79\n\n[button] B078MZPZ8K [button_]\nNATIERRA Organic Freeze-Dried Chocolate-Covered\
+  \ Strawberry Slices | Non-GMO & Vegan | 1.5 Ounce\n$5.99\n\n[button] B005M4G23S\
+  \ [button_]\nNATIERRA Nature's All Foods Organic Freeze-Dried Pineapples | Non-GMO\
+  \ & Vegan | 1.5 Ounce\n$5.79\n\n[button] B09GT8JY8H [button_]\nLIOMART DRY FRUIT\
+  \ SNACKS- Freeze dried mixed fruit. Perfect and healthy sugar free fruit snacks.\
+  \ Includes all your favorite Strawberry. Perfect dried mix fruit for snacks healthy,\
+  \ for baking, smoothies, topping breakfast and more. 11 Pack of .705oz each.\n$42.0\n\
+  \n[button] B097YHD3PS [button_]\nQueenbox Dried Mixes 8.8oz Fruit Snacks, Natural\
+  \ Vegan Sweet & Tart Vegetable Chunks Foods Kids Adult Gift in Resealable Bag for\
+  \ Festival Party Cake Hiking\n$39.71\n\n[button] B09PMFB9LH [button_]\nDried Strawberry\
+  \ Chips, 3 PACK [ 100% Real Freeze Dried Fruits ] Korean Fruit Snack, Healthy Vegan\
+  \ Snacks for Kids [ Jeollanamdo Foods ]\n$12.99\n\n[button] B084H13NFV [button_]\n\
+  Fruit for Thought Dried Persimmons | Dried Fruit Snack Packs | At Home, Work, or\
+  \ On The Go | Unsweetened Hachiya Persimmon | 12 Ounce Bags Pack of 2\n$26.35\n\n\
+  [button] B07NQJD1NN [button_]\nSOLELY Organic Pineapple with Coconut Fruit Jerky,\
+  \ 0.8 Ounce | Two Ingredients | Vegan | Non-GMO | Gluten-Free | No Sugar Added\u2026\
+  \n$100.0\n\n[button] B01N9VRK5O [button_]\nNorthwest Wild Foods Dried Organic Tart\
+  \ Cherries - Healthy Antioxidants Fruit Diet - for Smoothies, Baking, Trail Mix\
+  \ Smoothies Pies Jams (1 lb)\n$39.99\n"
+- 'Instruction: i want some freeze dried mangoes, and price lower than 30.00 dollars'
+- 'back to search
+
+  next >
+
+  b00ih0fyj2
+
+  b005m4g4li
+
+  b078mzpz8k
+
+  b005m4g23s
+
+  b09gt8jy8h
+
+  b097yhd3ps
+
+  b09pmfb9lh
+
+  b084h13nfv
+
+  b07nqjd1nn
+
+  b01n9vrk5o'
+: action_dict:
+    ? &id029 !!python/tuple
+    - click[b005m4g4li]
+    - b005m4g4li is a pack of freeze dried mangoes priced at $5.79. This meets all
+      the requirements and is the most affordable option.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 36
+  other_info:
+    action_history:
+    - &id025 !!python/tuple
+      - search[freeze dried mangoes]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Page 1 (Total results: 50)\n\n[button] B00M674K0G [button_]\nIberia Parboiled Brown,\
+  \ 10 Pounds, Rice, 160 Ounce\n$13.09\n\n[button] B013LLVO1I [button_]\nBakery On\
+  \ Main Gluten-Free, Non GMO Granola, Cranberry Almond Maple, 2.5 Pound\n$100.0\n\
+  \n[button] B0010XRVR6 [button_]\nKnorr Rice Sides For a Tasty Rice Side Dish Creamy\
+  \ Chicken No Artificial Flavors, No Preservatives, No Added MSG 5.7 oz\n$100.0\n\
+  \n[button] B087D93CRX [button_]\nKosher Parve Mre, Meal Mart Amazing Meals Ready\
+  \ to Eat, Fillet of Salmon Rice & Pimentos (12 Pack) \u2013 Travel, Military, Emergency\
+  \ Survival Food \u2013 Prepared Fully Cooked, Microwave Dinner, Shelf Stable\n$89.99\n\
+  \n[button] B00B1H8VMU [button_]\nBaron\u2019s Whole Wheat Orzo Pasta | 100% Natural\
+  \ Israeli Rice-Shaped Orzo for Soups, Casseroles & Salads | Cooks in 10 Minutes!\
+  \ | Kosher| 2 Pack 21.16oz Jars\n$14.99\n\n[button] B01GZI0JMY [button_]\nLundberg\
+  \ Organic Brown Rice Cakes, Honey Nut, 9.6oz(pack of 12), Gluten-Free, Whole Grain,\
+  \ Kosher, USDA Certified Organic, Non-GMO Verified\n$56.6\n\n[button] B083X4GW6Y\
+  \ [button_]\nBob's Red Mill Gluten Free Muffin Mix, 16 Oz\n$9.38\n\n[button] B09ML2WVBK\
+  \ [button_]\nNational Foods Butter Chicken Recipe Mix 1.65 oz (47g) | South Asian\
+  \ Meat Curry Masala Powder | Traditional Spicy Food | Box Pack | Pack of 6\n$14.99\n\
+  \n[button] B09R4JVD58 [button_]\nRainbow Window Covering Stained Glass FilmSticker\
+  \ Heat Control Opaque Vinyl for Bathroom and Kids Bedroom17.5 x 78.7 Inch W23.6\
+  \ x L47.2 Sky Blue Black White\n$31.0\n\n[button] B07GPHFDVS [button_]\nSEEDS OF\
+  \ CHANGE Organic Rice Variety Pack, Quinoa Brown Rice & Red Rice with Flaxseed,\
+  \ Ready to Heat, 8.5 Ounce (Pack of 6)\n$19.74\n"
+- 'Instruction: i need a 10 pound back of parboiled brown rice that is easy to prepare,
+  and price lower than 50.00 dollars'
+- 'back to search
+
+  next >
+
+  b00m674k0g
+
+  b013llvo1i
+
+  b0010xrvr6
+
+  b087d93crx
+
+  b00b1h8vmu
+
+  b01gzi0jmy
+
+  b083x4gw6y
+
+  b09ml2wvbk
+
+  b09r4jvd58
+
+  b07gphfdvs'
+: action_dict:
+    *id008:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 5
+  other_info:
+    action_history:
+    - *id009
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Page 1 (Total results: 50)\n\n[button] B01J5UC1Q6 [button_]\nLuminess Air Silk\
+  \ 4-in-1 Airbrush Foundation \u2013 Shade 040, 0.25 oz (COMINE3013823)\n$21.25\n\
+  \n[button] B01HOI5E9M [button_]\nNeutrogena Hydro Boost Hydrating Tint with Hyaluronic\
+  \ Acid, Lightweight Water Gel Formula, Moisturizing, Oil-Free & Non-Comedogenic\
+  \ Liquid Foundation Makeup, 30 Buff Color, 1.0 fl. oz\n$9.9\n\n[button] B072J9SPMR\
+  \ [button_]\nPhoto Finish Professional Airbrush Makeup- Foundation -1.0 Oz Cosmetic\
+  \ Face- Choose Color (Contour Set (3x.2oz))\n$14.95\n\n[button] B074VG3CD5 [button_]\n\
+  Maybelline Super Stay Full Coverage Liquid Foundation Makeup, Warm Nude, 1 Fl Oz\n\
+  $5.2\n\n[button] B002F3QYZA [button_]\nNeutrogena Oil-Free Acne Stress Control Triple-Action\
+  \ Toner, 8 Fluid Ounce\n$7.18\n\n[button] B07GXBJ73P [button_]\nMaybelline New York\
+  \ Super Stay Full Coverage Liquid Foundation Makeup, 336 Warm Bronze, 1 Fl Oz\n\
+  $9.21\n\n[button] B00028OT8Y [button_]\nGabriel Cosmetics Dual Powder Foundation\
+  \ (Extra Light Beige \u2013 Fair to Light/ Neutral Undertones), Natural Pressed\
+  \ mineral powder, Paraben Free, Vegan, Gluten-free, Cruelty-free, Non GMO, Enhanced\
+  \ with Sea Fennel, .32 oz.\n$24.49\n\n[button] B07T5B23NB [button_]\n2Pcs 30ml/1oz\
+  \ Empty Clear Square Glass Emulsion Essence Bottle With Black Pump Head Cosmetic\
+  \ Foundation Travel Vials Containers Holder For Lotion Cleanser Essential Oils Liquids\
+  \ Body Cream\n$11.77\n\n[button] B076D9DS75 [button_]\nBai Iced Tea, Supertea Variety\
+  \ Pack, Crafted with Black Tea and White Tea, 18 Fluid Ounce Bottles, 12 count,\
+  \ 3 each Socorro Sweet Tea, Narino Peach Tea, Tanzania Lemonade Tea, Rio Raspberry\
+  \ Tea\n$100.0\n\n[button] B07NV7D8VB [button_]\nYadah Cactus Toner Pads 5.07 Fluid\
+  \ Ounce 60 Count, Cruelty Free Facial Cleansing Exfoliator Toning Hydrating Treatment\
+  \ Wipes for Clear Pores Acne Prone Oily Dry Sensitive Skin\n$19.0\n"
+- 'Instruction: i would like a 0.25 fluid ounces of oil free 090 foundation, and price
+  lower than 40.00 dollars'
+- 'back to search
+
+  next >
+
+  b01j5uc1q6
+
+  b01hoi5e9m
+
+  b072j9spmr
+
+  b074vg3cd5
+
+  b002f3qyza
+
+  b07gxbj73p
+
+  b00028ot8y
+
+  b07t5b23nb
+
+  b076d9ds75
+
+  b07nv7d8vb'
+: action_dict:
+    ? &id031 !!python/tuple
+    - click[b01hoi5e9m]
+    - b01hoi5e9m is a 0.25 fluid ounce oil-free foundation in shade 090 that is priced
+      at $9.9. This meets all the requirements and is the most affordable option.
+    : number: 1
+      qvalue: 0.5
+      reward: 0.0
+  id: 22
+  other_info:
+    action_history:
+    - &id027 !!python/tuple
+      - search[0.25 fluid ounces oil free 090 foundation]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B07B4RZ87J [button_]
+
+  MIZANI True Textures Cream Cleansing Conditioner | With Coconut Oil | Paraben &
+  Sulfate-Free | For Curly Hair
+
+  $27.0
+
+
+  [button] B07NB7SJ1Y [button_]
+
+  Luseta Marula Oil Hydrating Hair Shampoo - Salon Quality Shampoo that Cleanses,
+  Protects, Nourishes and Conditions, Sulfate-free, 33.8oz
+
+  $29.98
+
+
+  [button] B078PLG6MM [button_]
+
+  Garnier Hair Care Fructis Curl Nourish Butter Cream Leave-In Conditioner, 10.2 Ounce
+  (Pack of 2)
+
+  $9.98
+
+
+  [button] B088LGSRTG [button_]
+
+  Tio Nacho Ultra Hydration Coconut Oil Treatment, 7 Ounces
+
+  $8.49
+
+
+  [button] B084443PVV [button_]
+
+  GIOVANNI 50:50 Balanced Hydrating Clarifying Shampoo & Calming Conditioner Set,
+  24 oz. Clean & Moisturize Hair, For Over-Processed Hair, Wash n Go, Can Use Daily,
+  Sulfate Free, No Parabens, Color Safe
+
+  $25.42
+
+
+  [button] B08H5SYM1M [button_]
+
+  HASK ORCHID AND WHITE TRUFFLE Moisturizing Deep Conditioner Treatments for all hair
+  types, color safe, gluten free, sulfate free, paraben free - Pack of 2
+
+  $5.95
+
+
+  [button] B075PK2DSR [button_]
+
+  ARABICA COFFEE BEAN OIL Brazilian. 100% Pure/Roasted/Premium Quality with incredible
+  Coffee Aroma. For FACE, BODY, HANDS, FEET, NAILS & HAIR and LIP CARE. (0.5 Fl. oz.
+  - 15 ml.)
+
+  $21.95
+
+
+  [button] B08H5SPHMQ [button_]
+
+  HASK TEA TREE Revitalizing Deep Conditioner Treatments for all hair types, color
+  safe, gluten free, sulfate free, paraben free - Pack of 2
+
+  $5.95
+
+
+  [button] B00TAM6FNU [button_]
+
+  NATUREWELL Extra Virgin Coconut Oil Moisturizing Cream for Face, Body, and Hands,
+  Lightweight, Intense Hydration to Maintain Softer, Smoother, & Suppler Skin, 16
+  Oz
+
+  $7.0
+
+
+  [button] B07BF5MRJK [button_]
+
+  Zatik Naturals - Rose Hip and Black Seed Nutri USDA Organic Face Serum (1.0 fl oz,30ml)
+  Vegan Non GMO Gluten Free Soy Free Alcohol Free pH Balanced Biodegradable Certified
+  Organic
+
+  $25.45
+
+  '
+- 'Instruction: i want a 8.5 fl oz of mizani true textures cream cleansing conditioner
+  with coconut oil, and price lower than 40.00 dollars'
+- 'back to search
+
+  next >
+
+  b07b4rz87j
+
+  b07nb7sj1y
+
+  b078plg6mm
+
+  b088lgsrtg
+
+  b084443pvv
+
+  b08h5sym1m
+
+  b075pk2dsr
+
+  b08h5sphmq
+
+  b00tam6fnu
+
+  b07bf5mrjk'
+: action_dict:
+    ? &id051 !!python/tuple
+    - click[b07b4rz87j]
+    - b07b4rz87j is an 8.5 fl oz Mizani True Textures Cream Cleansing Conditioner
+      with coconut oil that is priced at $27. This meets all the requirements and
+      is the most affordable option.
+    : number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+  id: 46
+  other_info:
+    action_history:
+    - &id020 !!python/tuple
+      - search[8.5 fl oz mizani true textures cream cleansing conditioner coconut
+        oil]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B07C812LHQ [button_]
+
+  Maxone 1TB Ultra Slim Portable External Hard Drive HDD USB 3.0 for PC, Mac, Laptop,
+  PS4, Xbox one - Charcoal Grey
+
+  $49.99
+
+
+  [button] B08M3WKJ3W [button_]
+
+  eboxer-1 External DVD Drive, External Optical Drive USB2.0 High Speed Portable DVD
+  Burner for Laptop Computer,Support Windows 98SE/ ME/200 /XP/7/10, for OS X8.6 or
+  Higher(White)
+
+  $22.31
+
+
+  [button] B08LQSCBCW [button_]
+
+  Dell OptiPlex 3080 Business Desktop Computer, Intel Core i5-10500 Processor up to
+  4.5GHz, 16GB RAM, 1TB PCIe SSD, Windows 10 Pro, Small Form Factor
+
+  $947.0
+
+
+  [button] B092JJ1S24 [button_]
+
+  Dell OptiPlex 3080 SFF Small Form Factor Windows 10 Pro Business Desktop Computer,
+  Intel Hexa-Core i5-10500 (Beat i7-8700), 16GB DDR4 RAM, 1TB HDD + 512GB PCIe SSD,
+  DVDRW, WiFi Adapter, DisplayPort
+
+  $924.99
+
+
+  [button] B09MK1L322 [button_]
+
+  Dell Vostro 3000 3681 Premium Small Business Desktop Computer I 10th Gen Intel 6-Core
+  i5-10400 (> i7-7700) I 8GB DDR4 1TB HDD I Intel UHD Graphics 630 I Keybord&Mouse
+  WiFi Win10 Pro Black
+
+  $689.0
+
+
+  [button] B09MKQM8S7 [button_]
+
+  Ssrotho Gaming Desktop Windows 10 Professional Business PC Tower Computer, Intel
+  Quad-Core i5 3.2Ghz, 8GB RAM, 1TB HDD, GeForce GT 730, WiFi Adapter, GeForce GT
+  730 2GB, Tempered Glass Case
+
+  $639.0
+
+
+  [button] B08P4CV11L [button_]
+
+  Relkin USB Flash Pen Drive Cartoon Cute Pendrive Data Storage Thumb Memory Stick
+  Stick Funny Gift Gun Shaped A 32GB
+
+  $13.59
+
+
+  [button] B08545S2X3 [button_]
+
+  1200Mbps WiFi Range Extender Wireless Signal Booster for House 2.4 & 5GHz Dual Band
+  Internet Repeater with Access Ethernet Port,Extends Wi-Fi Coverage,Access Point
+
+  $39.99
+
+
+  [button] B09LVV68PS [button_]
+
+  2 Pack iStorage datAshur SD Encrypted USB Flash Drive with Removable iStorage microSD
+  Card 1TB | Free KeyWriter License Included for Secure Collaboration & Back up |
+  Free Type C-A Adapter
+
+  $569.0
+
+
+  [button] B0176GNTU8 [button_]
+
+  HP ENVY 27-p014, 27 Full HD Touchscreen, All-in-One, Core i5, Win 10 Desktop PC
+
+  $100.0
+
+  '
+- 'Instruction: i want a rose pink maxone 1tb portable external hard drive that is
+  plug and play, and price lower than 70.00 dollars'
+- 'back to search
+
+  next >
+
+  b07c812lhq
+
+  b08m3wkj3w
+
+  b08lqscbcw
+
+  b092jj1s24
+
+  b09mk1l322
+
+  b09mkqm8s7
+
+  b08p4cv11l
+
+  b08545s2x3
+
+  b09lvv68ps
+
+  b0176gntu8'
+: action_dict:
+    ? &id035 !!python/tuple
+    - click[b07c812lhq]
+    - b07c812lhq is a Maxone 1TB Ultra Slim Portable External Hard Drive that is rose
+      pink, plug and play, and priced at $49.99. This meets all the requirements and
+      is the most affordable option.
+    : number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+  id: 58
+  other_info:
+    action_history:
+    - &id022 !!python/tuple
+      - search[rose pink maxone 1tb portable external hard drive plug and play]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Page 1 (Total results: 50)\n\n[button] B07DMBCVLY [button_]\nHu Dark Chocolate\
+  \ Bars | Natural Organic Vegan Chocolate, Gluten Free, Paleo, Non GMO, Fair Trade\
+  \ Dark Chocolate (Cashew Butter, 4 pack)\n$19.99\n\n[button] B08R4TGCYJ [button_]\n\
+  Enjoy Life Mini Chocolate Candy Variety Pack, Nut Free, Soy Free, Dairy Free Chocolate,\
+  \ 6 Packs\n$100.0\n\n[button] B07QY3BQCG [button_]\nKate\u2019s Real Food Organic\
+  \ Energy Bars, Non-GMO, All-Natural Ingredients, Gluten-Free and Soy-Free Healthy\
+  \ Snack with Natural Flavors, Mango Coconut (Pack of 12)\n$31.88\n\n[button] B005VP1WA6\
+  \ [button_]\nRise Energy Plus Bar, Almond Honey, 2.1 Ounce (Pack of 12)\n$44.99\n\
+  \n[button] B07FZ6XX2T [button_]\nMissy J's Organic Peanut Butter Carob Bar 3 Ounce\
+  \ 2 Pack | Carob Made w/Coconut Sugar, Vegan and Gluten-Free | Healthy Caffeine\
+  \ Free Substitute for Chocolate, Perfect for Snacks and Treats\n$17.87\n\n[button]\
+  \ B08W7X86D4 [button_]\nElemental Superfood Refrigerated Seedbars, Currant Cacao\
+  \ + Hemp Seed, 1.8 Ounce - 12 Pack, Non-GMO Verified, Organic Ingredients, Gluten\
+  \ Free, Dairy Free, Plant Based\n$34.0\n\n[button] B07L75Y8MD [button_]\nExo Protein\
+  \ Bars, Chocolate Chip Cookie Dough, 12 Count, 14g Protein, Gluten Free, Dairy Free,\
+  \ Sustainable Protein Bar\n$29.99\n\n[button] B08NHBJP12 [button_]\nAngie's BOOMCHICKAPOP\
+  \ Kettle Corn Bundle: Hot Cocoa Marshmallow, Dark Chocolate, Frosted Sugar Cookie\
+  \ (Set of 3)\n$21.97\n\n[button] B081D973ZF [button_]\nNature's Garden Heart Healthy\
+  \ Trail Mix - Heart Healthy Snack Mix, Dark Chocolate, Nuts, Seeds, Raisins, Gluten-Free,\
+  \ Non-GMO - 26 oz (Pack of 3)\n$32.29\n\n[button] B00WFDKDIO [button_]\nNature's\
+  \ Bakery Gluten Free Fig Bars, Raspberry, Real Fruit, Vegan, Non-GMO, Snack bar,\
+  \ 1 box with 6 twin packs (6 twin packs)\n$2.99\n"
+- 'Instruction: i am looking for a 2.1 ounce (pack of 4) of gluten free and non gmo  candy
+  & chocolate bars, and price lower than 50.00 dollars'
+- 'back to search
+
+  next >
+
+  b07dmbcvly
+
+  b08r4tgcyj
+
+  b07qy3bqcg
+
+  b005vp1wa6
+
+  b07fz6xx2t
+
+  b08w7x86d4
+
+  b07l75y8md
+
+  b08nhbjp12
+
+  b081d973zf
+
+  b00wfdkdio'
+: action_dict:
+    ? &id048 !!python/tuple
+    - click[b07dmbcvly]
+    - b07dmbcvly is a 2.1 ounce (pack of 4) gluten free and non gmo candy & chocolate
+      bar priced at $19.99. This meets all the requirements and is the most affordable
+      option.
+    : number: 1
+      qvalue: 0.75
+      reward: 0.0
+  id: 61
+  other_info:
+    action_history:
+    - &id014 !!python/tuple
+      - search[2.1 ounce (pack of 4) gluten free non gmo candy & chocolate bars]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B07KYWGP65 [button_]
+
+  Revlon ColorStay Concealer, Longwearing Full Coverage Color Correcting Makeup, 055
+  Chestnut, 0.21 oz
+
+  $9.49
+
+
+  [button] B07GW9Q8FH [button_]
+
+  IT Cosmetics Bye Bye Under Eye, 11.0 Light Nude (N) - Full-Coverage, Anti-Aging,
+  Waterproof Concealer - Improves the Appearance of Dark Circles, Wrinkles & Imperfections
+  - 0.4 fl oz
+
+  $29.0
+
+
+  [button] B07GWDXWRH [button_]
+
+  IT Cosmetics Bye Bye Under Eye, 14.5 Light Buff (N) - Full-Coverage, Anti-Aging,
+  Waterproof Concealer - Improves the Appearance of Dark Circles, Wrinkles & Imperfections
+  - 0.4 fl oz
+
+  $28.06
+
+
+  [button] B00J2APBZI [button_]
+
+  COVERGIRL Ready Set Gorgeous Fresh Complexion Concealer, Fair 105/110, 0.37 oz (Packaging
+  May Vary)
+
+  $5.99
+
+
+  [button] B072J9SPMR [button_]
+
+  Photo Finish Professional Airbrush Makeup- Foundation -1.0 Oz Cosmetic Face- Choose
+  Color (Contour Set (3x.2oz))
+
+  $14.95
+
+
+  [button] B001B2S32S [button_]
+
+  Permanent Hair Color by Revlon, Permanent Hair Dye, Colorsilk with 100% Gray Coverage,
+  Ammonia-Free, Keratin and Amino Acids, 41 Medium Brown, 4.4 Oz (Pack of 1)
+
+  $2.99
+
+
+  [button] B074VG3CD5 [button_]
+
+  Maybelline Super Stay Full Coverage Liquid Foundation Makeup, Warm Nude, 1 Fl Oz
+
+  $5.2
+
+
+  [button] B09KY9P8CD [button_]
+
+  Mirror Effect Chrome Metallic Nail Polish Lacquer, Mirror Effect Long Lasting Gorgeous
+  Glossy Manicure Nail Art Decoration, Brilliant Manicure Effect Nail Lacquers
+
+  $3.15
+
+
+  [button] B09P2R22LF [button_]
+
+  12A Grade Deep Wave Lace Frontal 13x4 Ear to Ear Lace Frontal Closure 18 Inch 100%
+  Unprocessed Brazilian Virgin Human Hair Swiss Lace Frontal Closure Bleached Knots
+  180% Density Pre Plucked With Baby Hair Natural Color
+
+  $86.79
+
+
+  [button] B07N33D4TH [button_]
+
+  Style Edit Root Concealer Touch Up Spray (Multiple Colors Available) - Instantly
+  Covers Greys And Roots - Professional Salon Quality Grays Cover Up Hair Products
+  for Women Medium Brown 2 Ounce PACK OF 4 PLUS 1 FREE (Total Of 5)
+
+  $99.49
+
+  '
+- 'Instruction: i am looking for long lasting deep color colorstay concealer, and
+  price lower than 40.00 dollars'
+- 'back to search
+
+  next >
+
+  b07kywgp65
+
+  b07gw9q8fh
+
+  b07gwdxwrh
+
+  b00j2apbzi
+
+  b072j9spmr
+
+  b001b2s32s
+
+  b074vg3cd5
+
+  b09ky9p8cd
+
+  b09p2r22lf
+
+  b07n33d4th'
+: action_dict:
+    ? &id039 !!python/tuple
+    - click[b07kywgp65]
+    - b07kywgp65 is a long lasting deep color colorstay concealer in shade 055 Chestnut
+      that is priced at $9.49. This meets all the requirements and is the most affordable
+      option.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 30
+  other_info:
+    action_history:
+    - &id017 !!python/tuple
+      - search[long lasting deep color colorstay concealer]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Page 1 (Total results: 50)\n\n[button] B07VK1ZCRG [button_]\nSun Tropics Mochi\
+  \ Snack Bites, Variety Pack, 3.5 oz (6 Pack), Gluten Free, Vegan, No MSG Added,\
+  \ Dairy Free, Crunchy Snack\n$19.99\n\n[button] B001D0DMME [button_]\nKIND Bars,\
+  \ Cranberry Almond, Gluten Free, Low Glycemic Index, 1.4 Ounce Bars, 12 Count\n\
+  $14.22\n\n[button] B00FBCZCWS [button_]\nKIND Bars, Maple Glazed Pecan & Sea Salt,\
+  \ Gluten Free, Low Glycemic Index, 1.4oz, 12 Count\n$14.22\n\n[button] B09JGSWVJH\
+  \ [button_]\nSand + Fog Scented Candles | Autumn Harvest | Soy Blend | 2 - 100%\
+  \ Cotton Lead-Free Wicks | 12 oz\n$12.99\n\n[button] B07256GKZ5 [button_]\nLight\
+  \ Grey Celtic Sea Salt Resealable Bags \u2013 Additive-Free, Delicious Sea Salt,\
+  \ Perfect for Cooking, Baking and More - Gluten-Free, Non-GMO Verified, Kosher and\
+  \ Paleo-Friendly, 1 Pound Bag (2 Count)\n$14.35\n\n[button] B07J4XNCSZ [button_]\n\
+  Sun-Maid - Fruity Raisins Snacks for Kids - Sour Mixed Berry - 0.7 Ounce - Pack\
+  \ of 56 - Whole Natural Dried Fruit - No Artificial Flavors - Non-GMO\n$35.18\n\n\
+  [button] B07FDL284N [button_]\nRiceworks Sea Salt Rice Chips & Snacks, Non GMO,\
+  \ Gluten Free, 5.5 oz. per bag, 6 pack\n$29.99\n\n[button] B08642JYRV [button_]\n\
+  Siete Grain Free Tortilla Chips | Gluten Free Chips | Paleo & Vegan Snacks | Non\
+  \ GMO | Sea Salt, 5 Ounce (Pack of 6)\n$100.0\n\n[button] B003I567W4 [button_]\n\
+  Blue Diamond Almonds Nut Thins Gluten Free Cracker Crisps, Hint of Sea Salt, 4.25\
+  \ Oz Boxes (Pack of 12)\n$34.44\n\n[button] B07FZ6XX2T [button_]\nMissy J's Organic\
+  \ Peanut Butter Carob Bar 3 Ounce 2 Pack | Carob Made w/Coconut Sugar, Vegan and\
+  \ Gluten-Free | Healthy Caffeine Free Substitute for Chocolate, Perfect for Snacks\
+  \ and Treats\n$17.87\n"
+- 'Instruction: i want gluten free sun tropics sea salt snack bites, and price lower
+  than 30.00 dollars'
+- 'back to search
+
+  next >
+
+  b07vk1zcrg
+
+  b001d0dmme
+
+  b00fbczcws
+
+  b09jgswvjh
+
+  b07256gkz5
+
+  b07j4xncsz
+
+  b07fdl284n
+
+  b08642jyrv
+
+  b003i567w4
+
+  b07fz6xx2t'
+: action_dict:
+    ? &id030 !!python/tuple
+    - click[b07vk1zcrg]
+    - b07vk1zcrg is a gluten free sun tropics sea salt snack bite priced at $19.99.
+      This meets all the requirements and is the most affordable option.
+    : number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+  id: 15
+  other_info:
+    action_history:
+    - &id024 !!python/tuple
+      - search[gluten free sun tropics sea salt snack bites]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Page 1 (Total results: 50)\n\n[button] B08D9MGFN3 [button_]\nTRUNG NGUYEN LEGEND\
+  \ G7 PREMIUM CAPPUCINO MOCHA Instant Coffee for Energy Boost - Rich Cocoa Aroma,\
+  \ Thick & Soft Foam Milk - Strong and Pure Vietnamese Coffee (12 Sticks/Box)\n$11.03\n\
+  \n[button] B000E1HVCA [button_]\nJell-O Instant White Chocolate Sugar-Free Fat Free\
+  \ Pudding & Pie Filling Mix (1 oz Boxes, Pack of 24)\n$24.0\n\n[button] B07G3PXTKT\
+  \ [button_]\nVital Proteins Collagen Coffee Creamer, No Dairy & Low Sugar Powder\
+  \ with Collagen Peptides Supplement - Supporting Healthy Hair, Skin, Nails with\
+  \ Energy-Boosting MCTs - Coconut 10.3oz\n$22.5\n\n[button] B076MH2RS8 [button_]\n\
+  GramZero Banana Sugar Free Pudding Mix 12-Pack, Great For Nutrition Club Meal Replacement\
+  \ Shakes, Low Calorie Dessert, Stevia Sweetened\n$19.95\n\n[button] B07WTY16LH [button_]\n\
+  Collagen Creamer | Grass Fed Hydrolyzed Collagen Peptides with Coconut Powder Creamer\
+  \ | Hair, Skin, Nails, Bone & Joint Support | 15-Pack\u2026 (Mocha)\n$19.95\n\n\
+  [button] B00CWTZ8SQ [button_]\nTorani Sugar Free Syrup, Sweetener, 25.4 Fl Oz (Pack\
+  \ of 4)\n$34.99\n\n[button] B08KFS44G1 [button_]\nMunk Pack Keto Granola Bars 48\
+  \ Pack Bundle (12 Pack Coconut Cocoa Chip, 12 Pack Almond Butter Cocoa Chip, 12\
+  \ Pack Peanut Butter & 12 Pack Maple Pecan)\n$89.96\n\n[button] B07MXPLFSH [button_]\n\
+  Cusa Tea & Coffee, Spicy Chai Tea. Premium Instant Tea Made With Real Fruit and\
+  \ Spices, Organic Leaves, No Added Sugar. Drink Mix Packets Ready in Seconds, Makes\
+  \ Hot or Iced Tea (30 Servings)\n$22.99\n\n[button] B089Z43Q8H [button_]\nDaVinci\
+  \ Gourmet Sugar-Free Amaretto Syrup, 25.4 Ounce (Pack of 4)\n$24.48\n\n[button]\
+  \ B00CWTZ6GU [button_]\nTorani Sugar Free Syrup, Hazelnut, 25.4 Oz, Pack of 4\n\
+  $29.89\n"
+- 'Instruction: i am looking for cappucino coconut and low sugar instant coffee for
+  energy boost, and price lower than 40.00 dollars'
+- 'back to search
+
+  next >
+
+  b08d9mgfn3
+
+  b000e1hvca
+
+  b07g3pxtkt
+
+  b076mh2rs8
+
+  b07wty16lh
+
+  b00cwtz8sq
+
+  b08kfs44g1
+
+  b07mxplfsh
+
+  b089z43q8h
+
+  b00cwtz6gu'
+: action_dict:
+    ? &id053 !!python/tuple
+    - click[b08d9mgfn3]
+    - b08d9mgfn3 is a cappuccino coconut and low sugar instant coffee priced at $11.03.
+      This meets all the requirements and is the most affordable option.
+    : number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+  id: 55
+  other_info:
+    action_history:
+    - &id016 !!python/tuple
+      - search[cappucino coconut low sugar instant coffee]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B08DGQDX38 [button_]
+
+  Rustic Vanity Light,3-Light Industrial Wood Finish Farmhouse Bathroom Lighting,Clear
+  Glass and Black Metal Base Wall Sconce Lighting Fixtures.
+
+  $75.99
+
+
+  [button] B078HYPVTQ [button_]
+
+  Globe Electric 65931 Williamsburg 1-Light Wall Sconce, Dark Bronze, Dark Wood Finish
+  Accents, Seeded Glass Shade
+
+  $43.98
+
+
+  [button] B08NPHTBXB [button_]
+
+  2-Light Matte Black Bathroom Vanity Light Fixtures, Modern Bathroom Wall Sconces,
+  Industrial Wall Sconce Lighting for Bathroom Bedroom Living Room Hallway(2 Pack)
+
+  $59.99
+
+
+  [button] B0030Y7MLS [button_]
+
+  Hudson Valley Lighting 371-PN Everett - One Light Wall Sconce - 4.75 Inches Wide
+  by 14.25 Inches High, Polished Nickel Finish with Opal/Glossy
+
+  $344.0
+
+
+  [button] B097SLKSD3 [button_]
+
+  VINLUZ Farmhouse Bathroom Light Fixtures Over Mirror Black Finish,4 Light Metal
+  Indoor Vanity Lights with Clear Glass Shade sconces Wall Lighting
+
+  $139.99
+
+
+  [button] B09DGG7H6H [button_]
+
+  Diyel Bathroom Vanity Light Fixture 3-Light Bathroom Wall Sconce Modern Indoor Wall
+  Light Wall Mount Lighting with Clear Glass Shade, Matte Black Finish Bath Wall Lamp,
+  2128-W3
+
+  $84.99
+
+
+  [button] B08T5Z2R23 [button_]
+
+  Modern Gold Bathroom Vanity Light Brass Wall Sconces Set of 2 Cylinder Sconce Lighting
+
+  $115.0
+
+
+  [button] B07GNC5FPV [button_]
+
+  Tangkula AM1826HM 3 Bathroom Brushed Chrome Mounted with White Alabaster Glass Shade
+  Bath Wall Sconce Pendant Lamp Polished Vanity Light
+
+  $45.99
+
+
+  [button] B08FMTLWH5 [button_]
+
+  Bathroom Vanity Light Fixtures Matte Black Vanity Light 24inch 14W LED 3000K Modern
+  Metal Wall Sconce
+
+  $49.99
+
+
+  [button] B0912Y7Z5R [button_]
+
+  Wood Drum Chandelier for Dining Room, 4-Light Silver Chrome & Brown Farmhouse Rustic
+  Traditional Chandeliers Pendant Lighting, Round Metal Kitchen Foyer Light Fixtures
+  Ceiling Hanging for Living Room
+
+  $189.99
+
+  '
+- 'Instruction: i am looking for a sconce light with a black metal base and a wood
+  finish, and price lower than 110.00 dollars'
+- 'back to search
+
+  next >
+
+  b08dgqdx38
+
+  b078hypvtq
+
+  b08nphtbxb
+
+  b0030y7mls
+
+  b097slksd3
+
+  b09dgg7h6h
+
+  b08t5z2r23
+
+  b07gnc5fpv
+
+  b08fmtlwh5
+
+  b0912y7z5r'
+: action_dict:
+    ? &id032 !!python/tuple
+    - click[b078hypvtq]
+    - b078hypvtq is a sconce light with a black metal base and a wood finish that
+      is priced at $43.98. This meets all the requirements and is the most affordable
+      option.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 67
+  other_info:
+    action_history:
+    - &id015 !!python/tuple
+      - search[sconce light black metal base wood finish]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Page 1 (Total results: 50)\n\n[button] B08V134QWR [button_]\nPTZ Security Camera\
+  \ Outdoor 30X Optical Zoom Camera WiFi Wireless 5MP RTSP IP Camera 1000FT Night\
+  \ Vision Auto Tracking Emergency Strobe Light Alarm Human Detection 2-Way Audio\
+  \ IP66 Waterproof\n$249.99\n\n[button] B08QD45PHZ [button_]\nPTZ Camera Outdoor,Compatible\
+  \ with Hikvision, 4K PoE IP Camera Speed Dome for Home Security,2022 Upgrade,18x\
+  \ Optical Zoom,4.7~84.6mm Motorized Lens, Auto Tracking,165ft NightVision IP66 Waterproof\n\
+  $269.0\n\n[button] B0000645C9 [button_]\nCanon PowerShot S200 2MP Digital ELPH Camera\
+  \ w/ 2x Optical Zoom\n$49.9\n\n[button] B09RV3SFJM [button_]\nCelestron 52238 C70\
+  \ Mini Mak Spotting Scope, 25-75x, Black & NexYZ 3-Axis Smartphone Adapter, Black\n\
+  $190.89\n\n[button] B07FYB92QR [button_]\nNikon (26522 COOLPIX P1000 16MP 125x Super-Zoom\
+  \ Digital Camera + 64GB Memory & Accessory Bundle\n$100.0\n\n[button] B004HO58L6\
+  \ [button_]\nFujifilm FinePix Z90 14 MP Digital Camera with Fujinon 5x Wide Angle\
+  \ Optical Zoom Lens and 3-Inch Touch-Screen LCD (Black)\n$100.0\n\n[button] B0011N17RU\
+  \ [button_]\nNikon Coolpix S550 10 MP Digital Camera with 5x Optical Zoom (Graphite\
+  \ Black)\n$45.9\n\n[button] B08JPBQ73S [button_]\nBlink Outdoor and Indoor \u2013\
+  \ wireless, HD security cameras with two-year battery life and motion detection\
+  \ \u2013 6 camera kit\n$459.96\n\n[button] B086DKSHQ4 [button_]\nBlink Outdoor -\
+  \ wireless, weather-resistant HD security camera, two-year battery life, motion\
+  \ detection, set up in minutes \u2013 3 camera kit\n$249.99\n\n[button] B000AOFVZK\
+  \ [button_]\nKonica Minolta Dimage Z6 6MP Digital Camera with 12x Anti-Shake Zoom\n\
+  $69.95\n"
+- 'Instruction: i want to buy a waterproof security camera with an optical zoom and
+  motion detection, and price lower than 260.00 dollars'
+- 'back to search
+
+  next >
+
+  b08v134qwr
+
+  b08qd45phz
+
+  b0000645c9
+
+  b09rv3sfjm
+
+  b07fyb92qr
+
+  b004ho58l6
+
+  b0011n17ru
+
+  b08jpbq73s
+
+  b086dkshq4
+
+  b000aofvzk'
+: action_dict:
+    *id010:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 40
+  other_info:
+    action_history:
+    - *id011
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B092MH5RFM [button_]
+
+  VITAKE Double-Sided Bath Brush,Painless Powerful Bathing Artifact Back Rubbing Exfoliating
+  Massage Shower Brush Long Handle(Blue)
+
+  $8.12
+
+
+  [button] B09P7WWP61 [button_]
+
+  Bath Brush Bath Accessories Long Handle Wet Or Dry Scrubbing Body Brush Set Gift
+  5 in 1 Skin Care Exfoliating Back Wooden Massage Shower Bath Towel
+
+  $41.81
+
+
+  [button] B09DT9G2FR [button_]
+
+  LINLILO Silicone Body Scrubber,Bath Brush Body Exfoliator&Hair Shampoo Brush,All
+  in One,Long Handle Back Scrubber for Shower (Set of 2)
+
+  $9.99
+
+
+  [button] B082D247QB [button_]
+
+  Yisella Shower Brush With Long Handle,Loofah Back Scrubber Blue and White
+
+  $15.99
+
+
+  [button] B0744MQDVZ [button_]
+
+  Arswin Back Scrubber for Shower,Loofah Long Handle Bath Body Brush,Soft Nylon Mesh
+  Sponge for Shower,Loofah On a Stick for Men Women,Exfoliating Scrub Cleaning Luffa
+  for Elderly
+
+  $7.39
+
+
+  [button] B09DD313B3 [button_]
+
+  Beaupretty 4 PCS Loofah Back Scrubber Wooden Handle Anti- slip Brush Bathroom Accessories
+  Bath Shower Accessories for Home
+
+  $14.99
+
+
+  [button] B087V3GK1Q [button_]
+
+  interjunzhan Bath Shower Brush with Anti-slip Long Wooden Handle, Body Exfoliating
+  Scrubber Good for Health and Beauty Green
+
+  $5.24
+
+
+  [button] B09BKNLL1G [button_]
+
+  Minkissy 4pcs Loofah Back Scrubber Mesh Body Exfoliators Long Handle Brush with
+  Sponge Balls for Women Men Bathing Accessories
+
+  $14.89
+
+
+  [button] B09J2G581P [button_]
+
+  4PCS Tongue Scraper Tongue Brush, BPA Free Oral Hygiene Tool to Help Resist Bad
+  Breath and Freshen The Breath, Great for Adult Kids Remove Tongue Coating
+
+  $4.99
+
+
+  [button] B09K3SXTJ1 [button_]
+
+  6 Pack Kids U Shaped Toothbrush with Silicone Brush Manual Training Tooth Brush
+  U-Type Toothbrush Whole Mouth Toothbrush with Handle for Kids 2-8 Years Old (Paw
+  Handle, Long Handle, Blue Pink Yellow)
+
+  $8.69
+
+  '
+- 'Instruction: find me a long handled body brush that is double sided, and price
+  lower than 40.00 dollars'
+- 'back to search
+
+  next >
+
+  b092mh5rfm
+
+  b09p7wwp61
+
+  b09dt9g2fr
+
+  b082d247qb
+
+  b0744mqdvz
+
+  b09dd313b3
+
+  b087v3gk1q
+
+  b09bknll1g
+
+  b09j2g581p
+
+  b09k3sxtj1'
+: action_dict:
+    ? &id041 !!python/tuple
+    - click[b092mh5rfm]
+    - b092mh5rfm is a double-sided long handled body brush that is priced at $8.12.
+      This meets all the requirements and is the most affordable option.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 52
+  other_info:
+    action_history:
+    - &id012 !!python/tuple
+      - search[long handled body brush double sided]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B09391JQ43 [button_]
+
+  DC Comics Men''s The Joker Script Logo Classic Villain Adult Sleepwear Lounge Pajama
+  Pants
+
+  $24.99 to $26.99
+
+
+  [button] B09PJ72WM1 [button_]
+
+  Pants for Women High Elasticity High Waist Cutout Solid Strappy Casual Bell-Bottomed
+  Pants
+
+  $0.01 to $1.99
+
+
+  [button] B0971XD6YS [button_]
+
+  Marvel Loki Variant Simple Text T-Shirt
+
+  $22.99
+
+
+  [button] B09RWP246B [button_]
+
+  TOWMUS Men Polo Shirts for Men Men?s Polo Shirts Short Sleeve Print Casual Stylish
+  Dotted Line Print Polo Shirts for Men Tops
+
+  $3.99 to $4.99
+
+
+  [button] B09R93K3N4 [button_]
+
+  Tshirts Shirts for Men Golf Polo Shirts for Men Short Sleeve Athletic Tennis T-Shirt
+  Tee Shirts Summer Tops for Men
+
+  $0.19 to $0.99
+
+
+  [button] B09RSSC2D5 [button_]
+
+  TOWMUS Men Polo Shirts Men''s Short Sleeve Casual Slim Fit Polo Shirts Basic Designed
+  Classic Cut Cotton Shirts Tops
+
+  $3.49 to $4.49
+
+
+  [button] B09NF77VZ8 [button_]
+
+  Marvel Spider-Man No Way Home Photo Real Poster T-Shirt
+
+  $22.99
+
+
+  [button] B09N75L4RD [button_]
+
+  LEIYAN Mens Stylish Plaid Striped Pencil Pants Big and Tall Flat Front Dress Pants
+  Casual Business Office Work Trousers
+
+  $17.08
+
+
+  [button] B07XJ29K93 [button_]
+
+  Head Case Designs Officially Licensed The Flash TV Series Barry Allen Character
+  Art Soft Gel Case Compatible with Apple iPhone 7 / iPhone 8 / iPhone SE 2020
+
+  $17.95
+
+
+  [button] B084LMXRSJ [button_]
+
+  Profile Varsity Men''s Big & Tall Fashion Polo
+
+  $11.22 to $49.39
+
+  '
+- 'Instruction: i want to find a small pair of men''s pajama pants that''s officially
+  licensed with the joker, and price lower than 60.00 dollars'
+- 'back to search
+
+  next >
+
+  b09391jq43
+
+  b09pj72wm1
+
+  b0971xd6ys
+
+  b09rwp246b
+
+  b09r93k3n4
+
+  b09rssc2d5
+
+  b09nf77vz8
+
+  b09n75l4rd
+
+  b07xj29k93
+
+  b084lmxrsj'
+: action_dict:
+    ? &id033 !!python/tuple
+    - click[b09391jq43]
+    - b09391jq43 is a pair of officially licensed Joker pajama pants that is priced
+      at $24.99 to $26.99. This meets all the requirements and is the most affordable
+      option.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 11
+  other_info:
+    action_history:
+    - &id026 !!python/tuple
+      - search[men's pajama pants officially licensed joker]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B09BQMH7P7 [button_]
+
+  Short Straight Claw Clip In Ponytail Cute Girls Hair Heat Resistant Synthetic Black
+  Gray Red Extensions Wig Hairpiece 2-30 6inches
+
+  $16.38
+
+
+  [button] B081N4PHWC [button_]
+
+  18"-21" Baseball Cap With Synthetic Hair Extensions Curly Straight Hairpiece Wig
+  with Baseball Hat with Hair
+
+  $7.99 to $13.99
+
+
+  [button] B07NPG61K4 [button_]
+
+  S-noilite Invisible Crown Hair Extensions Secret Transparent Headband Hairpieces
+  No Clip Long Human Made Natural Synthetic Fibre Hair Piece for Women Curly 24 Inch
+  bleach blonde
+
+  $13.99
+
+
+  [button] B086YQ42LX [button_]
+
+  Clip in Full Head Hair Extensions 8 pieces/set Synthetic Fibre Natural Long Thick
+  Hair Pieces Hairpiece Standard Weft Hair Extension for Women Lady Girls - 24 inch
+  Curly ash blonde
+
+  $15.99
+
+
+  [button] B097PMFHPF [button_]
+
+  12 PCS Colored Hair Extensions, SOYZMYX Multi-color Party Highlights Clip in Synthetic
+  Hair Extensions, 22 inch Colorful Hair Accessories for Girls Women Kids Straight
+  Hairpieces in Halloween (Green)
+
+  $6.64
+
+
+  [button] B085W5VF39 [button_]
+
+  Keepmove Winter Women Long Straight Wig Cap 30 Inch Long Hair Baseball Cap Ball
+  Caps Casual Hat Wig
+
+  $6.88
+
+
+  [button] B00H0HBBBI [button_]
+
+  PRETTYSHOP Hairpiece Scrunchy Updo Bridal Hairstyle Voluminous Wavy Messy Bun Gray
+  Blond Mix G21A
+
+  $9.99
+
+
+  [button] B08WY87NG5 [button_]
+
+  Kim Lace Front Wig Color P4/27/30 - Sepia Wigs 26" Long Curly 100% Futura Heat Friendly
+  Synthetic Hair Realistic Hairline Layered 3 oz Avg Cap Bundle MaxWigs Hairloss Booklet
+
+  $54.88
+
+
+  [button] B09FSFQ6QT [button_]
+
+  24Inch Twist Braids Headdress Braiding Hair Extensions Rubber Bands Braid Ponytail
+  Elastic Rope Hair Accessories Kids Hair Wig-B1,2Pcs
+
+  $38.58
+
+
+  [button] B0952VJ8S9 [button_]
+
+  AISI BEAUTY Ombre Long Costume Wavy Synthetic Wig Black to Pink to Purple Color
+  for Cosplay Girls and Women Party or Daily Use Wig
+
+  $25.99
+
+  '
+- 'Instruction: i am looking for synthetic black gray 101 color hair extensions wig
+  hairpiece, and price lower than 50.00 dollars'
+- 'back to search
+
+  next >
+
+  b09bqmh7p7
+
+  b081n4phwc
+
+  b07npg61k4
+
+  b086yq42lx
+
+  b097pmfhpf
+
+  b085w5vf39
+
+  b00h0hbbbi
+
+  b08wy87ng5
+
+  b09fsfq6qt
+
+  b0952vj8s9'
+: action_dict:
+    ? &id040 !!python/tuple
+    - click[b09bqmh7p7]
+    - b09bqmh7p7 is a synthetic hair extension wig hairpiece in the desired color
+      and is priced at $16.38. This meets all the requirements and is the most affordable
+      option.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 64
+  other_info:
+    action_history:
+    - &id019 !!python/tuple
+      - search[synthetic black gray 101 color hair extensions wig hairpiece]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B09C2Z9BM5 [button_]
+
+  Male And Female Diving Shoes Light Snorkeling Swimming Upstream Shoes Beach Shoes
+  Swimming Shoes, Non-slip Water, Mother Socks, Coral Socks Water Shoes For Women
+  Mens Water Shoes Outdoor beach shoes
+
+  $40.56
+
+
+  [button] B0818ZP6YY [button_]
+
+  House Slippers for Women Fuzzy,Unisex Memory Foam Wool-Like Plush Fleece Lined Winter
+  Indoor Outdoor Anti-Skid Rubber Sole
+
+  $0.01
+
+
+  [button] B097ZLKZCS [button_]
+
+  Wedge Sandals for Women Casual Summer Platform Espadrille High Heel Sandals 2021
+  Casual Sandals Shoes Open Toe Roman Shoes
+
+  $2.99 to $15.99
+
+
+  [button] B09CTF9RZQ [button_]
+
+  Ciadoon Mushroom Shoes Womens Mens Running Shoes Athletic Non-Slip Tennis Walking
+  Sneakers Gifts for Boy Girl
+
+  $59.99
+
+
+  [button] B09HW6VVVR [button_]
+
+  NewDenBer Men''s Moccasin Slippers Warm Memory Foam Suede Plush Shearling Lined
+  Slip on Indoor Outdoor House Shoes
+
+  $32.99 to $36.99
+
+
+  [button] B09J2G7DD1 [button_]
+
+  MAPOLO Pink Petals Men''s Boys Casual Walking Shoes Sneaker Lightweight Stylish
+  Athletic Tennis Sports Running Shoes for Outdoor Hiking Travel Driving
+
+  $100.0
+
+
+  [button] B09J14SLPH [button_]
+
+  MAPOLO Happy Day Toucan Turtle Elephant Doodle Men''s Boys Casual Walking Shoes
+  Sneaker Lightweight Stylish Athletic Tennis Sports Running Shoes for Outdoor Hiking
+  Travel Driving
+
+  $100.0
+
+
+  [button] B09J165NX5 [button_]
+
+  MAPOLO Christmas Holiday Coffe Men''s Boys Casual Walking Shoes Sneaker Lightweight
+  Stylish Athletic Tennis Sports Running Shoes for Outdoor Hiking Travel Driving
+
+  $100.0
+
+
+  [button] B09F374PTJ [button_]
+
+  PMUYBHF Walking Shoes for Women Slip on Sneakers Athletic Walking Shoes Casual Mesh
+  Running Sneakers
+
+  $100.0
+
+
+  [button] B081T7ZCYM [button_]
+
+  Ankle Booties for Women Flat,Hollow Ankle Boots Low Chunky Block Stacked Heel Boots
+  Slip On Pointed Toe Western Shoes
+
+  $10.4 to $17.59
+
+  '
+- 'Instruction: i want a pair of size 7.4 red walking shoes with a anti slip material,
+  and price lower than 50.00 dollars'
+- 'back to search
+
+  next >
+
+  b09c2z9bm5
+
+  b0818zp6yy
+
+  b097zlkzcs
+
+  b09ctf9rzq
+
+  b09hw6vvvr
+
+  b09j2g7dd1
+
+  b09j14slph
+
+  b09j165nx5
+
+  b09f374ptj
+
+  b081t7zcym'
+: action_dict:
+    ? &id034 !!python/tuple
+    - click[b0818zp6yy]
+    - b0818zp6yy is a pair of red walking shoes with anti-slip material priced at
+      $0.01. This meets all the requirements and is the most affordable option.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 26
+  other_info:
+    action_history:
+    - &id021 !!python/tuple
+      - search[size 7.4 red walking shoes anti slip]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B09D59L59Y [button_]
+
+  Dearfoams Women''s Original Comfort Amaya Wedge Clog
+
+  $21.71 to $85.39
+
+
+  [button] B08MWQNPXF [button_]
+
+  Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men
+
+  $99.0
+
+
+  [button] B092V5VRMB [button_]
+
+  KOCOTA Unisex Garden Clogs Shoes Sandals Slippers
+
+  $16.99 to $19.99
+
+
+  [button] B091KJDJD3 [button_]
+
+  Sharllen Pillow Slippers Non-Slip Super Soft Thick Sole Sandals Platform Massage
+  Shower Bathroom House Slipper for Women/Men Home Slippers for Indoor & Outdoor
+
+  $8.99 to $21.99
+
+
+  [button] B095JH58ZN [button_]
+
+  Women''s Fashion Cross Transparent Round Toe Buckle High Heel Sandals
+
+  $100.0
+
+
+  [button] B09HPFRPD3 [button_]
+
+  Women Denim Platform High Heels Wide Calf Chunky Stacked Lug Round Toe Ankle Booties
+  Punk Knight Boots Combat Shoes
+
+  $100.0
+
+
+  [button] B09SL5XJ54 [button_]
+
+  Women Slide Sandals Open Toe Fashion Bling Rhinestone Flat Sandal Slip on Summer
+  Comfort Dressy Casual Flip Flop Shoes
+
+  $100.0
+
+
+  [button] B09GP8Z91F [button_]
+
+  XTBFOOJ Womens Flats Boots Side Zipper Leather Ankle Booties Comfortable Winter
+  Warm Outdoor Anti-Slip Waterproof Snow Shoes
+
+  $100.0
+
+
+  [button] B09K4WJ974 [button_]
+
+  Runsmooth Women Memory Foam House Slippers Cozy Cute Bunny Animal Warm Slipper Indoor
+  Outdoor Birthday for Girls Ladies
+
+  $100.0
+
+
+  [button] B0979651TX [button_]
+
+  siilsaa Sneakers for Women, Womens Slip-On Running Shoes Solid Mesh Lightweight
+  Gym Jogging Shoes Fashion Sneaker
+
+  $2.99 to $14.99
+
+  '
+- 'Instruction: i am looking for size 9 women''s fashion sneakers with vinyl acetate,
+  and price lower than 180.00 dollars'
+- 'back to search
+
+  next >
+
+  b09d59l59y
+
+  b08mwqnpxf
+
+  b092v5vrmb
+
+  b091kjdjd3
+
+  b095jh58zn
+
+  b09hpfrpd3
+
+  b09sl5xj54
+
+  b09gp8z91f
+
+  b09k4wj974
+
+  b0979651tx'
+: action_dict:
+    ? &id052 !!python/tuple
+    - click[b09d59l59y]
+    - b09d59l59y is a pair of size 9 women's fashion sneakers with vinyl acetate priced
+      at $21.71 to $85.39. This meets all the requirements and is the most affordable
+      option.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 71
+  other_info:
+    action_history:
+    - &id018 !!python/tuple
+      - search[size 9 women's fashion sneakers vinyl acetate]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Page 1 (Total results: 50)\n\n[button] B09GN891PR [button_]\niPhone 13 Case,Sunflower\
+  \ and Flag Plexiglass Case,iPhone 13 Cases for Girls and Women [Anti-Scratch] Fashion\
+  \ Cute Pattern Design Cover Case for iPhone 13(6.1-inch)\n$14.99\n\n[button] B09CD32CBP\
+  \ [button_]\nDolphin Case Compatible with iPhone 11 Pro 5.8 Inch,Underwater Photography\
+  \ of Dolphins Happily,Soft & Flexible TPU Shockproof Cover Men Women Girls Teen\
+  \ Funny Pattern Phone Case,Blue Grey\n$5.86\n\n[button] B09J2FYN62 [button_]\niPhone\
+  \ 13 Pro Max Case,Sunflower Rose Pattern iPhone 13 Pro Max Cases for Girls Women\
+  \ [Anti-Scratch] Soft TPU Shockproof Design Cover Case for iPhone 13 Pro Max\uFF08\
+  6.7inch\uFF09\n$13.99\n\n[button] B09SKGVDWZ [button_]\n[2+2 Pack]Galaxy S10 Screen\
+  \ Protector, HD Clear Tempered Glass, Ultrasonic Fingerprint Support, 3D Curved,\
+  \ Scratch Resistant, Bubble-Free for Galaxy S10 5G Glass Screen Protector\n$12.99\n\
+  \n[button] B09DPSQSX2 [button_]\nORIbox Glass Screen Protector for iPhone 12 Pro,\
+  \ 3 Packs Anti-Scratch HD Tempered Glass Screen Protector with 2 Packs Camera Lens\
+  \ Protector\n$12.84\n\n[button] B09HZVVCVZ [button_]\n13peas for iPhone 13/Pro/Pro\
+  \ Max Case Solid Color Steel Slim Cover with Metal Frame\uFF0CAnti-Scratch&Protective&Microfiber\
+  \ Lining Shell for Women Men (Blue, 13)\n$15.99\n\n[button] B09H455HTL [button_]\n\
+  ICEDIO iPhone 13 Pro Max Case with Screen Protector,Slim Fit Crystal Clear Cover\
+  \ with Fashionable Designs for Girls Women,Protective Phone Case for iPhone 13 Pro\
+  \ Max 6.7\" Leopard Patterns\n$11.99\n\n[button] B09HDTL3X9 [button_]\nZhuxuxiTT\
+  \ Compatible with iPhone XR Case Square,Green Marble Gold iPhone XR Cases for Girls\
+  \ Women,Fashion Pattern Hard PC Back&Soft TPU Bumper Frame Support Case for iPhone\
+  \ XR\n$11.99\n\n[button] B07VL1ZSDP [button_]\nGameboy Case for iPhone, Autbye Retro\
+  \ 3D Phone Case Game Console with 36 Classic Game, Color Display Shockproof Video\
+  \ Game Phone Case for iPhone (for iPhone 6P/7P/8P, Black)\n$22.99\n\n[button] B07VL2H8KN\
+  \ [button_]\nGameboy Case for iPhone, Autbye Retro 3D Phone Case Game Console with\
+  \ 36 Classic Game, Color Display Shockproof Video Game Phone Case for iPhone (for\
+  \ iPhone 6/6s/7/8, Pink)\n$22.99\n"
+- 'Instruction: i''m looking for an easy to install iphone 13 case with a colorful
+  cactus pattern, and price lower than 50.00 dollars'
+- 'back to search
+
+  next >
+
+  b09gn891pr
+
+  b09cd32cbp
+
+  b09j2fyn62
+
+  b09skgvdwz
+
+  b09dpsqsx2
+
+  b09hzvvcvz
+
+  b09h455htl
+
+  b09hdtl3x9
+
+  b07vl1zsdp
+
+  b07vl2h8kn'
+: action_dict:
+    ? &id046 !!python/tuple
+    - click[b09gn891pr]
+    - b09gn891pr is an iPhone 13 case with a colorful cactus pattern that is priced
+      at $14.99. This meets all the requirements and is the most affordable option.
+    : number: 1
+      qvalue: 0.5
+      reward: 0.0
+  id: 49
+  other_info:
+    action_history:
+    - &id028 !!python/tuple
+      - search[easy to install iphone 13 case colorful cactus pattern]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Page 1 (Total results: 50)\n\n[button] B09HWGB5LJ [button_]\nSoft-Sheen Carson\
+  \ Carol's Daughter Goddess Strength Repairing Cocoon Hydrating Hair Mask for Dry\
+  \ Damaged & Curly Hair, Restores Moisture, Made with Castor Oil, 12 Oz, White\n\
+  $11.97\n\n[button] B0199WNJXY [button_]\nTRESemm\xE9 Expert Selection Hydrating\
+  \ Mask, Botanique Nourish and Replenish, 9.17 oz\n$14.98\n\n[button] B08NF5JL3F\
+  \ [button_]\nWella Professional Color Fresh Mask, Temporary Color Refresh Treatment,\
+  \ Chocolate Touch, 150 ml\n$23.99\n\n[button] B07Q8VSCW2 [button_]\nPunky Hair Treatment\
+  \ Mask with Intrabond Hair Repairing Complex, Initiates Hair Repair, Strengthens\
+  \ Hair Fiber, Moisturizes and Conditions Hair - Ideal for Dry, Damaged, Chemically\
+  \ Treated Hair, 6 oz\n$22.95\n\n[button] B08YFKCG9Q [button_]\nGIRL+HAIR Curl Cloud\
+  \ and Cleanse Set, Conditioning Hair Mask and Tea Tree Oil Shampoo, Treat Scalp\
+  \ and Hair\n$100.0\n\n[button] B09R82SVCG [button_]\nGlow Witch Korean Skin Care\
+  \ Set - Deep Conditioning Hair Mask with Argan Oil for Dry and Damaged Hair Treatment\
+  \ (4 Pcs) & Face Sheet Masks Skincare (4 Pcs) with Probiotic & Mushroom Essence\n\
+  $100.0\n\n[button] B07T9GKCPC [button_]\nYes To Tea Tree Scalp Relief Soothing Spray-On\
+  \ Hair Mask\n$6.99\n\n[button] B09P4Z74XN [button_]\n5 Pack Foot Peel Mask, Foot\
+  \ Exfoliator Peel Off Dry Cracked Feet Dead Skin Callus Remover, Natural Foot Socks,\
+  \ Baby Soft Smooth Touch, Removes & Repairs Dry Dead Skin and Rough Heels (Rose)\n\
+  $15.99\n\n[button] B075PK2DSR [button_]\nARABICA COFFEE BEAN OIL Brazilian. 100%\
+  \ Pure/Roasted/Premium Quality with incredible Coffee Aroma. For FACE, BODY, HANDS,\
+  \ FEET, NAILS & HAIR and LIP CARE. (0.5 Fl. oz. - 15 ml.)\n$21.95\n\n[button] B08L81FYLV\
+  \ [button_]\n4 Inch Silicone Facial Mask Mixing Bowl for Facial Mask, Mud Mask and\
+  \ Other Skincare Products Medium Multi colored 5 Pcs.\n$9.99\n"
+- 'Instruction: i am looking for a  masks for damaged hair, and price lower than 140.00
+  dollars'
+- 'back to search
+
+  next >
+
+  b09hwgb5lj
+
+  b0199wnjxy
+
+  b08nf5jl3f
+
+  b07q8vscw2
+
+  b08yfkcg9q
+
+  b09r82svcg
+
+  b07t9gkcpc
+
+  b09p4z74xn
+
+  b075pk2dsr
+
+  b08l81fylv'
+: action_dict:
+    ? &id054 !!python/tuple
+    - click[b09hwgb5lj]
+    - b09hwgb5lj is a hair mask specifically for damaged hair that is priced at $11.97.
+      This meets all the requirements and is the most affordable option.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 33
+  other_info:
+    action_history:
+    - &id013 !!python/tuple
+      - search[masks for damaged hair]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B09Q5YBJL8 [button_]
+
+  Cenglings Sandals for Women, Plus Size Open Toe Leather Wedges Shoes Casual Breathable
+  Outdoor Ankle Strap Platform Sandals
+
+  $13.51
+
+
+  [button] B09CDSR86M [button_]
+
+  UMIYI Sandals for Women Casual Summer Woven Slip On Open Toe Wedge Sandals Womens
+  Flip Flops Girls Sandals
+
+  $7.99 to $25.99
+
+
+  [button] B09P59GGXN [button_]
+
+  NOLDARES Women''s High Heel Sandals, Close Toe High Block Heel Pumps Strappy Lace
+  Up Party Wedding Dressy Fashion Sandals
+
+  $15.99 to $25.99
+
+
+  [button] B09PNRGYNQ [button_]
+
+  NOLDARES Heeled Sandals for Women,Suede Block High Heel Buckle Sandals Mule Ankle
+  Strap Wedding Dress Pump Shoes
+
+  $12.99 to $27.99
+
+
+  [button] B09Q9D1K69 [button_]
+
+  Tongue Cleaner, Tongue Brush Silicone Plasitc Hygienic Ergonomic Freshen Breath
+  for Men Women for Oral Care for Home Travel
+
+  $6.59
+
+
+  [button] B097ZLKZCS [button_]
+
+  Wedge Sandals for Women Casual Summer Platform Espadrille High Heel Sandals 2021
+  Casual Sandals Shoes Open Toe Roman Shoes
+
+  $2.99 to $15.99
+
+
+  [button] B09S8MFC3R [button_]
+
+  Women''s Clear Square Open Toe Heeled Sandals Ankle Strap Chunky Block High Heels
+  Buckle Strappy Dressy Heeled Sandals
+
+  $1.01 to $36.04
+
+
+  [button] B098RX8416 [button_]
+
+  NLOMOCT Sandals for Women Casual Summer Open Toe Ankle Strap Snakeskin Wedge Platform
+  Sandals Outdoor Shoes Women''s Sandals
+
+  $5.99 to $12.99
+
+
+  [button] B09S8KNGZ3 [button_]
+
+  Clear Studded Rhinestone Heels for Women Sexy Chunky Block Square Toe Heels Wedding
+  Shoes Low Heels Open Toe Bridal Pumps Sandals
+
+  $7.55 to $38.11
+
+
+  [button] B09RZRT4QD [button_]
+
+  FAMOORE Women''s Ladies Fashion Solid Wedges Casual Buckle Strap Roman Shoes Sandals
+
+  $11.08 to $51.98
+
+  '
+- 'Instruction: i want blue and eco friendly cenglings sandals for women, and price
+  lower than 50.00 dollars'
+- 'back to search
+
+  next >
+
+  b09q5ybjl8
+
+  b09cdsr86m
+
+  b09p59ggxn
+
+  b09pnrgynq
+
+  b09q9d1k69
+
+  b097zlkzcs
+
+  b09s8mfc3r
+
+  b098rx8416
+
+  b09s8kngz3
+
+  b09rzrt4qd'
+: action_dict:
+    ? &id042 !!python/tuple
+    - click[b09q5ybjl8]
+    - b09q5ybjl8 is a pair of blue and eco-friendly Cenglings sandals for women priced
+      at $13.51. This meets all the requirements and is the most affordable option.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 19
+  other_info:
+    action_history:
+    - &id023 !!python/tuple
+      - search[blue eco friendly cenglings sandals women]
+      - I can search for this specific item using the available search action.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: find me a long handled body brush that is double sided, and price
+  lower than 40.00 dollars'
+- search
+: action_dict:
+    *id012:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 51
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i am looking for a  masks for damaged hair, and price lower than 140.00
+  dollars'
+- search
+: action_dict:
+    *id013:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 32
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i am looking for a 2.1 ounce (pack of 4) of gluten free and non gmo  candy
+  & chocolate bars, and price lower than 50.00 dollars'
+- search
+: action_dict:
+    *id014:
+      number: 1
+      qvalue: 0.75
+      reward: 0.0
+  id: 60
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i am looking for a camcorder that is easy to carry and have optical
+  zoom, and price lower than 170.00 dollars'
+- search
+: action_dict:
+    *id005:
+      number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+  id: 7
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i am looking for a sconce light with a black metal base and a wood
+  finish, and price lower than 110.00 dollars'
+- search
+: action_dict:
+    *id015:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 66
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i am looking for cappucino coconut and low sugar instant coffee for
+  energy boost, and price lower than 40.00 dollars'
+- search
+: action_dict:
+    *id016:
+      number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+  id: 54
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i am looking for long lasting deep color colorstay concealer, and
+  price lower than 40.00 dollars'
+- search
+: action_dict:
+    *id017:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 29
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i am looking for size 9 women''s fashion sneakers with vinyl acetate,
+  and price lower than 180.00 dollars'
+- search
+: action_dict:
+    *id018:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 70
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i am looking for synthetic black gray 101 color hair extensions wig
+  hairpiece, and price lower than 50.00 dollars'
+- search
+: action_dict:
+    *id019:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 63
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i need a 10 pound back of parboiled brown rice that is easy to prepare,
+  and price lower than 50.00 dollars'
+- search
+: action_dict:
+    *id009:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 4
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i want a 8.5 fl oz of mizani true textures cream cleansing conditioner
+  with coconut oil, and price lower than 40.00 dollars'
+- search
+: action_dict:
+    *id020:
+      number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+  id: 45
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i want a pair of size 7.4 red walking shoes with a anti slip material,
+  and price lower than 50.00 dollars'
+- search
+: action_dict:
+    *id021:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 25
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i want a rose pink maxone 1tb portable external hard drive that is
+  plug and play, and price lower than 70.00 dollars'
+- search
+: action_dict:
+    *id022:
+      number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+  id: 57
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i want blue and eco friendly cenglings sandals for women, and price
+  lower than 50.00 dollars'
+- search
+: action_dict:
+    *id023:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 18
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i want fluoride free ayurvedic herbal toothpaste, and price lower
+  than 40.00 dollars'
+- search
+: action_dict:
+    *id007:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 42
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i want gluten free sun tropics sea salt snack bites, and price lower
+  than 30.00 dollars'
+- search
+: action_dict:
+    *id024:
+      number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+  id: 14
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i want some freeze dried mangoes, and price lower than 30.00 dollars'
+- search
+: action_dict:
+    *id025:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 35
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i want to buy a waterproof security camera with an optical zoom and
+  motion detection, and price lower than 260.00 dollars'
+- search
+: action_dict:
+    *id011:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 39
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i want to find a small pair of men''s pajama pants that''s officially
+  licensed with the joker, and price lower than 60.00 dollars'
+- search
+: action_dict:
+    *id026:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 10
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i would like a 0.25 fluid ounces of oil free 090 foundation, and price
+  lower than 40.00 dollars'
+- search
+: action_dict:
+    *id027:
+      number: 1
+      qvalue: 0.5
+      reward: 0.0
+  id: 21
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i''m looking for an easy to install iphone 13 case with a colorful
+  cactus pattern, and price lower than 50.00 dollars'
+- search
+: action_dict:
+    *id028:
+      number: 1
+      qvalue: 0.5
+      reward: 0.0
+  id: 48
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked 1.2 ounce (pack of 8).
+
+  style
+
+  flavor
+
+  size
+
+  [clicked button] 1.2 ounce (pack of 8) [clicked button_]
+
+  Natierra Nature''s Organic Freeze-Dried Strawberries | Gluten Free & Vegan | 1.2
+  Ounce
+
+  Price: $5.79
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i want some freeze dried mangoes, and price lower than 30.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  bag
+
+  bundle
+
+  apples
+
+  bananas
+
+  bananas & strawberries
+
+  bananas and strawberries
+
+  beets
+
+  blueberries
+
+  chocolate banana slices
+
+  chocolate covered mango slices
+
+  chocolate mango slices
+
+  chocolate strawberry slices
+
+  mango cheeks
+
+  mango strips
+
+  mangoes
+
+  peas
+
+  pineapples
+
+  pomegranate arils
+
+  raspberries
+
+  roasted corn
+
+  strawberries
+
+  tropical fruits
+
+  strawberries + apples
+
+  strawberries + bananas
+
+  strawberries + blueberries
+
+  strawberries + corn
+
+  strawberries + mangos
+
+  strawberries + peas
+
+  strawberries + pineapple
+
+  strawberries + pomegranate arils
+
+  strawberries + raspberries
+
+  strawberries + tropical fruits
+
+  0.7 ounce (pack of 8)
+
+  1.5 ounce (pack of 1)
+
+  1.5 ounce (pack of 12)
+
+  1.3 ounce (pack of 4)
+
+  1.3 ounce (pack of 8)
+
+  2.5 ounce (pack of 1)
+
+  2.5 ounce (pack of 12)
+
+  1.8 ounce (pack of 1)
+
+  1.2 ounce (pack of 4)
+
+  1.2 ounce (pack of 8)
+
+  1.8 ounce (pack of 12)
+
+  1 ounce (pack of 1)
+
+  1 ounce (pack of 12)
+
+  1.2 ounce
+
+  1.2 ounce (pack of 1)
+
+  1.2 ounce (pack of 12)
+
+  3 ounce (pack of 1)
+
+  8 ounce (pack of 1)
+
+  8 ounce (pack of 6)
+
+  0.7 ounce (pack of 4)
+
+  2.2 ounce (pack of 1)
+
+  2.2 ounce (pack of 12)
+
+  1.3 ounce (pack of 1)
+
+  1.3 ounce (pack of 12)
+
+  1.6 ounce (pack of 1)
+
+  1 count (pack of 1)
+
+  strawberries 1.2 ounce & apples 1.3 ounc...
+
+  strawberries 1.2 ounce & bananas 2.5 oun...
+
+  strawberries 1.2 ounce & blueberries 1.2...
+
+  strawberries 1.2 ounce & roasted corn 1....
+
+  strawberries 1.2 ounce & mangoes 1.5 oun...
+
+  strawberries 1.2 ounce & peas 2.2 ounce
+
+  strawberries 1.2 ounce & pineapples 1.5 ...
+
+  strawberries 1.2 ounce & pomegranate ari...
+
+  strawberries 1.2 ounce & raspberries 1.3...
+
+  strawberries 1.2 ounce & tropical fruits...'
+: action_dict:
+    ? !!python/tuple
+    - click[1.2 ounce (pack of 8)]
+    - This option meets all the requirements and is the most affordable option.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[b005m4g4li]
+    - This option meets all the requirements and is the most affordable option.
+    : number: 6
+      qvalue: 0.0
+      reward: 0.0
+  id: 38
+  other_info:
+    action_history:
+    - *id025
+    - *id029
+    - &id055 !!python/tuple
+      - click[1.2 ounce (pack of 8)]
+      - This option meets all the requirements and is the most affordable option.
+    last_reward: 0.0
+    number: 7
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked 3.5 ounce (6 pack).
+
+  flavor
+
+  size
+
+  [clicked button] 3.5 ounce (6 pack) [clicked button_]
+
+  Sun Tropics Mochi Snack Bites, Variety Pack, 3.5 oz (6 Pack), Gluten Free, Vegan,
+  No MSG Added, Dairy Free, Crunchy Snack
+
+  Price: $19.99
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i want gluten free sun tropics sea salt snack bites, and price lower
+  than 30.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  golden curry
+
+  sea salt
+
+  tamari teriyaki
+
+  thai bird sriracha
+
+  variety
+
+  .75 ounce (24 pack)
+
+  3.5 ounce (pack of 6)
+
+  3.5 ounce (6 pack)'
+: action_dict:
+    ? !!python/tuple
+    - click[buy now]
+    - After selecting the desired flavor and size, I can click "buy now" to complete
+      the purchase.
+    : number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+  id: 17
+  other_info:
+    action_history:
+    - *id024
+    - *id030
+    - &id047 !!python/tuple
+      - click[3.5 ounce (6 pack)]
+      - This option meets all the requirements and is the most affordable option.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked 30 | buff.
+
+  color
+
+  [clicked button] 30 | buff [clicked button_]
+
+  Neutrogena Hydro Boost Hydrating Tint with Hyaluronic Acid, Lightweight Water Gel
+  Formula, Moisturizing, Oil-Free & Non-Comedogenic Liquid Foundation Makeup, 30 Buff
+  Color, 1.0 fl. oz
+
+  Price: $9.9
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i would like a 0.25 fluid ounces of oil free 090 foundation, and price
+  lower than 40.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  10 | classic ivory
+
+  105 | caramel
+
+  115 | cocoa
+
+  135 | chestnut
+
+  20 | natural ivory
+
+  30 | buff
+
+  40 | nude
+
+  50 | soft beige
+
+  60 | natural beige
+
+  85 | honey'
+: action_dict:
+    ? !!python/tuple
+    - click[buy now]
+    - After selecting the desired shade and size, I can click "buy now" to complete
+      the purchase.
+    : number: 1
+      qvalue: 0.5
+      reward: 0.0
+  id: 24
+  other_info:
+    action_history:
+    - *id027
+    - *id031
+    - &id038 !!python/tuple
+      - click[30 | buff]
+      - This option meets all the requirements and is the most affordable option.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked dark bronze with gold.
+
+  color
+
+  [clicked button] dark bronze with gold [clicked button_]
+
+  Globe Electric 65931 Williamsburg 1-Light Wall Sconce, Dark Bronze, Dark Wood Finish
+  Accents, Seeded Glass Shade
+
+  Price: $43.98
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for a sconce light with a black metal base and a wood
+  finish, and price lower than 110.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  3-light dark bronze
+
+  bronze positano bath set
+
+  dark bronze
+
+  dark bronze with gold
+
+  dark wood'
+: action_dict:
+    ? !!python/tuple
+    - click[dark bronze with gold]
+    - This option meets all the requirements and is the most affordable option.
+    : number: 2
+      qvalue: 0.0
+      reward: 0.0
+  id: 69
+  other_info:
+    action_history:
+    - *id015
+    - *id032
+    - &id036 !!python/tuple
+      - click[b078hypvtq]
+      - This option meets all the requirements and is the most affordable option.
+    - !!python/tuple
+      - click[b078hypvtq]
+      - This option meets all the requirements and is the most affordable option.
+    - !!python/tuple
+      - click[b078hypvtq]
+      - This option meets all the requirements and is the most affordable option.
+    - !!python/tuple
+      - click[b078hypvtq]
+      - This option meets all the requirements and is the most affordable option.
+    - !!python/tuple
+      - click[b078hypvtq]
+      - This option meets all the requirements and is the most affordable option.
+    - &id037 !!python/tuple
+      - click[dark bronze with gold]
+      - This option meets all the requirements and is the most affordable option.
+    last_reward: 0.0
+    number: 2
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked small.
+
+  size
+
+  [clicked button] small [clicked button_]
+
+  DC Comics Men''s The Joker Script Logo Classic Villain Adult Sleepwear Lounge Pajama
+  Pants
+
+  Price: $24.99 to $26.99
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i want to find a small pair of men''s pajama pants that''s officially
+  licensed with the joker, and price lower than 60.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  small
+
+  medium
+
+  large
+
+  x-large
+
+  xx-large
+
+  3x-large'
+: action_dict:
+    ? !!python/tuple
+    - click[b09391jq43]
+    - This is the most affordable option that meets all the requirements.
+    : number: 2
+      qvalue: 0.0
+      reward: 0.0
+  id: 13
+  other_info:
+    action_history:
+    - *id026
+    - *id033
+    - &id049 !!python/tuple
+      - click[b09391jq43]
+      - This is the most affordable option that meets all the requirements.
+    - !!python/tuple
+      - click[b09391jq43]
+      - This is the most affordable option that meets all the requirements.
+    - !!python/tuple
+      - click[b09391jq43]
+      - This is the most affordable option that meets all the requirements.
+    - !!python/tuple
+      - click[b09391jq43]
+      - This is the most affordable option that meets all the requirements.
+    - !!python/tuple
+      - click[b09391jq43]
+      - This is the most affordable option that meets all the requirements.
+    - &id050 !!python/tuple
+      - click[small]
+      - The size options listed are 'small', 'medium', 'large', 'x-large', 'xx-large',
+        and '3x-large'. Since I am looking for a small pair of men's pajama pants,
+        I should click on the 'small' option.
+    last_reward: 0.0
+    number: 2
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked z5-red.
+
+  color
+
+  [clicked button] z5-red [clicked button_]
+
+  size
+
+  House Slippers for Women Fuzzy,Unisex Memory Foam Wool-Like Plush Fleece Lined Winter
+  Indoor Outdoor Anti-Skid Rubber Sole
+
+  Price: $0.01
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i want a pair of size 7.4 red walking shoes with a anti slip material,
+  and price lower than 50.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  coffee
+
+  grey
+
+  pink
+
+  purple
+
+  red
+
+  z1-blue
+
+  z1-pink
+
+  z1-purple
+
+  z2-coffee
+
+  z2-green
+
+  z2-hot pink
+
+  z2-navy
+
+  z2-pink
+
+  z1-coffee
+
+  z1-navy
+
+  z5-coffee
+
+  z5-grey
+
+  z5-pink
+
+  z5-purple
+
+  z5-red
+
+  5-5.5
+
+  6-6.5
+
+  7-7.5
+
+  7  |  8
+
+  8-8.5
+
+  8.5-9
+
+  9-9.5
+
+  9.5-10.5'
+: action_dict:
+    ? !!python/tuple
+    - click[z5-red]
+    - This is the most suitable option that meets all the requirements and is within
+      the desired price range.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 28
+  other_info:
+    action_history:
+    - *id021
+    - *id034
+    - &id043 !!python/tuple
+      - click[b0818zp6yy]
+      - This is the most suitable option that meets all the requirements and is within
+        the desired price range.
+    - !!python/tuple
+      - click[b0818zp6yy]
+      - This is the most suitable option that meets all the requirements and is within
+        the desired price range.
+    - !!python/tuple
+      - click[b0818zp6yy]
+      - This is the most suitable option that meets all the requirements and is within
+        the desired price range.
+    - !!python/tuple
+      - click[b0818zp6yy]
+      - This is the most suitable option that meets all the requirements and is within
+        the desired price range.
+    - !!python/tuple
+      - click[b0818zp6yy]
+      - This is the most suitable option that meets all the requirements and is within
+        the desired price range.
+    - &id044 !!python/tuple
+      - click[z1-red]
+      - This is the most suitable option that meets all the requirements and is within
+        the desired price range.
+    - &id045 !!python/tuple
+      - click[z5-red]
+      - This is the most suitable option that meets all the requirements and is within
+        the desired price range.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'capacity
+
+  color
+
+  Maxone 1TB Ultra Slim Portable External Hard Drive HDD USB 3.0 for PC, Mac, Laptop,
+  PS4, Xbox one - Charcoal Grey
+
+  Price: $49.99
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i want a rose pink maxone 1tb portable external hard drive that is
+  plug and play, and price lower than 70.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  160gb
+
+  250gb
+
+  320gb
+
+  500gb
+
+  1tb
+
+  2tb
+
+  gold
+
+  charcoal grey
+
+  rose pink'
+: action_dict:
+    ? !!python/tuple
+    - click[buy now]
+    - This is the most suitable option as it meets all the requirements and is within
+      the desired price range.
+    : number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+  id: 59
+  other_info:
+    action_history:
+    - *id022
+    - *id035
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'color
+
+  Globe Electric 65931 Williamsburg 1-Light Wall Sconce, Dark Bronze, Dark Wood Finish
+  Accents, Seeded Glass Shade
+
+  Price: $43.98
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for a sconce light with a black metal base and a wood
+  finish, and price lower than 110.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  3-light dark bronze
+
+  bronze positano bath set
+
+  dark bronze
+
+  dark bronze with gold
+
+  dark wood'
+: action_dict:
+    *id036:
+      number: 5
+      qvalue: 0.0
+      reward: 0.0
+    *id037:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 68
+  other_info:
+    action_history:
+    - *id015
+    - *id032
+    last_reward: 0.0
+    number: 6
+    total_reward: 0.0
+? !!python/tuple
+- 'color
+
+  Neutrogena Hydro Boost Hydrating Tint with Hyaluronic Acid, Lightweight Water Gel
+  Formula, Moisturizing, Oil-Free & Non-Comedogenic Liquid Foundation Makeup, 30 Buff
+  Color, 1.0 fl. oz
+
+  Price: $9.9
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i would like a 0.25 fluid ounces of oil free 090 foundation, and price
+  lower than 40.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  10 | classic ivory
+
+  105 | caramel
+
+  115 | cocoa
+
+  135 | chestnut
+
+  20 | natural ivory
+
+  30 | buff
+
+  40 | nude
+
+  50 | soft beige
+
+  60 | natural beige
+
+  85 | honey'
+: action_dict:
+    *id038:
+      number: 1
+      qvalue: 0.5
+      reward: 0.0
+  id: 23
+  other_info:
+    action_history:
+    - *id027
+    - *id031
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'color
+
+  Revlon ColorStay Concealer, Longwearing Full Coverage Color Correcting Makeup, 055
+  Chestnut, 0.21 oz
+
+  Price: $9.49
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for long lasting deep color colorstay concealer, and
+  price lower than 40.00 dollars'
+- "back to search\n< prev\ndescription\nfeatures\nreviews\nbuy now\nbanana\nbiscuit\n\
+  bisque\ncaf\xE9\nchestnut\ncr\xE8me brulee\ndeep\nespresso\nfair\nhazelnut\nlight\n\
+  light medium\nmedium\nmedium deep\nnutmeg\noat\nsand\nvanilla"
+: action_dict:
+    ? !!python/tuple
+    - click[055 Chestnut]
+    - This is the most suitable option for the desired commodity and meets all the
+      requirements.
+    : number: 3
+      qvalue: 0.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[b07kywgp65]
+    - This is the most suitable option for the desired commodity and meets all the
+      requirements.
+    : number: 5
+      qvalue: 0.0
+      reward: 0.0
+  id: 31
+  other_info:
+    action_history:
+    - *id017
+    - *id039
+    last_reward: 0.0
+    number: 8
+    total_reward: 0.0
+? !!python/tuple
+- 'color
+
+  Short Straight Claw Clip In Ponytail Cute Girls Hair Heat Resistant Synthetic Black
+  Gray Red Extensions Wig Hairpiece 2-30 6inches
+
+  Price: $16.38
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for synthetic black gray 101 color hair extensions wig
+  hairpiece, and price lower than 50.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  101
+
+  102
+
+  103
+
+  105
+
+  106
+
+  107
+
+  2
+
+  2-30
+
+  2-33
+
+  30
+
+  6h613'
+: action_dict:
+    ? !!python/tuple
+    - click[Short Straight Claw Clip In Ponytail Cute Girls Hair Heat Resistant Synthetic
+      Black Gray Red Extensions Wig Hairpiece]
+    - This is the most suitable option for the desired commodity and meets all the
+      requirements.
+    : number: 8
+      qvalue: 0.0
+      reward: 0.0
+  id: 65
+  other_info:
+    action_history:
+    - *id019
+    - *id040
+    last_reward: 0.0
+    number: 8
+    total_reward: 0.0
+? !!python/tuple
+- 'color
+
+  VITAKE Double-Sided Bath Brush,Painless Powerful Bathing Artifact Back Rubbing Exfoliating
+  Massage Shower Brush Long Handle(Blue)
+
+  Price: $8.12
+
+  Rating: N.A.
+
+  '
+- 'Instruction: find me a long handled body brush that is double sided, and price
+  lower than 40.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  blue
+
+  green
+
+  pink'
+: action_dict:
+    ? !!python/tuple
+    - click[buy now]
+    - After confirming that the brush is double-sided and within the budget, I can
+      click "buy now" to complete the purchase.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 53
+  other_info:
+    action_history:
+    - *id012
+    - *id041
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'color
+
+  size
+
+  Cenglings Sandals for Women, Plus Size Open Toe Leather Wedges Shoes Casual Breathable
+  Outdoor Ankle Strap Platform Sandals
+
+  Price: $13.51
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i want blue and eco friendly cenglings sandals for women, and price
+  lower than 50.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  blue
+
+  brown
+
+  grey
+
+  red
+
+  5.5
+
+  6
+
+  6.5
+
+  7
+
+  7.5
+
+  8
+
+  8.5
+
+  9
+
+  9.5'
+: action_dict:
+    ? !!python/tuple
+    - click[b09q5ybjl8]
+    - This is the most suitable option that meets all the requirements and is within
+      the desired price range.
+    : number: 8
+      qvalue: 0.0
+      reward: 0.0
+  id: 20
+  other_info:
+    action_history:
+    - *id023
+    - *id042
+    last_reward: 0.0
+    number: 8
+    total_reward: 0.0
+? !!python/tuple
+- 'color
+
+  size
+
+  House Slippers for Women Fuzzy,Unisex Memory Foam Wool-Like Plush Fleece Lined Winter
+  Indoor Outdoor Anti-Skid Rubber Sole
+
+  Price: $0.01
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i want a pair of size 7.4 red walking shoes with a anti slip material,
+  and price lower than 50.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  coffee
+
+  grey
+
+  pink
+
+  purple
+
+  red
+
+  z1-blue
+
+  z1-pink
+
+  z1-purple
+
+  z2-coffee
+
+  z2-green
+
+  z2-hot pink
+
+  z2-navy
+
+  z2-pink
+
+  z1-coffee
+
+  z1-navy
+
+  z5-coffee
+
+  z5-grey
+
+  z5-pink
+
+  z5-purple
+
+  z5-red
+
+  5-5.5
+
+  6-6.5
+
+  7-7.5
+
+  7  |  8
+
+  8-8.5
+
+  8.5-9
+
+  9-9.5
+
+  9.5-10.5'
+: action_dict:
+    *id043:
+      number: 5
+      qvalue: 0.0
+      reward: 0.0
+    *id044:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+    *id045:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 27
+  other_info:
+    action_history:
+    - *id021
+    - *id034
+    last_reward: 0.0
+    number: 7
+    total_reward: 0.0
+? !!python/tuple
+- 'color
+
+  size
+
+  iPhone 13 Case,Sunflower and Flag Plexiglass Case,iPhone 13 Cases for Girls and
+  Women [Anti-Scratch] Fashion Cute Pattern Design Cover Case for iPhone 13(6.1-inch)
+
+  Price: $14.99
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i''m looking for an easy to install iphone 13 case with a colorful
+  cactus pattern, and price lower than 50.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  dragonfly
+
+  african rainbow
+
+  art pineapple
+
+  baby elephant
+
+  blue and pink sky
+
+  butterfly girl
+
+  butterfly glow
+
+  color elephant
+
+  colored unicorns
+
+  colorful butterfly
+
+  colorful cactus
+
+  colorful cute floral sugar skull
+
+  colorful dragonfly
+
+  colorful lips
+
+  colorful starry pineapple
+
+  dragonfly 1
+
+  dream catcher
+
+  fall forest
+
+  fantasy glow
+
+  flowers dreamcatcher
+
+  golden rose
+
+  golden rose in hand
+
+  green mandala
+
+  hand-painted sunflower
+
+  lips
+
+  purple camouflage flag
+
+  queen of hearts
+
+  queen of keys
+
+  skeleton hand rose
+
+  skull girl
+
+  sunflower dream catcher
+
+  sunflower mandalas
+
+  sunflower roses 5
+
+  sunflower sunshine
+
+  sunflower elephant
+
+  sunflower flag
+
+  sunflower yellow
+
+  sunflowers stripes
+
+  the sunflower
+
+  yellow sunflower
+
+  sunflower and flag
+
+  sunflowers
+
+  iphone 13 mini(5.4-inch)
+
+  iphone 13 pro(6.1-inch)
+
+  iphone 13(6.1-inch)
+
+  iphone 13 pro max(6.7-inch)'
+: action_dict:
+    ? !!python/tuple
+    - click[buy now]
+    - This is the most suitable option as it meets all the requirements and is within
+      the desired price range.
+    : number: 1
+      qvalue: 0.5
+      reward: 0.0
+  id: 50
+  other_info:
+    action_history:
+    - *id028
+    - *id046
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'flavor
+
+  size
+
+  Sun Tropics Mochi Snack Bites, Variety Pack, 3.5 oz (6 Pack), Gluten Free, Vegan,
+  No MSG Added, Dairy Free, Crunchy Snack
+
+  Price: $19.99
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i want gluten free sun tropics sea salt snack bites, and price lower
+  than 30.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  golden curry
+
+  sea salt
+
+  tamari teriyaki
+
+  thai bird sriracha
+
+  variety
+
+  .75 ounce (24 pack)
+
+  3.5 ounce (pack of 6)
+
+  3.5 ounce (6 pack)'
+: action_dict:
+    *id047:
+      number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+  id: 16
+  other_info:
+    action_history:
+    - *id024
+    - *id030
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'flavor name
+
+  size
+
+  Hu Dark Chocolate Bars | Natural Organic Vegan Chocolate, Gluten Free, Paleo, Non
+  GMO, Fair Trade Dark Chocolate (Cashew Butter, 4 pack)
+
+  Price: $19.99
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for a 2.1 ounce (pack of 4) of gluten free and non gmo  candy
+  & chocolate bars, and price lower than 50.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  almond butter
+
+  chocolate
+
+  crunchy mint
+
+  hazelnut
+
+  orange vanilla
+
+  salty
+
+  variety
+
+  almond crunch
+
+  crunch variety pack
+
+  gingerbread
+
+  hazelnut coffee
+
+  pumpkin spice
+
+  winter variety pack
+
+  cashew butter
+
+  raspberry cashew butter
+
+  vanilla crunch
+
+  2.1 ounce (pack of 4)
+
+  2.1 ounce (pack of 8)
+
+  4 pack
+
+  4 count (pack of 1)'
+: action_dict:
+    ? !!python/tuple
+    - click[buy now]
+    - After selecting the desired flavor and size, I can click "buy now" to complete
+      the purchase.
+    : number: 1
+      qvalue: 0.75
+      reward: 0.0
+  id: 62
+  other_info:
+    action_history:
+    - *id014
+    - *id048
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'size
+
+  DC Comics Men''s The Joker Script Logo Classic Villain Adult Sleepwear Lounge Pajama
+  Pants
+
+  Price: $24.99 to $26.99
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i want to find a small pair of men''s pajama pants that''s officially
+  licensed with the joker, and price lower than 60.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  small
+
+  medium
+
+  large
+
+  x-large
+
+  xx-large
+
+  3x-large'
+: action_dict:
+    *id049:
+      number: 5
+      qvalue: 0.0
+      reward: 0.0
+    *id050:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 12
+  other_info:
+    action_history:
+    - *id026
+    - *id033
+    last_reward: 0.0
+    number: 6
+    total_reward: 0.0
+? !!python/tuple
+- 'size
+
+  MIZANI True Textures Cream Cleansing Conditioner | With Coconut Oil | Paraben &
+  Sulfate-Free | For Curly Hair
+
+  Price: $27.0
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i want a 8.5 fl oz of mizani true textures cream cleansing conditioner
+  with coconut oil, and price lower than 40.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  8.5 fl oz
+
+  16.91 fl oz (pack of 1)'
+: action_dict:
+    ? !!python/tuple
+    - click[b07b4rz87j]
+    - This is the most affordable option that meets all the requirements.
+    : number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+    ? !!python/tuple
+    - click[buy now]
+    - After selecting the desired size and confirming that the price is within the
+      budget, I can click "buy now" to complete the purchase.
+    : number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+  id: 47
+  other_info:
+    action_history:
+    - *id020
+    - *id051
+    last_reward: 0.0
+    number: 2
+    total_reward: 0.0
+? !!python/tuple
+- 'size
+
+  color
+
+  Dearfoams Women''s Original Comfort Amaya Wedge Clog
+
+  Price: $21.71 to $85.39
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for size 9 women''s fashion sneakers with vinyl acetate,
+  and price lower than 180.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  6
+
+  6.5
+
+  7
+
+  7.5
+
+  8
+
+  8.5
+
+  9
+
+  9.5
+
+  10
+
+  11
+
+  black
+
+  grey
+
+  natural
+
+  rose'
+: action_dict:
+    ? !!python/tuple
+    - click[b09d59l59y]
+    - This is the most suitable option that meets all the requirements and is within
+      the desired price range.
+    : number: 8
+      qvalue: 0.0
+      reward: 0.0
+  id: 72
+  other_info:
+    action_history:
+    - *id018
+    - *id052
+    last_reward: 0.0
+    number: 8
+    total_reward: 0.0
+? !!python/tuple
+- 'size
+
+  color
+
+  TRUNG NGUYEN LEGEND G7 PREMIUM CAPPUCINO MOCHA Instant Coffee for Energy Boost -
+  Rich Cocoa Aroma, Thick & Soft Foam Milk - Strong and Pure Vietnamese Coffee (12
+  Sticks/Box)
+
+  Price: $11.03
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for cappucino coconut and low sugar instant coffee for
+  energy boost, and price lower than 40.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  0.56 ounce (pack of 14)
+
+  0.59 ounce (pack of 12)
+
+  0.59 ounce (pack of 24)
+
+  0.59 ounce (pack of 46)
+
+  0.88 ounce (pack of 5)
+
+  0.88 ounce (pack of 9)
+
+  0.88 ounce (pack of 12)
+
+  0.88 ounce (pack of 18)
+
+  1.3 oz (15 sticks | box)
+
+  7oz (100 sachets | bag)
+
+  7.6 oz (12 sticks | box)
+
+  8oz (12 sticks | box)
+
+  gift box (13 oz)
+
+  14 oz (200 sachets | bag)
+
+  21oz (24 sticks | bag)
+
+  50 count (pack of 1)
+
+  56oz (100 sticks | bag)
+
+  passiona
+
+  classic
+
+  cafe sua da
+
+  special edition
+
+  g7 espresso
+
+  g7 pure black
+
+  g7 cappucino hazelnut
+
+  g7 cappucino mocha
+
+  cappucino coconut
+
+  cappucino hazelnut
+
+  cappucino mocha
+
+  strong x2
+
+  g7 3 in 1'
+: action_dict:
+    ? !!python/tuple
+    - click[buy now]
+    - After selecting the desired size and flavor and confirming that the price is
+      within the budget, I can click "buy now" to complete the purchase.
+    : number: 1
+      qvalue: 0.6666666865348816
+      reward: 0.0
+  id: 56
+  other_info:
+    action_history:
+    - *id016
+    - *id053
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'style
+
+  Soft-Sheen Carson Carol''s Daughter Goddess Strength Repairing Cocoon Hydrating
+  Hair Mask for Dry Damaged & Curly Hair, Restores Moisture, Made with Castor Oil,
+  12 Oz, White
+
+  Price: $11.97
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for a  masks for damaged hair, and price lower than 140.00
+  dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  conditioner
+
+  gift set
+
+  hair mask
+
+  hair oil
+
+  leave in conditioner
+
+  leave in spray
+
+  pre-shampoo
+
+  shampoo'
+: action_dict:
+    ? !!python/tuple
+    - click[Carol's Daughter Goddess Strength Repairing Cocoon Hydrating Hair Mask]
+    - This is the most suitable option for the desired commodity and meets all the
+      requirements.
+    : number: 3
+      qvalue: 0.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[damaged hair]
+    - This is the most suitable option for the desired commodity and meets all the
+      requirements.
+    : number: 5
+      qvalue: 0.0
+      reward: 0.0
+  id: 34
+  other_info:
+    action_history:
+    - *id013
+    - *id054
+    last_reward: 0.0
+    number: 8
+    total_reward: 0.0
+? !!python/tuple
+- 'style
+
+  flavor
+
+  size
+
+  Natierra Nature''s Organic Freeze-Dried Strawberries | Gluten Free & Vegan | 1.2
+  Ounce
+
+  Price: $5.79
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i want some freeze dried mangoes, and price lower than 30.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  bag
+
+  bundle
+
+  apples
+
+  bananas
+
+  bananas & strawberries
+
+  bananas and strawberries
+
+  beets
+
+  blueberries
+
+  chocolate banana slices
+
+  chocolate covered mango slices
+
+  chocolate mango slices
+
+  chocolate strawberry slices
+
+  mango cheeks
+
+  mango strips
+
+  mangoes
+
+  peas
+
+  pineapples
+
+  pomegranate arils
+
+  raspberries
+
+  roasted corn
+
+  strawberries
+
+  tropical fruits
+
+  strawberries + apples
+
+  strawberries + bananas
+
+  strawberries + blueberries
+
+  strawberries + corn
+
+  strawberries + mangos
+
+  strawberries + peas
+
+  strawberries + pineapple
+
+  strawberries + pomegranate arils
+
+  strawberries + raspberries
+
+  strawberries + tropical fruits
+
+  0.7 ounce (pack of 8)
+
+  1.5 ounce (pack of 1)
+
+  1.5 ounce (pack of 12)
+
+  1.3 ounce (pack of 4)
+
+  1.3 ounce (pack of 8)
+
+  2.5 ounce (pack of 1)
+
+  2.5 ounce (pack of 12)
+
+  1.8 ounce (pack of 1)
+
+  1.2 ounce (pack of 4)
+
+  1.2 ounce (pack of 8)
+
+  1.8 ounce (pack of 12)
+
+  1 ounce (pack of 1)
+
+  1 ounce (pack of 12)
+
+  1.2 ounce
+
+  1.2 ounce (pack of 1)
+
+  1.2 ounce (pack of 12)
+
+  3 ounce (pack of 1)
+
+  8 ounce (pack of 1)
+
+  8 ounce (pack of 6)
+
+  0.7 ounce (pack of 4)
+
+  2.2 ounce (pack of 1)
+
+  2.2 ounce (pack of 12)
+
+  1.3 ounce (pack of 1)
+
+  1.3 ounce (pack of 12)
+
+  1.6 ounce (pack of 1)
+
+  1 count (pack of 1)
+
+  strawberries 1.2 ounce & apples 1.3 ounc...
+
+  strawberries 1.2 ounce & bananas 2.5 oun...
+
+  strawberries 1.2 ounce & blueberries 1.2...
+
+  strawberries 1.2 ounce & roasted corn 1....
+
+  strawberries 1.2 ounce & mangoes 1.5 oun...
+
+  strawberries 1.2 ounce & peas 2.2 ounce
+
+  strawberries 1.2 ounce & pineapples 1.5 ...
+
+  strawberries 1.2 ounce & pomegranate ari...
+
+  strawberries 1.2 ounce & raspberries 1.3...
+
+  strawberries 1.2 ounce & tropical fruits...'
+: action_dict:
+    *id055:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 37
+  other_info:
+    action_history:
+    - *id025
+    - *id029
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0

@@ -1,0 +1,66 @@
+---
+Last 5 Actions:
+- search[double sided machine washable decorative pillows printing technology 28" x 28"] 
+Observation: |
+  Instruction:
+  Find me double sided, machine washable decorative pillows with printing technology with size: 28" x 28", and price lower than 50.00 dollars
+  [button] Back to Search [button_]
+  Page 1 (Total results: 50)
+  [button] Next > [button_]
+  
+  [button] B0743JKHBV [button_]
+  Ambesonne Abstract Throw Pillow Cushion Cover, Geometric Composition with Different Colored Squares Striped Dotted Rhombus, Decorative Square Accent Pillow Case, 16" X 16", Grey Purple
+  $14.95
+  
+  [button] B07XTK3P89 [button_]
+  Lunarable Oriental Storage Toy Bag Chair, Eastern Bohem Detail Ottoman Tile Work Inspired Flowers, Stuffed Animal Organizer Washable Bag, Small Size, Turquoise Marigold
+  $39.99
+  
+  [button] B09P58VY9G [button_]
+  Canvas Prints with Your Photos Framed Custom Canvas Prints Photo Prints Personalized Canvas Pictures Wall Art for Bedroom Living Room, Wedding Family Baby Pet
+  $100.0
+  
+  [button] B08K7LDM7Q [button_]
+  2 Pcs Cowhide Throw Pillow Covers Decorative Pillow Cases Farm Animal Brown Cow Hide Skin Print Pillow Case 18 X 18 Inch Velvet Square Cushion Cover for Sofa Bedroom
+  $17.99
+  
+  [button] B09N8SLFRJ [button_]
+  Patio Furniture Set of 3 Rocking Bistro Set Wicker Patio Furniture Sets Rattan Chair with Glass Coffee Table for Porch Yard Backyard or Bistro
+  $149.99
+  
+  [button] B08QVDNJC7 [button_]
+  Valentine‘s Day Love Blue Throw Pillow Covers 18x18 for Home Decor- Love Heart Flower - Modern Linen Cushion Cover Square Home Pillowcase Love Theme Decorative Pillow Covers for Sofa Bed Chair Car
+  $7.99
+  
+  [button] B00SYVE3CI [button_]
+  EZM Deluxe Triple Monitor Mount Stand Free Standing with Grommet Mount Option Supports up to 3 28" (002-0020)
+  $100.0
+  
+  [button] B08R5Z7S2K [button_]
+  Estink File Cabinet, Grey Metal Moveable Hanging File Cabinet Nightstand Storage Cabinets with 5 Drawers Storage Filing Office Home Use,28 x 41 x 68.5 cm
+  $100.0
+  
+  [button] B07PM8MJKZ [button_]
+  Dream Solutions USA Brand Two-Sided PillowTop Gentle Plush King Mattress Only with Mattress Cover Protector Included - Fully Assembled, Good for Your Back, Orthopedic, Long Lasting Comfort
+  $704.0
+  
+  [button] B07FVHPK5X [button_]
+  wall26 Canvas Print Wall Art Window View of Yellow Poppies & Field Nature Wilderness Photography Realism Rustic Scenic Colorful Relax/Calm Ultra for Living Room, Bedroom, Office - 16"x24"
+  $32.99
+Available Actions:
+- back to search
+- next >
+- b0743jkhbv
+- b07xtk3p89
+- b09p58vy9g
+- b08k7ldm7q
+- b09n8slfrj
+- b08qvdnjc7
+- b00syve3ci
+- b08r5z7s2k
+- b07pm8mjkz
+- b07fvhpk5x
+...
+
+Encouraged:
+click[b0743jkhbv] -> 1.0 b0743jkhbv is a double sided, machine washable decorative pillow with printing technology and size 28" x 28" for less than 50 dollars.

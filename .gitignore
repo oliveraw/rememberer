@@ -4,6 +4,7 @@ weights
 visualization
 bandits.yaml
 
+*output*
 logs
 logs-historyless/
 bandits.logs/

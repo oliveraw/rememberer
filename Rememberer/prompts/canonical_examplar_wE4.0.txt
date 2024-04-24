@@ -1,0 +1,14 @@
+---
+Last 5 Actions:
+
+Observation: |
+  WebShop
+  Instruction: 
+  Find me double sided, machine washable decorative pillows with printing technology with size: 28" x 28", and price lower than 50.00 dollars
+  [button] Search [button_]
+Available Actions:
+- search
+...
+
+Encouraged:
+search[double sided machine washable decorative pillows printing technology 28" x 28"] -> 1.0

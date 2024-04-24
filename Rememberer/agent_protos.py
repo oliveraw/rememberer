@@ -34,16 +34,23 @@ import numpy as np
 import tiktoken
 import itertools
 
+import random
+
 logger = logging.getLogger("agent")
 ocounter = 0
 ologger = logging.getLogger("openaiE")
 
+# class TemplateGroup(NamedTuple):
+#     whole_template: string.Template
+#     input_template: string.Template
+#     advice_template: string.Template
+#     canonical1: str
+#     canonical2: str
 class TemplateGroup(NamedTuple):
     whole_template: string.Template
     input_template: string.Template
     advice_template: string.Template
-    canonical1: str
-    canonical2: str
+    canonicals: List[str]
 
 class Result(NamedTuple):
     text: str
@@ -54,8 +61,8 @@ A = TypeVar("Action")
 
 def parse_action_with_optional(response: str) -> Tuple[str, str]:
     #  function parse_action_with_optional {{{ # 
-    encouraged_result: str = response.split("Disc", maxsplit=1)[0]
-    encouraged_result = encouraged_result.split(":", maxsplit=1)[1]
+    # encouraged_result: str = response.split("Disc", maxsplit=1)[0]
+    encouraged_result = response.split(":", maxsplit=1)[1]
     encouraged_result: List[str] = encouraged_result.strip().splitlines()
 
     encouraged_texts: List[Tuple[str, float, str]] = []
@@ -66,21 +73,24 @@ def parse_action_with_optional(response: str) -> Tuple[str, str]:
 
         action_text = action_text.strip()
 
-        action_tail: List[str] = action_tail.strip().split(maxsplit=1)
-        score: float = float(action_tail[0].strip())
-        element_html: str = action_tail[1].strip() if len(action_tail)>1 else ""
+        # action_tail: List[str] = action_tail.strip().split(maxsplit=1)
+        # score: float = float(action_tail[0].strip())
+        # element_html: str = action_tail[1].strip() if len(action_tail)>1 else ""
+        element_html = action_tail.strip()
 
-        encouraged_texts.append((action_text, score, element_html))
+        # encouraged_texts.append((action_text, score, element_html))
+        encouraged_texts.append((action_text, element_html))
 
-    highest_result: Tuple[str, float, str]\
-            = list( itertools.islice( sorted( encouraged_texts
-                                            , key=(lambda itm: itm[1])
-                                            , reverse=True
-                                            )
-                                    , 1
-                                    )
-                  )[0]
-    return highest_result[0], highest_result[2]
+    # highest_result: Tuple[str, float, str]\
+    #         = list( itertools.islice( sorted( encouraged_texts
+    #                                         , key=(lambda itm: itm[1])
+    #                                         , reverse=True
+    #                                         )
+    #                                 , 1
+    #                                 )
+    #               )[0]
+    highest_result = encouraged_texts[0]
+    return highest_result[0], highest_result[1]
     #  }}} function parse_action_with_optional # 
 
 class OpenAIClient(abc.ABC, Generic[A]):
@@ -164,6 +174,11 @@ class OpenAIClient(abc.ABC, Generic[A]):
                                                )
                 completion: Result = self._extractor(completion)
 
+                # 10% of the time randomly print the prompt and response
+                # if random.randint(0, 9) == 0:
+                print("---------------------------------------------------------------------------------------------\nPrompt:", prompt)
+                print("Response:", completion.text)
+
                 self._last_request_time = datetime.datetime.now()
 
                 logger.debug( "Return: {text: %s, reason: %s}"
@@ -186,7 +201,7 @@ class OpenAIClient(abc.ABC, Generic[A]):
 
             action: A = self._parse_action(response)
         except Exception as e:
-            print("Exception in OpenAI API call.", e, self._model)
+            print("Exception in OpenAI API call.", e)
             with io.StringIO() as bfr:
                 ocounter = globals()["ocounter"]
                 traceback.print_exc(file=bfr)
@@ -237,6 +252,8 @@ class HistoryReplayClient(Generic[history.Key, history.Action]):
             List[str]: examplar strs
         """
 
+        # here candidates is already sorted highest to lowest similarity,
+        # compared to the current key
         candidates: List[ Tuple[ history.Key
                                , history.HistoryReplay.Record[history.Action]
                                , float
@@ -257,67 +274,71 @@ class HistoryReplayClient(Generic[history.Key, history.Action]):
             key, record, score = cdd
             info_dict: history.HistoryReplay.InfoDict[history.Action] = record["other_info"]
 
-            action_dict: history.HistoryReplay.ActionDict[history.Action] = record["action_dict"]
-            actions: List[Tuple[history.Action, float]] =\
-                    sorted( map( lambda itm: (itm[0], itm[1]["qvalue"])
-                               , action_dict.items()
-                               )
-                          , key=(lambda itm: itm[1])
-                          , reverse=True
-                          )
+            action = list(record['action_dict'].keys())[-1]
+            encouraged = self._action_to_string(action, None)
 
-            if actions[0][1]<=0.:
-                if self._norandom:
-                    encouraged: List[Tuple[history.Action, float]]\
-                            = actions[:1]
-                else:
-                    encouraged: List[Tuple[history.Action, float]]\
-                            = [ ( self._random_action(key, True)
-                                , self._rng.random()/2.
-                                )
-                              ]
-            else:
-                encouraged: List[Tuple[history.Action, float]] = actions[:1]
-            encouraged_actions: Set[history.Action] = set(map(lambda itm: itm[0], encouraged))
-            encouraged: str = "\n".join( map( lambda act: self._action_to_string(act[0], act[1])
-                                            , encouraged
-                                            )
-                                       )
+            # sort encouraged/discouraged actions based on highest q value
+            # action_dict: history.HistoryReplay.ActionDict[history.Action] = record["action_dict"]
+            # actions: List[Tuple[history.Action, float]] =\
+            #         sorted( map( lambda itm: (itm[0], itm[1]["qvalue"])
+            #                    , action_dict.items()
+            #                    )
+            #               , key=(lambda itm: itm[1])
+            #               , reverse=True
+            #               )
 
-            if actions[-1][1]>0.:
-                if self._norandom:
-                    discouraged: List[Tuple[history.Action, float]]\
-                            = actions[-1:]
-                else:
-                    discouraged_action: history.Action = self._random_action(key, False)
-                    j = 0
-                    while discouraged_action in encouraged_actions:
-                        discouraged_action = self._random_action(key, False)
-                        j += 1
-                        if j>=10:
-                            break
-                    discouraged: List[Tuple[history.Action, float]]\
-                            = [ ( discouraged_action
-                                , 0.
-                                )
-                              ]
-                logger.debug("Generated Discouraged: {:}".format(discouraged))
-            else:
-                discouraged: List[Tuple[history.Action, float]] = list( itertools.takewhile( lambda itm: itm[1]==0.
-                                                                      , reversed(actions)
-                                                                      )
-                                                           )
-                logger.debug("Recorded Discouraged: {:}".format(discouraged))
-            discouraged: str = "\n".join( map( lambda act: self._action_to_string(act[0], act[1])
-                                             , discouraged
-                                             )
-                                        )
+            # # if first action has qvalue <=0., encourage a random action, else take the first action
+            # if actions[0][1]<=0.:
+            #     if self._norandom:
+            #         encouraged: List[Tuple[history.Action, float]]\
+            #                 = actions[:1]
+            #     else:
+            #         encouraged: List[Tuple[history.Action, float]]\
+            #                 = [ ( self._random_action(key, True)
+            #                     , self._rng.random()/2.
+            #                     )
+            #                   ]
+            # else:
+            #     encouraged: List[Tuple[history.Action, float]] = actions[:1]
+            # encouraged_actions: Set[history.Action] = set(map(lambda itm: itm[0], encouraged))
+            # encouraged: str = "\n".join( map( lambda act: self._action_to_string(act[0], act[1])
+            #                                 , encouraged
+            #                                 )
+            #                            )
+
+            # if actions[-1][1]>0.:
+            #     if self._norandom:
+            #         discouraged: List[Tuple[history.Action, float]]\
+            #                 = actions[-1:]
+            #     else:
+            #         discouraged_action: history.Action = self._random_action(key, False)
+            #         j = 0
+            #         while discouraged_action in encouraged_actions:
+            #             discouraged_action = self._random_action(key, False)
+            #             j += 1
+            #             if j>=10:
+            #                 break
+            #         discouraged: List[Tuple[history.Action, float]]\
+            #                 = [ ( discouraged_action
+            #                     , 0.
+            #                     )
+            #                   ]
+            #     logger.debug("Generated Discouraged: {:}".format(discouraged))
+            # else:
+            #     discouraged: List[Tuple[history.Action, float]] = list( itertools.takewhile( lambda itm: itm[1]==0.
+            #                                                           , reversed(actions)
+            #                                                           )
+            #                                                )
+            #     logger.debug("Recorded Discouraged: {:}".format(discouraged))
+            # discouraged: str = "\n".join( map( lambda act: self._action_to_string(act[0], act[1])
+            #                                  , discouraged
+            #                                  )
+            #                             )
 
             examplar: str = self._examplar_to_string( i
                                                     , key
                                                     , info_dict
                                                     , encouraged
-                                                    , discouraged
                                                     )
             #  }}} Contruct one Examplar # 
 
@@ -353,7 +374,6 @@ class HistoryReplayClient(Generic[history.Key, history.Action]):
                            , key: history.Key
                            , info_dict: history.HistoryReplay.InfoDict[history.Action]
                            , encouraged: str
-                           , discouraged: str
                            ) -> str:
         raise NotImplementedError()
 

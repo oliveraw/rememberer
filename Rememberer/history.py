@@ -552,7 +552,7 @@ class HistoryReplay(AbstractHistoryReplay[Key, Action]):
             List[Tuple[Key, Record, float]]: the retrieved action-state value
               estimations sorted by matching scores
         """
-
+        # request = (observation, task, actions)
         matcher: Matcher = self._matcher(request)
         match_scores: List[float] =\
                 list( map( matcher
@@ -580,9 +580,9 @@ class HistoryReplay(AbstractHistoryReplay[Key, Action]):
         #  }}} method __getitem__ # 
 
     def update( self
-              , step: Key
+              , step: Key           # (observation, task, available_actions)
               , reward: float
-              , action: Optional[Action] = None
+              , action: Action      # ex. 'search[10 pound bag parboiled brown rice easy prepare]'
               , last_step: bool = False
               , truly_update: bool = True
               , reference_q_table: Optional["HistoryReplay[Key, Action]"] = None
@@ -601,6 +601,7 @@ class HistoryReplay(AbstractHistoryReplay[Key, Action]):
             reference_q_table (Optional[HistoryReplay[Key, Action]]):
               reference Q table, defaults to `self`
         """
+        assert False, "debugging"
 
         self._action_buffer.append(action)
         if action is not None:
@@ -922,6 +923,8 @@ class HistoryReplay(AbstractHistoryReplay[Key, Action]):
     def __len__(self) -> int:
         return len(self._record)
     #  }}} class HistoryReplay # 
+
+    
 
 class DoubleHistoryReplay(AbstractHistoryReplay[Key, Action]):
     #  class DoubleHistoryReplay {{{ # 

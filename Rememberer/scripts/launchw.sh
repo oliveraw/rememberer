@@ -35,4 +35,5 @@ python webshop.py --log-dir logs\
 				  --trainseta 0\
 				  --trainsetb 10\
 				  --testseta 0\
-				  --testsetb 100
+				  --testsetb 100\
+				  --prompt-mode default

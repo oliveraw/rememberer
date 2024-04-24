@@ -39,7 +39,7 @@ import argparse
 import datetime
 import os
 
-from typing import List, Dict, Set
+from typing import Callable, List, Dict, Set
 import numpy as np
 
 #  Interfaces of WebAgentTextEnv {{{ # 
@@ -106,6 +106,7 @@ def traverse_environment( env: gym.Env
                         , except_list: Set[int] = set()
                         , max_nb_steps: int = 15
                         , max_nb_consective_nothings: int = 15
+                        , save_history_replay_callback: Callable[[int], None] = (lambda x: None)
                         ) -> Set[int]:
     #  function traverse_environment {{{ # 
     """
@@ -150,12 +151,12 @@ def traverse_environment( env: gym.Env
         while nb_steps<max_nb_steps and nb_consecutive_nothings<max_nb_consective_nothings:
             action: str = model( task
                                , observation
-                               , reward
-                               , total_reward
                                , available_actions
                                )
             if action!="NOTHINGG":
                 observation, reward, done, _ = env.step(action)
+                model._update_history(task, observation, available_actions, action, reward)
+
                 total_reward += reward
                 available_actions = env.get_available_actions()["clickables"]
 
@@ -174,6 +175,10 @@ def traverse_environment( env: gym.Env
                  , total_reward
                  , available_actions
                  )
+        
+        # save replay every 10 tasks
+        if idx % 10 == 0:
+            save_history_replay_callback(idx)
 
         if succeeds:
             success_list.add(i)
@@ -185,6 +190,7 @@ def traverse_environment( env: gym.Env
         logger.info( "\x1b[42mEND!\x1b[0m TaskIdx: %d, TaskId: %d, #Steps: %d(%d), Reward: %.2f, Succeds: %s"
                    , idx, i, nb_steps, nb_nothing_steps, total_reward, str(succeeds)
                    )
+        logger.info(f"Accuracy, task {idx}: {len(success_list) / (idx+1)}")
     logger.info( "──────────{:.2f}──────────{:.3f}──────────{:.3f}──────────"\
                  .format( np.mean(np.asarray(nb_stepss))
                         , np.mean(np.asarray(rewards))
@@ -254,6 +260,7 @@ def main():
     parser.add_argument("--manual", action="store_true")
     parser.add_argument("--train", action="store_true")
     parser.add_argument("--norandom", action="store_true")
+    parser.add_argument("--prompt-mode", default="default", type=str)
 
     parser.add_argument("--starts-from", default=0, type=int)
     parser.add_argument("--epochs", default=3, type=int)
@@ -371,21 +378,41 @@ def main():
                                        )
         history_replay.load_yaml(args.load_replay[0])
 
-    with open(os.path.join(args.prompt_template, "prompt_pthw.txt")) as f:
+
+    if args.prompt_mode == 'default':
+        base_prompt = "prompt_pthw.txt"
+        canonical_examples = ["canonical_examplar_wE0.1_act.txt", "canonical_examplar_wE0.2_act.txt"]
+    elif args.prompt_mode == 'actiontrajectories':
+        base_prompt = "prompt_pthw_act_traj.txt"
+        canonical_examples = ["canonical_examplar_wE0.1.txt", "canonical_examplar_wE0.2.txt"]
+    elif args.prompt_mode =='actiontrajectories_long':
+        base_prompt = "prompt_pthw_act_traj_long.txt"
+        canonical_examples = ["canonical_examplar_wE4.3.txt", "canonical_examplar_wE4.2.txt", "canonical_examplar_wE4.1.txt", "canonical_examplar_wE4.0.txt"]
+    elif args.prompt_mode == 'you':
+        base_prompt = "prompt_pthw_you.txt"
+        canonical_examples = ["canonical_examplar_wE0.1.txt", "canonical_examplar_wE0.2.txt"]
+    else:
+        raise NotImplementedError("Unsupported prompt mode")
+
+    with open(os.path.join(args.prompt_template, base_prompt)) as f:
         prompt_template = string.Template(f.read())
     with open(os.path.join(args.prompt_template, "input_template_w.txt")) as f:
         input_template = string.Template(f.read())
     with open(os.path.join(args.prompt_template, "advice_template.txt")) as f:
         advice_template = string.Template(f.read())
-    with open(os.path.join(args.prompt_template, "canonical_examplar_wE0.1.txt")) as f:
-        canonical1: str = f.read()
-    with open(os.path.join(args.prompt_template, "canonical_examplar_wE0.2.txt")) as f:
-        canonical2: str = f.read()
+    # with open(os.path.join(args.prompt_template, "canonical_examplar_wE0.1.txt")) as f:
+    #     canonical1: str = f.read()
+    # with open(os.path.join(args.prompt_template, "canonical_examplar_wE0.2.txt")) as f:
+    #     canonical2: str = f.read()
+
+    canonicals: List[str] = []
+    for name in canonical_examples:
+        with open(os.path.join(args.prompt_template, name)) as f:
+            canonicals.append(f.read())
     template_group = agent_protos.TemplateGroup( whole_template=prompt_template
                                                , input_template=input_template
                                                , advice_template=advice_template
-                                               , canonical1=canonical1
-                                               , canonical2=canonical2
+                                               , canonicals=canonicals
                                                )
 
     with open(args.config) as f:
@@ -412,6 +439,7 @@ def main():
                                             else DEFAULT_FILE_PATH)
                   , num_products=None
                   , human_goals=True
+                #   , human_goals=False
                   , num_prev_actions=args.prev_actions
                   , num_prev_obs=args.prev_observations
                   )
@@ -448,14 +476,19 @@ def main():
     else:
         starts_from: int = args.starts_from
         nb_epochs: int = args.epochs
-    max_nb_steps = 15
+    # max_nb_steps = 15
+    max_nb_steps = 10
     for epch in range(starts_from, nb_epochs):
         if args.train:
             model.train(True)
-            success_list: Set[int] = traverse_environment( env, training_set
+            save_history_replay_callback = lambda i: history_replay.save_yaml(args.save_replay[0] % i)  # to save at a specific task interval
+            success_list: Set[int] = traverse_environment( env
+                                                         , training_set
                                                          , model
-                                                         , logger, except_list
+                                                         , logger
+                                                         , except_list
                                                          , max_nb_steps=max_nb_steps
+                                                         , save_history_replay_callback=save_history_replay_callback
                                                          )
             if epch==0:
                 except_list |= success_list

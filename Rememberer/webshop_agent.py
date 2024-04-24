@@ -32,6 +32,16 @@ logger = logging.getLogger("webshop")
 Key = Tuple[str, str, str] # (observation, task, available_actions)
 Action = Tuple[str, str] # (action, reason)
 
+def remove_instruction(obs: str) -> List[str]:
+    obs = obs.split("\n")
+    obs = [x.strip() for x in obs]
+    obs = [x for x in obs if not x.startswith("[button]") or x.startswith("[button] B0")]  # remove all buttons except the product code ones
+    if "Instruction:" in obs:
+        ins_idx = obs.index("Instruction:")
+        return obs[:ins_idx] + obs[ins_idx+2:]
+    else:   # mturk end screen, every page besides that should have instruction:
+        return obs
+
 class Agent(abc.ABC):
     #  class Agent {{{ # 
     def __init__(self, env_mode: str):
@@ -45,7 +55,7 @@ class Agent(abc.ABC):
         elif env_mode=="text":
             self._preprocess_observation = vh_to_html.convert_simple_page
         elif env_mode=="text_rich":
-            self._preprocess_observation = lambda url: [url]
+            self._preprocess_observation = remove_instruction
         elif env_mode=="url":
             self._preprocess_observation = lambda url: [url]
         #  }}} method __init__ # 
@@ -64,8 +74,6 @@ class Agent(abc.ABC):
     def __call__( self
                 , task: str
                 , observation: str
-                , reward: float
-                , total_reward: float
                 , available_actions: List[str]
                 ) -> str:
         #  method __call__ {{{ # 
@@ -83,8 +91,6 @@ class Agent(abc.ABC):
 
         action_tuple: Action = self._get_action( task
                                              , self._preprocess_observation(observation)
-                                             , reward
-                                             , total_reward
                                              , available_actions
                                              )
         action_str: str = action_tuple[0]
@@ -198,6 +204,7 @@ class AutoAgent( Agent
            , available_actions: List[str]
            ):
         #  method end {{{ # 
+        assert False, "fix this bc now we're updating history after giving the action"
         observation: str = "\n".join(self._preprocess_observation(observation))
         available_actions: str = "\n".join(available_actions)
         if self._train:
@@ -215,13 +222,12 @@ class AutoAgent( Agent
                                    , task: str
                                    , observation: str
                                    , action_history: List[Action]
-                                   , reward: float
-                                   , total_reward: float
                                    , available_actions: str
                                    ):
         #  method _instantiate_input_template {{{ # 
         return self._prompt_templates.input_template.safe_substitute(
                                                         task=task
+                                                      , instruction=task
                                                       , observation=\
                                                               "\n".join(
                                                                   map( lambda l: "  " + l
@@ -236,11 +242,22 @@ class AutoAgent( Agent
                                                                           )
                                                                      )
                                                                 )
-                                                      , reward="{:.1f}".format(reward)
-                                                      , total_reward="{:.1f}".format(total_reward)
+                                                    #   , actions=\
+                                                    #           "\n".join(
+                                                    #               map( lambda act: "- " + act
+                                                    #                  , [x[0] for x in action_history[-min(5, len(action_history)):]]
+                                                    #                  )
+                                                    #             )
+
+                                                    #   , available_actions=\
+                                                    #           "\n".join(
+                                                    #               map( lambda act: "- " + act
+                                                    #                  , available_actions.splitlines()
+                                                    #                  )
+                                                    #             )
                                                       , available_actions=\
                                                               "\n".join(
-                                                                  map( lambda act: "- " + act
+                                                                  map( lambda act: "  <action>" + act + "</action>"
                                                                      , available_actions.splitlines()
                                                                      )
                                                                 )
@@ -286,30 +303,35 @@ class AutoAgent( Agent
         return (action_str, reason)
         #  }}} method _random_action # 
 
+    # def _action_to_string(self, action: Action, value: float) -> str:
+    #     return "{:} -> {:.1f} {:}".format(action[0], value, action[1])
+    
+    # ablate the importance of the q values
     def _action_to_string(self, action: Action, value: float) -> str:
-        return "{:} -> {:.1f} {:}".format(action[0], value, action[1])
+        return "{:} -> {:}".format(action[0], action[1])
 
     def _examplar_to_string( self
                            , index: int
                            , key: Key
                            , info_dict: history.HistoryReplay.InfoDict[Action]
                            , encouraged: str
-                           , discouraged: str
                            ) -> str:
-        #  method _examplar_to_string {{{ # 
+        #  method _examplar_to_string {{{ # original
         examplar: str = "Example {:d}:\n\n".format(index+1)\
                       + self._instantiate_input_template( task=key[1]
                                                         , observation=key[0]
                                                         , action_history=info_dict["action_history"]
-                                                        , reward=info_dict["last_reward"]
-                                                        , total_reward=info_dict["total_reward"]
                                                         , available_actions=key[2]
                                                         )\
                       + "\n"\
                       + self._prompt_templates.advice_template.safe_substitute(
                                                                 encouraged=encouraged
-                                                              , discouraged=discouraged
                                                               )
+                    # remove discouraged
+                    #   + self._prompt_templates.advice_template.safe_substitute(
+                    #                                             encouraged=encouraged
+                    #                                           , discouraged=discouraged
+                    #                                           )
         return examplar
         #  }}} method _examplar_to_string # 
 
@@ -321,31 +343,16 @@ class AutoAgent( Agent
     def _get_action( self
                    , task: str
                    , observation: List[str]
-                   , reward: float
-                   , total_reward: float
                    , available_actions: List[str]
                    ) -> Action:
         #  method _get_action {{{ # 
         observation: str = "\n".join(observation)
         available_actions: str = "\n".join(available_actions)
 
-        #  Replay Updating {{{ # 
-        if self._train:
-            last_action: Optional[Action] = self._action_history[-1]\
-                                            if len(self._action_history)>0\
-                                          else None
-            self._history_replay.update( (observation, task, available_actions)
-                                       , reward
-                                       , last_action
-                                       )
-        #  }}} Replay Updating # 
-
         #  Construct New Input {{{ # 
         new_input: str = self._instantiate_input_template( task=task
                                                          , observation=observation
                                                          , action_history=self._action_history
-                                                         , reward=reward
-                                                         , total_reward=total_reward
                                                          , available_actions=available_actions
                                                          )
         nb_new_input_tokens: int = len(self._tokenizer.encode(new_input))
@@ -354,9 +361,10 @@ class AutoAgent( Agent
 
         #  Construct Examplars {{{ # 
         if self._static:
-            examplars: List[str] = [ "Example 2:\n\n" + self._prompt_templates.canonical2
-                                   , "Example 1:\n\n" + self._prompt_templates.canonical1
+            examplars: List[str] = [ "Example 2:\n" + self._prompt_templates.canonical2
+                                   , "Example 1:\n" + self._prompt_templates.canonical1
                                    ]
+
         else:
             examplars: List[str] = self._get_examplars( (observation, task, available_actions)
                                                       , example_tokens_limit
@@ -381,6 +389,15 @@ class AutoAgent( Agent
         logger.debug("Action: %s %s", action_text, reason)
         return (action_text, reason)
         #  }}} method _get_action # 
+
+    def _update_history(self, task, observation, available_actions, taken_action, reward):
+        #  Replay Updating {{{ # 
+        if self._train:
+            self._history_replay.update( (observation, task, available_actions)
+                                       , reward
+                                       , taken_action
+                                       )
+        #  }}} Replay Updating # 
 
     def train(self, train: bool):
         super(agent_protos.OpenAIClient, self).train(train)

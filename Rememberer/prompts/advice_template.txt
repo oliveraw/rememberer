@@ -1,4 +1,3 @@
-Encouraged:
+Suggested <action>:
 ${encouraged}
-Discouraged:
-${discouraged}
+***

@@ -1,7 +1,8 @@
 ---
+${instruction}
 Last 5 Actions:
 ${actions}
-Observation: |
+Webpage Contents:
 ${observation}
 Available Actions:
 ${available_actions}

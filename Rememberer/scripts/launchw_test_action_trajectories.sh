@@ -17,6 +17,7 @@
 
 date_str=$(date +%Y-%m-%dT%H:%M:%S)
 
+mkdir output_act_traj
 python webshop.py --log-dir logs\
 				  --observation-mode text_rich\
 				  --load-replay history-pools/init_pool.wq.yaml\
@@ -28,11 +29,15 @@ python webshop.py --log-dir logs\
 				  --matcher pgpat+insrel\
 				  --prompt-template prompts/\
 				  --max-tokens 200\
-				  --stop "Discouraged"\
+				  --stop "***"\
 				  --request-timeout 10.\
 				  --starts-from 0\
 				  --epochs 1\
 				  --trainseta 0\
-				  --trainsetb 100\
+				  --trainsetb 10\
 				  --testseta 0\
-				  --testsetb 10
+				  --testsetb 50\
+				  \
+				  --prompt-mode actiontrajectories\
+				  --temperature 0.1\
+| tee -a output_act_traj/${date_str}.txt

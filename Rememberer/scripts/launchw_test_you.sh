@@ -17,6 +17,7 @@
 
 date_str=$(date +%Y-%m-%dT%H:%M:%S)
 
+mkdir output_you
 python webshop.py --log-dir logs\
 				  --observation-mode text_rich\
 				  --load-replay history-pools/init_pool.wq.yaml\
@@ -28,12 +29,15 @@ python webshop.py --log-dir logs\
 				  --matcher pgpat+insrel\
 				  --prompt-template prompts/\
 				  --max-tokens 200\
-				  --stop "Discouraged"\
+				  --stop "***"\
 				  --request-timeout 10.\
 				  --starts-from 0\
-				  --epochs 3\
+				  --epochs 1\
 				  --trainseta 0\
 				  --trainsetb 10\
 				  --testseta 0\
-				  --testsetb 100\
-				  --train
+				  --testsetb 50\
+				  \
+				  --prompt-mode you\
+				  --temperature 0.1\
+| tee -a output_you/${date_str}.txt

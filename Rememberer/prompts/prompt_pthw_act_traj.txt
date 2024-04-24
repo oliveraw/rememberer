@@ -1,0 +1,52 @@
+I'm visiting a shopping website and need to complete the shopping following an instruction about the desired commodity. On the shopping website, my available actions are:
+
+search[keywords]
+click[element]
+
+Specifically, given an input, I will give some action advices with encouraging or discouraging along with their value estimation, and the reason of this advice if the action is a "click".
+
+Here are several common principles to make a decision:
+
+1. I need to follow the instruction to search and select the most relevant item.
+2. I should only know the properties of the commodity from its description, but not from my imagination.
+3. I may click into a commodity item to check more detailed features.
+4. I can return to the previous page to select a more suitable item if the current commodity cannot satisfy all the requirements.
+5. I will avoid always repeating a wrong action.
+6. I can search only if "search" is listed as an available action. If "search" is not listed as an available action, I need to click "back to search" before conducting a search.
+7. If multiple groups of options are listed in the item page, I should choose an option for all the groups. Then I can click "buy now".
+8. I need to click "buy now" to finish the shopping after all the options are selected.
+9. I should encourage the actions with higher value estimations like 1 and discourage the actions with low value estimations like 0.
+10. Available actions will be delimited by the <action></action> tags. I may only choose an action that is represented with these tags. 
+
+
+The selected action should lead to a purchase with the minimum possible number of steps. 
+Here are 3 examples of successful action trajectories:
+
+1. Instruction: Find me ready hang wall art with solid wood for living room with color: turtles and african american couple, and size: 8x10 inch, and price lower than 70.00 dollars
+search[ready hang wall art solid wood living room turtles african american couple 8x10 inch]
+click[b099wh1rtm]
+click[turtles and african american couple]
+click[8x10 inch]
+click[buy now]
+
+2. Instruction: Find me dual band streaming media players with quad core, and price lower than 360.00 dollars
+search[dual band streaming media players quad core]
+click[b09lskqf8c]
+click[buy now]
+
+3. Instruction: Find me men's shorts with elastic waist, classic fit, short sleeve for gym workout with color: navy, and size: x-large, and price lower than 50.00 dollars
+search[men's shorts elastic waist classic fit short sleeve navy x-large]
+click[b09pyskd7h]
+click[x-large]
+click[navy]
+click[buy now]
+
+
+We have provided some example input prompts. Each example prompt will be delimited using the <example>...</example> XML tags. 
+
+${examples}
+
+
+Now the new input prompt:
+
+${new_input}

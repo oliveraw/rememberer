@@ -1,0 +1,4550 @@
+? !!python/tuple
+- '
+
+  Instruction:
+
+  i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and
+  price lower than 40.00 dollars
+
+  [Back to Search]
+
+  Page 1 (Total results: 50)
+
+  [Next >]
+
+  [B078GWRC1J]
+
+  Bright Citrus Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy
+  and Breastfeeding, Contains Organic Calendula 3-Ounce
+
+  $10.99
+
+  [B078GTKVXY]
+
+  Ginger Fresh Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy
+  and Breastfeeding, Contains Organic Calendula 3-Ounce
+
+  $10.99
+
+  [B08KBVJ4XN]
+
+  Barrel and Oak - Aluminum-Free Deodorant, Deodorant for Men, Essential Oil-Based
+  Scent, 24-Hour Odor Protection, Cedar & Patchouli Blend, Gentle on Sensitive Skin
+  (Mountain Sage, 2.7 oz, 2-Pack)
+
+  $15.95
+
+  '
+- Instruction:i would like a 3 ounce bottle of bright citrus deodorant for sensitive
+  skin, and price lower than 40.00 dollars
+- 'back to search
+
+  next >
+
+  b078gwrc1j
+
+  b078gtkvxy
+
+  b08kbvj4xn'
+: action_dict:
+    ? &id002 !!python/tuple
+    - click[b078gwrc1j]
+    - b078gwrc1j and b078gtkvxy are bright citrus deodorant less then 50 dollars.
+      I can check b078gwrc1j first.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 1
+  other_info:
+    action_history:
+    - &id001 !!python/tuple
+      - search[3 ounce bottle bright citrus deodorant sensitive skin]
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- '
+
+  Instruction:
+
+  i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and
+  price lower than 40.00 dollars
+
+  [Back to Search]
+
+  [< Prev]
+
+  scent [assorted scents][bright citrus][calming lavender][ginger fresh][simply non-scents]
+
+  size [travel set (4-pack)][3 ounce (pack of 1)][3-ounce (2-pack)]
+
+  Bright Citrus Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy
+  and Breastfeeding, Contains Organic Calendula 3-Ounce
+
+  Price: $10.99
+
+  Rating: N.A.
+
+  [Description]
+
+  [Features]
+
+  [Reviews]
+
+  [Buy Now]
+
+  '
+- Instruction:i would like a 3 ounce bottle of bright citrus deodorant for sensitive
+  skin, and price lower than 40.00 dollars
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  assorted scents
+
+  bright citrus
+
+  calming lavender
+
+  ginger fresh
+
+  simply non-scents
+
+  travel set (4-pack)
+
+  3 ounce (pack of 1)
+
+  3-ounce (2-pack)'
+: action_dict:
+    ? &id003 !!python/tuple
+    - click[bright citrus]
+    - For 3 ounce bottle of bright citrus deodorant for sensitive skin, the item has
+      options 'bright citrus' and '3 ounce (pack of 1)' and seems good to buy.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 2
+  other_info:
+    action_history:
+    - *id001
+    - *id002
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- '
+
+  WebShop
+
+  Instruction:
+
+  i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and
+  price lower than 40.00 dollars
+
+  [Search]
+
+  '
+- Instruction:i would like a 3 ounce bottle of bright citrus deodorant for sensitive
+  skin, and price lower than 40.00 dollars
+- search
+: action_dict:
+    ? !!python/tuple
+    - click[search]
+    - The search button shouldn't be clicked.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+    *id001:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 0
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- '
+
+  You have clicked bright citrus.
+
+  Instruction:
+
+  i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and
+  price lower than 40.00 dollars
+
+  [Back to Search]
+
+  [< Prev]
+
+  scent [assorted scents][[bright citrus]][calming lavender][ginger fresh][simply
+  non-scents]
+
+  size [travel set (4-pack)][3 ounce (pack of 1)][3-ounce (2-pack)]
+
+  Bright Citrus Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy
+  and Breastfeeding, Contains Organic Calendula 3-Ounce
+
+  Price: $10.99
+
+  Rating: N.A.
+
+  [Description]
+
+  [Features]
+
+  [Reviews]
+
+  [Buy Now]
+
+  '
+- Instruction:i would like a 3 ounce bottle of bright citrus deodorant for sensitive
+  skin, and price lower than 40.00 dollars
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  assorted scents
+
+  bright citrus
+
+  calming lavender
+
+  ginger fresh
+
+  simply non-scents
+
+  travel set (4-pack)
+
+  3 ounce (pack of 1)
+
+  3-ounce (2-pack)'
+: action_dict:
+    ? !!python/tuple
+    - click[3 ounce (pack of 1)]
+    - I have clicked for 'bright citrus' and haven't clicked for '3 ounce (pack of
+      1)'. I need to first click '3 ounce (pack of 1)' and then buy this item.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 3
+  other_info:
+    action_history:
+    - *id001
+    - *id002
+    - *id003
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'BedShelfie Wood Bedside Shelf for Bed & Bunk Bed Shelf Tray Table Caddy for Top
+  Bunk Organizer As Seen On Business Insider College Dorm Room Essentials Clip-On
+  Nightstand (Original Size, White Bamboo)
+
+  Price: $38.24
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for an eco friendly wood bedside shelf for a bed, and
+  price lower than 50.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now'
+: action_dict:
+    ? !!python/tuple
+    - click[b074rvn91q]
+    - b074rvn91q is an eco-friendly wood bedside shelf for a bed with a price lower
+      than 50.00 dollars.
+    : number: 3
+      qvalue: 1.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[buy now]
+    - All the options are ready now and I will click "buy now" to complete the shopping.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 45
+  other_info:
+    action_history:
+    - &id007 !!python/tuple
+      - 'search[Instruction: i am looking for an eco friendly wood bedside shelf for
+        a bed, and price lower than 50.00 dollars]'
+      - ''
+    - &id006 !!python/tuple
+      - click[b074rvn91q]
+      - b074rvn91q is an eco-friendly wood bedside shelf for a bed with a price lower
+        than 50.00 dollars.
+    last_reward: 0.0
+    number: 4
+    total_reward: 0.0
+? !!python/tuple
+- "Cookie Variety Pack: Contains 16 individually wrapped 4 ounce cookies in 8 Flavors,\
+  \ 2 each of the following\nThe Complete Cookie: A convenient source of plant based\
+  \ proteins that taste downright delicious Finally, you can finish a whole box of\
+  \ delectable cookies without feeling guilty\nShockingly Delicious: With up to 16g\
+  \ of plant based proteins and 10g of fiber, these satisfyingly firm and chewy vegan\
+  \ cookies are packed with plant based protein, plenty of fiber and zero guilt\n\
+  Indulge Guilt Free: Our cookies are Non GMO Project Verified, Vegan and Kosher friendly\
+  \ We don\u2019t use dairy, soy, eggs, high fructose corn syrup or artificial sweeteners\
+  \ in any of our Complete Cookies\nTry Them All: With tantalizing flavors like chocolate\
+  \ chip, peanut butter, oatmeal raisin, PB chocolate chip and more, you can throw\
+  \ away those inedible protein bars and try the Complete Cookie instead\n"
+- 'Instruction: i''m looking for cakes it contains high protein and the low fat, and
+  price lower than 50.00 dollars'
+- 'back to search
+
+  < prev'
+: action_dict:
+    ? !!python/tuple
+    - click[back to search]
+    - The current item doesn't offer the desired options and I need to search for
+      other items.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 38
+  other_info:
+    action_history:
+    - &id005 !!python/tuple
+      - 'search[Instruction: i''m looking for cakes it contains high protein and the
+        low fat, and price lower than 50.00 dollars]'
+      - ''
+    - &id004 !!python/tuple
+      - click[b086qnnl78]
+      - b086qnnl78 conforms to the instruction.
+    - &id049 !!python/tuple
+      - click[features]
+      - Features conforms to the instruction.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Govisiry Swimming Headphones with 32G\uFF0CBone Conduction Headphones Built in\
+  \ Wireless Bluetooth 5.0, Open-Ear Headphones IPX8 Waterproof.\nPrice: $89.9\nRating:\
+  \ N.A.\n"
+- 'Instruction: i need noise cancelling headphones for my daily running routine, and
+  price lower than 90.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now'
+: action_dict:
+    ? &id050 !!python/tuple
+    - click[features]
+    - features conforms to the instruction.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 41
+  other_info:
+    action_history:
+    - &id009 !!python/tuple
+      - 'search[Instruction: i need noise cancelling headphones for my daily running
+        routine, and price lower than 90.00 dollars]'
+      - ''
+    - &id008 !!python/tuple
+      - click[b09pgdqxvl]
+      - b09pgdqxvl is a noise cancelling headphone with a price lower than 90.00 dollars.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Page 1 (Total results: 50)\n\n[button] B005M4G23S [button_]\nNATIERRA Nature's\
+  \ All Foods Organic Freeze-Dried Pineapples | Non-GMO & Vegan | 1.5 Ounce\n$5.79\n\
+  \n[button] B07VBLHD8C [button_]\nMaud's Dark Hot Chocolate (Loco Hot Cocoa), 50ct.\
+  \ Solar Energy Produced Recyclable Single Serve Gluten Free Dairy Free Hot Cocoa\
+  \ Pods, 100% California Blended Hot Chocolate, KCup Compatible\n$29.7\n\n[button]\
+  \ B078MZPZ8K [button_]\nNATIERRA Organic Freeze-Dried Chocolate-Covered Strawberry\
+  \ Slices | Non-GMO & Vegan | 1.5 Ounce\n$5.99\n\n[button] B09MZQV3QB [button_]\n\
+  Cerebelly Toddler Snack Bars \u2013 Peppa Pig Blueberry Banana Sweet Potato (Pack\
+  \ of 30), Healthy & Organic Whole Grain Bars with Veggies & Fruit, 15 Brain-supporting\
+  \ Nutrients from Superfoods, Nut & Gluten Free, No Added Sugar\n$29.99\n\n[button]\
+  \ B089DLMN63 [button_]\nSkout Organic Real Food Bars for Kids Fruit Variety Pack\
+  \ (36 Pack) | Organic Snacks for Kids | Plant-Based Nutrition, No Refined Sugar\
+  \ | Vegan | Gluten, Dairy, Grain & Soy Free\n$39.99\n\n[button] B005M4G4LI [button_]\n\
+  Natierra Nature's Organic Freeze-Dried Strawberries | Gluten Free & Vegan | 1.2\
+  \ Ounce\n$5.79\n\n[button] B08L769ZS8 [button_]\nNaturalvert Organic, gluten-free,\
+  \ vegan granola (Bulk) (Raspberry Cacao, 25 lbs)\n$89.07\n\n[button] B01N9VRK5O\
+  \ [button_]\nNorthwest Wild Foods Dried Organic Tart Cherries - Healthy Antioxidants\
+  \ Fruit Diet - for Smoothies, Baking, Trail Mix Smoothies Pies Jams (1 lb)\n$39.99\n\
+  \n[button] B08W7X86D4 [button_]\nElemental Superfood Refrigerated Seedbars, Currant\
+  \ Cacao + Hemp Seed, 1.8 Ounce - 12 Pack, Non-GMO Verified, Organic Ingredients,\
+  \ Gluten Free, Dairy Free, Plant Based\n$34.0\n\n[button] B013I738K0 [button_]\n\
+  Sensible Foods Fruit Snacks, Cherry Berry, 48 Count (Pack of 48)\n$43.99\n"
+- 'Instruction: i am looking for organic blueberries, and price lower than 40.00 dollars'
+- 'back to search
+
+  next >
+
+  b005m4g23s
+
+  b07vblhd8c
+
+  b078mzpz8k
+
+  b09mzqv3qb
+
+  b089dlmn63
+
+  b005m4g4li
+
+  b08l769zs8
+
+  b01n9vrk5o
+
+  b08w7x86d4
+
+  b013i738k0'
+: action_dict:
+    ? &id020 !!python/tuple
+    - click[b005m4g23s]
+    - b005m4g23s is not an organic blueberry product.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 21
+  other_info:
+    action_history:
+    - &id015 !!python/tuple
+      - search[organic blueberries]
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B00G4ITP30 [button_]
+
+  SAFAVIEH Milan Shag Collection SG180 Solid Non-Shedding Living Room Bedroom Dining
+  Room Entryway Plush 2-inch Thick Area Rug, 8'' x 10'', Ivory
+
+  $306.19
+
+
+  [button] B00F96L14Y [button_]
+
+  Unique Loom Del Mar Collection Area Rug-Transitional Inspired with Modern Contemporary
+  Design, 5 x 8 ft, Blue/Navy Blue
+
+  $92.07
+
+
+  [button] B07JJDXFJL [button_]
+
+  SAFAVIEH Brentwood Collection BNT899G Traditional Oriental Distressed Non-Shedding
+  Living Room Bedroom Dining Home Office Area Rug, 6'' x 9'', Light Grey / Blue
+
+  $112.78
+
+
+  [button] B01MTRVZ1V [button_]
+
+  SAFAVIEH Monaco Collection MNC222F Boho Chic Tribal Distressed Non-Shedding Living
+  Room Bedroom Dining Home Office Area Rug, 8'' x 10'', Multi
+
+  $210.3
+
+
+  [button] B07XW113LC [button_]
+
+  Safavieh Bella Collection BEL151G Handmade Dotted Border Premium Wool Area Rug,
+  9'' x 12'', Navy Blue / Ivory
+
+  $431.99
+
+
+  [button] B07TD6T9WP [button_]
+
+  nuLOOM RZAB07B Jacquie Floral Vintage Area Rug, 6'' 7" x 9'', Blue
+
+  $159.24
+
+
+  [button] B01K6CHVKI [button_]
+
+  Unique Loom Solo Collection Solid, Plush, Kids, Modern Area Rug, 8 ft x 10 ft, Grey
+
+  $215.73
+
+
+  [button] B01FGKEBBW [button_]
+
+  Unique Loom Studio Solid Shag Collection Urban Modern Super Soft & Plush Area Rug,
+  8 ft x 10 ft, Taupe
+
+  $199.83
+
+
+  [button] B07T94Q186 [button_]
+
+  JONATHAN Y MOH101B-5 Moroccan Hype Boho Vintage Diamond Cream/Gray 5 ft. x 8 ft.
+  Area Rug, Bohemian, Easy Cleaning, for Bedroom, Kitchen, Living Room, Non Shedding
+
+  $52.39
+
+
+  [button] B093WWHRLT [button_]
+
+  8K HDMI Cable 100ft/30M, IVANKY 48Gbps High Speed HDMI 2.1 Cable, 4K@120Hz 8K@60Hz
+  144Hz HDMI 2.1 2.0 Cable, 7680P, DTS:X, eARC, HDR, HDCP 2.2 & 2.3, for Fire TV/Roku
+  TV/PS4 5/Xbox Series X
+
+  $99.99
+
+  '
+- 'Instruction: i would like a 8 ft 6 in x 12 ft rectangular navy rug for my living
+  room, and price lower than 340.00 dollars'
+- 'back to search
+
+  next >
+
+  b00g4itp30
+
+  b00f96l14y
+
+  b07jjdxfjl
+
+  b01mtrvz1v
+
+  b07xw113lc
+
+  b07td6t9wp
+
+  b01k6chvki
+
+  b01fgkebbw
+
+  b07t94q186
+
+  b093wwhrlt'
+: action_dict:
+    ? &id030 !!python/tuple
+    - click[b07jjdxfjl]
+    - b07jjdxfjl conforms to the instruction.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 50
+  other_info:
+    action_history:
+    - &id018 !!python/tuple
+      - 'search[Instruction: i would like a 8 ft 6 in x 12 ft rectangular navy rug
+        for my living room, and price lower than 340.00 dollars]'
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Page 1 (Total results: 50)\n\n[button] B089DLMN63 [button_]\nSkout Organic Real\
+  \ Food Bars for Kids Fruit Variety Pack (36 Pack) | Organic Snacks for Kids | Plant-Based\
+  \ Nutrition, No Refined Sugar | Vegan | Gluten, Dairy, Grain & Soy Free\n$39.99\n\
+  \n[button] B08R4TGCYJ [button_]\nEnjoy Life Mini Chocolate Candy Variety Pack, Nut\
+  \ Free, Soy Free, Dairy Free Chocolate, 6 Packs\n$100.0\n\n[button] B019EGM90O [button_]\n\
+  KIND Bars, Honey Roasted Nuts & Sea Salt, Gluten Free, Low Glycemic Index, 1.4oz,\
+  \ 12 Count\n$12.18\n\n[button] B019EGM8FU [button_]\nKIND Bars Raspberry Cashew\
+  \ & Chia, Gluten Free, 12 Count (Pack of 1)\n$10.98\n\n[button] B09MZQV3QB [button_]\n\
+  Cerebelly Toddler Snack Bars \u2013 Peppa Pig Blueberry Banana Sweet Potato (Pack\
+  \ of 30), Healthy & Organic Whole Grain Bars with Veggies & Fruit, 15 Brain-supporting\
+  \ Nutrients from Superfoods, Nut & Gluten Free, No Added Sugar\n$29.99\n\n[button]\
+  \ B001D0DMME [button_]\nKIND Bars, Cranberry Almond, Gluten Free, Low Glycemic Index,\
+  \ 1.4 Ounce Bars, 12 Count\n$14.22\n\n[button] B00FBCZCWS [button_]\nKIND Bars,\
+  \ Maple Glazed Pecan & Sea Salt, Gluten Free, Low Glycemic Index, 1.4oz, 12 Count\n\
+  $14.22\n\n[button] B07QY3BQCG [button_]\nKate\u2019s Real Food Organic Energy Bars,\
+  \ Non-GMO, All-Natural Ingredients, Gluten-Free and Soy-Free Healthy Snack with\
+  \ Natural Flavors, Mango Coconut (Pack of 12)\n$31.88\n\n[button] B07S3XVZVB [button_]\n\
+  Oh! Nuts Granola Single Serve Packs | Healthy Gourmet Set w/ 12 Assorted Serving\
+  \ Size Bags of Toasted Oats, Nuts & Dried Fruit | Perfect High Protein Pantry Snacks\
+  \ for Cold Cereal, Yogurt & More\n$17.95\n\n[button] B00WFDKDIO [button_]\nNature's\
+  \ Bakery Gluten Free Fig Bars, Raspberry, Real Fruit, Vegan, Non-GMO, Snack bar,\
+  \ 1 box with 6 twin packs (6 twin packs)\n$2.99\n"
+- 'Instruction: i am looking for a 36 count pack of soy free fruit and nut bars, and
+  price lower than 60.00 dollars'
+- 'back to search
+
+  next >
+
+  b089dlmn63
+
+  b08r4tgcyj
+
+  b019egm90o
+
+  b019egm8fu
+
+  b09mzqv3qb
+
+  b001d0dmme
+
+  b00fbczcws
+
+  b07qy3bqcg
+
+  b07s3xvzvb
+
+  b00wfdkdio'
+: action_dict:
+    ? &id023 !!python/tuple
+    - click[b089dlmn63]
+    - b089dlmn63 is a 36 count pack of soy free fruit and nut bars and is within the
+      desired price range.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 26
+  other_info:
+    action_history:
+    - &id012 !!python/tuple
+      - search[36 count pack soy free fruit nut bars]
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B08NP79M17 [button_]
+
+  Photography Rms Titanic Famous Old Vintage Historic Throw Blanket Microfiber Fleece
+  Flannel Blankets Lightweight Super Fluffy Bed Blanket fit Couch Suitable for All
+  Season
+
+  $39.99
+
+
+  [button] B08N4YVGBG [button_]
+
+  Ambesonne Burnt Orange Decorative Throw Pillow Case Pack of 4, Vintage Mosaic Pattern
+  with Burnt Floral Curve Feature Abstract Graphic, Cushion Cover for Couch Living
+  Room Car, 18", Black Orange
+
+  $23.99
+
+
+  [button] B07RP5TQB4 [button_]
+
+  CZHO Pack of 2, Soft Decorative Faux Leather Pillow Covers, Square Modern Outdoor
+  Cushion Case, Durable Rustic Throw Pillow Cover Shell for Couch Sofa Bed 18x18 Inch
+  (Brown)
+
+  $14.99
+
+
+  [button] B09LGXJY5Q [button_]
+
+  LANANAS Decorative Square Throw Pillow Covers Set Super Soft Luxury Faux Fur Pillow
+  Case Cover for Sofa Living Room 18 x 18 Inch Pack of 2 (22"x 22", Pack of 2, Light
+  Brown)
+
+  $20.99
+
+
+  [button] B071ZZB5QC [button_]
+
+  Ambesonne Graffiti Throw Pillow Cushion Cover, Modern and Grunge Wall with a Girl
+  and Words Casual Youth Urban Fashion Print, Decorative Square Accent Pillow Case,
+  24" X 24", Yellow Grey
+
+  $26.99
+
+
+  [button] B098JR7D8X [button_]
+
+  KWOS Silver Grey Sequin Lumbar Throw Pillow Covers Luxury Shiny Sparkling Comfy
+  Velvet Rectangle Cushion Covers, Decorative Glitzy Pillowcases for Party Christmas
+  Thanksgiving Wedding, 12 x 20 inch
+
+  $16.99
+
+
+  [button] B07658L9HR [button_]
+
+  Iconic Home Da Vinci Right Hand Facing Sectional Sofa L Shape Chaise PU Leather
+  Button Tufted with Silver Nailhead Trim Silvertone Metal Leg with 3 Accent Pillows,
+  Modern Contemporary, Navy
+
+  $100.0
+
+
+  [button] B07F6QKGX5 [button_]
+
+  BELLEZE Modern 47 Inch Ottoman Bench Footstool Upholstered Faux Leather Decor for
+  Living Room, Entryway, or Bedroom with Storage & Safety-Hinge Lid - Amherst (Rustic
+  Brown)
+
+  $199.99
+
+
+  [button] B09CZMMLC8 [button_]
+
+  Rae Dunn Throw Blanket- Soft, Decorative Blankets for Bed or Couch, Cozy Throws
+  for Sofa, Plush Black Fleece Throw Embroidered with Together We Can, 50 inches x
+  60 inches, with Wood Hanger
+
+  $39.99
+
+
+  [button] B08169JG35 [button_]
+
+  JWH Pink 3D Flower Pillow Aesthetic Valentine Day Pillow Covers Round Shaped Decorative
+  Pillowcase Gifts Cushion Covers Farmhouse Bed Living Room Sofa Couch Decor Shams
+  with Pillow Insert 12 Inch
+
+  $25.01
+
+  '
+- 'Instruction: i am looking for brown black throw pillow case that is double sided
+  and super soft, and price lower than 60.00 dollars'
+- 'back to search
+
+  next >
+
+  b08np79m17
+
+  b08n4yvgbg
+
+  b07rp5tqb4
+
+  b09lgxjy5q
+
+  b071zzb5qc
+
+  b098jr7d8x
+
+  b07658l9hr
+
+  b07f6qkgx5
+
+  b09czmmlc8
+
+  b08169jg35'
+: action_dict:
+    ? &id048 !!python/tuple
+    - click[b07f6qkgx5]
+    - b07f6qkgx5 is a modern and stylish ottoman bench that fits the description and
+      is within the desired price range.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 47
+  other_info:
+    action_history:
+    - &id014 !!python/tuple
+      - 'search[Instruction: i am looking for brown black throw pillow case that is
+        double sided and super soft, and price lower than 60.00 dollars]'
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Page 1 (Total results: 50)\n\n[button] B091QC3SF7 [button_]\nBestMed - High Protein\
+  \ Nutrition Bar - Low-Carb, 15g Protein, Low Sugar, High Fiber, Low Calorie, Meal\
+  \ Replacement Bar (Vanilla Caramel, 1 Box - 7 Count)\n$13.99\n\n[button] B07FZ6XX2T\
+  \ [button_]\nMissy J's Organic Peanut Butter Carob Bar 3 Ounce 2 Pack | Carob Made\
+  \ w/Coconut Sugar, Vegan and Gluten-Free | Healthy Caffeine Free Substitute for\
+  \ Chocolate, Perfect for Snacks and Treats\n$17.87\n\n[button] B09KQ6TQY5 [button_]\n\
+  Beyond Meat Beyond Burger Plant-Based Frozen Patties - 35% LESS SAT FAT Per Serving\
+  \ of 80/20 beef - Non GMOs, Soy and Gluten Free - 20g Protein Per Serving - 4 Pack\
+  \ (8 oz. 2 ct Each), Total 8 Patties\n$69.99\n\n[button] B09RSSX4C7 [button_]\n\
+  Margarita Man King Cake Daiquiri\u2122 Mix Concentrate | King Cake Cocktail Mix\
+  \ | 64 oz bottle, makes 56 drinks | Pure cane sugar\n$19.99\n\n[button] B09PQWGMPH\
+  \ [button_]\nVDSOIUTYHFV Monoculars, Portable Telescopes, High-Definition Night\
+  \ Vision Telescopes, Mobile Phone Camera Lenses, for Adults Bird Watching, Traveling,\
+  \ Hiking, Sightseeing\n$352.99\n\n[button] B086QNNL78 [button_]\nLenny & Larry's\
+  \ The Complete Cookie, 8 Flavor Variety Pack, Soft Baked, 16g Plant Protein, Vegan,\
+  \ Non-GMO, 4 Ounce Cookie (Pack of 16)\n$29.5\n\n[button] B07ZJNB6T7 [button_]\n\
+  Sharifa Halal Beef Jerky, Sweet BBQ, (1) 2.85 oz. Bag \u2013 Great Everyday Halal\
+  \ Jerky Beef Meat Snack, 100 % Real Zabiha Halal Beef, 12g of Protein, 80 Calories,\
+  \ 0g Trans Fat, & 2g of Carbohydrates\n$9.99\n\n[button] B07JBP3151 [button_]\n\
+  Perfect Keto Bars - The Cleanest Keto Snacks with Collagen and MCT. No Added Sugar,\
+  \ Keto Diet Friendly - 3g Net Carbs, 19g Fat,11g protein - Keto Diet Food Dessert\
+  \ (Salted Caramel, 12 Bars)\n$43.99\n\n[button] B0037507EE [button_]\nStarKist Ready-to-Eat\
+  \ Tuna Salad, Original Deli Style, 3 oz pouch (Pack of 24) (Packaging May Vary)\n\
+  $29.76\n\n[button] B071DV6H98 [button_]\nPeanut Butter & Co. Pure Peanut Powder,\
+  \ Non-GMO Project Verified, Gluten Free, Vegan, 6.5 oz Jar\n$8.78\n"
+- 'Instruction: i''m looking for cakes it contains high protein and the low fat, and
+  price lower than 50.00 dollars'
+- 'back to search
+
+  next >
+
+  b091qc3sf7
+
+  b07fz6xx2t
+
+  b09kq6tqy5
+
+  b09rssx4c7
+
+  b09pqwgmph
+
+  b086qnnl78
+
+  b07zjnb6t7
+
+  b07jbp3151
+
+  b0037507ee
+
+  b071dv6h98'
+: action_dict:
+    *id004:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 36
+  other_info:
+    action_history:
+    - *id005
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B09BDDB9HF [button_]
+
+  Signature Design by Ashley Shamryn 1 Drawer Night Stand, Dark Brown
+
+  $100.0
+
+
+  [button] B09P4R6VXR [button_]
+
+  Deepclaoto Mobile Desk Adjustable Height on Wheels,Desk with Wheels,Mobile Work
+  Table,Workstation Desk,Desks for Home Office Small Space,Bedside Laptop Table
+
+  $50.65
+
+
+  [button] B09Q3NVJNM [button_]
+
+  VECELO Nightstand Modern Side End Tables Night Stand with Bin Drawer for Living
+  Room Bedroom, Set of 2, Industrial Metal Frame, Nightstands, Vintage Black
+
+  $99.99
+
+
+  [button] B074RVN91Q [button_]
+
+  BedShelfie Wood Bedside Shelf for Bed & Bunk Bed Shelf Tray Table Caddy for Top
+  Bunk Organizer As Seen On Business Insider College Dorm Room Essentials Clip-On
+  Nightstand (Original Size, White Bamboo)
+
+  $38.24
+
+
+  [button] B099WVV8PM [button_]
+
+  Triple Bunk Beds with Slide, 3 Bunk Beds Twin-Over-Twin-Over-Twin, Triple Bed with
+  Built-in Ladder, Wood Triple Bunk Bed Frame for Kids, Teens, Adults ( Twin, White)
+
+  $315.99
+
+
+  [button] B09ND1LQB2 [button_]
+
+  Low Loft Bed with Storage Drawers, Wood Twin Size Loft Bed with Cabinet, Shelf,
+  Ladder, Safety Rail for Girls, Boys, Teen (Grey)
+
+  $461.99
+
+
+  [button] B09CZMMLC8 [button_]
+
+  Rae Dunn Throw Blanket- Soft, Decorative Blankets for Bed or Couch, Cozy Throws
+  for Sofa, Plush Black Fleece Throw Embroidered with Together We Can, 50 inches x
+  60 inches, with Wood Hanger
+
+  $39.99
+
+
+  [button] B01MQHE1B0 [button_]
+
+  Queen Size Futon Bed Sofa - (Natural Hardwood Frame and Green Mattress Set), Armless
+  Convertible, Couch, Bed, Lounger
+
+  $488.0
+
+
+  [button] B084DLMXM9 [button_]
+
+  Wood Platform Bed with Headboard, Footboard and Wood Slat Support, Platform Bed
+  Slats Twin Platform Bed and Headboard King Platform Twin Bed Frame Ships from USA
+  Warehouse Arrive Fast (White)
+
+  $100.0
+
+
+  [button] B075GW4GXH [button_]
+
+  ZINUS Alexia Wood Platform Bed Frame with headboard / Solid Wood Foundation with
+  Wood Slat Support / No Box Spring Needed / Easy Assembly, Rustic Pine, Queen
+
+  $253.99
+
+  '
+- 'Instruction: i am looking for an eco friendly wood bedside shelf for a bed, and
+  price lower than 50.00 dollars'
+- 'back to search
+
+  next >
+
+  b09bddb9hf
+
+  b09p4r6vxr
+
+  b09q3nvjnm
+
+  b074rvn91q
+
+  b099wvv8pm
+
+  b09nd1lqb2
+
+  b09czmmlc8
+
+  b01mqhe1b0
+
+  b084dlmxm9
+
+  b075gw4gxh'
+: action_dict:
+    *id006:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 44
+  other_info:
+    action_history:
+    - *id007
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B09D59L59Y [button_]
+
+  Dearfoams Women''s Original Comfort Amaya Wedge Clog
+
+  $21.71 to $85.39
+
+
+  [button] B08MWQNPXF [button_]
+
+  Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men
+
+  $99.0
+
+
+  [button] B092V5VRMB [button_]
+
+  KOCOTA Unisex Garden Clogs Shoes Sandals Slippers
+
+  $16.99 to $19.99
+
+
+  [button] B091KJDJD3 [button_]
+
+  Sharllen Pillow Slippers Non-Slip Super Soft Thick Sole Sandals Platform Massage
+  Shower Bathroom House Slipper for Women/Men Home Slippers for Indoor & Outdoor
+
+  $8.99 to $21.99
+
+
+  [button] B095JH58ZN [button_]
+
+  Women''s Fashion Cross Transparent Round Toe Buckle High Heel Sandals
+
+  $100.0
+
+
+  [button] B09HPFRPD3 [button_]
+
+  Women Denim Platform High Heels Wide Calf Chunky Stacked Lug Round Toe Ankle Booties
+  Punk Knight Boots Combat Shoes
+
+  $100.0
+
+
+  [button] B09SL5XJ54 [button_]
+
+  Women Slide Sandals Open Toe Fashion Bling Rhinestone Flat Sandal Slip on Summer
+  Comfort Dressy Casual Flip Flop Shoes
+
+  $100.0
+
+
+  [button] B09GP8Z91F [button_]
+
+  XTBFOOJ Womens Flats Boots Side Zipper Leather Ankle Booties Comfortable Winter
+  Warm Outdoor Anti-Slip Waterproof Snow Shoes
+
+  $100.0
+
+
+  [button] B09K4WJ974 [button_]
+
+  Runsmooth Women Memory Foam House Slippers Cozy Cute Bunny Animal Warm Slipper Indoor
+  Outdoor Birthday for Girls Ladies
+
+  $100.0
+
+
+  [button] B0979651TX [button_]
+
+  siilsaa Sneakers for Women, Womens Slip-On Running Shoes Solid Mesh Lightweight
+  Gym Jogging Shoes Fashion Sneaker
+
+  $2.99 to $14.99
+
+  '
+- 'Instruction: i am looking for size 9 women''s fashion sneakers with vinyl acetate,
+  and price lower than 170.00 dollars'
+- 'back to search
+
+  next >
+
+  b09d59l59y
+
+  b08mwqnpxf
+
+  b092v5vrmb
+
+  b091kjdjd3
+
+  b095jh58zn
+
+  b09hpfrpd3
+
+  b09sl5xj54
+
+  b09gp8z91f
+
+  b09k4wj974
+
+  b0979651tx'
+: action_dict:
+    ? &id035 !!python/tuple
+    - click[b08mwqnpxf]
+    - b08mwqnpxf is a size 9 women's fashion sneaker with vinyl acetate and the price
+      is lower than 170.00 dollars.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 5
+  other_info:
+    action_history:
+    - &id016 !!python/tuple
+      - search[size 9 women's fashion sneakers vinyl acetate]
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B09GP8Z91F [button_]
+
+  XTBFOOJ Womens Flats Boots Side Zipper Leather Ankle Booties Comfortable Winter
+  Warm Outdoor Anti-Slip Waterproof Snow Shoes
+
+  $100.0
+
+
+  [button] B09SL5XJ54 [button_]
+
+  Women Slide Sandals Open Toe Fashion Bling Rhinestone Flat Sandal Slip on Summer
+  Comfort Dressy Casual Flip Flop Shoes
+
+  $100.0
+
+
+  [button] B09HPFRPD3 [button_]
+
+  Women Denim Platform High Heels Wide Calf Chunky Stacked Lug Round Toe Ankle Booties
+  Punk Knight Boots Combat Shoes
+
+  $100.0
+
+
+  [button] B091KJDJD3 [button_]
+
+  Sharllen Pillow Slippers Non-Slip Super Soft Thick Sole Sandals Platform Massage
+  Shower Bathroom House Slipper for Women/Men Home Slippers for Indoor & Outdoor
+
+  $8.99 to $21.99
+
+
+  [button] B08532F8QQ [button_]
+
+  Eagsouni Unisex Garden Clogs Shoes Casual Slippers Quick Drying Sandals Summer Anti-Slip
+  Beach Shoes for Men and Women
+
+  $9.99 to $22.99
+
+
+  [button] B09D59L59Y [button_]
+
+  Dearfoams Women''s Original Comfort Amaya Wedge Clog
+
+  $21.71 to $85.39
+
+
+  [button] B094ZBVWK9 [button_]
+
+  Howilath Blue Butterfly Print Summer Slide Slippers for Men Women Kid, Sunflower
+  Colorful Tie-dye Animals House Slippers Slide Sandal Non-Slip Light Weight
+
+  $18.99 to $19.99
+
+
+  [button] B08MWQNPXF [button_]
+
+  Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men
+
+  $99.0
+
+
+  [button] B004AW4370 [button_]
+
+  Birki''s Super, Men''s Clogs
+
+  $85.45
+
+
+  [button] B092V5VRMB [button_]
+
+  KOCOTA Unisex Garden Clogs Shoes Sandals Slippers
+
+  $16.99 to $19.99
+
+  '
+- 'Instruction: i am looking for a slip loafer with vinyl acetate. also choose dark
+  khaki suede color and 7 narrow size, and price lower than 100.00 dollars'
+- 'back to search
+
+  next >
+
+  b09gp8z91f
+
+  b09sl5xj54
+
+  b09hpfrpd3
+
+  b091kjdjd3
+
+  b08532f8qq
+
+  b09d59l59y
+
+  b094zbvwk9
+
+  b08mwqnpxf
+
+  b004aw4370
+
+  b092v5vrmb'
+: action_dict:
+    ? &id031 !!python/tuple
+    - click[b091kjdjd3]
+    - b091kjdjd3 is a slip loafer with vinyl acetate and dark khaki suede color, and
+      the price is lower than 100.00 dollars.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 16
+  other_info:
+    action_history:
+    - &id013 !!python/tuple
+      - search[slip loafer vinyl acetate]
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Page 1 (Total results: 50)\n\n[button] B09PGDQXVL [button_]\nGovisiry Swimming\
+  \ Headphones with 32G\uFF0CBone Conduction Headphones Built in Wireless Bluetooth\
+  \ 5.0, Open-Ear Headphones IPX8 Waterproof.\n$89.9\n\n[button] B09NNQTVYB [button_]\n\
+  Earbuds Bluetooth Wireless Headphones Noise Cancelling with Microphone,Bone Conduction\
+  \ Sports Headset,Hands-Free,Waterproof Earphones,Ideal Christmas Gidts for Women\
+  \ Men-#3\n$0.39\n\n[button] B09NNRN32Y [button_]\nEarbuds Bluetooth Wireless Headphones\
+  \ Noise Cancelling with Microphone,Bone Conduction Sports Headset,Hands-Free,Waterproof\
+  \ Earphones,Ideal Christmas Gidts for Women Men-#2\n$0.69\n\n[button] B07J5LMT7L\
+  \ [button_]\nNoise Cancelling Headphones Bluetooth Headset, ANC Over Ear Wireless\
+  \ Bluetooth Headphones With Mic, Dual 40 mm Drivers, HIFI Deep Bass Foldable Bluetooth\
+  \ Headphones With15Hrs Playtime 3.5mm Audio Jack\n$69.99\n\n[button] B09MK2BWKX\
+  \ [button_]\nWireless Sport Earphones IPX5 Waterproof, Noise Cancelling Bt Headphones\
+  \ for Running and Workout, Wireless Earbuds with TF Card Slot(Black)\n$59.99\n\n\
+  [button] B09LSQX8MH [button_]\nPro Hands-Free Headset Works for Samsung Galaxy S\
+  \ III AT&T with Adjustable Boom V5.0 Bluetooth Single Noise Reduction & Cancelling\
+  \ Features Portable Slim (Black)\n$54.99\n\n[button] B08CD2NJPH [button_]\nGaming\
+  \ Headset PS4 Headset 3.5mm Stereo Wired Over-Head Gaming Headphone,RGB Rainbow\
+  \ Backlit, Professional Headphone Stereo Surround Sound,Noise Canceling Microphone\
+  \ Compatible with PC,PS4,Xbox(Black)\n$21.99\n\n[button] B09MJZ214X [button_]\n\
+  Libratone Track+ 2 (2nd Gen) Wireless Neckband, Sport Headphones with Active Noise\
+  \ Cancelling, Running Mode, Magnetic, Bluetooth 5.2, IP54 Sweat Resistant, Up to\
+  \ 14 Hours Playback for Workout Sports\n$159.0\n\n[button] B08JTZ145X [button_]\n\
+  USB Headset with Microphone Noise Cancelling, Stereo Computer Headphones for PC\
+  \ Laptop SoftPhone Skype Business Call Center Office, Audio Controls, Crystal Clear\
+  \ Chat, Ultra Comfort\n$29.95\n\n[button] B089B658NP [button_]\nSAMSUNG Galaxy Buds\
+  \ Live True Wireless Earbuds US Version Active Noise Cancelling Wireless Charging\
+  \ Case Included, Mystic Black\n$99.99\n"
+- 'Instruction: i need noise cancelling headphones for my daily running routine, and
+  price lower than 90.00 dollars'
+- 'back to search
+
+  next >
+
+  b09pgdqxvl
+
+  b09nnqtvyb
+
+  b09nnrn32y
+
+  b07j5lmt7l
+
+  b09mk2bwkx
+
+  b09lsqx8mh
+
+  b08cd2njph
+
+  b09mjz214x
+
+  b08jtz145x
+
+  b089b658np'
+: action_dict:
+    *id008:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 40
+  other_info:
+    action_history:
+    - *id009
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B09PV3KH7J [button_]
+
+  Natural Scenery Photography Background River Scenery Travel Photography Background
+  Studio Props A36 10x7ft/3x2.2m
+
+  $42.98
+
+
+  [button] B09PV4HGFN [button_]
+
+  Green Forest Natural Scenery Photography Background Landscape Portrait Photo Background
+  Studio Props A17 9x6ft/2.7x1.8m
+
+  $36.98
+
+
+  [button] B09PTZYPDZ [button_]
+
+  Forest Trees Spring Landscape Natural Scenery Photography Background Props Vinyl
+  Background Photography Studio Shooting A6 10x10ft/3x3m
+
+  $48.98
+
+
+  [button] B07WYDVDZ3 [button_]
+
+  TJ 5X3FT Blue Sky White Clouds Toy Story Theme Photography Background Children Baby
+  Shower Birthday Party Photo Backdrops Cake Table Decoration Banner Kids Studio Booth
+  Props Vinyl
+
+  $8.99
+
+
+  [button] B09NNKB863 [button_]
+
+  Leyiyi 12x10ft Happy Easter Photography Backdrops Easter Wreath Cartoon Bunny Doll
+  Colorful Eggs on Green Grass Wood Board Photo Background for Baby Shower Decor Banner
+  Kids Children Photo Shoot
+
+  $62.99
+
+
+  [button] B07MZ2W5T7 [button_]
+
+  CSFOTO Underwater World Backdrop 10x6.5ft Photography Background Child Birthday
+  Party Decor 3D Aarine Benthos Aquatic Plants Dolphins Turtle Interior Decor Kids
+  Newborn Portrait Photo Studio Props
+
+  $35.99
+
+
+  [button] B07MZ3Z2TY [button_]
+
+  CSFOTO 10x6.5ft Underwater World Backdrop for Photography Sea World Background for
+  Child Birthday Cartoon Precious Deposits Money Aarine Benthos Kids Newborn Portrait
+  Photo Studio Props
+
+  $35.99
+
+
+  [button] B083Q84GLC [button_]
+
+  CSFOTO 12x8ft Western Wall Backdrop Jerusalem Judaism Wailing Wall Ruins Background
+  for Photography Judaism Event Decor Banner Room Decor Wallpaper Audlts Photo Booth
+
+  $52.99
+
+
+  [button] B07PTZ3141 [button_]
+
+  CSFOTO 12x8ft Cowboy Backdrop Wood Board Wooden Case Hay Rope Photography Background
+  Children Adult Portrait Shooting Photo Film Studio Video Props Interior Decoration
+  Wallpaper
+
+  $51.99
+
+
+  [button] B09MQLBLDJ [button_]
+
+  Cartoon Jungle Safari Birthday Party Baby Family Shooting Poster Photo Photography
+  Background Studio Props A8 7x5ft/2.1x1.5m
+
+  $26.98
+
+  '
+- 'Instruction: i am looking for light weight background having color a6, and price
+  lower than 60.00 dollars'
+- 'back to search
+
+  next >
+
+  b09pv3kh7j
+
+  b09pv4hgfn
+
+  b09ptzypdz
+
+  b07wydvdz3
+
+  b09nnkb863
+
+  b07mz2w5t7
+
+  b07mz3z2ty
+
+  b083q84glc
+
+  b07ptz3141
+
+  b09mqlbldj'
+: action_dict:
+    ? &id011 !!python/tuple
+    - click[b09pv3kh7j]
+    - b09pv3kh7j is a light weight background with color a6 and the price is lower
+      than 60.00 dollars.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 10
+  other_info:
+    action_history:
+    - &id010 !!python/tuple
+      - search[light weight background color a6]
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [button] B09S1591W1 [button_]
+
+  Crew-Neck Short Sleeve 301 Women''s Summer Printing Loose Blouse Tops T-Shirt Bodysuits
+  Lucky Backless Print Kids Tunic Table Men Cut Square y 271k Bras Pleasure Green
+  flo
+
+  $22.45
+
+
+  [button] B099SBXBJH [button_]
+
+  NIANTIE Mens Short Sleeve T Shirts Linen Cotton Hippie Beach Button Down Shirts
+  Summer Casual Loose Lapel Beach T-Shirts
+
+  $2.47 to $6.59
+
+
+  [button] B09S169XYP [button_]
+
+  Plus Size Small 721 Women''s Short Sleeve T-Shirt Blouse Tops Cat Print Shirt Backless
+  Thermal Work Boys Zip 2366 Dresser Blouses Basic Square Club Through Winter Grill
+  cami Leggings
+
+  $100.0
+
+
+  [button] B09NNXGRHX [button_]
+
+  Yaiewey Long Sleeve Shirts for Women,Women''s Stripe Print Crewneck Sweatshirts
+  Color Block Casual T Shirt Pullover Tops Tunic
+
+  $1.39 to $10.99
+
+
+  [button] B09R4GN7P7 [button_]
+
+  Shirts for Men Short Sleeve,Men''s Summer Tops Fashion Guitar 3D Printed T-Shirts
+  Casual O-Neck Athletic Blouse Tops
+
+  $8.99
+
+
+  [button] B09QG84JT4 [button_]
+
+  Mens Floral Button Down Shirt Hawaiian Shirts Short Sleeve Aloha Beach Shirt Floral
+  Summer Casual Shirts Blouses
+
+  $8.99 to $14.99
+
+
+  [button] B09P77876R [button_]
+
+  Mens Hoodies, Men''s Pocket Drawstring Printed Long Sleeve Hooded Sports Top Fashion
+  Sweatshirts and Hoodies Blouses
+
+  $0.19 to $39.99
+
+
+  [button] B09R93K3N4 [button_]
+
+  Tshirts Shirts for Men Golf Polo Shirts for Men Short Sleeve Athletic Tennis T-Shirt
+  Tee Shirts Summer Tops for Men
+
+  $0.19 to $0.99
+
+
+  [button] B09QD1G4JC [button_]
+
+  Women Short Sleeves O Neck Love Print Casual Tops Blouse T Shirt Vintage Fairy Print
+  Long Sleeve Crop Top for Women Rhinestone Graphic T-Shirts Y2k Round Neck 90S Grunge
+  Tees
+
+  $8.9
+
+
+  [button] B085NH2C7W [button_]
+
+  VEKDONE Men''s Mask Skull Tank Tops Hoodie Sweatshirt Sleeveless Bodybuilding Training
+  Gym Shirts Tops Blouse
+
+  $11.99 to $16.91
+
+  '
+- 'Instruction: i want a medium sized t-shirt with long sleeves, and price lower than
+  40.00 dollars'
+- 'back to search
+
+  next >
+
+  b09s1591w1
+
+  b099sbxbjh
+
+  b09s169xyp
+
+  b09nnxgrhx
+
+  b09r4gn7p7
+
+  b09qg84jt4
+
+  b09p77876r
+
+  b09r93k3n4
+
+  b09qd1g4jc
+
+  b085nh2c7w'
+: action_dict:
+    ? &id019 !!python/tuple
+    - click[b09s1591w1]
+    - b09s1591w1 is a medium sized t-shirt with long sleeves and the price is lower
+      than 40.00 dollars.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 31
+  other_info:
+    action_history:
+    - &id017 !!python/tuple
+      - search[medium t-shirt long sleeves]
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Page 1 (Total results: 50)
+
+
+  [clicked button] B09PV3KH7J [clicked button_]
+
+  Natural Scenery Photography Background River Scenery Travel Photography Background
+  Studio Props A36 10x7ft/3x2.2m
+
+  $42.98
+
+
+  [button] B09PV4HGFN [button_]
+
+  Green Forest Natural Scenery Photography Background Landscape Portrait Photo Background
+  Studio Props A17 9x6ft/2.7x1.8m
+
+  $36.98
+
+
+  [button] B09PTZYPDZ [button_]
+
+  Forest Trees Spring Landscape Natural Scenery Photography Background Props Vinyl
+  Background Photography Studio Shooting A6 10x10ft/3x3m
+
+  $48.98
+
+
+  [button] B07WYDVDZ3 [button_]
+
+  TJ 5X3FT Blue Sky White Clouds Toy Story Theme Photography Background Children Baby
+  Shower Birthday Party Photo Backdrops Cake Table Decoration Banner Kids Studio Booth
+  Props Vinyl
+
+  $8.99
+
+
+  [button] B09NNKB863 [button_]
+
+  Leyiyi 12x10ft Happy Easter Photography Backdrops Easter Wreath Cartoon Bunny Doll
+  Colorful Eggs on Green Grass Wood Board Photo Background for Baby Shower Decor Banner
+  Kids Children Photo Shoot
+
+  $62.99
+
+
+  [button] B07MZ2W5T7 [button_]
+
+  CSFOTO Underwater World Backdrop 10x6.5ft Photography Background Child Birthday
+  Party Decor 3D Aarine Benthos Aquatic Plants Dolphins Turtle Interior Decor Kids
+  Newborn Portrait Photo Studio Props
+
+  $35.99
+
+
+  [button] B07MZ3Z2TY [button_]
+
+  CSFOTO 10x6.5ft Underwater World Backdrop for Photography Sea World Background for
+  Child Birthday Cartoon Precious Deposits Money Aarine Benthos Kids Newborn Portrait
+  Photo Studio Props
+
+  $35.99
+
+
+  [button] B083Q84GLC [button_]
+
+  CSFOTO 12x8ft Western Wall Backdrop Jerusalem Judaism Wailing Wall Ruins Background
+  for Photography Judaism Event Decor Banner Room Decor Wallpaper Audlts Photo Booth
+
+  $52.99
+
+
+  [button] B07PTZ3141 [button_]
+
+  CSFOTO 12x8ft Cowboy Backdrop Wood Board Wooden Case Hay Rope Photography Background
+  Children Adult Portrait Shooting Photo Film Studio Video Props Interior Decoration
+  Wallpaper
+
+  $51.99
+
+
+  [button] B09MQLBLDJ [button_]
+
+  Cartoon Jungle Safari Birthday Party Baby Family Shooting Poster Photo Photography
+  Background Studio Props A8 7x5ft/2.1x1.5m
+
+  $26.98
+
+  '
+- 'Instruction: i am looking for light weight background having color a6, and price
+  lower than 60.00 dollars'
+- 'back to search
+
+  next >
+
+  b09pv3kh7j
+
+  b09pv4hgfn
+
+  b09ptzypdz
+
+  b07wydvdz3
+
+  b09nnkb863
+
+  b07mz2w5t7
+
+  b07mz3z2ty
+
+  b083q84glc
+
+  b07ptz3141
+
+  b09mqlbldj'
+: action_dict:
+    ? !!python/tuple
+    - click[b09pv3kh7j]
+    - b09pv3kh7j is a light weight background with color a6 and the price is lower
+      than 60.00 dollars.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 14
+  other_info:
+    action_history:
+    - *id010
+    - *id011
+    - &id022 !!python/tuple
+      - click[10x7ft | 3x2.2m]
+      - 10x7ft | 3x2.2m conforms to the instruction.
+    - &id021 !!python/tuple
+      - click[a6]
+      - a6 is the desired color for the background.
+    - &id036 !!python/tuple
+      - click[< prev]
+      - The current item doesn't offer the desired options and I need to go back to
+        check other items.
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i am looking for a 36 count pack of soy free fruit and nut bars, and
+  price lower than 60.00 dollars'
+- search
+: action_dict:
+    *id012:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 25
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i am looking for a slip loafer with vinyl acetate. also choose dark
+  khaki suede color and 7 narrow size, and price lower than 100.00 dollars'
+- search
+: action_dict:
+    *id013:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 15
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i am looking for an eco friendly wood bedside shelf for a bed, and
+  price lower than 50.00 dollars'
+- search
+: action_dict:
+    *id007:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 43
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i am looking for brown black throw pillow case that is double sided
+  and super soft, and price lower than 60.00 dollars'
+- search
+: action_dict:
+    *id014:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 46
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i am looking for light weight background having color a6, and price
+  lower than 60.00 dollars'
+- search
+: action_dict:
+    *id010:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 9
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i am looking for organic blueberries, and price lower than 40.00 dollars'
+- search
+: action_dict:
+    *id015:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 20
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i am looking for size 9 women''s fashion sneakers with vinyl acetate,
+  and price lower than 170.00 dollars'
+- search
+: action_dict:
+    *id016:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 4
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i need noise cancelling headphones for my daily running routine, and
+  price lower than 90.00 dollars'
+- search
+: action_dict:
+    ? !!python/tuple
+    - click[b09pgdqxvl]
+    - ''
+    : number: 4
+      qvalue: 0.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[back to search]
+    - ''
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[features]
+    - ''
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+    *id009:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 39
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 7
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i want a medium sized t-shirt with long sleeves, and price lower than
+  40.00 dollars'
+- search
+: action_dict:
+    *id017:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 30
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i would like a 8 ft 6 in x 12 ft rectangular navy rug for my living
+  room, and price lower than 340.00 dollars'
+- search
+: action_dict:
+    *id018:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 49
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'WebShop
+
+  '
+- 'Instruction: i''m looking for cakes it contains high protein and the low fat, and
+  price lower than 50.00 dollars'
+- search
+: action_dict:
+    ? !!python/tuple
+    - click[b086qnnl78]
+    - ''
+    : number: 4
+      qvalue: 0.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[back to search]
+    - ''
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[features]
+    - ''
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+    *id005:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 35
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 7
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked 1-green.
+
+  You have clicked medium.
+
+  size
+
+  [clicked button] medium [clicked button_]
+
+  color
+
+  [clicked button] 1-green [clicked button_]
+
+  Crew-Neck Short Sleeve 301 Women''s Summer Printing Loose Blouse Tops T-Shirt Bodysuits
+  Lucky Backless Print Kids Tunic Table Men Cut Square y 271k Bras Pleasure Green
+  flo
+
+  Price: $22.45
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i want a medium sized t-shirt with long sleeves, and price lower than
+  40.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  small
+
+  medium
+
+  large
+
+  x-large
+
+  xx-large
+
+  1-blue
+
+  1-green
+
+  1-hot pink'
+: action_dict:
+    ? !!python/tuple
+    - click[1-green]
+    - I have clicked for 'medium' and haven't clicked for '1-green'. I need to first
+      click '1-green' and then buy this item.
+    : number: 4
+      qvalue: 0.0
+      reward: 0.0
+  id: 34
+  other_info:
+    action_history:
+    - *id017
+    - *id019
+    - &id044 !!python/tuple
+      - click[b09s1591w1]
+      - b09s1591w1 is a medium sized t-shirt with long sleeves and the price is lower
+        than 40.00 dollars.
+    - &id045 !!python/tuple
+      - click[medium]
+      - I have clicked for 'medium t-shirt long sleeves' and haven't clicked for 'medium'.
+        I need to first click 'medium' and then buy this item.
+    - &id043 !!python/tuple
+      - click[b09s1591w1]
+      - b09s1591w1 is a medium sized t-shirt with long sleeves and the price is lower
+        than 40.00 dollars.
+    - &id042 !!python/tuple
+      - click[1-green]
+      - I have clicked for 'medium' and haven't clicked for '1-green'. I need to first
+        click '1-green' and then buy this item.
+    last_reward: 0.0
+    number: 4
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked 1.2 ounce (pack of 1).
+
+  You have clicked blueberries.
+
+  style
+
+  flavor
+
+  [clicked button] blueberries [clicked button_]
+
+  size
+
+  [clicked button] 1.2 ounce (pack of 1) [clicked button_]
+
+  NATIERRA Nature''s All Foods Organic Freeze-Dried Pineapples | Non-GMO & Vegan |
+  1.5 Ounce
+
+  Price: $5.79
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for organic blueberries, and price lower than 40.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  bag
+
+  bundle
+
+  apples
+
+  bananas
+
+  bananas & strawberries
+
+  bananas and strawberries
+
+  beets
+
+  blueberries
+
+  chocolate banana slices
+
+  chocolate covered mango slices
+
+  chocolate mango slices
+
+  chocolate strawberry slices
+
+  mango cheeks
+
+  mango strips
+
+  mangoes
+
+  peas
+
+  pineapples
+
+  pomegranate arils
+
+  raspberries
+
+  roasted corn
+
+  strawberries
+
+  tropical fruits
+
+  strawberries + apples
+
+  strawberries + bananas
+
+  strawberries + blueberries
+
+  strawberries + corn
+
+  strawberries + mangos
+
+  strawberries + peas
+
+  strawberries + pineapple
+
+  strawberries + pomegranate arils
+
+  strawberries + raspberries
+
+  strawberries + tropical fruits
+
+  0.7 ounce (pack of 8)
+
+  1.5 ounce (pack of 1)
+
+  1.5 ounce (pack of 12)
+
+  1.3 ounce (pack of 4)
+
+  1.3 ounce (pack of 8)
+
+  2.5 ounce (pack of 1)
+
+  2.5 ounce (pack of 12)
+
+  1.8 ounce (pack of 1)
+
+  1.2 ounce (pack of 4)
+
+  1.2 ounce (pack of 8)
+
+  1.8 ounce (pack of 12)
+
+  1 ounce (pack of 1)
+
+  1 ounce (pack of 12)
+
+  1.2 ounce
+
+  1.2 ounce (pack of 1)
+
+  1.2 ounce (pack of 12)
+
+  3 ounce (pack of 1)
+
+  8 ounce (pack of 1)
+
+  8 ounce (pack of 6)
+
+  0.7 ounce (pack of 4)
+
+  2.2 ounce (pack of 1)
+
+  2.2 ounce (pack of 12)
+
+  1.3 ounce (pack of 1)
+
+  1.3 ounce (pack of 12)
+
+  1.6 ounce (pack of 1)
+
+  1 count (pack of 1)
+
+  strawberries 1.2 ounce & apples 1.3 ounc...
+
+  strawberries 1.2 ounce & bananas 2.5 oun...
+
+  strawberries 1.2 ounce & blueberries 1.2...
+
+  strawberries 1.2 ounce & roasted corn 1....
+
+  strawberries 1.2 ounce & mangoes 1.5 oun...
+
+  strawberries 1.2 ounce & peas 2.2 ounce
+
+  strawberries 1.2 ounce & pineapples 1.5 ...
+
+  strawberries 1.2 ounce & pomegranate ari...
+
+  strawberries 1.2 ounce & raspberries 1.3...
+
+  strawberries 1.2 ounce & tropical fruits...'
+: action_dict:
+    ? !!python/tuple
+    - click[1.2 ounce (pack of 1)]
+    - I have clicked for 'blueberries' and haven't clicked for '1.2 ounce (pack of
+      1)'. I need to first click '1.2 ounce (pack of 1)' and then buy this item.
+    : number: 6
+      qvalue: 0.0
+      reward: 0.0
+  id: 24
+  other_info:
+    action_history:
+    - *id015
+    - *id020
+    - &id038 !!python/tuple
+      - click[blueberries]
+      - Blueberries are the desired item.
+    - &id037 !!python/tuple
+      - click[1.2 ounce (pack of 1)]
+      - I have clicked for 'blueberries' and haven't clicked for '1.2 ounce (pack
+        of 1)'. I need to first click '1.2 ounce (pack of 1)' and then buy this item.
+    last_reward: 0.0
+    number: 6
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked 10x7ft | 3x2.2m.
+
+  size
+
+  [clicked button] 10x7ft | 3x2.2m [clicked button_]
+
+  color
+
+  Natural Scenery Photography Background River Scenery Travel Photography Background
+  Studio Props A36 10x7ft/3x2.2m
+
+  Price: $42.98
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for light weight background having color a6, and price
+  lower than 60.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  5x3ft | 1.5x1m
+
+  7x5ft | 2.1x1.5m
+
+  9x6ft | 2.7x1.8m
+
+  10x7ft | 3x2.2m
+
+  10x10ft | 3x3m
+
+  a1
+
+  a10
+
+  a11
+
+  a12
+
+  a13
+
+  a14
+
+  a15
+
+  a16
+
+  a17
+
+  a18
+
+  a19
+
+  a2
+
+  a20
+
+  a21
+
+  a22
+
+  a23
+
+  a24
+
+  a25
+
+  a26
+
+  a27
+
+  a28
+
+  a29
+
+  a3
+
+  a30
+
+  a31
+
+  a32
+
+  a33
+
+  a34
+
+  a35
+
+  a36
+
+  a37
+
+  a38
+
+  a39
+
+  a4
+
+  a40
+
+  a5
+
+  a6
+
+  a7
+
+  a8
+
+  a9'
+: action_dict:
+    *id021:
+      number: 2
+      qvalue: 0.0
+      reward: 0.0
+  id: 12
+  other_info:
+    action_history:
+    - *id010
+    - *id011
+    - *id022
+    last_reward: 0.0
+    number: 2
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked 36 count.
+
+  You have clicked peanut butter & jelly.
+
+  flavor name
+
+  [clicked button] peanut butter & jelly [clicked button_]
+
+  size
+
+  [clicked button] 36 count [clicked button_]
+
+  Skout Organic Real Food Bars for Kids Fruit Variety Pack (36 Pack) | Organic Snacks
+  for Kids | Plant-Based Nutrition, No Refined Sugar | Vegan | Gluten, Dairy, Grain
+  & Soy Free
+
+  Price: $39.99
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for a 36 count pack of soy free fruit and nut bars, and
+  price lower than 60.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  peanut butter & jelly
+
+  apple pie
+
+  blueberry blast
+
+  french toast frenzy
+
+  raspberry rush
+
+  skout bar sample pack
+
+  fruit variety pack
+
+  peanut butter chocolate chip
+
+  kids bar variety pack
+
+  0.84 ounce (pack of 18)
+
+  18 count
+
+  18 pack
+
+  36 count
+
+  36 pack'
+: action_dict:
+    ? !!python/tuple
+    - click[36 count pack]
+    - 36 count pack conforms to the instruction.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[peanut butter & jelly]
+    - Peanut butter & jelly conforms to the instruction.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 29
+  other_info:
+    action_history:
+    - *id012
+    - *id023
+    - &id026 !!python/tuple
+      - click[36 count pack]
+      - 36 count pack conforms to the instruction.
+    - &id027 !!python/tuple
+      - click[36 count pack]
+      - 36 count pack conforms to the instruction.
+    - &id028 !!python/tuple
+      - click[36 count pack]
+      - 36 count pack conforms to the instruction.
+    - &id029 !!python/tuple
+      - click[36 count]
+      - 36 count conforms to the instruction.
+    - &id024 !!python/tuple
+      - click[36 count]
+      - 36 count conforms to the instruction.
+    - &id025 !!python/tuple
+      - click[peanut butter & jelly]
+      - Peanut butter & jelly conforms to the instruction.
+    last_reward: 0.0
+    number: 2
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked 36 count.
+
+  flavor name
+
+  size
+
+  [clicked button] 36 count [clicked button_]
+
+  Skout Organic Real Food Bars for Kids Fruit Variety Pack (36 Pack) | Organic Snacks
+  for Kids | Plant-Based Nutrition, No Refined Sugar | Vegan | Gluten, Dairy, Grain
+  & Soy Free
+
+  Price: $39.99
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for a 36 count pack of soy free fruit and nut bars, and
+  price lower than 60.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  peanut butter & jelly
+
+  apple pie
+
+  blueberry blast
+
+  french toast frenzy
+
+  raspberry rush
+
+  skout bar sample pack
+
+  fruit variety pack
+
+  peanut butter chocolate chip
+
+  kids bar variety pack
+
+  0.84 ounce (pack of 18)
+
+  18 count
+
+  18 pack
+
+  36 count
+
+  36 pack'
+: action_dict:
+    *id024:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+    *id025:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 28
+  other_info:
+    action_history:
+    - *id012
+    - *id023
+    - *id026
+    - *id027
+    - *id028
+    - *id029
+    last_reward: 0.0
+    number: 2
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked 6 ft 7 in x 6 ft 7 in.
+
+  You have clicked navy  |  beige.
+
+  item shape
+
+  color
+
+  [clicked button] navy  |  beige [clicked button_]
+
+  size
+
+  [clicked button] 6 ft 7 in x 6 ft 7 in [clicked button_]
+
+  SAFAVIEH Brentwood Collection BNT899G Traditional Oriental Distressed Non-Shedding
+  Living Room Bedroom Dining Home Office Area Rug, 6'' x 9'', Light Grey / Blue
+
+  Price: $112.78
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i would like a 8 ft 6 in x 12 ft rectangular navy rug for my living
+  room, and price lower than 340.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  runner
+
+  rectangular
+
+  round
+
+  square
+
+  blue  |  yellow
+
+  ivory  |  aqua
+
+  ivory  |  grey
+
+  ivory  |  light grey
+
+  light grey  |  blue
+
+  navy  |  beige
+
+  red  |  ivory
+
+  2 ft x 8 ft
+
+  3 ft x 5 ft
+
+  4 ft x 6 ft
+
+  5 ft 3 in x 7 ft 6 in
+
+  6 ft 7 in x 6 ft 7 in
+
+  6 ft x 9 ft
+
+  8 ft x 10 ft
+
+  9 ft x 12 ft
+
+  2 ft x 4 ft
+
+  2 ft x 6 ft
+
+  2 ft x 10 ft
+
+  2 ft x 12 ft
+
+  2 ft x 14 ft
+
+  2 ft x 16 ft
+
+  2 ft x 18 ft
+
+  2 ft x 20 ft
+
+  2 ft x 22 ft
+
+  3 ft x 3 ft
+
+  5 ft x 5 ft
+
+  9 ft x 9 ft
+
+  10 ft x 13 ft
+
+  11 ft x 11 ft
+
+  11 ft x 15 ft
+
+  12 ft x 18 ft'
+: action_dict:
+    ? !!python/tuple
+    - click[navy  |  beige]
+    - navy and beige are both desired colors for the rug.
+    : number: 6
+      qvalue: 0.0
+      reward: 0.0
+  id: 53
+  other_info:
+    action_history:
+    - *id018
+    - *id030
+    - &id047 !!python/tuple
+      - click[navy  |  beige]
+      - navy and beige are both desired colors for the rug.
+    - &id046 !!python/tuple
+      - click[6 ft 7 in x 6 ft 7 in]
+      - 6 ft 7 in x 6 ft 7 in conforms to the instruction.
+    last_reward: 0.0
+    number: 6
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked 7-8 women | 6-7 men.
+
+  You have clicked navy.
+
+  color
+
+  [clicked button] navy [clicked button_]
+
+  size
+
+  [clicked button] 7-8 women | 6-7 men [clicked button_]
+
+  Sharllen Pillow Slippers Non-Slip Super Soft Thick Sole Sandals Platform Massage
+  Shower Bathroom House Slipper for Women/Men Home Slippers for Indoor & Outdoor
+
+  Price: $8.99 to $21.99
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for a slip loafer with vinyl acetate. also choose dark
+  khaki suede color and 7 narrow size, and price lower than 100.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  navy
+
+  orange
+
+  pink
+
+  yellow
+
+  avocado green
+
+  beige
+
+  dark blue
+
+  sky blue
+
+  watermelon red
+
+  white
+
+  black
+
+  grey
+
+  khaki
+
+  green
+
+  5.5-6.5 women | 5-6 men
+
+  7-8 women | 6-7 men
+
+  8.5-9 women | 7-8 men
+
+  9.5-10 women | 8-9 men
+
+  10.5-11 women | 9-10 men'
+: action_dict:
+    ? !!python/tuple
+    - click[7-8 women | 6-7 men]
+    - 7-8 women | 6-7 men conforms to the instruction.
+    : number: 3
+      qvalue: 0.0
+      reward: 0.0
+  id: 19
+  other_info:
+    action_history:
+    - *id013
+    - *id031
+    - &id034 !!python/tuple
+      - click[7-8 women | 6-7 men]
+      - 7-8 women | 6-7 men conforms to the instruction.
+    - &id032 !!python/tuple
+      - click[7-8 women | 6-7 men]
+      - 7-8 women | 6-7 men conforms to the instruction.
+    - !!python/tuple
+      - click[7-8 women | 6-7 men]
+      - 7-8 women | 6-7 men conforms to the instruction.
+    - !!python/tuple
+      - click[7-8 women | 6-7 men]
+      - 7-8 women | 6-7 men conforms to the instruction.
+    - &id033 !!python/tuple
+      - click[navy]
+      - navy is the desired color for the slip loafer.
+    last_reward: 0.0
+    number: 3
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked 7-8 women | 6-7 men.
+
+  color
+
+  size
+
+  [clicked button] 7-8 women | 6-7 men [clicked button_]
+
+  Sharllen Pillow Slippers Non-Slip Super Soft Thick Sole Sandals Platform Massage
+  Shower Bathroom House Slipper for Women/Men Home Slippers for Indoor & Outdoor
+
+  Price: $8.99 to $21.99
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for a slip loafer with vinyl acetate. also choose dark
+  khaki suede color and 7 narrow size, and price lower than 100.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  navy
+
+  orange
+
+  pink
+
+  yellow
+
+  avocado green
+
+  beige
+
+  dark blue
+
+  sky blue
+
+  watermelon red
+
+  white
+
+  black
+
+  grey
+
+  khaki
+
+  green
+
+  5.5-6.5 women | 5-6 men
+
+  7-8 women | 6-7 men
+
+  8.5-9 women | 7-8 men
+
+  9.5-10 women | 8-9 men
+
+  10.5-11 women | 9-10 men'
+: action_dict:
+    *id032:
+      number: 3
+      qvalue: 0.0
+      reward: 0.0
+    *id033:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 18
+  other_info:
+    action_history:
+    - *id013
+    - *id031
+    - *id034
+    last_reward: 0.0
+    number: 4
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked 9 women | 7.5 men.
+
+  size
+
+  [clicked button] 9 women | 7.5 men [clicked button_]
+
+  color
+
+  Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men
+
+  Price: $99.0
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for size 9 women''s fashion sneakers with vinyl acetate,
+  and price lower than 170.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  6 women | 4.5 men
+
+  6 wide women | 4.5 wide men
+
+  6.5 women | 5 men
+
+  6.5 wide women | 5 wide men
+
+  7 women | 5.5 men
+
+  7 wide women | 5.5 wide men
+
+  7.5 women | 6 men
+
+  7.5 wide women | 6 wide men
+
+  8 women | 6.5 men
+
+  8 wide women | 6.5 wide men
+
+  8.5 women | 7 men
+
+  8.5 wide women | 7 wide men
+
+  9 women | 7.5 men
+
+  9 wide women | 7.5 wide men
+
+  9.5 women | 8 men
+
+  9.5 wide women | 8 wide men
+
+  10 women | 8.5 men
+
+  10 wide women | 8.5 wide men
+
+  10.5 women | 9 men
+
+  10.5 wide women | 9 wide men
+
+  11 women | 9.5 men
+
+  11 wide women | 9.5 wide men
+
+  11.5 women | 10 men
+
+  11.5 wide women | 10 wide men
+
+  12 women | 10.5 men
+
+  12 wide women | 10.5 wide men
+
+  12.5 women | 11 men
+
+  12.5 wide women | 11 wide men
+
+  13 women | 11.5 men
+
+  13 wide women | 11.5 wide men
+
+  13.5 women | 12 men
+
+  13.5 wide women | 12 wide men
+
+  14.5 women | 13 men
+
+  14.5 wide women | 13 wide men
+
+  15.5 women | 14 men
+
+  15.5 wide women | 14 wide men
+
+  16.5 women | 15 men
+
+  16.5 wide women | 15 wide men
+
+  heathered grey
+
+  smoke grey
+
+  black white
+
+  black | black'
+: action_dict:
+    ? &id040 !!python/tuple
+    - click[9 women | 7.5 men]
+    - I have clicked for 'b08mwqnpxf' and haven't clicked for '9 women | 7.5 men'.
+      I need to first click '9 women | 7.5 men' and then buy this item.
+    : number: 4
+      qvalue: 0.0
+      reward: 0.0
+    ? &id041 !!python/tuple
+    - click[heathered grey]
+    - heathered grey is the desired color for the sneakers.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 7
+  other_info:
+    action_history:
+    - *id016
+    - *id035
+    - &id039 !!python/tuple
+      - click[9 women | 7.5 men]
+      - I have clicked for 'b08mwqnpxf' and haven't clicked for '9 women | 7.5 men'.
+        I need to first click '9 women | 7.5 men' and then buy this item.
+    last_reward: 0.0
+    number: 5
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked a6.
+
+  You have clicked 10x7ft | 3x2.2m.
+
+  size
+
+  [clicked button] 10x7ft | 3x2.2m [clicked button_]
+
+  color
+
+  [clicked button] a6 [clicked button_]
+
+  Natural Scenery Photography Background River Scenery Travel Photography Background
+  Studio Props A36 10x7ft/3x2.2m
+
+  Price: $42.98
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for light weight background having color a6, and price
+  lower than 60.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  5x3ft | 1.5x1m
+
+  7x5ft | 2.1x1.5m
+
+  9x6ft | 2.7x1.8m
+
+  10x7ft | 3x2.2m
+
+  10x10ft | 3x3m
+
+  a1
+
+  a10
+
+  a11
+
+  a12
+
+  a13
+
+  a14
+
+  a15
+
+  a16
+
+  a17
+
+  a18
+
+  a19
+
+  a2
+
+  a20
+
+  a21
+
+  a22
+
+  a23
+
+  a24
+
+  a25
+
+  a26
+
+  a27
+
+  a28
+
+  a29
+
+  a3
+
+  a30
+
+  a31
+
+  a32
+
+  a33
+
+  a34
+
+  a35
+
+  a36
+
+  a37
+
+  a38
+
+  a39
+
+  a4
+
+  a40
+
+  a5
+
+  a6
+
+  a7
+
+  a8
+
+  a9'
+: action_dict:
+    ? !!python/tuple
+    - click[10x7ft | 3x2.2m]
+    - 10x7ft | 3x2.2m conforms to the instruction.
+    : number: 2
+      qvalue: 0.0
+      reward: 0.0
+    *id036:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 13
+  other_info:
+    action_history:
+    - *id010
+    - *id011
+    - *id022
+    - *id021
+    last_reward: 0.0
+    number: 3
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked blueberries.
+
+  style
+
+  flavor
+
+  [clicked button] blueberries [clicked button_]
+
+  size
+
+  NATIERRA Nature''s All Foods Organic Freeze-Dried Pineapples | Non-GMO & Vegan |
+  1.5 Ounce
+
+  Price: $5.79
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for organic blueberries, and price lower than 40.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  bag
+
+  bundle
+
+  apples
+
+  bananas
+
+  bananas & strawberries
+
+  bananas and strawberries
+
+  beets
+
+  blueberries
+
+  chocolate banana slices
+
+  chocolate covered mango slices
+
+  chocolate mango slices
+
+  chocolate strawberry slices
+
+  mango cheeks
+
+  mango strips
+
+  mangoes
+
+  peas
+
+  pineapples
+
+  pomegranate arils
+
+  raspberries
+
+  roasted corn
+
+  strawberries
+
+  tropical fruits
+
+  strawberries + apples
+
+  strawberries + bananas
+
+  strawberries + blueberries
+
+  strawberries + corn
+
+  strawberries + mangos
+
+  strawberries + peas
+
+  strawberries + pineapple
+
+  strawberries + pomegranate arils
+
+  strawberries + raspberries
+
+  strawberries + tropical fruits
+
+  0.7 ounce (pack of 8)
+
+  1.5 ounce (pack of 1)
+
+  1.5 ounce (pack of 12)
+
+  1.3 ounce (pack of 4)
+
+  1.3 ounce (pack of 8)
+
+  2.5 ounce (pack of 1)
+
+  2.5 ounce (pack of 12)
+
+  1.8 ounce (pack of 1)
+
+  1.2 ounce (pack of 4)
+
+  1.2 ounce (pack of 8)
+
+  1.8 ounce (pack of 12)
+
+  1 ounce (pack of 1)
+
+  1 ounce (pack of 12)
+
+  1.2 ounce
+
+  1.2 ounce (pack of 1)
+
+  1.2 ounce (pack of 12)
+
+  3 ounce (pack of 1)
+
+  8 ounce (pack of 1)
+
+  8 ounce (pack of 6)
+
+  0.7 ounce (pack of 4)
+
+  2.2 ounce (pack of 1)
+
+  2.2 ounce (pack of 12)
+
+  1.3 ounce (pack of 1)
+
+  1.3 ounce (pack of 12)
+
+  1.6 ounce (pack of 1)
+
+  1 count (pack of 1)
+
+  strawberries 1.2 ounce & apples 1.3 ounc...
+
+  strawberries 1.2 ounce & bananas 2.5 oun...
+
+  strawberries 1.2 ounce & blueberries 1.2...
+
+  strawberries 1.2 ounce & roasted corn 1....
+
+  strawberries 1.2 ounce & mangoes 1.5 oun...
+
+  strawberries 1.2 ounce & peas 2.2 ounce
+
+  strawberries 1.2 ounce & pineapples 1.5 ...
+
+  strawberries 1.2 ounce & pomegranate ari...
+
+  strawberries 1.2 ounce & raspberries 1.3...
+
+  strawberries 1.2 ounce & tropical fruits...'
+: action_dict:
+    *id037:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 23
+  other_info:
+    action_history:
+    - *id015
+    - *id020
+    - *id038
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked heathered grey.
+
+  You have clicked 9 women | 7.5 men.
+
+  size
+
+  [clicked button] 9 women | 7.5 men [clicked button_]
+
+  color
+
+  [clicked button] heathered grey [clicked button_]
+
+  Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men
+
+  Price: $99.0
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for size 9 women''s fashion sneakers with vinyl acetate,
+  and price lower than 170.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  6 women | 4.5 men
+
+  6 wide women | 4.5 wide men
+
+  6.5 women | 5 men
+
+  6.5 wide women | 5 wide men
+
+  7 women | 5.5 men
+
+  7 wide women | 5.5 wide men
+
+  7.5 women | 6 men
+
+  7.5 wide women | 6 wide men
+
+  8 women | 6.5 men
+
+  8 wide women | 6.5 wide men
+
+  8.5 women | 7 men
+
+  8.5 wide women | 7 wide men
+
+  9 women | 7.5 men
+
+  9 wide women | 7.5 wide men
+
+  9.5 women | 8 men
+
+  9.5 wide women | 8 wide men
+
+  10 women | 8.5 men
+
+  10 wide women | 8.5 wide men
+
+  10.5 women | 9 men
+
+  10.5 wide women | 9 wide men
+
+  11 women | 9.5 men
+
+  11 wide women | 9.5 wide men
+
+  11.5 women | 10 men
+
+  11.5 wide women | 10 wide men
+
+  12 women | 10.5 men
+
+  12 wide women | 10.5 wide men
+
+  12.5 women | 11 men
+
+  12.5 wide women | 11 wide men
+
+  13 women | 11.5 men
+
+  13 wide women | 11.5 wide men
+
+  13.5 women | 12 men
+
+  13.5 wide women | 12 wide men
+
+  14.5 women | 13 men
+
+  14.5 wide women | 13 wide men
+
+  15.5 women | 14 men
+
+  15.5 wide women | 14 wide men
+
+  16.5 women | 15 men
+
+  16.5 wide women | 15 wide men
+
+  heathered grey
+
+  smoke grey
+
+  black white
+
+  black | black'
+: action_dict:
+    ? !!python/tuple
+    - click[9 women | 7.5 men]
+    - I have clicked for 'b08mwqnpxf' and haven't clicked for '9 women | 7.5 men'.
+      I need to first click '9 women | 7.5 men' and then buy this item.
+    : number: 2
+      qvalue: 0.0
+      reward: 0.0
+  id: 8
+  other_info:
+    action_history:
+    - *id016
+    - *id035
+    - *id039
+    - *id040
+    - !!python/tuple
+      - click[9 women | 7.5 men]
+      - I have clicked for 'b08mwqnpxf' and haven't clicked for '9 women | 7.5 men'.
+        I need to first click '9 women | 7.5 men' and then buy this item.
+    - !!python/tuple
+      - click[9 women | 7.5 men]
+      - I have clicked for 'b08mwqnpxf' and haven't clicked for '9 women | 7.5 men'.
+        I need to first click '9 women | 7.5 men' and then buy this item.
+    - !!python/tuple
+      - click[9 women | 7.5 men]
+      - I have clicked for 'b08mwqnpxf' and haven't clicked for '9 women | 7.5 men'.
+        I need to first click '9 women | 7.5 men' and then buy this item.
+    - *id041
+    last_reward: 0.0
+    number: 2
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked medium.
+
+  size
+
+  [clicked button] medium [clicked button_]
+
+  color
+
+  Crew-Neck Short Sleeve 301 Women''s Summer Printing Loose Blouse Tops T-Shirt Bodysuits
+  Lucky Backless Print Kids Tunic Table Men Cut Square y 271k Bras Pleasure Green
+  flo
+
+  Price: $22.45
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i want a medium sized t-shirt with long sleeves, and price lower than
+  40.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  small
+
+  medium
+
+  large
+
+  x-large
+
+  xx-large
+
+  1-blue
+
+  1-green
+
+  1-hot pink'
+: action_dict:
+    *id042:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+    *id043:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 33
+  other_info:
+    action_history:
+    - *id017
+    - *id019
+    - *id044
+    - *id045
+    last_reward: 0.0
+    number: 2
+    total_reward: 0.0
+? !!python/tuple
+- 'You have clicked navy  |  beige.
+
+  item shape
+
+  color
+
+  [clicked button] navy  |  beige [clicked button_]
+
+  size
+
+  SAFAVIEH Brentwood Collection BNT899G Traditional Oriental Distressed Non-Shedding
+  Living Room Bedroom Dining Home Office Area Rug, 6'' x 9'', Light Grey / Blue
+
+  Price: $112.78
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i would like a 8 ft 6 in x 12 ft rectangular navy rug for my living
+  room, and price lower than 340.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  runner
+
+  rectangular
+
+  round
+
+  square
+
+  blue  |  yellow
+
+  ivory  |  aqua
+
+  ivory  |  grey
+
+  ivory  |  light grey
+
+  light grey  |  blue
+
+  navy  |  beige
+
+  red  |  ivory
+
+  2 ft x 8 ft
+
+  3 ft x 5 ft
+
+  4 ft x 6 ft
+
+  5 ft 3 in x 7 ft 6 in
+
+  6 ft 7 in x 6 ft 7 in
+
+  6 ft x 9 ft
+
+  8 ft x 10 ft
+
+  9 ft x 12 ft
+
+  2 ft x 4 ft
+
+  2 ft x 6 ft
+
+  2 ft x 10 ft
+
+  2 ft x 12 ft
+
+  2 ft x 14 ft
+
+  2 ft x 16 ft
+
+  2 ft x 18 ft
+
+  2 ft x 20 ft
+
+  2 ft x 22 ft
+
+  3 ft x 3 ft
+
+  5 ft x 5 ft
+
+  9 ft x 9 ft
+
+  10 ft x 13 ft
+
+  11 ft x 11 ft
+
+  11 ft x 15 ft
+
+  12 ft x 18 ft'
+: action_dict:
+    *id046:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 52
+  other_info:
+    action_history:
+    - *id018
+    - *id030
+    - *id047
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'color
+
+  BELLEZE Modern 47 Inch Ottoman Bench Footstool Upholstered Faux Leather Decor for
+  Living Room, Entryway, or Bedroom with Storage & Safety-Hinge Lid - Amherst (Rustic
+  Brown)
+
+  Price: $199.99
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for brown black throw pillow case that is double sided
+  and super soft, and price lower than 60.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  beige |  linen
+
+  black |  faux leather
+
+  brown |  faux leather
+
+  cream |  faux leather
+
+  gray |  linen
+
+  red |  faux leather
+
+  rustic brown |  faux leather
+
+  rustic gray |  faux leather'
+: action_dict:
+    ? !!python/tuple
+    - click[beige | linen]
+    - beige | linen conforms to the instruction and has a high value estimation.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[beige | linen]
+    - beige | linen conforms to the instruction.
+    : number: 3
+      qvalue: 0.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[rustic brown | faux leather]
+    - rustic brown | faux leather conforms to the instruction and has a high value
+      estimation.
+    : number: 3
+      qvalue: 0.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[rustic brown | faux leather]
+    - rustic brown | faux leather conforms to the instruction.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 48
+  other_info:
+    action_history:
+    - *id014
+    - *id048
+    last_reward: 0.0
+    number: 8
+    total_reward: 0.0
+? !!python/tuple
+- 'color
+
+  size
+
+  Sharllen Pillow Slippers Non-Slip Super Soft Thick Sole Sandals Platform Massage
+  Shower Bathroom House Slipper for Women/Men Home Slippers for Indoor & Outdoor
+
+  Price: $8.99 to $21.99
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for a slip loafer with vinyl acetate. also choose dark
+  khaki suede color and 7 narrow size, and price lower than 100.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  navy
+
+  orange
+
+  pink
+
+  yellow
+
+  avocado green
+
+  beige
+
+  dark blue
+
+  sky blue
+
+  watermelon red
+
+  white
+
+  black
+
+  grey
+
+  khaki
+
+  green
+
+  5.5-6.5 women | 5-6 men
+
+  7-8 women | 6-7 men
+
+  8.5-9 women | 7-8 men
+
+  9.5-10 women | 8-9 men
+
+  10.5-11 women | 9-10 men'
+: action_dict:
+    *id034:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 17
+  other_info:
+    action_history:
+    - *id013
+    - *id031
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'flavor name
+
+  size
+
+  Lenny & Larry''s The Complete Cookie, 8 Flavor Variety Pack, Soft Baked, 16g Plant
+  Protein, Vegan, Non-GMO, 4 Ounce Cookie (Pack of 16)
+
+  Price: $29.5
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i''m looking for cakes it contains high protein and the low fat, and
+  price lower than 50.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  birthday cake
+
+  choc-o-mint
+
+  chocolate chip
+
+  chocolate donut
+
+  double chocolate
+
+  lemon poppy seed
+
+  oatmeal raisin
+
+  peanut butter
+
+  peanut butter chocolate chip
+
+  salted caramel
+
+  snickerdoodle
+
+  white chocolaty macadamia
+
+  8 flavor variety pack
+
+  complete cookie starter pack
+
+  4 ounce (pack of 12)
+
+  4 ounce (pack of 16)
+
+  starter pack'
+: action_dict:
+    *id049:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 37
+  other_info:
+    action_history:
+    - *id005
+    - *id004
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'flavor name
+
+  size
+
+  Skout Organic Real Food Bars for Kids Fruit Variety Pack (36 Pack) | Organic Snacks
+  for Kids | Plant-Based Nutrition, No Refined Sugar | Vegan | Gluten, Dairy, Grain
+  & Soy Free
+
+  Price: $39.99
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for a 36 count pack of soy free fruit and nut bars, and
+  price lower than 60.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  peanut butter & jelly
+
+  apple pie
+
+  blueberry blast
+
+  french toast frenzy
+
+  raspberry rush
+
+  skout bar sample pack
+
+  fruit variety pack
+
+  peanut butter chocolate chip
+
+  kids bar variety pack
+
+  0.84 ounce (pack of 18)
+
+  18 count
+
+  18 pack
+
+  36 count
+
+  36 pack'
+: action_dict:
+    *id026:
+      number: 3
+      qvalue: 0.0
+      reward: 0.0
+    *id029:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 27
+  other_info:
+    action_history:
+    - *id012
+    - *id023
+    last_reward: 0.0
+    number: 4
+    total_reward: 0.0
+? !!python/tuple
+- 'item shape
+
+  color
+
+  size
+
+  SAFAVIEH Brentwood Collection BNT899G Traditional Oriental Distressed Non-Shedding
+  Living Room Bedroom Dining Home Office Area Rug, 6'' x 9'', Light Grey / Blue
+
+  Price: $112.78
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i would like a 8 ft 6 in x 12 ft rectangular navy rug for my living
+  room, and price lower than 340.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  runner
+
+  rectangular
+
+  round
+
+  square
+
+  blue  |  yellow
+
+  ivory  |  aqua
+
+  ivory  |  grey
+
+  ivory  |  light grey
+
+  light grey  |  blue
+
+  navy  |  beige
+
+  red  |  ivory
+
+  2 ft x 8 ft
+
+  3 ft x 5 ft
+
+  4 ft x 6 ft
+
+  5 ft 3 in x 7 ft 6 in
+
+  6 ft 7 in x 6 ft 7 in
+
+  6 ft x 9 ft
+
+  8 ft x 10 ft
+
+  9 ft x 12 ft
+
+  2 ft x 4 ft
+
+  2 ft x 6 ft
+
+  2 ft x 10 ft
+
+  2 ft x 12 ft
+
+  2 ft x 14 ft
+
+  2 ft x 16 ft
+
+  2 ft x 18 ft
+
+  2 ft x 20 ft
+
+  2 ft x 22 ft
+
+  3 ft x 3 ft
+
+  5 ft x 5 ft
+
+  9 ft x 9 ft
+
+  10 ft x 13 ft
+
+  11 ft x 11 ft
+
+  11 ft x 15 ft
+
+  12 ft x 18 ft'
+: action_dict:
+    *id047:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 51
+  other_info:
+    action_history:
+    - *id018
+    - *id030
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'size
+
+  color
+
+  Crew-Neck Short Sleeve 301 Women''s Summer Printing Loose Blouse Tops T-Shirt Bodysuits
+  Lucky Backless Print Kids Tunic Table Men Cut Square y 271k Bras Pleasure Green
+  flo
+
+  Price: $22.45
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i want a medium sized t-shirt with long sleeves, and price lower than
+  40.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  small
+
+  medium
+
+  large
+
+  x-large
+
+  xx-large
+
+  1-blue
+
+  1-green
+
+  1-hot pink'
+: action_dict:
+    *id044:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+    *id045:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 32
+  other_info:
+    action_history:
+    - *id017
+    - *id019
+    last_reward: 0.0
+    number: 2
+    total_reward: 0.0
+? !!python/tuple
+- 'size
+
+  color
+
+  Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men
+
+  Price: $99.0
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for size 9 women''s fashion sneakers with vinyl acetate,
+  and price lower than 170.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  6 women | 4.5 men
+
+  6 wide women | 4.5 wide men
+
+  6.5 women | 5 men
+
+  6.5 wide women | 5 wide men
+
+  7 women | 5.5 men
+
+  7 wide women | 5.5 wide men
+
+  7.5 women | 6 men
+
+  7.5 wide women | 6 wide men
+
+  8 women | 6.5 men
+
+  8 wide women | 6.5 wide men
+
+  8.5 women | 7 men
+
+  8.5 wide women | 7 wide men
+
+  9 women | 7.5 men
+
+  9 wide women | 7.5 wide men
+
+  9.5 women | 8 men
+
+  9.5 wide women | 8 wide men
+
+  10 women | 8.5 men
+
+  10 wide women | 8.5 wide men
+
+  10.5 women | 9 men
+
+  10.5 wide women | 9 wide men
+
+  11 women | 9.5 men
+
+  11 wide women | 9.5 wide men
+
+  11.5 women | 10 men
+
+  11.5 wide women | 10 wide men
+
+  12 women | 10.5 men
+
+  12 wide women | 10.5 wide men
+
+  12.5 women | 11 men
+
+  12.5 wide women | 11 wide men
+
+  13 women | 11.5 men
+
+  13 wide women | 11.5 wide men
+
+  13.5 women | 12 men
+
+  13.5 wide women | 12 wide men
+
+  14.5 women | 13 men
+
+  14.5 wide women | 13 wide men
+
+  15.5 women | 14 men
+
+  15.5 wide women | 14 wide men
+
+  16.5 women | 15 men
+
+  16.5 wide women | 15 wide men
+
+  heathered grey
+
+  smoke grey
+
+  black white
+
+  black | black'
+: action_dict:
+    *id039:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 6
+  other_info:
+    action_history:
+    - *id016
+    - *id035
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'size
+
+  color
+
+  Natural Scenery Photography Background River Scenery Travel Photography Background
+  Studio Props A36 10x7ft/3x2.2m
+
+  Price: $42.98
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for light weight background having color a6, and price
+  lower than 60.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  5x3ft | 1.5x1m
+
+  7x5ft | 2.1x1.5m
+
+  9x6ft | 2.7x1.8m
+
+  10x7ft | 3x2.2m
+
+  10x10ft | 3x3m
+
+  a1
+
+  a10
+
+  a11
+
+  a12
+
+  a13
+
+  a14
+
+  a15
+
+  a16
+
+  a17
+
+  a18
+
+  a19
+
+  a2
+
+  a20
+
+  a21
+
+  a22
+
+  a23
+
+  a24
+
+  a25
+
+  a26
+
+  a27
+
+  a28
+
+  a29
+
+  a3
+
+  a30
+
+  a31
+
+  a32
+
+  a33
+
+  a34
+
+  a35
+
+  a36
+
+  a37
+
+  a38
+
+  a39
+
+  a4
+
+  a40
+
+  a5
+
+  a6
+
+  a7
+
+  a8
+
+  a9'
+: action_dict:
+    *id022:
+      number: 2
+      qvalue: 0.0
+      reward: 0.0
+  id: 11
+  other_info:
+    action_history:
+    - *id010
+    - *id011
+    last_reward: 0.0
+    number: 2
+    total_reward: 0.0
+? !!python/tuple
+- 'style
+
+  flavor
+
+  size
+
+  NATIERRA Nature''s All Foods Organic Freeze-Dried Pineapples | Non-GMO & Vegan |
+  1.5 Ounce
+
+  Price: $5.79
+
+  Rating: N.A.
+
+  '
+- 'Instruction: i am looking for organic blueberries, and price lower than 40.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  bag
+
+  bundle
+
+  apples
+
+  bananas
+
+  bananas & strawberries
+
+  bananas and strawberries
+
+  beets
+
+  blueberries
+
+  chocolate banana slices
+
+  chocolate covered mango slices
+
+  chocolate mango slices
+
+  chocolate strawberry slices
+
+  mango cheeks
+
+  mango strips
+
+  mangoes
+
+  peas
+
+  pineapples
+
+  pomegranate arils
+
+  raspberries
+
+  roasted corn
+
+  strawberries
+
+  tropical fruits
+
+  strawberries + apples
+
+  strawberries + bananas
+
+  strawberries + blueberries
+
+  strawberries + corn
+
+  strawberries + mangos
+
+  strawberries + peas
+
+  strawberries + pineapple
+
+  strawberries + pomegranate arils
+
+  strawberries + raspberries
+
+  strawberries + tropical fruits
+
+  0.7 ounce (pack of 8)
+
+  1.5 ounce (pack of 1)
+
+  1.5 ounce (pack of 12)
+
+  1.3 ounce (pack of 4)
+
+  1.3 ounce (pack of 8)
+
+  2.5 ounce (pack of 1)
+
+  2.5 ounce (pack of 12)
+
+  1.8 ounce (pack of 1)
+
+  1.2 ounce (pack of 4)
+
+  1.2 ounce (pack of 8)
+
+  1.8 ounce (pack of 12)
+
+  1 ounce (pack of 1)
+
+  1 ounce (pack of 12)
+
+  1.2 ounce
+
+  1.2 ounce (pack of 1)
+
+  1.2 ounce (pack of 12)
+
+  3 ounce (pack of 1)
+
+  8 ounce (pack of 1)
+
+  8 ounce (pack of 6)
+
+  0.7 ounce (pack of 4)
+
+  2.2 ounce (pack of 1)
+
+  2.2 ounce (pack of 12)
+
+  1.3 ounce (pack of 1)
+
+  1.3 ounce (pack of 12)
+
+  1.6 ounce (pack of 1)
+
+  1 count (pack of 1)
+
+  strawberries 1.2 ounce & apples 1.3 ounc...
+
+  strawberries 1.2 ounce & bananas 2.5 oun...
+
+  strawberries 1.2 ounce & blueberries 1.2...
+
+  strawberries 1.2 ounce & roasted corn 1....
+
+  strawberries 1.2 ounce & mangoes 1.5 oun...
+
+  strawberries 1.2 ounce & peas 2.2 ounce
+
+  strawberries 1.2 ounce & pineapples 1.5 ...
+
+  strawberries 1.2 ounce & pomegranate ari...
+
+  strawberries 1.2 ounce & raspberries 1.3...
+
+  strawberries 1.2 ounce & tropical fruits...'
+: action_dict:
+    *id038:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 22
+  other_info:
+    action_history:
+    - *id015
+    - *id020
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "\u3010IPX8 WATERPROOF\u3011Our Swimming Headphones With IPX8 waterproof technology\
+  \ are professional waterproof headphones for swimming. The underwater headphones\
+  \ for swimming are specifically designed for swimming within a water depth of 35ft.\
+  \ Wireless swimming headphones are suitable for diving, swimming, running, cycling,\
+  \ workout, etc.\n\u3010BONE CONDUCTION & OPEN EAR\u3011Bone conduction waterproof\
+  \ earbuds for swimming Bluetooth Works by vibrations. No hurt for hearing because\
+  \ of open-ear headphones. The swimming earbuds realized the hands-free calling mode\
+  \ and provided a clear sound in a noisy environment. To start the related application(Such\
+  \ as Siri), the multifunction button of the waterproof earbuds for swimming can\
+  \ be enabled by the Intelligent Voice assistant function.\n\u30108 HOURS OF MUSIC&\
+  \ 32G RAM\u3011These bone conduction headphones allow you to enjoy music for 8 hours.\
+  \ With Magnetic mode and fast charging technology, the swimming headphones bluetooth\
+  \ underwater can be perfectly suited to your need for continuous use of headphones\
+  \ outdoors. You could play 10000 songs while swimming. 32GB memory MP3 to waterproof\
+  \ mp3 for swimming & Bluetooth two modes make you enjoy music anytime anywhere.\n\
+  \u3010BLUETOOTH 5.0& OT 2.0\u3011This sport headphones wireless for swimming adopt\
+  \ Bluetooth 5.0 technology, having exclusive OT leakage reduction 2.0 technology,\
+  \ reduce sound leakage 90% and protect your privacy. The headphones for swimming\
+  \ wireless range on air are 35ft. The connection speed is faster, the state is more\
+  \ stable, no cable restriction. Supporting a variety of Bluetooth-compatible devices(Music:\
+  \ MP3, WMA, WAV, APE, FLAC; Bluetooth-compatible: iOS, Android, tablets, Mac, PC,\
+  \ etc.)\n\u3010EASY TO USE\u3011Press 3\u201C sec to turn on or off the swimming\
+  \ headphones, and press 2\" sec. for switch devices. One-click to answer the call\
+  \ and play songs. On both sides, you can increase and decrease the volume or change\
+  \ the song with the large buttons raised and marked with \u201C+ \u201Dand \u201C\
+  -\u201D.\n"
+- 'Instruction: i need noise cancelling headphones for my daily running routine, and
+  price lower than 90.00 dollars'
+- 'back to search
+
+  < prev'
+: action_dict:
+    ? !!python/tuple
+    - click[back to search]
+    - The current item doesn't offer the desired options and I need to search for
+      other items.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 42
+  other_info:
+    action_history:
+    - *id009
+    - *id008
+    - *id050
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
