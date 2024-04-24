@@ -105,7 +105,7 @@ def traverse_environment( env: gym.Env
                         , logger: logging.Logger
                         , except_list: Set[int] = set()
                         , max_nb_steps: int = 15
-                        , max_nb_consective_nothings: int = 15
+                        , max_nb_consective_nothings: int = 10
                         ) -> Set[int]:
     #  function traverse_environment {{{ # 
     """
@@ -437,7 +437,7 @@ def main():
                                                 , f.read().splitlines()
                                                 )
                                            )
-    training_set: List[int] = local_mapping[args.trainseta:args.trainsetb]
+    training_set: List[int] = local_mapping[args.trainseta:args.trainsetb]    
     test_set: List[int] = local_mapping[args.testseta:args.testsetb]
     print(f"training_set: {training_set}")
     print(f"test_set: {test_set}")

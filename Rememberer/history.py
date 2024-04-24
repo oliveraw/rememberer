@@ -841,6 +841,8 @@ class HistoryReplay(AbstractHistoryReplay[Key, Action]):
             qvalue_ *= self._multi_gamma
         else:
             qvalue_: float = 0.
+        
+        print()
         new_estimation = new_estimation + qvalue_
         #  }}} New Estimation of Q Value # 
 

@@ -31,9 +31,8 @@ python webshop.py --log-dir logs\
 				  --stop "Discouraged"\
 				  --request-timeout 10.\
 				  --starts-from 0\
-				  --epochs 1\
+				  --epochs 3\
 				  --trainseta 0\
 				  --trainsetb 10\
 				  --testseta 10\
-				  --testsetb 29\
-				  --train
+				  --testsetb 20

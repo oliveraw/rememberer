@@ -21,8 +21,8 @@ python webshop.py --log-dir logs\
 				  --observation-mode text_rich\
 				  --load-replay history-pools/init_pool.wq.yaml\
 				  --load-replay history-pools/init_pool.wq.yaml\
-				  --save-replay history-pools/init_pool.wqu."$date_str".%d.a.yaml\
-				  --save-replay history-pools/init_pool.wqu."$date_str".%d.b.yaml\
+				  --save-replay history-pools/init_baseline_pool.wqu."$date_str".%d.a.yaml\
+				  --save-replay history-pools/init_baseline_pool.wqu."$date_str".%d.b.yaml\
 				  --item-capacity 500\
 				  --action-capacity 20\
 				  --matcher pgpat+insrel\
@@ -33,7 +33,7 @@ python webshop.py --log-dir logs\
 				  --starts-from 0\
 				  --epochs 1\
 				  --trainseta 0\
-				  --trainsetb 10\
-				  --testseta 10\
-				  --testsetb 29\
+				  --trainsetb 11\
+				  --testseta 0\
+				  --testsetb 19\
 				  --train
