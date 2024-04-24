@@ -32,7 +32,7 @@ python webshop.py --log-dir logs\
 				  --request-timeout 10.\
 				  --starts-from 0\
 				  --epochs 3\
-				  --trainseta 500\
-				  --trainsetb 510\
-				  --testseta 0\
-				  --testsetb 100
+				  --trainseta 0\
+				  --trainsetb 10\
+				  --testseta 10\
+				  --testsetb 20

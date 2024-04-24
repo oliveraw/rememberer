@@ -185,7 +185,7 @@ def traverse_environment( env: gym.Env
         logger.info( "\x1b[42mEND!\x1b[0m TaskIdx: %d, TaskId: %d, #Steps: %d(%d), Reward: %.2f, Succeds: %s"
                    , idx, i, nb_steps, nb_nothing_steps, total_reward, str(succeeds)
                    )
-    logger.info( "──────────{:.2f}──────────{:.3f}──────────{:.3f}──────────"\
+    logger.info( "Avg. # steps {:.2f}, Avg. total reward {:.3f}, Avg. Successes {:.3f}"\
                  .format( np.mean(np.asarray(nb_stepss))
                         , np.mean(np.asarray(rewards))
                         , np.mean(np.asarray(succeedss))
@@ -411,7 +411,7 @@ def main():
                   , file_path=(args.file_path if args.file_path is not None and args.file_path != ""
                                             else DEFAULT_FILE_PATH)
                   , num_products=None
-                  , human_goals=True
+                  , human_goals=False # Was True
                   , num_prev_actions=args.prev_actions
                   , num_prev_obs=args.prev_observations
                   )
@@ -437,8 +437,10 @@ def main():
                                                 , f.read().splitlines()
                                                 )
                                            )
-    training_set: List[int] = local_mapping[500+args.trainseta:500+args.trainsetb]
+    training_set: List[int] = local_mapping[args.trainseta:args.trainsetb]
     test_set: List[int] = local_mapping[args.testseta:args.testsetb]
+    print(f"training_set: {training_set}")
+    print(f"test_set: {test_set}")
 
     except_list: Set[int] = set() if getattr(args, "except") is None else set(getattr(args, "except"))
 

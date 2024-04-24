@@ -1,0 +1,2636 @@
+? !!python/tuple
+- '
+
+  Instruction:
+
+  i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and
+  price lower than 40.00 dollars
+
+  [Back to Search]
+
+  Page 1 (Total results: 50)
+
+  [Next >]
+
+  [B078GWRC1J]
+
+  Bright Citrus Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy
+  and Breastfeeding, Contains Organic Calendula 3-Ounce
+
+  $10.99
+
+  [B078GTKVXY]
+
+  Ginger Fresh Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy
+  and Breastfeeding, Contains Organic Calendula 3-Ounce
+
+  $10.99
+
+  [B08KBVJ4XN]
+
+  Barrel and Oak - Aluminum-Free Deodorant, Deodorant for Men, Essential Oil-Based
+  Scent, 24-Hour Odor Protection, Cedar & Patchouli Blend, Gentle on Sensitive Skin
+  (Mountain Sage, 2.7 oz, 2-Pack)
+
+  $15.95
+
+  '
+- Instruction:i would like a 3 ounce bottle of bright citrus deodorant for sensitive
+  skin, and price lower than 40.00 dollars
+- 'back to search
+
+  next >
+
+  b078gwrc1j
+
+  b078gtkvxy
+
+  b08kbvj4xn'
+: action_dict:
+    ? &id002 !!python/tuple
+    - click[b078gwrc1j]
+    - b078gwrc1j and b078gtkvxy are bright citrus deodorant less then 50 dollars.
+      I can check b078gwrc1j first.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 1
+  other_info:
+    action_history:
+    - &id001 !!python/tuple
+      - search[3 ounce bottle bright citrus deodorant sensitive skin]
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- '
+
+  Instruction:
+
+  i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and
+  price lower than 40.00 dollars
+
+  [Back to Search]
+
+  [< Prev]
+
+  scent [assorted scents][bright citrus][calming lavender][ginger fresh][simply non-scents]
+
+  size [travel set (4-pack)][3 ounce (pack of 1)][3-ounce (2-pack)]
+
+  Bright Citrus Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy
+  and Breastfeeding, Contains Organic Calendula 3-Ounce
+
+  Price: $10.99
+
+  Rating: N.A.
+
+  [Description]
+
+  [Features]
+
+  [Reviews]
+
+  [Buy Now]
+
+  '
+- Instruction:i would like a 3 ounce bottle of bright citrus deodorant for sensitive
+  skin, and price lower than 40.00 dollars
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  assorted scents
+
+  bright citrus
+
+  calming lavender
+
+  ginger fresh
+
+  simply non-scents
+
+  travel set (4-pack)
+
+  3 ounce (pack of 1)
+
+  3-ounce (2-pack)'
+: action_dict:
+    ? &id003 !!python/tuple
+    - click[bright citrus]
+    - For 3 ounce bottle of bright citrus deodorant for sensitive skin, the item has
+      options 'bright citrus' and '3 ounce (pack of 1)' and seems good to buy.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 2
+  other_info:
+    action_history:
+    - *id001
+    - *id002
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- '
+
+  WebShop
+
+  Instruction:
+
+  i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and
+  price lower than 40.00 dollars
+
+  [Search]
+
+  '
+- Instruction:i would like a 3 ounce bottle of bright citrus deodorant for sensitive
+  skin, and price lower than 40.00 dollars
+- search
+: action_dict:
+    ? !!python/tuple
+    - click[search]
+    - The search button shouldn't be clicked.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+    *id001:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 0
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- '
+
+  You have clicked bright citrus.
+
+  Instruction:
+
+  i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and
+  price lower than 40.00 dollars
+
+  [Back to Search]
+
+  [< Prev]
+
+  scent [assorted scents][[bright citrus]][calming lavender][ginger fresh][simply
+  non-scents]
+
+  size [travel set (4-pack)][3 ounce (pack of 1)][3-ounce (2-pack)]
+
+  Bright Citrus Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy
+  and Breastfeeding, Contains Organic Calendula 3-Ounce
+
+  Price: $10.99
+
+  Rating: N.A.
+
+  [Description]
+
+  [Features]
+
+  [Reviews]
+
+  [Buy Now]
+
+  '
+- Instruction:i would like a 3 ounce bottle of bright citrus deodorant for sensitive
+  skin, and price lower than 40.00 dollars
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  assorted scents
+
+  bright citrus
+
+  calming lavender
+
+  ginger fresh
+
+  simply non-scents
+
+  travel set (4-pack)
+
+  3 ounce (pack of 1)
+
+  3-ounce (2-pack)'
+: action_dict:
+    ? !!python/tuple
+    - click[3 ounce (pack of 1)]
+    - I have clicked for 'bright citrus' and haven't clicked for '3 ounce (pack of
+      1)'. I need to first click '3 ounce (pack of 1)' and then buy this item.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 3
+  other_info:
+    action_history:
+    - *id001
+    - *id002
+    - *id003
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Instruction:
+
+  Find me anti aging scrubs & body treatments for fine lines, dry skin, dead skin,
+  and price lower than 60.00 dollars
+
+  [button] Back to Search [button_]
+
+  Page 1 (Total results: 10)
+
+  [button] Next > [button_]
+
+
+  [button] B094JTNPWK [button_]
+
+  Salt & Sugar Bundle Kit, Lemon Mint Dead Sea Salt Scrub & Papaya Brown Sugar Scrub.
+  Exfoliate Face & Body
+
+  $26.99
+
+
+  [button] B00OYBADQ2 [button_]
+
+  Grown Alchemist Purifying Body Exfoliant - Pearl, Peppermint & Ylang Ylang - Pearl
+  Scrub Made with Organic Ingredients (170ml / 5.7oz)
+
+  $48.0
+
+
+  [button] B08SH37R9Z [button_]
+
+  zxb-shop Exfoliating Washcloths Bath Shower Silicone Strip for Body Brush Bathing
+  Back Exfoliating Washcloth Accessories Baths Belt Scrubber Sponge Exfoliating Towel
+  for Body (Color : B)
+
+  $33.64
+
+
+  [button] B08LD3XCPQ [button_]
+
+  Premium Tongue Scraper Cleaner, BPA Free Tongue Scrapers, Healthy Oral Care, Soft
+  and 100% Effective Clean Tools, With Travel Carry Case
+
+  $4.29
+
+
+  [button] B07DJJXGB5 [button_]
+
+  Face, Body Acne Spray with Benzoyl Peroxide - Body, Chest, Butt, Back Acne Treatment
+  with Tea Tree Oil - Salicylic Acid Spray for Men, Women, Teens - Cystic Hormonal
+  Acne Treatment - Acne Body Spray
+
+  $19.97
+
+
+  [button] B08D4MH7XQ [button_]
+
+  Neutrogena Stubborn Acne AM Face Treatment with 2.5% Micronized Benzoyl Peroxide
+  Acne Medicine, Oil-Free Daily Facial Treatment to Reduce Size & Redness of Breakouts,
+  Paraben-Free, 2 oz
+
+  $9.2
+
+
+  [button] B005X7IXTK [button_]
+
+  L''Erbolario - Iris - Deodorant Cream - Floral and Powdery Scent - Anti-perspirant
+  Properties - Maintains Freshness, Protects Skin - Made with Marshmallow, 1.6 Oz
+
+  $35.5
+
+
+  [button] B07C8NSB75 [button_]
+
+  L''Oreal Paris Cosmetics Colour Riche Ultra Matte Highly Pigmented Nude Lipstick,
+  Lilac Impulse, 0.13 Ounce
+
+  $7.99
+
+
+  [button] B08HNFTG83 [button_]
+
+  Dark Spot Remover for Face and Body,Brighten & Moisturizes Armpit, Neck, Knees,
+  Private Parts - Body Moisturizer Intimate Skin Cream (orange)
+
+  $15.99
+
+
+  [button] B004VMVLLU [button_]
+
+  Eminence Cinnamon Paprika Body Lotion, 8.4 Ounce
+
+  $39.94
+
+  '
+- 'Instruction: Find me anti aging scrubs & body treatments for fine lines, dry skin,
+  dead skin, and price lower than 60.00 dollars'
+- 'back to search
+
+  next >
+
+  b094jtnpwk
+
+  b00oybadq2
+
+  b08sh37r9z
+
+  b08ld3xcpq
+
+  b07djjxgb5
+
+  b08d4mh7xq
+
+  b005x7ixtk
+
+  b07c8nsb75
+
+  b08hnftg83
+
+  b004vmvllu'
+: action_dict:
+    ? &id005 !!python/tuple
+    - click[b094jtnpwk]
+    - b094jtnpwk conforms to the instruction.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 33
+  other_info:
+    action_history:
+    - &id004 !!python/tuple
+      - 'search[Instruction: Find me anti aging scrubs & body treatments for fine
+        lines, dry skin, dead skin, and price lower than 60.00 dollars]'
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Instruction:
+
+  Find me anti aging scrubs & body treatments for fine lines, dry skin, dead skin,
+  and price lower than 60.00 dollars
+
+  [button] Back to Search [button_]
+
+  [button] < Prev [button_]
+
+  Salt & Sugar Bundle Kit, Lemon Mint Dead Sea Salt Scrub & Papaya Brown Sugar Scrub.
+  Exfoliate Face & Body
+
+  Price: $26.99
+
+  Rating: N.A.
+
+  [button] Description [button_]
+
+  [button] Features [button_]
+
+  [button] Reviews [button_]
+
+  [button] Buy Now [button_]
+
+  '
+- 'Instruction: Find me anti aging scrubs & body treatments for fine lines, dry skin,
+  dead skin, and price lower than 60.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now'
+: action_dict:
+    ? !!python/tuple
+    - click[b094jtnpwk]
+    - b094jtnpwk conforms to the instruction.
+    : number: 2
+      qvalue: 1.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[buy now]
+    - All the options are ready now and I will click "buy now" to complete the shopping.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 34
+  other_info:
+    action_history:
+    - *id004
+    - *id005
+    last_reward: 0.0
+    number: 3
+    total_reward: 0.0
+? !!python/tuple
+- 'Instruction:
+
+  Find me anti perspirant, cruelty free deodorants & antiperspirants with scent: floral,
+  and size: 1.7 ounce (pack of 1), and price lower than 70.00 dollars
+
+  [button] Back to Search [button_]
+
+  Page 1 (Total results: 9)
+
+  [button] Next > [button_]
+
+
+  [button] B005X7IXTK [button_]
+
+  L''Erbolario - Iris - Deodorant Cream - Floral and Powdery Scent - Anti-perspirant
+  Properties - Maintains Freshness, Protects Skin - Made with Marshmallow, 1.6 Oz
+
+  $35.5
+
+
+  [button] B006Y3IDMO [button_]
+
+  OLD SPICE High Endurance Antiperspirant Invisible Solid, Fresh, 3 Oz (Pack of 3)
+
+  $15.3
+
+
+  [button] B004VMVLLU [button_]
+
+  Eminence Cinnamon Paprika Body Lotion, 8.4 Ounce
+
+  $39.94
+
+
+  [button] B0851PC2TM [button_]
+
+  Azzaro Wanted Girl Tonic Eau de Toilette
+
+  $99.0
+
+
+  [button] B07CBFM96F [button_]
+
+  Garnier Hair Care Fructis Style Pixie Play Crafting Cream, 2 Count, Texture, 4 Oz
+
+  $6.98
+
+
+  [button] B08D4MH7XQ [button_]
+
+  Neutrogena Stubborn Acne AM Face Treatment with 2.5% Micronized Benzoyl Peroxide
+  Acne Medicine, Oil-Free Daily Facial Treatment to Reduce Size & Redness of Breakouts,
+  Paraben-Free, 2 oz
+
+  $9.2
+
+
+  [button] B07C8NSB75 [button_]
+
+  L''Oreal Paris Cosmetics Colour Riche Ultra Matte Highly Pigmented Nude Lipstick,
+  Lilac Impulse, 0.13 Ounce
+
+  $7.99
+
+
+  [button] B00IG0RDNI [button_]
+
+  Banana Boat Deep Tanning Spray with Coconut Oil SPF 4, 8 Ounces each (Value Pack
+  of 5)
+
+  $38.14
+
+
+  [button] B01E7UY7AC [button_]
+
+  Calista Embellish Texturizing Definer Travel Size, Salon Quality Lightweight Styling
+  Paste for All Hair Types, 1.7 oz (Packaging May Vary)
+
+  $18.0
+
+  '
+- 'Instruction: Find me anti perspirant, cruelty free deodorants & antiperspirants
+  with scent: floral, and size: 1.7 ounce (pack of 1), and price lower than 70.00
+  dollars'
+- 'back to search
+
+  next >
+
+  b005x7ixtk
+
+  b006y3idmo
+
+  b004vmvllu
+
+  b0851pc2tm
+
+  b07cbfm96f
+
+  b08d4mh7xq
+
+  b07c8nsb75
+
+  b00ig0rdni
+
+  b01e7uy7ac'
+: action_dict:
+    ? &id007 !!python/tuple
+    - click[b005x7ixtk]
+    - b005x7ixtk conforms to the instruction.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 36
+  other_info:
+    action_history:
+    - &id006 !!python/tuple
+      - search[anti perspirant cruelty free deodorants antiperspirants scent floral
+        size 1.7 ounce pack 1]
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Instruction:\nFind me anti perspirant, cruelty free deodorants & antiperspirants\
+  \ with scent: floral, and size: 1.7 ounce (pack of 1), and price lower than 70.00\
+  \ dollars\n[button] Back to Search [button_]\n[button] < Prev [button_]\nscent\n\
+  \  [button] floral [button_]\n  [button] woody scent [button_]\nsize\n  [button]\
+  \ 1.7 ounce (pack of 1) [button_]\n  [button] 1.6 ounce (pack of 1) [button_]\n\
+  L'Erbolario - Iris - Deodorant Cream - Floral and Powdery Scent - Anti-perspirant\
+  \ Properties - Maintains Freshness, Protects Skin - Made with Marshmallow, 1.6 Oz\n\
+  Price: $35.5\nRating: N.A.\n[button] Description [button_]\n[button] Features [button_]\n\
+  [button] Reviews [button_]\n[button] Buy Now [button_]\n"
+- 'Instruction: Find me anti perspirant, cruelty free deodorants & antiperspirants
+  with scent: floral, and size: 1.7 ounce (pack of 1), and price lower than 70.00
+  dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  floral
+
+  woody scent
+
+  1.7 ounce (pack of 1)
+
+  1.6 ounce (pack of 1)'
+: action_dict:
+    ? &id027 !!python/tuple
+    - click[floral]
+    - The item has the desired scent of floral.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 37
+  other_info:
+    action_history:
+    - *id006
+    - *id007
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Instruction:
+
+  Find me anti perspirant, cruelty free deodorants & antiperspirants with scent: woody
+  scent, and size: 1.6 ounce (pack of 1), and price lower than 70.00 dollars
+
+  [button] Back to Search [button_]
+
+  Page 1 (Total results: 9)
+
+  [button] Next > [button_]
+
+
+  [button] B005X7IXTK [button_]
+
+  L''Erbolario - Iris - Deodorant Cream - Floral and Powdery Scent - Anti-perspirant
+  Properties - Maintains Freshness, Protects Skin - Made with Marshmallow, 1.6 Oz
+
+  $35.5
+
+
+  [button] B004VMVLLU [button_]
+
+  Eminence Cinnamon Paprika Body Lotion, 8.4 Ounce
+
+  $39.94
+
+
+  [button] B006Y3IDMO [button_]
+
+  OLD SPICE High Endurance Antiperspirant Invisible Solid, Fresh, 3 Oz (Pack of 3)
+
+  $15.3
+
+
+  [button] B017MOAUGA [button_]
+
+  Demeter Fragrance Library 1 Oz Cologne Spray - Sugar Plum
+
+  $15.0
+
+
+  [button] B07DJJXGB5 [button_]
+
+  Face, Body Acne Spray with Benzoyl Peroxide - Body, Chest, Butt, Back Acne Treatment
+  with Tea Tree Oil - Salicylic Acid Spray for Men, Women, Teens - Cystic Hormonal
+  Acne Treatment - Acne Body Spray
+
+  $19.97
+
+
+  [button] B07CBFM96F [button_]
+
+  Garnier Hair Care Fructis Style Pixie Play Crafting Cream, 2 Count, Texture, 4 Oz
+
+  $6.98
+
+
+  [button] B08D4MH7XQ [button_]
+
+  Neutrogena Stubborn Acne AM Face Treatment with 2.5% Micronized Benzoyl Peroxide
+  Acne Medicine, Oil-Free Daily Facial Treatment to Reduce Size & Redness of Breakouts,
+  Paraben-Free, 2 oz
+
+  $9.2
+
+
+  [button] B07C8NSB75 [button_]
+
+  L''Oreal Paris Cosmetics Colour Riche Ultra Matte Highly Pigmented Nude Lipstick,
+  Lilac Impulse, 0.13 Ounce
+
+  $7.99
+
+
+  [button] B00IG0RDNI [button_]
+
+  Banana Boat Deep Tanning Spray with Coconut Oil SPF 4, 8 Ounces each (Value Pack
+  of 5)
+
+  $38.14
+
+  '
+- 'Instruction: Find me anti perspirant, cruelty free deodorants & antiperspirants
+  with scent: woody scent, and size: 1.6 ounce (pack of 1), and price lower than 70.00
+  dollars'
+- 'back to search
+
+  next >
+
+  b005x7ixtk
+
+  b004vmvllu
+
+  b006y3idmo
+
+  b017moauga
+
+  b07djjxgb5
+
+  b07cbfm96f
+
+  b08d4mh7xq
+
+  b07c8nsb75
+
+  b00ig0rdni'
+: action_dict:
+    ? &id009 !!python/tuple
+    - click[b017moauga]
+    - b017moauga conforms to the instruction.
+    : number: 2
+      qvalue: 0.0
+      reward: 0.0
+  id: 41
+  other_info:
+    action_history:
+    - &id008 !!python/tuple
+      - search[anti perspirant cruelty free deodorants antiperspirants scent woody
+        scent size 1.6 ounce pack 1]
+      - ''
+    last_reward: 0.0
+    number: 2
+    total_reward: 0.0
+? !!python/tuple
+- 'Instruction:
+
+  Find me anti perspirant, cruelty free deodorants & antiperspirants with scent: woody
+  scent, and size: 1.6 ounce (pack of 1), and price lower than 70.00 dollars
+
+  [button] Back to Search [button_]
+
+  Page 1 (Total results: 9)
+
+  [button] Next > [button_]
+
+
+  [button] B005X7IXTK [button_]
+
+  L''Erbolario - Iris - Deodorant Cream - Floral and Powdery Scent - Anti-perspirant
+  Properties - Maintains Freshness, Protects Skin - Made with Marshmallow, 1.6 Oz
+
+  $35.5
+
+
+  [button] B004VMVLLU [button_]
+
+  Eminence Cinnamon Paprika Body Lotion, 8.4 Ounce
+
+  $39.94
+
+
+  [button] B006Y3IDMO [button_]
+
+  OLD SPICE High Endurance Antiperspirant Invisible Solid, Fresh, 3 Oz (Pack of 3)
+
+  $15.3
+
+
+  [clicked button] B017MOAUGA [clicked button_]
+
+  Demeter Fragrance Library 1 Oz Cologne Spray - Sugar Plum
+
+  $15.0
+
+
+  [button] B07DJJXGB5 [button_]
+
+  Face, Body Acne Spray with Benzoyl Peroxide - Body, Chest, Butt, Back Acne Treatment
+  with Tea Tree Oil - Salicylic Acid Spray for Men, Women, Teens - Cystic Hormonal
+  Acne Treatment - Acne Body Spray
+
+  $19.97
+
+
+  [button] B07CBFM96F [button_]
+
+  Garnier Hair Care Fructis Style Pixie Play Crafting Cream, 2 Count, Texture, 4 Oz
+
+  $6.98
+
+
+  [button] B08D4MH7XQ [button_]
+
+  Neutrogena Stubborn Acne AM Face Treatment with 2.5% Micronized Benzoyl Peroxide
+  Acne Medicine, Oil-Free Daily Facial Treatment to Reduce Size & Redness of Breakouts,
+  Paraben-Free, 2 oz
+
+  $9.2
+
+
+  [button] B07C8NSB75 [button_]
+
+  L''Oreal Paris Cosmetics Colour Riche Ultra Matte Highly Pigmented Nude Lipstick,
+  Lilac Impulse, 0.13 Ounce
+
+  $7.99
+
+
+  [button] B00IG0RDNI [button_]
+
+  Banana Boat Deep Tanning Spray with Coconut Oil SPF 4, 8 Ounces each (Value Pack
+  of 5)
+
+  $38.14
+
+  '
+- 'Instruction: Find me anti perspirant, cruelty free deodorants & antiperspirants
+  with scent: woody scent, and size: 1.6 ounce (pack of 1), and price lower than 70.00
+  dollars'
+- 'back to search
+
+  next >
+
+  b005x7ixtk
+
+  b004vmvllu
+
+  b006y3idmo
+
+  b017moauga
+
+  b07djjxgb5
+
+  b07cbfm96f
+
+  b08d4mh7xq
+
+  b07c8nsb75
+
+  b00ig0rdni'
+: action_dict:
+    ? !!python/tuple
+    - click[b017moauga]
+    - b017moauga conforms to the instruction and has the desired properties.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[b017moauga]
+    - b017moauga conforms to the instruction.
+    : number: 2
+      qvalue: 0.0
+      reward: 0.0
+  id: 43
+  other_info:
+    action_history:
+    - *id008
+    - *id009
+    - &id010 !!python/tuple
+      - click[back to search]
+      - I need to click "back to search" to conduct a new search.
+    - !!python/tuple
+      - search[anti perspirant cruelty free deodorants antiperspirants scent woody
+        scent size 1.6 ounce pack 1]
+      - ''
+    - !!python/tuple
+      - click[b017moauga]
+      - b017moauga conforms to the instruction.
+    - &id011 !!python/tuple
+      - search[anti perspirant cruelty free deodorants antiperspirants scent woody
+        scent size 1.6 ounce pack 1]
+      - The new search will help me find the desired item.
+    last_reward: 0.0
+    number: 3
+    total_reward: 0.0
+? !!python/tuple
+- 'Instruction:
+
+  Find me anti perspirant, cruelty free deodorants & antiperspirants with scent: woody
+  scent, and size: 1.6 ounce (pack of 1), and price lower than 70.00 dollars
+
+  [button] Back to Search [button_]
+
+  [button] < Prev [button_]
+
+  Demeter Fragrance Library 1 Oz Cologne Spray - Sugar Plum
+
+  Price: $15.0
+
+  Rating: N.A.
+
+  [button] Description [button_]
+
+  [button] Features [button_]
+
+  [button] Reviews [button_]
+
+  [button] Buy Now [button_]
+
+  '
+- 'Instruction: Find me anti perspirant, cruelty free deodorants & antiperspirants
+  with scent: woody scent, and size: 1.6 ounce (pack of 1), and price lower than 70.00
+  dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now'
+: action_dict:
+    ? !!python/tuple
+    - click[< prev]
+    - The current item does not have the desired properties and I need to go back
+      to search for a more suitable item.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[b017moauga]
+    - The item has the desired properties of being anti perspirant, cruelty free,
+      and having a woody scent and size of 1.6 ounce (pack of 1).
+    : number: 4
+      qvalue: 0.0
+      reward: 0.0
+    *id010:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+    *id011:
+      number: 2
+      qvalue: 0.0
+      reward: 0.0
+  id: 42
+  other_info:
+    action_history:
+    - *id008
+    - *id009
+    last_reward: 0.0
+    number: 8
+    total_reward: 0.0
+? !!python/tuple
+- 'Instruction:
+
+  Find me bpa free, easy clean tongue cleaners with storage case for bad breath, and
+  price lower than 30.00 dollars
+
+  [button] Back to Search [button_]
+
+  Page 1 (Total results: 6)
+
+  [button] Next > [button_]
+
+
+  [button] B08LD3XCPQ [button_]
+
+  Premium Tongue Scraper Cleaner, BPA Free Tongue Scrapers, Healthy Oral Care, Soft
+  and 100% Effective Clean Tools, With Travel Carry Case
+
+  $4.29
+
+
+  [button] B08J3WFRBT [button_]
+
+  LotFancy 70ml 2.4Oz Travel Bottles with Keychain,15pc Empty Plastic Carabiner Bottle,
+  Clear Bottle, Squeeze Container for Hand Sanitizer, Lotion, Cosmetics, Leakproof,
+  Refillable, 15 labels Included
+
+  $11.96
+
+
+  [button] B078T46X81 [button_]
+
+  Sparkle-Dent Denture Whitener and Cleaner
+
+  $27.95
+
+
+  [button] B001EHF3KK [button_]
+
+  Listerine Smart Rinse Kids Mouthwash Mild Mint
+
+  $14.7
+
+
+  [button] B08GFNJN5R [button_]
+
+  Byootique Classic Black Makeup Train Case Soft Sided Barber Cosmetic Backpack Organize
+  Storage Carry on Travel with Side Pocket Removable Bag
+
+  $79.9
+
+
+  [button] B08X2PKKB2 [button_]
+
+  1 oz Aluminum Tin Jar with Screw Cap Refillable Container for Cosmetic, Lip Balm,
+  Cream, Rose Gold 12 Pcs.
+
+  $7.99
+
+  '
+- 'Instruction: Find me bpa free, easy clean tongue cleaners with storage case for
+  bad breath, and price lower than 30.00 dollars'
+- 'back to search
+
+  next >
+
+  b08ld3xcpq
+
+  b08j3wfrbt
+
+  b078t46x81
+
+  b001ehf3kk
+
+  b08gfnjn5r
+
+  b08x2pkkb2'
+: action_dict:
+    ? &id013 !!python/tuple
+    - click[b08ld3xcpq]
+    - b08ld3xcpq is a bpa free, easy clean tongue cleaner with a storage case for
+      bad breath and is priced lower than 30.00 dollars.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 27
+  other_info:
+    action_history:
+    - &id012 !!python/tuple
+      - search[bpa free easy clean tongue cleaners storage case bad breath]
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Instruction:
+
+  Find me bpa free, easy clean tongue cleaners with storage case for bad breath, and
+  price lower than 30.00 dollars
+
+  [button] Back to Search [button_]
+
+  [button] < Prev [button_]
+
+  Premium Tongue Scraper Cleaner, BPA Free Tongue Scrapers, Healthy Oral Care, Soft
+  and 100% Effective Clean Tools, With Travel Carry Case
+
+  Price: $4.29
+
+  Rating: N.A.
+
+  [button] Description [button_]
+
+  [button] Features [button_]
+
+  [button] Reviews [button_]
+
+  [button] Buy Now [button_]
+
+  '
+- 'Instruction: Find me bpa free, easy clean tongue cleaners with storage case for
+  bad breath, and price lower than 30.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now'
+: action_dict:
+    ? !!python/tuple
+    - click[buy now]
+    - All the requirements are ready and I have clicked on the desired option. I can
+      now click "buy now" to purchase the item.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 28
+  other_info:
+    action_history:
+    - *id012
+    - *id013
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Instruction:
+
+  Find me easy carry, high quality bags & cases with color: blue, and price lower
+  than 20.00 dollars
+
+  [button] Back to Search [button_]
+
+  Page 1 (Total results: 3)
+
+  [button] Next > [button_]
+
+
+  [button] B09JJ5W1N4 [button_]
+
+  Lotus78 Makeup Bag. Cosmetic Bag for Women. Elegant Toiletry Bag for Women. Make
+  Up Bag with Brush Organizer. Travel Makeup Bag for Girls. Makeup Bag Organizer with
+  Detachable Small Cosmetic Bag. (Pink)
+
+  $9.99
+
+
+  [button] B08GFNJN5R [button_]
+
+  Byootique Classic Black Makeup Train Case Soft Sided Barber Cosmetic Backpack Organize
+  Storage Carry on Travel with Side Pocket Removable Bag
+
+  $79.9
+
+
+  [button] B08LD3XCPQ [button_]
+
+  Premium Tongue Scraper Cleaner, BPA Free Tongue Scrapers, Healthy Oral Care, Soft
+  and 100% Effective Clean Tools, With Travel Carry Case
+
+  $4.29
+
+  '
+- 'Instruction: Find me easy carry, high quality bags & cases with color: blue, and
+  price lower than 20.00 dollars'
+- 'back to search
+
+  next >
+
+  b09jj5w1n4
+
+  b08gfnjn5r
+
+  b08ld3xcpq'
+: action_dict:
+    ? &id015 !!python/tuple
+    - click[b09jj5w1n4]
+    - b09jj5w1n4 is an easy carry, high quality bag & case with a blue color and is
+      priced lower than 20.00 dollars.
+    : number: 1
+      qvalue: 0.75
+      reward: 0.0
+  id: 30
+  other_info:
+    action_history:
+    - &id014 !!python/tuple
+      - search[easy carry high quality bags cases color blue]
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Instruction:\nFind me easy carry, high quality bags & cases with color: blue, and\
+  \ price lower than 20.00 dollars\n[button] Back to Search [button_]\n[button] <\
+  \ Prev [button_]\ncolor\n  [button] blue [button_]\n  [button] green [button_]\n\
+  \  [button] grey [button_]\n  [button] pink [button_]\nLotus78 Makeup Bag. Cosmetic\
+  \ Bag for Women. Elegant Toiletry Bag for Women. Make Up Bag with Brush Organizer.\
+  \ Travel Makeup Bag for Girls. Makeup Bag Organizer with Detachable Small Cosmetic\
+  \ Bag. (Pink)\nPrice: $9.99\nRating: N.A.\n[button] Description [button_]\n[button]\
+  \ Features [button_]\n[button] Reviews [button_]\n[button] Buy Now [button_]\n"
+- 'Instruction: Find me easy carry, high quality bags & cases with color: blue, and
+  price lower than 20.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  blue
+
+  green
+
+  grey
+
+  pink'
+: action_dict:
+    ? !!python/tuple
+    - click[buy now]
+    - All the requirements are ready and I have clicked on the desired color option.
+      I can now click "buy now" to purchase the item.
+    : number: 1
+      qvalue: 0.75
+      reward: 0.0
+  id: 31
+  other_info:
+    action_history:
+    - *id014
+    - *id015
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Instruction:\nFind me hair loss products with coconut oil for hair loss, and price\
+  \ lower than 30.00 dollars\n[button] Back to Search [button_]\nPage 1 (Total results:\
+  \ 5)\n[button] Next > [button_]\n\n[button] B00ECNSAXU [button_]\nSHISEIDO Professional\
+  \ - The Hair Care Adenovital - Scalp Treatment - Thinning Hair - 130g x 2\n$59.9\n\
+  \n[button] B07B41K2VV [button_]\nNair Hair Remover Sensitive Formula (Pack of 2)\n\
+  $16.53\n\n[button] B07K6TCDR9 [button_]\ntgin Miracle Repairx Protective Leave In\
+  \ Conditioner For Natural Hair - Dry Hair - Curly Hair - 13 Oz\n$11.59\n\n[button]\
+  \ B07BFLJQCX [button_]\nartnaturals Black Castor Oil Conditioner \u2013 (16 Fl Oz\
+  \ / 473ml) \u2013 Strengthen, Grow and Restore \u2013 Jamaican Castor \u2013 For\
+  \ Color Treated Hair\n$11.95\n\n[button] B079HGJ5MH [button_]\nLinange Milk and\
+  \ Keratin Mask 500ml; Softening, Strengthening, Moisturizing, Nourishing, Hair Care\
+  \ Product; Hair Mask w/Proteins for Men and Women \u2013 for Dry, Frizzy, Damaged,\
+  \ Curly Hair\n$49.95\n"
+- 'Instruction: Find me hair loss products with coconut oil for hair loss, and price
+  lower than 30.00 dollars'
+- 'back to search
+
+  next >
+
+  b00ecnsaxu
+
+  b07b41k2vv
+
+  b07k6tcdr9
+
+  b07bfljqcx
+
+  b079hgj5mh'
+: action_dict:
+    ? !!python/tuple
+    - click[b07b41k2vv]
+    - b07b41k2vv is a hair loss product with coconut oil and is priced lower than
+      30.00 dollars.
+    : number: 1
+      qvalue: 0.3333333432674408
+      reward: 0.0
+    ? &id017 !!python/tuple
+    - click[b07b41k2vv]
+    - b07b41k2vv is not a hair loss product with coconut oil and is priced higher
+      than 30.00 dollars.
+    : number: 1
+      qvalue: 0.3333333432674408
+      reward: 0.0
+  id: 24
+  other_info:
+    action_history:
+    - &id016 !!python/tuple
+      - 'search[Instruction: Find me hair loss products with coconut oil for hair
+        loss, and price lower than 30.00 dollars]'
+      - ''
+    last_reward: 0.0
+    number: 2
+    total_reward: 0.0
+? !!python/tuple
+- 'Instruction:
+
+  Find me hair loss products with coconut oil for hair loss, and price lower than
+  30.00 dollars
+
+  [button] Back to Search [button_]
+
+  [button] < Prev [button_]
+
+  Nair Hair Remover Sensitive Formula (Pack of 2)
+
+  Price: $16.53
+
+  Rating: N.A.
+
+  [button] Description [button_]
+
+  [button] Features [button_]
+
+  [button] Reviews [button_]
+
+  [button] Buy Now [button_]
+
+  '
+- 'Instruction: Find me hair loss products with coconut oil for hair loss, and price
+  lower than 30.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now'
+: action_dict:
+    ? !!python/tuple
+    - click[b07b41k2vv]
+    - This item meets the desired criteria of being a hair loss product with coconut
+      oil and priced lower than 30.00 dollars.
+    : number: 2
+      qvalue: 0.3333333432674408
+      reward: 0.0
+    ? !!python/tuple
+    - click[b07b41k2vv]
+    - b07b41k2vv is a hair loss product with coconut oil and is priced lower than
+      30.00 dollars. This meets the desired criteria.
+    : number: 1
+      qvalue: 0.3333333432674408
+      reward: 0.0
+    ? !!python/tuple
+    - click[back to search]
+    - The current item does not meet the desired criteria and I need to search for
+      other items.
+    : number: 1
+      qvalue: 0.3333333432674408
+      reward: 0.0
+    ? !!python/tuple
+    - click[buy now]
+    - All the desired criteria are met and I can proceed to buy this item.
+    : number: 1
+      qvalue: 0.3333333432674408
+      reward: 0.0
+  id: 25
+  other_info:
+    action_history:
+    - *id016
+    - *id017
+    last_reward: 0.0
+    number: 5
+    total_reward: 0.0
+? !!python/tuple
+- 'Instruction:
+
+  Find me leak proof, bpa free, easy clean refillable containers with travel bottles
+  with size: 5 packs, and price lower than 40.00 dollars
+
+  [button] Back to Search [button_]
+
+  Page 1 (Total results: 7)
+
+  [button] Next > [button_]
+
+
+  [button] B08J3WFRBT [button_]
+
+  LotFancy 70ml 2.4Oz Travel Bottles with Keychain,15pc Empty Plastic Carabiner Bottle,
+  Clear Bottle, Squeeze Container for Hand Sanitizer, Lotion, Cosmetics, Leakproof,
+  Refillable, 15 labels Included
+
+  $11.96
+
+
+  [button] B08W568RSB [button_]
+
+  RMISODO 15 Pieces 50ml Empty Refillable Roll On Bottles, Plastic Roller Bottles,
+  Reusable Leak-Proof Deodorant Containers with Roller Balls for Essential Oil Perfume
+  Fragrance, White
+
+  $16.99
+
+
+  [button] B08LD3XCPQ [button_]
+
+  Premium Tongue Scraper Cleaner, BPA Free Tongue Scrapers, Healthy Oral Care, Soft
+  and 100% Effective Clean Tools, With Travel Carry Case
+
+  $4.29
+
+
+  [button] B07QXZL1K5 [button_]
+
+  Bamboo Cotton Swab 1000PCS Double Cotton Buds bamboo Cotton Bud Eco organic bamboo
+  ear swab for Ear Skin Jewelry Art Pet Cleaning Craft Paper Packaging (5 PACKS OF
+  200 STICKS)
+
+  $13.99
+
+
+  [button] B08SH37R9Z [button_]
+
+  zxb-shop Exfoliating Washcloths Bath Shower Silicone Strip for Body Brush Bathing
+  Back Exfoliating Washcloth Accessories Baths Belt Scrubber Sponge Exfoliating Towel
+  for Body (Color : B)
+
+  $33.64
+
+
+  [button] B08X2PKKB2 [button_]
+
+  1 oz Aluminum Tin Jar with Screw Cap Refillable Container for Cosmetic, Lip Balm,
+  Cream, Rose Gold 12 Pcs.
+
+  $7.99
+
+
+  [button] B089T9S33Y [button_]
+
+  Pure-aid 100% Pure Cotton Balls | Lint Free | Soft and Gentle | Hypoallergenic 100%
+  Pure Cotton Balls | Bargain Finds | Various Uses | 300 count each | 2 Pack (2 Pack
+  (200 Count))
+
+  $4.49
+
+  '
+- 'Instruction: Find me leak proof, bpa free, easy clean refillable containers with
+  travel bottles with size: 5 packs, and price lower than 40.00 dollars'
+- 'back to search
+
+  next >
+
+  b08j3wfrbt
+
+  b08w568rsb
+
+  b08ld3xcpq
+
+  b07qxzl1k5
+
+  b08sh37r9z
+
+  b08x2pkkb2
+
+  b089t9s33y'
+: action_dict:
+    ? &id019 !!python/tuple
+    - click[b08j3wfrbt]
+    - b08j3wfrbt is a leak proof, bpa free, easy clean refillable container with travel
+      bottles in a pack of 5 and is priced lower than 40.00 dollars.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 17
+  other_info:
+    action_history:
+    - &id018 !!python/tuple
+      - 'search[Instruction: Find me leak proof, bpa free, easy clean refillable containers
+        with travel bottles with size: 5 packs, and price lower than 40.00 dollars]'
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Instruction:\nFind me leak proof, bpa free, easy clean refillable containers with\
+  \ travel bottles with size: 5 packs, and price lower than 40.00 dollars\n[button]\
+  \ Back to Search [button_]\n[button] < Prev [button_]\nsize\n  [button] 5 packs\
+  \ [button_]\n  [button] 15 packs [button_]\nLotFancy 70ml 2.4Oz Travel Bottles with\
+  \ Keychain,15pc Empty Plastic Carabiner Bottle, Clear Bottle, Squeeze Container\
+  \ for Hand Sanitizer, Lotion, Cosmetics, Leakproof, Refillable, 15 labels Included\n\
+  Price: $11.96\nRating: N.A.\n[button] Description [button_]\n[button] Features [button_]\n\
+  [button] Reviews [button_]\n[button] Buy Now [button_]\n"
+- 'Instruction: Find me leak proof, bpa free, easy clean refillable containers with
+  travel bottles with size: 5 packs, and price lower than 40.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  5 packs
+
+  15 packs'
+: action_dict:
+    ? &id028 !!python/tuple
+    - click[5 packs]
+    - I have searched for leak proof, bpa free, easy clean refillable containers with
+      travel bottles and found a 5 pack option for a good price. I should click on
+      this option to view more details and potentially buy it.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 18
+  other_info:
+    action_history:
+    - *id018
+    - *id019
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Instruction:
+
+  Find me oil free, clinically proven, paraben free scrubs & body treatments for dead
+  skin with style: daily acne facial serum, and price lower than 30.00 dollars
+
+  [button] Back to Search [button_]
+
+  Page 1 (Total results: 9)
+
+  [button] Next > [button_]
+
+
+  [button] B08D4MH7XQ [button_]
+
+  Neutrogena Stubborn Acne AM Face Treatment with 2.5% Micronized Benzoyl Peroxide
+  Acne Medicine, Oil-Free Daily Facial Treatment to Reduce Size & Redness of Breakouts,
+  Paraben-Free, 2 oz
+
+  $9.2
+
+
+  [button] B07DJJXGB5 [button_]
+
+  Face, Body Acne Spray with Benzoyl Peroxide - Body, Chest, Butt, Back Acne Treatment
+  with Tea Tree Oil - Salicylic Acid Spray for Men, Women, Teens - Cystic Hormonal
+  Acne Treatment - Acne Body Spray
+
+  $19.97
+
+
+  [button] B094JTNPWK [button_]
+
+  Salt & Sugar Bundle Kit, Lemon Mint Dead Sea Salt Scrub & Papaya Brown Sugar Scrub.
+  Exfoliate Face & Body
+
+  $26.99
+
+
+  [button] B08LD3XCPQ [button_]
+
+  Premium Tongue Scraper Cleaner, BPA Free Tongue Scrapers, Healthy Oral Care, Soft
+  and 100% Effective Clean Tools, With Travel Carry Case
+
+  $4.29
+
+
+  [button] B07B41K2VV [button_]
+
+  Nair Hair Remover Sensitive Formula (Pack of 2)
+
+  $16.53
+
+
+  [button] B00OYBADQ2 [button_]
+
+  Grown Alchemist Purifying Body Exfoliant - Pearl, Peppermint & Ylang Ylang - Pearl
+  Scrub Made with Organic Ingredients (170ml / 5.7oz)
+
+  $48.0
+
+
+  [button] B08SH37R9Z [button_]
+
+  zxb-shop Exfoliating Washcloths Bath Shower Silicone Strip for Body Brush Bathing
+  Back Exfoliating Washcloth Accessories Baths Belt Scrubber Sponge Exfoliating Towel
+  for Body (Color : B)
+
+  $33.64
+
+
+  [button] B09B321GS4 [button_]
+
+  COSRX Acne Blemish Spot Drying Lotion 1.01 fl. oz / 30ml Dry and Reduce Blemish
+  Spot, Pimple, Whitehead, Spot Treatment
+
+  $16.0
+
+
+  [button] B08HNFTG83 [button_]
+
+  Dark Spot Remover for Face and Body,Brighten & Moisturizes Armpit, Neck, Knees,
+  Private Parts - Body Moisturizer Intimate Skin Cream (orange)
+
+  $15.99
+
+  '
+- 'Instruction: Find me oil free, clinically proven, paraben free scrubs & body treatments
+  for dead skin with style: daily acne facial serum, and price lower than 30.00 dollars'
+- 'back to search
+
+  next >
+
+  b08d4mh7xq
+
+  b07djjxgb5
+
+  b094jtnpwk
+
+  b08ld3xcpq
+
+  b07b41k2vv
+
+  b00oybadq2
+
+  b08sh37r9z
+
+  b09b321gs4
+
+  b08hnftg83'
+: action_dict:
+    ? &id021 !!python/tuple
+    - click[b08d4mh7xq]
+    - 'b08d4mh7xq is an oil-free, clinically proven, paraben-free scrub for dead skin
+      with style: daily acne facial serum and is priced lower than 30.00 dollars.'
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 5
+  other_info:
+    action_history:
+    - &id020 !!python/tuple
+      - 'search[oil free, clinically proven, paraben free scrubs & body treatments
+        for dead skin with style: daily acne facial serum]'
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "Instruction:\nFind me oil free, clinically proven, paraben free scrubs & body treatments\
+  \ for dead skin with style: daily acne facial serum, and price lower than 30.00\
+  \ dollars\n[button] Back to Search [button_]\n[button] < Prev [button_]\nstyle\n\
+  \  [button] am face treatment [button_]\n  [button] acne am face treatment with\
+  \ benzoyl peroxide [button_]\n  [button] daily acne facial serum [button_]\n  [button]\
+  \ marks pm treatment with retinol sa [button_]\n  [button] texture daily acne gel\
+  \ facial cleanser [button_]\nNeutrogena Stubborn Acne AM Face Treatment with 2.5%\
+  \ Micronized Benzoyl Peroxide Acne Medicine, Oil-Free Daily Facial Treatment to\
+  \ Reduce Size & Redness of Breakouts, Paraben-Free, 2 oz\nPrice: $9.2\nRating: N.A.\n\
+  [button] Description [button_]\n[button] Features [button_]\n[button] Reviews [button_]\n\
+  [button] Buy Now [button_]\n"
+- 'Instruction: Find me oil free, clinically proven, paraben free scrubs & body treatments
+  for dead skin with style: daily acne facial serum, and price lower than 30.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  am face treatment
+
+  acne am face treatment with benzoyl peroxide
+
+  daily acne facial serum
+
+  marks pm treatment with retinol sa
+
+  texture daily acne gel facial cleanser'
+: action_dict:
+    ? &id029 !!python/tuple
+    - click[daily acne facial serum]
+    - 'For oil-free, clinically proven, paraben-free scrubs & body treatments for
+      dead skin with style: daily acne facial serum, the item has options ''am face
+      treatment'', ''acne am face treatment with benzoyl peroxide'', ''daily acne
+      facial serum'', ''marks pm treatment with retinol sa'', and ''texture daily
+      acne gel facial cleanser''. The desired item is ''daily acne facial serum''
+      and it is priced lower than 30.00 dollars.'
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 6
+  other_info:
+    action_history:
+    - *id020
+    - *id021
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Instruction:
+
+  Find me oil free, clinically proven, paraben free scrubs & body treatments for dead
+  skin with style: texture daily acne gel facial cleanser, and price lower than 30.00
+  dollars
+
+  [button] Back to Search [button_]
+
+  Page 1 (Total results: 9)
+
+  [button] Next > [button_]
+
+
+  [button] B08D4MH7XQ [button_]
+
+  Neutrogena Stubborn Acne AM Face Treatment with 2.5% Micronized Benzoyl Peroxide
+  Acne Medicine, Oil-Free Daily Facial Treatment to Reduce Size & Redness of Breakouts,
+  Paraben-Free, 2 oz
+
+  $9.2
+
+
+  [button] B07DJJXGB5 [button_]
+
+  Face, Body Acne Spray with Benzoyl Peroxide - Body, Chest, Butt, Back Acne Treatment
+  with Tea Tree Oil - Salicylic Acid Spray for Men, Women, Teens - Cystic Hormonal
+  Acne Treatment - Acne Body Spray
+
+  $19.97
+
+
+  [button] B08SH37R9Z [button_]
+
+  zxb-shop Exfoliating Washcloths Bath Shower Silicone Strip for Body Brush Bathing
+  Back Exfoliating Washcloth Accessories Baths Belt Scrubber Sponge Exfoliating Towel
+  for Body (Color : B)
+
+  $33.64
+
+
+  [button] B08LD3XCPQ [button_]
+
+  Premium Tongue Scraper Cleaner, BPA Free Tongue Scrapers, Healthy Oral Care, Soft
+  and 100% Effective Clean Tools, With Travel Carry Case
+
+  $4.29
+
+
+  [button] B094JTNPWK [button_]
+
+  Salt & Sugar Bundle Kit, Lemon Mint Dead Sea Salt Scrub & Papaya Brown Sugar Scrub.
+  Exfoliate Face & Body
+
+  $26.99
+
+
+  [button] B07B41K2VV [button_]
+
+  Nair Hair Remover Sensitive Formula (Pack of 2)
+
+  $16.53
+
+
+  [button] B00OYBADQ2 [button_]
+
+  Grown Alchemist Purifying Body Exfoliant - Pearl, Peppermint & Ylang Ylang - Pearl
+  Scrub Made with Organic Ingredients (170ml / 5.7oz)
+
+  $48.0
+
+
+  [button] B07C8NSB75 [button_]
+
+  L''Oreal Paris Cosmetics Colour Riche Ultra Matte Highly Pigmented Nude Lipstick,
+  Lilac Impulse, 0.13 Ounce
+
+  $7.99
+
+
+  [button] B09B321GS4 [button_]
+
+  COSRX Acne Blemish Spot Drying Lotion 1.01 fl. oz / 30ml Dry and Reduce Blemish
+  Spot, Pimple, Whitehead, Spot Treatment
+
+  $16.0
+
+  '
+- 'Instruction: Find me oil free, clinically proven, paraben free scrubs & body treatments
+  for dead skin with style: texture daily acne gel facial cleanser, and price lower
+  than 30.00 dollars'
+- 'back to search
+
+  next >
+
+  b08d4mh7xq
+
+  b07djjxgb5
+
+  b08sh37r9z
+
+  b08ld3xcpq
+
+  b094jtnpwk
+
+  b07b41k2vv
+
+  b00oybadq2
+
+  b07c8nsb75
+
+  b09b321gs4'
+: action_dict:
+    ? &id023 !!python/tuple
+    - click[b07djjxgb5]
+    - b07djjxgb5 conforms to the instruction.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 11
+  other_info:
+    action_history:
+    - &id022 !!python/tuple
+      - 'search[Instruction: Find me oil free, clinically proven, paraben free scrubs
+        & body treatments for dead skin with style: texture daily acne gel facial
+        cleanser, and price lower than 30.00 dollars]'
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Instruction:
+
+  Find me oil free, clinically proven, paraben free scrubs & body treatments for dead
+  skin with style: texture daily acne gel facial cleanser, and price lower than 30.00
+  dollars
+
+  [button] Back to Search [button_]
+
+  [button] < Prev [button_]
+
+  '
+- 'Instruction: Find me oil free, clinically proven, paraben free scrubs & body treatments
+  for dead skin with style: texture daily acne gel facial cleanser, and price lower
+  than 30.00 dollars'
+- 'back to search
+
+  < prev'
+: action_dict:
+    ? !!python/tuple
+    - click[back to search]
+    - The current item doesn't offer the desired options and I need to search for
+      other items.
+    : number: 1
+      qvalue: 0.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[texture daily acne gel facial cleanser]
+    - texture daily acne gel facial cleanser conforms to the instruction.
+    : number: 6
+      qvalue: 0.0
+      reward: 0.0
+  id: 15
+  other_info:
+    action_history:
+    - *id022
+    - *id023
+    - &id024 !!python/tuple
+      - click[acne body spray]
+      - acne body spray conforms to the instruction.
+    - &id030 !!python/tuple
+      - click[acne face & body wash]
+      - acne face & body wash conforms to the instruction.
+    - &id031 !!python/tuple
+      - click[description]
+      - description conforms to the instruction.
+    last_reward: 0.0
+    number: 7
+    total_reward: 0.0
+? !!python/tuple
+- "Instruction:\nFind me oil free, clinically proven, paraben free scrubs & body treatments\
+  \ for dead skin with style: texture daily acne gel facial cleanser, and price lower\
+  \ than 30.00 dollars\n[button] Back to Search [button_]\n[button] < Prev [button_]\n\
+  scent\n  [button] acne body spray [button_]\n  [button] acne face & body wash [button_]\n\
+  Face, Body Acne Spray with Benzoyl Peroxide - Body, Chest, Butt, Back Acne Treatment\
+  \ with Tea Tree Oil - Salicylic Acid Spray for Men, Women, Teens - Cystic Hormonal\
+  \ Acne Treatment - Acne Body Spray\nPrice: $19.97\nRating: N.A.\n[button] Description\
+  \ [button_]\n[button] Features [button_]\n[button] Reviews [button_]\n[button] Buy\
+  \ Now [button_]\n"
+- 'Instruction: Find me oil free, clinically proven, paraben free scrubs & body treatments
+  for dead skin with style: texture daily acne gel facial cleanser, and price lower
+  than 30.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  acne body spray
+
+  acne face & body wash'
+: action_dict:
+    *id024:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 12
+  other_info:
+    action_history:
+    - *id022
+    - *id023
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Instruction:
+
+  Find me water resistant hair cutting tools for beauty salon, hair styling with color:
+  hot pink (hook & loop closure), and price lower than 30.00 dollars
+
+  [button] Back to Search [button_]
+
+  Page 1 (Total results: 4)
+
+  [button] Next > [button_]
+
+
+  [button] B08DQWNJPQ [button_]
+
+  Noverlife Pure White Makeup Cape, Short Comb-Out Beard Shaving Smock, Beauty Salon
+  Styling Bib for Client, Barber Shop Shampoo Cloth Makeover Shawl for Cosmetics Artist
+  Beautician Hairdresser
+
+  $7.99
+
+
+  [button] B01E7UY7AC [button_]
+
+  Calista Embellish Texturizing Definer Travel Size, Salon Quality Lightweight Styling
+  Paste for All Hair Types, 1.7 oz (Packaging May Vary)
+
+  $18.0
+
+
+  [button] B084PCSG5H [button_]
+
+  Colossal Innovative Nano Glass Callus Remover Foot File - Coarse Foot Rasp Colossal
+  Foot Scrubber Salon Home Pedicure Foot Care Tool for Soft Feet (1PC)
+
+  $9.9
+
+
+  [button] B07CBFM96F [button_]
+
+  Garnier Hair Care Fructis Style Pixie Play Crafting Cream, 2 Count, Texture, 4 Oz
+
+  $6.98
+
+  '
+- 'Instruction: Find me water resistant hair cutting tools for beauty salon, hair
+  styling with color: hot pink (hook & loop closure), and price lower than 30.00 dollars'
+- 'back to search
+
+  next >
+
+  b08dqwnjpq
+
+  b01e7uy7ac
+
+  b084pcsg5h
+
+  b07cbfm96f'
+: action_dict:
+    ? &id026 !!python/tuple
+    - click[b084pcsg5h]
+    - b084pcsg5h is a water resistant hair cutting tool for beauty salon with hot
+      pink color and is priced lower than 30.00 dollars.
+    : number: 1
+      qvalue: 0.019999999552965164
+      reward: 0.0
+  id: 21
+  other_info:
+    action_history:
+    - &id025 !!python/tuple
+      - 'search[water resistant hair cutting tools beauty salon hair styling color:
+        hot pink (hook & loop closure) price lower than 30.00 dollars]'
+      - ''
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- 'Instruction:
+
+  Find me water resistant hair cutting tools for beauty salon, hair styling with color:
+  hot pink (hook & loop closure), and price lower than 30.00 dollars
+
+  [button] Back to Search [button_]
+
+  [button] < Prev [button_]
+
+  Colossal Innovative Nano Glass Callus Remover Foot File - Coarse Foot Rasp Colossal
+  Foot Scrubber Salon Home Pedicure Foot Care Tool for Soft Feet (1PC)
+
+  Price: $9.9
+
+  Rating: N.A.
+
+  [button] Description [button_]
+
+  [button] Features [button_]
+
+  [button] Reviews [button_]
+
+  [button] Buy Now [button_]
+
+  '
+- 'Instruction: Find me water resistant hair cutting tools for beauty salon, hair
+  styling with color: hot pink (hook & loop closure), and price lower than 30.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now'
+: action_dict:
+    ? !!python/tuple
+    - click[b084pcsg5h]
+    - b084pcsg5h is the desired item with all the required features and price lower
+      than 30.00 dollars.
+    : number: 1
+      qvalue: 0.019999999552965164
+      reward: 0.0
+    ? !!python/tuple
+    - click[buy now]
+    - I have clicked all the required options and this item meets all the requirements.
+      I can now click "buy now" to finish the shopping.
+    : number: 1
+      qvalue: 0.019999999552965164
+      reward: 0.0
+  id: 22
+  other_info:
+    action_history:
+    - *id025
+    - *id026
+    last_reward: 0.0
+    number: 2
+    total_reward: 0.0
+? !!python/tuple
+- "WebShop\nInstruction: \nFind me anti aging scrubs & body treatments for fine lines,\
+  \ dry skin, dead skin, and price lower than 60.00 dollars\n[button] Search [button_]\n"
+- 'Instruction: Find me anti aging scrubs & body treatments for fine lines, dry skin,
+  dead skin, and price lower than 60.00 dollars'
+- search
+: action_dict:
+    *id004:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 32
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "WebShop\nInstruction: \nFind me anti perspirant, cruelty free deodorants & antiperspirants\
+  \ with scent: floral, and size: 1.7 ounce (pack of 1), and price lower than 70.00\
+  \ dollars\n[button] Search [button_]\n"
+- 'Instruction: Find me anti perspirant, cruelty free deodorants & antiperspirants
+  with scent: floral, and size: 1.7 ounce (pack of 1), and price lower than 70.00
+  dollars'
+- search
+: action_dict:
+    *id006:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 35
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "WebShop\nInstruction: \nFind me anti perspirant, cruelty free deodorants & antiperspirants\
+  \ with scent: woody scent, and size: 1.6 ounce (pack of 1), and price lower than\
+  \ 70.00 dollars\n[button] Search [button_]\n"
+- 'Instruction: Find me anti perspirant, cruelty free deodorants & antiperspirants
+  with scent: woody scent, and size: 1.6 ounce (pack of 1), and price lower than 70.00
+  dollars'
+- search
+: action_dict:
+    *id008:
+      number: 2
+      qvalue: 0.0
+      reward: 0.0
+  id: 40
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 2
+    total_reward: 0.0
+? !!python/tuple
+- "WebShop\nInstruction: \nFind me bpa free, easy clean tongue cleaners with storage\
+  \ case for bad breath, and price lower than 30.00 dollars\n[button] Search [button_]\n"
+- 'Instruction: Find me bpa free, easy clean tongue cleaners with storage case for
+  bad breath, and price lower than 30.00 dollars'
+- search
+: action_dict:
+    *id012:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 26
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "WebShop\nInstruction: \nFind me easy carry, high quality bags & cases with color:\
+  \ blue, and price lower than 20.00 dollars\n[button] Search [button_]\n"
+- 'Instruction: Find me easy carry, high quality bags & cases with color: blue, and
+  price lower than 20.00 dollars'
+- search
+: action_dict:
+    *id014:
+      number: 1
+      qvalue: 0.75
+      reward: 0.0
+  id: 29
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "WebShop\nInstruction: \nFind me hair loss products with coconut oil for hair loss,\
+  \ and price lower than 30.00 dollars\n[button] Search [button_]\n"
+- 'Instruction: Find me hair loss products with coconut oil for hair loss, and price
+  lower than 30.00 dollars'
+- search
+: action_dict:
+    *id016:
+      number: 2
+      qvalue: 0.3333333432674408
+      reward: 0.0
+  id: 23
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 2
+    total_reward: 0.0
+? !!python/tuple
+- "WebShop\nInstruction: \nFind me leak proof, bpa free, easy clean refillable containers\
+  \ with travel bottles with size: 5 packs, and price lower than 40.00 dollars\n[button]\
+  \ Search [button_]\n"
+- 'Instruction: Find me leak proof, bpa free, easy clean refillable containers with
+  travel bottles with size: 5 packs, and price lower than 40.00 dollars'
+- search
+: action_dict:
+    *id018:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 16
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "WebShop\nInstruction: \nFind me oil free, clinically proven, paraben free scrubs\
+  \ & body treatments for dead skin with style: daily acne facial serum, and price\
+  \ lower than 30.00 dollars\n[button] Search [button_]\n"
+- 'Instruction: Find me oil free, clinically proven, paraben free scrubs & body treatments
+  for dead skin with style: daily acne facial serum, and price lower than 30.00 dollars'
+- search
+: action_dict:
+    *id020:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 4
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "WebShop\nInstruction: \nFind me oil free, clinically proven, paraben free scrubs\
+  \ & body treatments for dead skin with style: texture daily acne gel facial cleanser,\
+  \ and price lower than 30.00 dollars\n[button] Search [button_]\n"
+- 'Instruction: Find me oil free, clinically proven, paraben free scrubs & body treatments
+  for dead skin with style: texture daily acne gel facial cleanser, and price lower
+  than 30.00 dollars'
+- search
+: action_dict:
+    ? !!python/tuple
+    - click[texture daily acne gel facial cleanser]
+    - ''
+    : number: 3
+      qvalue: 0.0
+      reward: 0.0
+    *id022:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 10
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 4
+    total_reward: 0.0
+? !!python/tuple
+- "WebShop\nInstruction: \nFind me water resistant hair cutting tools for beauty salon,\
+  \ hair styling with color: hot pink (hook & loop closure), and price lower than\
+  \ 30.00 dollars\n[button] Search [button_]\n"
+- 'Instruction: Find me water resistant hair cutting tools for beauty salon, hair
+  styling with color: hot pink (hook & loop closure), and price lower than 30.00 dollars'
+- search
+: action_dict:
+    *id025:
+      number: 1
+      qvalue: 0.019999999552965164
+      reward: 0.0
+  id: 20
+  other_info:
+    action_history: []
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "You have clicked 1.7 ounce (pack of 1).\nYou have clicked floral.\nInstruction:\n\
+  Find me anti perspirant, cruelty free deodorants & antiperspirants with scent: floral,\
+  \ and size: 1.7 ounce (pack of 1), and price lower than 70.00 dollars\n[button]\
+  \ Back to Search [button_]\n[button] < Prev [button_]\nscent\n  [clicked button]\
+  \ floral [clicked button_]\n  [button] woody scent [button_]\nsize\n  [clicked button]\
+  \ 1.7 ounce (pack of 1) [clicked button_]\n  [button] 1.6 ounce (pack of 1) [button_]\n\
+  L'Erbolario - Iris - Deodorant Cream - Floral and Powdery Scent - Anti-perspirant\
+  \ Properties - Maintains Freshness, Protects Skin - Made with Marshmallow, 1.6 Oz\n\
+  Price: $35.5\nRating: N.A.\n[button] Description [button_]\n[button] Features [button_]\n\
+  [button] Reviews [button_]\n[button] Buy Now [button_]\n"
+- 'Instruction: Find me anti perspirant, cruelty free deodorants & antiperspirants
+  with scent: floral, and size: 1.7 ounce (pack of 1), and price lower than 70.00
+  dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  floral
+
+  woody scent
+
+  1.7 ounce (pack of 1)
+
+  1.6 ounce (pack of 1)'
+: action_dict:
+    ? !!python/tuple
+    - click[1.7 ounce (pack of 1)]
+    - I have clicked for 'floral' and haven't clicked for '1.7 ounce (pack of 1)'.
+      I need to first click '1.7 ounce (pack of 1)' and then buy this item.
+    : number: 3
+      qvalue: 1.0
+      reward: 0.0
+    ? !!python/tuple
+    - click[buy now]
+    - All the requirements are ready now.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 39
+  other_info:
+    action_history:
+    - *id006
+    - *id007
+    - *id027
+    - &id035 !!python/tuple
+      - click[1.7 ounce (pack of 1)]
+      - I have clicked for 'floral' and haven't clicked for '1.7 ounce (pack of 1)'.
+        I need to first click '1.7 ounce (pack of 1)' and then buy this item.
+    last_reward: 0.0
+    number: 4
+    total_reward: 0.0
+? !!python/tuple
+- "You have clicked 5 packs.\nInstruction:\nFind me leak proof, bpa free, easy clean\
+  \ refillable containers with travel bottles with size: 5 packs, and price lower\
+  \ than 40.00 dollars\n[button] Back to Search [button_]\n[button] < Prev [button_]\n\
+  size\n  [clicked button] 5 packs [clicked button_]\n  [button] 15 packs [button_]\n\
+  LotFancy 70ml 2.4Oz Travel Bottles with Keychain,15pc Empty Plastic Carabiner Bottle,\
+  \ Clear Bottle, Squeeze Container for Hand Sanitizer, Lotion, Cosmetics, Leakproof,\
+  \ Refillable, 15 labels Included\nPrice: $11.96\nRating: N.A.\n[button] Description\
+  \ [button_]\n[button] Features [button_]\n[button] Reviews [button_]\n[button] Buy\
+  \ Now [button_]\n"
+- 'Instruction: Find me leak proof, bpa free, easy clean refillable containers with
+  travel bottles with size: 5 packs, and price lower than 40.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  5 packs
+
+  15 packs'
+: action_dict:
+    ? !!python/tuple
+    - click[buy now]
+    - All the requirements are ready and I have clicked on the desired size option.
+      I can now click "buy now" to purchase the item.
+    : number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 19
+  other_info:
+    action_history:
+    - *id018
+    - *id019
+    - *id028
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "You have clicked acne am face treatment with benzoyl peroxide.\nInstruction:\n\
+  Find me oil free, clinically proven, paraben free scrubs & body treatments for dead\
+  \ skin with style: daily acne facial serum, and price lower than 30.00 dollars\n\
+  [button] Back to Search [button_]\n[button] < Prev [button_]\nstyle\n  [button]\
+  \ am face treatment [button_]\n  [clicked button] acne am face treatment with benzoyl\
+  \ peroxide [clicked button_]\n  [button] daily acne facial serum [button_]\n  [button]\
+  \ marks pm treatment with retinol sa [button_]\n  [button] texture daily acne gel\
+  \ facial cleanser [button_]\nNeutrogena Stubborn Acne AM Face Treatment with 2.5%\
+  \ Micronized Benzoyl Peroxide Acne Medicine, Oil-Free Daily Facial Treatment to\
+  \ Reduce Size & Redness of Breakouts, Paraben-Free, 2 oz\nPrice: $9.2\nRating: N.A.\n\
+  [button] Description [button_]\n[button] Features [button_]\n[button] Reviews [button_]\n\
+  [button] Buy Now [button_]\n"
+- 'Instruction: Find me oil free, clinically proven, paraben free scrubs & body treatments
+  for dead skin with style: daily acne facial serum, and price lower than 30.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  am face treatment
+
+  acne am face treatment with benzoyl peroxide
+
+  daily acne facial serum
+
+  marks pm treatment with retinol sa
+
+  texture daily acne gel facial cleanser'
+: action_dict:
+    ? !!python/tuple
+    - click[daily acne facial serum]
+    - The desired item is 'daily acne facial serum' and it is priced lower than 30.00
+      dollars. Clicking 'daily acne facial serum' will allow me to check the options
+      for this item.
+    : number: 5
+      qvalue: 0.0
+      reward: 0.0
+  id: 9
+  other_info:
+    action_history:
+    - *id020
+    - *id021
+    - *id029
+    - &id033 !!python/tuple
+      - click[am face treatment]
+      - The desired item is 'daily acne facial serum' and it is priced lower than
+        30.00 dollars. Clicking 'am face treatment' will allow me to check the options
+        for this item.
+    - &id032 !!python/tuple
+      - click[daily acne facial serum]
+      - The desired item is 'daily acne facial serum' and it is priced lower than
+        30.00 dollars. Clicking 'daily acne facial serum' will allow me to check the
+        options for this item.
+    - &id034 !!python/tuple
+      - click[acne am face treatment with benzoyl peroxide]
+      - This option is for acne am face treatment with benzoyl peroxide, which is
+        one of the desired properties.
+    last_reward: 0.0
+    number: 5
+    total_reward: 0.0
+? !!python/tuple
+- "You have clicked acne body spray.\nInstruction:\nFind me oil free, clinically proven,\
+  \ paraben free scrubs & body treatments for dead skin with style: texture daily\
+  \ acne gel facial cleanser, and price lower than 30.00 dollars\n[button] Back to\
+  \ Search [button_]\n[button] < Prev [button_]\nscent\n  [clicked button] acne body\
+  \ spray [clicked button_]\n  [button] acne face & body wash [button_]\nFace, Body\
+  \ Acne Spray with Benzoyl Peroxide - Body, Chest, Butt, Back Acne Treatment with\
+  \ Tea Tree Oil - Salicylic Acid Spray for Men, Women, Teens - Cystic Hormonal Acne\
+  \ Treatment - Acne Body Spray\nPrice: $19.97\nRating: N.A.\n[button] Description\
+  \ [button_]\n[button] Features [button_]\n[button] Reviews [button_]\n[button] Buy\
+  \ Now [button_]\n"
+- 'Instruction: Find me oil free, clinically proven, paraben free scrubs & body treatments
+  for dead skin with style: texture daily acne gel facial cleanser, and price lower
+  than 30.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  acne body spray
+
+  acne face & body wash'
+: action_dict:
+    *id030:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 13
+  other_info:
+    action_history:
+    - *id022
+    - *id023
+    - *id024
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "You have clicked acne face & body wash.\nInstruction:\nFind me oil free, clinically\
+  \ proven, paraben free scrubs & body treatments for dead skin with style: texture\
+  \ daily acne gel facial cleanser, and price lower than 30.00 dollars\n[button] Back\
+  \ to Search [button_]\n[button] < Prev [button_]\nscent\n  [button] acne body spray\
+  \ [button_]\n  [clicked button] acne face & body wash [clicked button_]\nFace, Body\
+  \ Acne Spray with Benzoyl Peroxide - Body, Chest, Butt, Back Acne Treatment with\
+  \ Tea Tree Oil - Salicylic Acid Spray for Men, Women, Teens - Cystic Hormonal Acne\
+  \ Treatment - Acne Body Spray\nPrice: $19.97\nRating: N.A.\n[button] Description\
+  \ [button_]\n[button] Features [button_]\n[button] Reviews [button_]\n[button] Buy\
+  \ Now [button_]\n"
+- 'Instruction: Find me oil free, clinically proven, paraben free scrubs & body treatments
+  for dead skin with style: texture daily acne gel facial cleanser, and price lower
+  than 30.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  acne body spray
+
+  acne face & body wash'
+: action_dict:
+    *id031:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 14
+  other_info:
+    action_history:
+    - *id022
+    - *id023
+    - *id024
+    - *id030
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "You have clicked am face treatment.\nInstruction:\nFind me oil free, clinically\
+  \ proven, paraben free scrubs & body treatments for dead skin with style: daily\
+  \ acne facial serum, and price lower than 30.00 dollars\n[button] Back to Search\
+  \ [button_]\n[button] < Prev [button_]\nstyle\n  [clicked button] am face treatment\
+  \ [clicked button_]\n  [button] acne am face treatment with benzoyl peroxide [button_]\n\
+  \  [button] daily acne facial serum [button_]\n  [button] marks pm treatment with\
+  \ retinol sa [button_]\n  [button] texture daily acne gel facial cleanser [button_]\n\
+  Neutrogena Stubborn Acne AM Face Treatment with 2.5% Micronized Benzoyl Peroxide\
+  \ Acne Medicine, Oil-Free Daily Facial Treatment to Reduce Size & Redness of Breakouts,\
+  \ Paraben-Free, 2 oz\nPrice: $9.2\nRating: N.A.\n[button] Description [button_]\n\
+  [button] Features [button_]\n[button] Reviews [button_]\n[button] Buy Now [button_]\n"
+- 'Instruction: Find me oil free, clinically proven, paraben free scrubs & body treatments
+  for dead skin with style: daily acne facial serum, and price lower than 30.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  am face treatment
+
+  acne am face treatment with benzoyl peroxide
+
+  daily acne facial serum
+
+  marks pm treatment with retinol sa
+
+  texture daily acne gel facial cleanser'
+: action_dict:
+    *id032:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 8
+  other_info:
+    action_history:
+    - *id020
+    - *id021
+    - *id029
+    - *id033
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0
+? !!python/tuple
+- "You have clicked daily acne facial serum.\nInstruction:\nFind me oil free, clinically\
+  \ proven, paraben free scrubs & body treatments for dead skin with style: daily\
+  \ acne facial serum, and price lower than 30.00 dollars\n[button] Back to Search\
+  \ [button_]\n[button] < Prev [button_]\nstyle\n  [button] am face treatment [button_]\n\
+  \  [button] acne am face treatment with benzoyl peroxide [button_]\n  [clicked button]\
+  \ daily acne facial serum [clicked button_]\n  [button] marks pm treatment with\
+  \ retinol sa [button_]\n  [button] texture daily acne gel facial cleanser [button_]\n\
+  Neutrogena Stubborn Acne AM Face Treatment with 2.5% Micronized Benzoyl Peroxide\
+  \ Acne Medicine, Oil-Free Daily Facial Treatment to Reduce Size & Redness of Breakouts,\
+  \ Paraben-Free, 2 oz\nPrice: $9.2\nRating: N.A.\n[button] Description [button_]\n\
+  [button] Features [button_]\n[button] Reviews [button_]\n[button] Buy Now [button_]\n"
+- 'Instruction: Find me oil free, clinically proven, paraben free scrubs & body treatments
+  for dead skin with style: daily acne facial serum, and price lower than 30.00 dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  am face treatment
+
+  acne am face treatment with benzoyl peroxide
+
+  daily acne facial serum
+
+  marks pm treatment with retinol sa
+
+  texture daily acne gel facial cleanser'
+: action_dict:
+    *id034:
+      number: 5
+      qvalue: 0.0
+      reward: 0.0
+    *id033:
+      number: 1
+      qvalue: 0.0
+      reward: 0.0
+  id: 7
+  other_info:
+    action_history:
+    - *id020
+    - *id021
+    - *id029
+    last_reward: 0.0
+    number: 6
+    total_reward: 0.0
+? !!python/tuple
+- "You have clicked floral.\nInstruction:\nFind me anti perspirant, cruelty free deodorants\
+  \ & antiperspirants with scent: floral, and size: 1.7 ounce (pack of 1), and price\
+  \ lower than 70.00 dollars\n[button] Back to Search [button_]\n[button] < Prev [button_]\n\
+  scent\n  [clicked button] floral [clicked button_]\n  [button] woody scent [button_]\n\
+  size\n  [button] 1.7 ounce (pack of 1) [button_]\n  [button] 1.6 ounce (pack of\
+  \ 1) [button_]\nL'Erbolario - Iris - Deodorant Cream - Floral and Powdery Scent\
+  \ - Anti-perspirant Properties - Maintains Freshness, Protects Skin - Made with\
+  \ Marshmallow, 1.6 Oz\nPrice: $35.5\nRating: N.A.\n[button] Description [button_]\n\
+  [button] Features [button_]\n[button] Reviews [button_]\n[button] Buy Now [button_]\n"
+- 'Instruction: Find me anti perspirant, cruelty free deodorants & antiperspirants
+  with scent: floral, and size: 1.7 ounce (pack of 1), and price lower than 70.00
+  dollars'
+- 'back to search
+
+  < prev
+
+  description
+
+  features
+
+  reviews
+
+  buy now
+
+  floral
+
+  woody scent
+
+  1.7 ounce (pack of 1)
+
+  1.6 ounce (pack of 1)'
+: action_dict:
+    *id035:
+      number: 1
+      qvalue: 1.0
+      reward: 0.0
+  id: 38
+  other_info:
+    action_history:
+    - *id006
+    - *id007
+    - *id027
+    last_reward: 0.0
+    number: 1
+    total_reward: 0.0

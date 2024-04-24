@@ -323,7 +323,6 @@ class SimServer:
                 if idx not in idxs:
                     idxs.append(idx)
             self.goals = [self.goals[i] for i in idxs]
-        print(f'Loaded {len(self.goals)} goals.')
 
         # Set extraneous housekeeping variables
         self.weights = [goal['weight'] for goal in self.goals]
