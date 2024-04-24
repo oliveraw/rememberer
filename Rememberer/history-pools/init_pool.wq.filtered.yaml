@@ -1,0 +1,225 @@
+!!python/object/apply:collections.defaultdict
+args:
+- !!python/name:builtins.list ''
+dictitems:
+  0:
+  - !!python/object:history.MyRecord
+    avail_actions:
+    - search
+    ins: 'Instruction: i need a 10 pound back of parboiled brown rice that is easy
+      to prepare, and price lower than 50.00 dollars'
+    obs: "Instruction:\ni need a 10 pound back of parboiled brown rice that is easy\
+      \ to prepare, and price lower than 50.00 dollars\n[button] Back to Search [button_]\n\
+      Page 1 (Total results: 50)\n[button] Next > [button_]\n\n[button] B00M674K0G\
+      \ [button_]\nIberia Parboiled Brown, 10 Pounds, Rice, 160 Ounce\n$13.09\n\n\
+      [button] B013LLVO1I [button_]\nBakery On Main Gluten-Free, Non GMO Granola,\
+      \ Cranberry Almond Maple, 2.5 Pound\n$100.0\n\n[button] B0010XRVR6 [button_]\n\
+      Knorr Rice Sides For a Tasty Rice Side Dish Creamy Chicken No Artificial Flavors,\
+      \ No Preservatives, No Added MSG 5.7 oz\n$100.0\n\n[button] B087D93CRX [button_]\n\
+      Kosher Parve Mre, Meal Mart Amazing Meals Ready to Eat, Fillet of Salmon Rice\
+      \ & Pimentos (12 Pack) \u2013 Travel, Military, Emergency Survival Food \u2013\
+      \ Prepared Fully Cooked, Microwave Dinner, Shelf Stable\n$89.99\n\n[button]\
+      \ B00B1H8VMU [button_]\nBaron\u2019s Whole Wheat Orzo Pasta | 100% Natural Israeli\
+      \ Rice-Shaped Orzo for Soups, Casseroles & Salads | Cooks in 10 Minutes! | Kosher|\
+      \ 2 Pack 21.16oz Jars\n$14.99\n\n[button] B01GZI0JMY [button_]\nLundberg Organic\
+      \ Brown Rice Cakes, Honey Nut, 9.6oz(pack of 12), Gluten-Free, Whole Grain,\
+      \ Kosher, USDA Certified Organic, Non-GMO Verified\n$56.6\n\n[button] B083X4GW6Y\
+      \ [button_]\nBob's Red Mill Gluten Free Muffin Mix, 16 Oz\n$9.38\n\n[button]\
+      \ B09ML2WVBK [button_]\nNational Foods Butter Chicken Recipe Mix 1.65 oz (47g)\
+      \ | South Asian Meat Curry Masala Powder | Traditional Spicy Food | Box Pack\
+      \ | Pack of 6\n$14.99\n\n[button] B09R4JVD58 [button_]\nRainbow Window Covering\
+      \ Stained Glass FilmSticker Heat Control Opaque Vinyl for Bathroom and Kids\
+      \ Bedroom17.5 x 78.7 Inch W23.6 x L47.2 Sky Blue Black White\n$31.0\n\n[button]\
+      \ B07GPHFDVS [button_]\nSEEDS OF CHANGE Organic Rice Variety Pack, Quinoa Brown\
+      \ Rice & Red Rice with Flaxseed, Ready to Heat, 8.5 Ounce (Pack of 6)\n$19.74\n"
+    reason: 1.0 I have not yet searched for the desired item and this action is necessary
+      to find it.
+    sugg_action: search[10 pound bag parboiled brown rice easy to prepare]
+  - !!python/object:history.MyRecord
+    avail_actions:
+    - back to search
+    - next >
+    - b00m674k0g
+    - b013llvo1i
+    - b0010xrvr6
+    - b087d93crx
+    - b00b1h8vmu
+    - b01gzi0jmy
+    - b083x4gw6y
+    - b09ml2wvbk
+    - b09r4jvd58
+    - b07gphfdvs
+    ins: 'Instruction: i need a 10 pound back of parboiled brown rice that is easy
+      to prepare, and price lower than 50.00 dollars'
+    obs: 'Instruction:
+
+      i need a 10 pound back of parboiled brown rice that is easy to prepare, and
+      price lower than 50.00 dollars
+
+      [button] Back to Search [button_]
+
+      [button] < Prev [button_]
+
+      Iberia Parboiled Brown, 10 Pounds, Rice, 160 Ounce
+
+      Price: $13.09
+
+      Rating: N.A.
+
+      [button] Description [button_]
+
+      [button] Features [button_]
+
+      [button] Reviews [button_]
+
+      [button] Buy Now [button_]
+
+      '
+    reason: 1.0 b00m674k0g is a 10 pound bag of parboiled brown rice that is easy
+      to prepare and is priced lower than 50 dollars. I can check this item first.
+    sugg_action: click[b00m674k0g]
+  - !!python/object:history.MyRecord
+    avail_actions:
+    - back to search
+    - < prev
+    - description
+    - features
+    - reviews
+    - buy now
+    ins: 'Instruction: i need a 10 pound back of parboiled brown rice that is easy
+      to prepare, and price lower than 50.00 dollars'
+    obs: "Thank you for shopping with us!\nYour code: \nNone\n (Paste it in your MTurk\
+      \ interface.)\nPurchased\nasin\nB00M674K0G\noptions\n{}\nattrs\nNone\ncategory\n\
+      None\nquery\nNone\nproduct category\nNone\nTarget\nasin\noptions\nattrs\nprice\
+      \ upper\ninstuction text\ncategory\nproduct category\nquery\nGoal \nNone\nReward\n\
+      Your score (min 0.0, max 1.0)\n1.0\nReward Details \nNone\n"
+    reason: 1.0 I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i need a 10 pound back of parboiled brown rice that is easy
+      to prepare, and price lower than 40.00 dollars'
+    obs: "Instruction:\ni need a 10 pound back of parboiled brown rice that is easy\
+      \ to prepare, and price lower than 40.00 dollars\n[button] Back to Search [button_]\n\
+      Page 1 (Total results: 50)\n[button] Next > [button_]\n\n[button] B00M674K0G\
+      \ [button_]\nIberia Parboiled Brown, 10 Pounds, Rice, 160 Ounce\n$13.09\n\n\
+      [button] B013LLVO1I [button_]\nBakery On Main Gluten-Free, Non GMO Granola,\
+      \ Cranberry Almond Maple, 2.5 Pound\n$100.0\n\n[button] B0010XRVR6 [button_]\n\
+      Knorr Rice Sides For a Tasty Rice Side Dish Creamy Chicken No Artificial Flavors,\
+      \ No Preservatives, No Added MSG 5.7 oz\n$100.0\n\n[button] B087D93CRX [button_]\n\
+      Kosher Parve Mre, Meal Mart Amazing Meals Ready to Eat, Fillet of Salmon Rice\
+      \ & Pimentos (12 Pack) \u2013 Travel, Military, Emergency Survival Food \u2013\
+      \ Prepared Fully Cooked, Microwave Dinner, Shelf Stable\n$89.99\n\n[button]\
+      \ B00B1H8VMU [button_]\nBaron\u2019s Whole Wheat Orzo Pasta | 100% Natural Israeli\
+      \ Rice-Shaped Orzo for Soups, Casseroles & Salads | Cooks in 10 Minutes! | Kosher|\
+      \ 2 Pack 21.16oz Jars\n$14.99\n\n[button] B01GZI0JMY [button_]\nLundberg Organic\
+      \ Brown Rice Cakes, Honey Nut, 9.6oz(pack of 12), Gluten-Free, Whole Grain,\
+      \ Kosher, USDA Certified Organic, Non-GMO Verified\n$56.6\n\n[button] B083X4GW6Y\
+      \ [button_]\nBob's Red Mill Gluten Free Muffin Mix, 16 Oz\n$9.38\n\n[button]\
+      \ B09ML2WVBK [button_]\nNational Foods Butter Chicken Recipe Mix 1.65 oz (47g)\
+      \ | South Asian Meat Curry Masala Powder | Traditional Spicy Food | Box Pack\
+      \ | Pack of 6\n$14.99\n\n[button] B09R4JVD58 [button_]\nRainbow Window Covering\
+      \ Stained Glass FilmSticker Heat Control Opaque Vinyl for Bathroom and Kids\
+      \ Bedroom17.5 x 78.7 Inch W23.6 x L47.2 Sky Blue Black White\n$31.0\n\n[button]\
+      \ B07GPHFDVS [button_]\nSEEDS OF CHANGE Organic Rice Variety Pack, Quinoa Brown\
+      \ Rice & Red Rice with Flaxseed, Ready to Heat, 8.5 Ounce (Pack of 6)\n$19.74\n"
+    past_actions: !!python/object/apply:builtins.reversed
+      args:
+      - - search[10 pound bag parboiled brown rice easy to prepare]
+        - click[b00m674k0g]
+        - click[buy now]
+      state: 2
+    reason: I need to search for a 10 pound bag of parboiled brown rice that is easy
+      to prepare, as per the instruction.
+    sugg_action: search[10 pound bag parboiled brown rice easy to prepare]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b00m674k0g
+
+      b013llvo1i
+
+      b0010xrvr6
+
+      b087d93crx
+
+      b00b1h8vmu
+
+      b01gzi0jmy
+
+      b083x4gw6y
+
+      b09ml2wvbk
+
+      b09r4jvd58
+
+      b07gphfdvs'
+    ins: 'Instruction: i need a 10 pound back of parboiled brown rice that is easy
+      to prepare, and price lower than 40.00 dollars'
+    obs: 'Instruction:
+
+      i need a 10 pound back of parboiled brown rice that is easy to prepare, and
+      price lower than 40.00 dollars
+
+      [button] Back to Search [button_]
+
+      [button] < Prev [button_]
+
+      Iberia Parboiled Brown, 10 Pounds, Rice, 160 Ounce
+
+      Price: $13.09
+
+      Rating: N.A.
+
+      [button] Description [button_]
+
+      [button] Features [button_]
+
+      [button] Reviews [button_]
+
+      [button] Buy Now [button_]
+
+      '
+    past_actions: !!python/object/apply:builtins.reversed
+      args:
+      - - search[10 pound bag parboiled brown rice easy to prepare]
+        - click[b00m674k0g]
+        - click[buy now]
+        - search[10 pound bag parboiled brown rice easy to prepare]
+      state: 3
+    reason: b00m674k0g is a 10 pound bag of parboiled brown rice that is easy to prepare
+      and is priced under 40 dollars. I can check this item first.
+    sugg_action: click[b00m674k0g]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now'
+    ins: 'Instruction: i need a 10 pound back of parboiled brown rice that is easy
+      to prepare, and price lower than 40.00 dollars'
+    obs: "Thank you for shopping with us!\nYour code: \nNone\n (Paste it in your MTurk\
+      \ interface.)\nPurchased\nasin\nB00M674K0G\noptions\n{}\nattrs\nNone\ncategory\n\
+      None\nquery\nNone\nproduct category\nNone\nTarget\nasin\noptions\nattrs\nprice\
+      \ upper\ninstuction text\ncategory\nproduct category\nquery\nGoal \nNone\nReward\n\
+      Your score (min 0.0, max 1.0)\n1.0\nReward Details \nNone\n"
+    past_actions: !!python/object/apply:builtins.reversed
+      args:
+      - - search[10 pound bag parboiled brown rice easy to prepare]
+        - click[b00m674k0g]
+        - click[buy now]
+        - search[10 pound bag parboiled brown rice easy to prepare]
+        - click[b00m674k0g]
+      state: 4
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]

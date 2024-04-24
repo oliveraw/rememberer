@@ -94,10 +94,11 @@ class Agent(abc.ABC):
                                              , available_actions
                                              )
         action_str: str = action_tuple[0]
+        action_reason: str = action_tuple[1]
 
         if action_str!="NOTHINGG":
             self._action_history.append(action_tuple)
-        return action_str
+        return action_str, action_reason
         #  }}} method __call__ # 
 
     @abc.abstractmethod
@@ -152,6 +153,7 @@ class AutoAgent( Agent
     #  class AutoAgent {{{ # 
     def __init__( self
                 , history_replay: history.HistoryReplay[Key, Action]
+                , filtered_history_replay: history.FilteredHistoryReplay
                 , prompt_templates: agent_protos.TemplateGroup
                 , api_key: str
                 , model: str = "gpt-3.5-turbo-instruct"
@@ -185,6 +187,7 @@ class AutoAgent( Agent
 
         self._tokenizer: tiktoken.Encoding = tiktoken.encoding_for_model(model)
         super(agent_protos.OpenAIClient, self).__init__( history_replay
+                                                       , filtered_history_replay
                                                        , train
                                                        , self._tokenizer
                                                        , norandom
@@ -204,18 +207,19 @@ class AutoAgent( Agent
            , available_actions: List[str]
            ):
         #  method end {{{ # 
-        assert False, "fix this bc now we're updating history after giving the action"
-        observation: str = "\n".join(self._preprocess_observation(observation))
-        available_actions: str = "\n".join(available_actions)
-        if self._train:
-            last_action: Optional[Action] = self._action_history[-1]\
-                                            if len(self._action_history)>0\
-                                          else None
-            self._history_replay.update( (observation, task, available_actions)
-                                       , reward
-                                       , last_action
-                                       , last_step=True
-                                       )
+        self._history_replay.reset()
+        
+        # observation: str = "\n".join(self._preprocess_observation(observation))
+        # available_actions: str = "\n".join(available_actions)
+        # if self._train:
+        #     last_action: Optional[Action] = self._action_history[-1]\
+        #                                     if len(self._action_history)>0\
+        #                                   else None
+        #     self._history_replay.update( (observation, task, available_actions)
+        #                                , reward
+        #                                , last_action
+        #                                , last_step=True
+        #                                )
         #  }}} method end # 
 
     def _instantiate_input_template( self
@@ -242,19 +246,6 @@ class AutoAgent( Agent
                                                                           )
                                                                      )
                                                                 )
-                                                    #   , actions=\
-                                                    #           "\n".join(
-                                                    #               map( lambda act: "- " + act
-                                                    #                  , [x[0] for x in action_history[-min(5, len(action_history)):]]
-                                                    #                  )
-                                                    #             )
-
-                                                    #   , available_actions=\
-                                                    #           "\n".join(
-                                                    #               map( lambda act: "- " + act
-                                                    #                  , available_actions.splitlines()
-                                                    #                  )
-                                                    #             )
                                                       , available_actions=\
                                                               "\n".join(
                                                                   map( lambda act: "  <action>" + act + "</action>"
@@ -334,6 +325,16 @@ class AutoAgent( Agent
                     #                                           )
         return examplar
         #  }}} method _examplar_to_string # 
+    
+    def _myrecord_to_string(self, idx: int, rec: history.MyRecord):
+        examplar: str = f"Example {idx}\n\n" \
+            + self._instantiate_input_template( task=rec.ins
+                                              , observation=rec.obs
+                                              , action_history=rec.past_actions     # idk i didn't implement this yet
+                                              , available_actions='\n'.join(rec.avail_actions))\
+            + "\n"\
+            + self._prompt_templates.advice_template.safe_substitute(encouraged=self._action_to_string((rec.sugg_action, rec.reason), 0.0))
+        return examplar
 
     def _parse_action(self, response: str) -> Action:
         #  method _parse_action {{{ # 
@@ -361,10 +362,7 @@ class AutoAgent( Agent
 
         #  Construct Examplars {{{ # 
         if self._static:
-            examplars: List[str] = [ "Example 2:\n" + self._prompt_templates.canonical2
-                                   , "Example 1:\n" + self._prompt_templates.canonical1
-                                   ]
-
+            examplars: List[str] = [ (f"Example {i}:\n" + c) for i, c in enumerate(self._prompt_templates.canonicals)]
         else:
             examplars: List[str] = self._get_examplars( (observation, task, available_actions)
                                                       , example_tokens_limit
@@ -390,12 +388,16 @@ class AutoAgent( Agent
         return (action_text, reason)
         #  }}} method _get_action # 
 
-    def _update_history(self, task, observation, available_actions, taken_action, reward):
+    def _update_history(self, task_idx, task, observation, available_actions, taken_action, reason, reward, done):
         #  Replay Updating {{{ # 
         if self._train:
-            self._history_replay.update( (observation, task, available_actions)
+            self._history_replay.update((observation, task, available_actions), reward, (taken_action, reason))
+            self._filtered_history_replay.update(task_idx
+                                       , (observation, task, available_actions)
                                        , reward
                                        , taken_action
+                                       , reason
+                                       , done
                                        )
         #  }}} Replay Updating # 
 

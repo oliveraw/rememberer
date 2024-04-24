@@ -1,6 +1,5 @@
 ---
-Instruction:
-  i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and price lower than 40.00 dollars
+Instruction: i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and price lower than 40.00 dollars
 Last 5 Actions:
 
 Observation:
@@ -10,6 +9,6 @@ Available Actions:
   <action>search</action>
 ...
 
-Encouraged:
-search[3 ounce bottle bright citrus deodorant sensitive skin] -> 1.0
+Suggested <action>:
+search[3 ounce bottle bright citrus deodorant sensitive skin] -> 
 ***

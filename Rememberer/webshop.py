@@ -149,13 +149,13 @@ def traverse_environment( env: gym.Env
         total_reward = 0.
         succeeds = False
         while nb_steps<max_nb_steps and nb_consecutive_nothings<max_nb_consective_nothings:
-            action: str = model( task
+            action, reason = model( task
                                , observation
                                , available_actions
                                )
             if action!="NOTHINGG":
                 observation, reward, done, _ = env.step(action)
-                model._update_history(task, observation, available_actions, action, reward)
+                model._update_history(idx, task, observation, available_actions, action, reason, reward, done)
 
                 total_reward += reward
                 available_actions = env.get_available_actions()["clickables"]
@@ -169,12 +169,12 @@ def traverse_environment( env: gym.Env
                 nb_nothing_steps += 1
                 nb_consecutive_nothings += 1
 
-        model.end( task
-                 , observation
-                 , reward
-                 , total_reward
-                 , available_actions
-                 )
+        # model.end( task
+        #          , observation
+        #          , reward
+        #          , total_reward
+        #          , available_actions
+        #          )
         
         # save replay every 10 tasks
         if idx % 10 == 0:
@@ -230,6 +230,8 @@ def main():
     # Replay Options
     parser.add_argument("--load-replay", action="append", type=str)
     parser.add_argument("--save-replay", action="append", type=str)
+    parser.add_argument("--load-filtered-replay", action="append", type=str)
+    parser.add_argument("--save-filtered-replay", action="append", type=str)
     parser.add_argument("--item-capacity", type=int)
     parser.add_argument("--action-capacity", type=int)
     parser.add_argument( "--matcher"
@@ -368,20 +370,26 @@ def main():
     else:
         history_replay: history.AbstractHistoryReplay[webshop_agent.Key, webshop_agent.Action]\
                 = history.HistoryReplay( args.item_capacity
-                                       , args.action_capacity
-                                       , matcher=matcher_functions[args.matcher]
-                                       , gamma=args.gamma
-                                       , step_penalty=args.step_penalty
-                                       , update_mode=args.update_mode
-                                       , learning_rate=args.learning_rate
-                                       , n_step_flatten=args.n_step_flatten
-                                       )
+                                    , args.action_capacity
+                                    , matcher=matcher_functions[args.matcher]
+                                    , gamma=args.gamma
+                                    , step_penalty=args.step_penalty
+                                    , update_mode=args.update_mode
+                                    , learning_rate=args.learning_rate
+                                    , n_step_flatten=args.n_step_flatten
+                                    )
         history_replay.load_yaml(args.load_replay[0])
 
+        if len(args.load_filtered_replay):
+            filtered_history_replay = history.FilteredHistoryReplay\
+                    = history.FilteredHistoryReplay(args.item_capacity, args.action_capacity, matcher=matcher_functions[args.matcher], update_mode=args.update_mode)
+            filtered_history_replay.load_yaml(args.load_filtered_replay[0])
+        else:
+            filtered_history_replay = None
 
     if args.prompt_mode == 'default':
         base_prompt = "prompt_pthw.txt"
-        canonical_examples = ["canonical_examplar_wE0.1_act.txt", "canonical_examplar_wE0.2_act.txt"]
+        canonical_examples = ["canonical_examplar_wE0.1_act.txt", "canonical_examplar_wE0.2_act.txt", "canonical_examplar_wE3.1_act.txt", "canonical_examplar_wE3.2_act.txt"]
     elif args.prompt_mode == 'actiontrajectories':
         base_prompt = "prompt_pthw_act_traj.txt"
         canonical_examples = ["canonical_examplar_wE0.1.txt", "canonical_examplar_wE0.2.txt"]
@@ -419,6 +427,7 @@ def main():
         openaiconfig: Dict[str, str] = yaml.load(f, Loader=yaml.Loader)
     api_key: str = openaiconfig["api_key"]
     model = webshop_agent.AutoAgent( history_replay=history_replay
+                                   , filtered_history_replay=filtered_history_replay
                                    , prompt_templates=template_group
                                    , api_key=api_key
                                    , max_tokens=args.max_tokens
@@ -481,7 +490,7 @@ def main():
     for epch in range(starts_from, nb_epochs):
         if args.train:
             model.train(True)
-            save_history_replay_callback = lambda i: history_replay.save_yaml(args.save_replay[0] % i)  # to save at a specific task interval
+            save_history_replay_callback = lambda i: filtered_history_replay.save_yaml(args.save_filtered_replay[0] % i)  # to save at a specific task interval
             success_list: Set[int] = traverse_environment( env
                                                          , training_set
                                                          , model
@@ -524,6 +533,9 @@ def main():
                                         )
             else:
                 history_replay.save_yaml(args.save_replay[0] % epch)
+
+                if len(args.save_filtered_replay):
+                    filtered_history_replay.save_yaml(args.save_filtered_replay[0] % epch)
 
         epoch_str = "Epoch {:}".format(epch)
         logger.info("\x1b[31m━━━━━━━━━━━━━━━━━━━%s━━━━━━━━━━━━━━━━━━━━\x1b[0m", epoch_str)

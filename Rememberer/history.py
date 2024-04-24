@@ -14,6 +14,7 @@
 
 # Created by Danyang Zhang @X-Lance.
 
+from dataclasses import dataclass
 from typing import Dict, Tuple, Deque, List, Set
 from typing import Union, Optional, Callable, Sequence, TypeVar, Generic, Hashable, Any
 import abc
@@ -458,6 +459,97 @@ def _update_action_history( mode: str
         pass
     #  }}} function _update_action_history # 
 
+@dataclass
+class MyRecord:
+    ins: str
+    obs: str
+    avail_actions: str
+    sugg_action: str
+    reason: str
+    past_actions: List[str]
+
+class FilteredHistoryReplay(object):
+
+    def __init__( self
+                , item_capacity: Optional[int]
+                , action_capacity: Optional[int]
+                , matcher: MatcherConstructor
+                , update_mode: str
+                ):
+        self._record: Dict[int, List[MyRecord]] = collections.defaultdict(list)
+
+        self._item_capacity: Optional[int] = item_capacity
+        self._action_capacity: Optional[int] = action_capacity
+        self._matcher: MatcherConstructor = matcher
+        self._update_mode: str = update_mode
+
+
+    def __getitem__(self, request: Key):
+        #  method __getitem__ {{{ # 
+        """
+        Args:
+            request (Key): the observation
+
+        Returns:
+            List[Tuple[Key, Record, float]]: the retrieved action-state value
+              estimations sorted by matching scores
+        """
+        # request = (observation, task, actions)
+        matcher: Matcher = self._matcher(request)
+        candidates = []
+        for history in self._record.values():
+            for rec in history:
+                ins, obs, avail_actions = rec.ins, rec.obs, rec.avail_actions
+                sim_score = matcher((obs, ins, "\n".join(avail_actions)))
+                candidates.append((rec, sim_score))
+        sorted(candidates, key=lambda x: x[1], reverse=True)
+
+        return candidates
+        #  }}} method __getitem__ # 
+
+    def update( self
+              , task_idx: int
+              , step: Key           # (observation, task, available_actions)
+              , reward: float
+              , action: Action      # ex. 'search[10 pound bag parboiled brown rice easy prepare]'
+              , reason: str
+              , done: bool
+              ):
+        obs, ins, avail_actions = step
+        avail_actions = '\n'.join(avail_actions)
+
+        past_actions = [x.sugg_action for x in reversed(self._record[task_idx])]
+        if done:
+            # only record the buy now if this was a fully successful run
+            if reward == 1.0:
+                assert action == 'click[buy now]', "last action on successful run should be buy now"
+                self._record[task_idx].append(MyRecord(ins, obs, avail_actions, action, reason, past_actions))
+        else:
+            # if the same action was taken don't record that
+            if len(self._record[task_idx]):
+                last_rec = self._record[task_idx][-1]
+                if action == last_rec.sugg_action:
+                    return
+            self._record[task_idx].append(MyRecord(ins, obs, avail_actions, action, reason, past_actions))
+
+
+    def __str__(self) -> str:
+        return yaml.dump(self._record, Dumper=yaml.Dumper)
+    
+    def load_yaml(self, yaml_file: str):
+        #  method load_yaml {{{ # 
+        with open(yaml_file) as f:
+            self._record = yaml.load(f, Loader=yaml.Loader)
+        #  }}} method load_yaml # 
+
+    def save_yaml(self, yaml_file: str):
+        with open(yaml_file, "w") as f:
+            yaml.dump(self._record, f, Dumper=yaml.Dumper)
+
+    def __len__(self) -> int:
+        return len(self._record)
+    #  }}} class HistoryReplay # 
+
 class HistoryReplay(AbstractHistoryReplay[Key, Action]):
     #  class HistoryReplay {{{ # 
 
@@ -583,8 +675,6 @@ class HistoryReplay(AbstractHistoryReplay[Key, Action]):
               , step: Key           # (observation, task, available_actions)
               , reward: float
               , action: Action      # ex. 'search[10 pound bag parboiled brown rice easy prepare]'
-              , last_step: bool = False
-              , truly_update: bool = True
               , reference_q_table: Optional["HistoryReplay[Key, Action]"] = None
               ):
         #  method update {{{ # 
@@ -601,28 +691,16 @@ class HistoryReplay(AbstractHistoryReplay[Key, Action]):
             reference_q_table (Optional[HistoryReplay[Key, Action]]):
               reference Q table, defaults to `self`
         """
-        assert False, "debugging"
 
         self._action_buffer.append(action)
-        if action is not None:
-            self._action_history.append(action)
+        self._action_history.append(action)
         self._observation_buffer.append(step)
         self._reward_buffer.append(reward)
         self._total_reward += reward
         self._total_reward_buffer.append(self._total_reward)
 
-        if not truly_update:
-            if last_step:
-                self._action_buffer.clear()
-                self._action_history.clear()
-                self._observation_buffer.clear()
-                self._reward_buffer.clear()
-                self._total_reward_buffer.clear()
-                self._total_reward = 0.
-            return
-
-        if not last_step\
-                and self._observation_buffer.maxlen is not None\
+        # if there is a limit to the observation buffer and you have reached it
+        if self._observation_buffer.maxlen is not None\
                 and len(self._observation_buffer)==self._observation_buffer.maxlen:
 
             step = self._observation_buffer[0]
@@ -656,9 +734,16 @@ class HistoryReplay(AbstractHistoryReplay[Key, Action]):
                                       )
             self._prune_action(action_dict)
 
-        if last_step:
-            self._clear_buffer()
         #  }}} method update # 
+
+    def reset(self):
+        self._action_buffer.clear()
+        self._action_history.clear()
+        self._observation_buffer.clear()
+        self._reward_buffer.clear()
+        self._total_reward_buffer.clear()
+        self._total_reward = 0.
+        self._clear_buffer()
 
     def _clear_buffer(self):
         #  method new_trajectory {{{ # 
@@ -670,7 +755,6 @@ class HistoryReplay(AbstractHistoryReplay[Key, Action]):
             self._reward_buffer.clear()
             self._total_reward_buffer.clear()
             self._total_reward = 0.
-
             return
 
         if self._action_buffer[0] is None:

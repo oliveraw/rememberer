@@ -221,13 +221,15 @@ class HistoryReplayClient(Generic[history.Key, history.Action]):
     #  class HistoryReplayClient {{{ # 
     def __init__( self
                 , history_replay: history.HistoryReplay[history.Key, history.Action]
+                , filtered_history_replay: Optional[history.FilteredHistoryReplay]
                 , train: bool
                 , tokenizer: tiktoken.Encoding
                 , norandom: bool = False
                 ):
         #  method __init__ {{{ # 
         self._history_replay: history.HistoryReplay[history.Key, history.Action]\
-                = history_replay
+                = history_replay 
+        self._filtered_history_replay = filtered_history_replay
         self._train: bool = train
 
         self._rng: np.random.Generator = np.random.default_rng()
@@ -252,113 +254,125 @@ class HistoryReplayClient(Generic[history.Key, history.Action]):
             List[str]: examplar strs
         """
 
-        # here candidates is already sorted highest to lowest similarity,
-        # compared to the current key
-        candidates: List[ Tuple[ history.Key
-                               , history.HistoryReplay.Record[history.Action]
-                               , float
-                               ]
-                        ] = self._history_replay[key]
+        if self._filtered_history_replay == None:
+            # here candidates is already sorted highest to lowest similarity,
+            # compared to the current key
+            candidates: List[ Tuple[ history.Key
+                                , history.HistoryReplay.Record[history.Action]
+                                , float
+                                ]
+                            ] = self._history_replay[key]
 
-        #  Construct Examplars {{{ # 
-        examplars: List[str] = []
-        examplar_ids: List[int] = []
-        examplar_scores: List[float] = []
-        #nb_examplars = 2
-        i = 0
-        for cdd in candidates:
-            #  Contruct one Examplar {{{ # 
-            key: history.Key
-            record: history.HistoryReplay.Record[history.Action]
-            score: float
-            key, record, score = cdd
-            info_dict: history.HistoryReplay.InfoDict[history.Action] = record["other_info"]
+            #  Construct Examplars {{{ # 
+            examplars: List[str] = []
+            examplar_ids: List[int] = []
+            examplar_scores: List[float] = []
+            #nb_examplars = 2
+            i = 0
+            for cdd in candidates:
+                #  Contruct one Examplar {{{ # 
+                key: history.Key
+                record: history.HistoryReplay.Record[history.Action]
+                score: float
+                key, record, score = cdd
+                info_dict: history.HistoryReplay.InfoDict[history.Action] = record["other_info"]
 
-            action = list(record['action_dict'].keys())[-1]
-            encouraged = self._action_to_string(action, None)
+                action = list(record['action_dict'].keys())[-1]
+                encouraged = self._action_to_string(action, None)
 
-            # sort encouraged/discouraged actions based on highest q value
-            # action_dict: history.HistoryReplay.ActionDict[history.Action] = record["action_dict"]
-            # actions: List[Tuple[history.Action, float]] =\
-            #         sorted( map( lambda itm: (itm[0], itm[1]["qvalue"])
-            #                    , action_dict.items()
-            #                    )
-            #               , key=(lambda itm: itm[1])
-            #               , reverse=True
-            #               )
+                # sort encouraged/discouraged actions based on highest q value
+                # action_dict: history.HistoryReplay.ActionDict[history.Action] = record["action_dict"]
+                # actions: List[Tuple[history.Action, float]] =\
+                #         sorted( map( lambda itm: (itm[0], itm[1]["qvalue"])
+                #                    , action_dict.items()
+                #                    )
+                #               , key=(lambda itm: itm[1])
+                #               , reverse=True
+                #               )
 
-            # # if first action has qvalue <=0., encourage a random action, else take the first action
-            # if actions[0][1]<=0.:
-            #     if self._norandom:
-            #         encouraged: List[Tuple[history.Action, float]]\
-            #                 = actions[:1]
-            #     else:
-            #         encouraged: List[Tuple[history.Action, float]]\
-            #                 = [ ( self._random_action(key, True)
-            #                     , self._rng.random()/2.
-            #                     )
-            #                   ]
-            # else:
-            #     encouraged: List[Tuple[history.Action, float]] = actions[:1]
-            # encouraged_actions: Set[history.Action] = set(map(lambda itm: itm[0], encouraged))
-            # encouraged: str = "\n".join( map( lambda act: self._action_to_string(act[0], act[1])
-            #                                 , encouraged
-            #                                 )
-            #                            )
+                # # if first action has qvalue <=0., encourage a random action, else take the first action
+                # if actions[0][1]<=0.:
+                #     if self._norandom:
+                #         encouraged: List[Tuple[history.Action, float]]\
+                #                 = actions[:1]
+                #     else:
+                #         encouraged: List[Tuple[history.Action, float]]\
+                #                 = [ ( self._random_action(key, True)
+                #                     , self._rng.random()/2.
+                #                     )
+                #                   ]
+                # else:
+                #     encouraged: List[Tuple[history.Action, float]] = actions[:1]
+                # encouraged_actions: Set[history.Action] = set(map(lambda itm: itm[0], encouraged))
+                # encouraged: str = "\n".join( map( lambda act: self._action_to_string(act[0], act[1])
+                #                                 , encouraged
+                #                                 )
+                #                            )
 
-            # if actions[-1][1]>0.:
-            #     if self._norandom:
-            #         discouraged: List[Tuple[history.Action, float]]\
-            #                 = actions[-1:]
-            #     else:
-            #         discouraged_action: history.Action = self._random_action(key, False)
-            #         j = 0
-            #         while discouraged_action in encouraged_actions:
-            #             discouraged_action = self._random_action(key, False)
-            #             j += 1
-            #             if j>=10:
-            #                 break
-            #         discouraged: List[Tuple[history.Action, float]]\
-            #                 = [ ( discouraged_action
-            #                     , 0.
-            #                     )
-            #                   ]
-            #     logger.debug("Generated Discouraged: {:}".format(discouraged))
-            # else:
-            #     discouraged: List[Tuple[history.Action, float]] = list( itertools.takewhile( lambda itm: itm[1]==0.
-            #                                                           , reversed(actions)
-            #                                                           )
-            #                                                )
-            #     logger.debug("Recorded Discouraged: {:}".format(discouraged))
-            # discouraged: str = "\n".join( map( lambda act: self._action_to_string(act[0], act[1])
-            #                                  , discouraged
-            #                                  )
-            #                             )
+                # if actions[-1][1]>0.:
+                #     if self._norandom:
+                #         discouraged: List[Tuple[history.Action, float]]\
+                #                 = actions[-1:]
+                #     else:
+                #         discouraged_action: history.Action = self._random_action(key, False)
+                #         j = 0
+                #         while discouraged_action in encouraged_actions:
+                #             discouraged_action = self._random_action(key, False)
+                #             j += 1
+                #             if j>=10:
+                #                 break
+                #         discouraged: List[Tuple[history.Action, float]]\
+                #                 = [ ( discouraged_action
+                #                     , 0.
+                #                     )
+                #                   ]
+                #     logger.debug("Generated Discouraged: {:}".format(discouraged))
+                # else:
+                #     discouraged: List[Tuple[history.Action, float]] = list( itertools.takewhile( lambda itm: itm[1]==0.
+                #                                                           , reversed(actions)
+                #                                                           )
+                #                                                )
+                #     logger.debug("Recorded Discouraged: {:}".format(discouraged))
+                # discouraged: str = "\n".join( map( lambda act: self._action_to_string(act[0], act[1])
+                #                                  , discouraged
+                #                                  )
+                #                             )
 
-            examplar: str = self._examplar_to_string( i
-                                                    , key
-                                                    , info_dict
-                                                    , encouraged
-                                                    )
-            #  }}} Contruct one Examplar # 
+                examplar: str = self._examplar_to_string( i
+                                                        , key
+                                                        , info_dict
+                                                        , encouraged
+                                                        )
+                #  }}} Contruct one Examplar # 
 
-            examplar_length: int = len(self._tokenizer.encode(examplar))+1
-            if examplar_length<=example_tokens_limit:
+                examplar_length: int = len(self._tokenizer.encode(examplar))+1
+                if examplar_length<=example_tokens_limit:
+                    examplars.append(examplar)
+                    examplar_ids.append(record["id"])
+                    examplar_scores.append(score)
+                    example_tokens_limit -= examplar_length
+                    i += 1
+                    if i>=nb_examplars:
+                        break
+            #  }}} Construct Examplars # 
+
+            logger.debug("Egs: %s", " ".join(map(str, examplar_ids)))
+            logger.debug("Sms: %s", " ".join(map("{:.2f}".format, examplar_scores)))
+            assert len(examplar_ids)>=1
+
+            return examplars
+            #  }}} method _get_examplars # 
+
+        # this is to accomodate my added class, so jank
+        else:
+            candidates: List[Tuple[history.MyRecord, float]] = self._filtered_history_replay[key]     # list of (MyRecord, score)
+            candidates = candidates[:nb_examplars]
+
+            examplars: List[str] = []
+            for idx, (rec, score) in enumerate(candidates):
+                examplar = self._myrecord_to_string(idx, rec)
                 examplars.append(examplar)
-                examplar_ids.append(record["id"])
-                examplar_scores.append(score)
-                example_tokens_limit -= examplar_length
-                i += 1
-                if i>=nb_examplars:
-                    break
-        #  }}} Construct Examplars # 
-
-        logger.debug("Egs: %s", " ".join(map(str, examplar_ids)))
-        logger.debug("Sms: %s", " ".join(map("{:.2f}".format, examplar_scores)))
-        assert len(examplar_ids)>=1
-
-        return examplars
-        #  }}} method _get_examplars # 
+            return examplars
 
     @abc.abstractmethod
     def _random_action(self, key: history.Key, encourages: bool = False) -> history.Action:
@@ -375,6 +389,10 @@ class HistoryReplayClient(Generic[history.Key, history.Action]):
                            , info_dict: history.HistoryReplay.InfoDict[history.Action]
                            , encouraged: str
                            ) -> str:
+        raise NotImplementedError()
+    
+    @abc.abstractmethod
+    def _myrecord_to_string(self, idx: int, rec: history.MyRecord):
         raise NotImplementedError()
 
     def train(self, train: bool):

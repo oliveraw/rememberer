@@ -1,0 +1,34 @@
+---
+Instruction: Find me double sided, machine washable decorative pillows with printing technology with size: 28" x 28", and price lower than 50.00 dollars
+Last 5 Actions:
+- click[b0743jkhbv] b0743jkhbv and b07xtk3p89 are both double sided, machine washable decorative pillows with printing technology and size 28" x 28". I can check b0743jkhbv first.
+- click[b0743jkhbv] b0743jkhbv and b07xtk3p89 are both double sided, machine washable decorative pillows with printing technology and size 28" x 28". I can check b0743jkhbv first.
+- click[b0743jkhbv] Both b0743jkhbv and b07xtk3p89 are double sided, machine washable decorative pillows with printing technology and size 28" x 28". I can check b0743jkhbv first.
+- click[28" x 28"] This is the desired size for the decorative pillows and I haven't clicked on it yet.
+- click[28" x 28"] This is the desired size for the decorative pillows and I haven't clicked on it yet.
+Observation: |
+  size
+  Ambesonne Abstract Throw Pillow Cushion Cover, Geometric Composition with Different Colored Squares Striped Dotted Rhombus, Decorative Square Accent Pillow Case, 16" X 16", Grey Purple
+  Price: $14.95
+  Rating: N.A.
+Available Actions:
+<action>back to search</action>
+<action>< prev</action>
+<action>description</action>
+<action>features</action>
+<action>reviews</action>
+<action>buy now</action>
+<action>16" x 16"</action>
+<action>18 x 18-inch</action>
+<action>20" x 20"</action>
+<action>24" x 24"</action>
+<action>26" x 16"</action>
+<action>26" x 26"</action>
+<action>28" x 28"</action>
+<action>36" x 16"</action>
+<action>36" x 36"</action>
+<action>40" x 40"</action>
+...
+
+Encouraged:
+click[buy now] -> I have already selected the required attributes and am ready to purchase the item. 
