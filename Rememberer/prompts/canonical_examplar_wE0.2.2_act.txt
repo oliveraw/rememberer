@@ -1,0 +1,38 @@
+---
+Instruction: i want blue and eco friendly cenglings sandals for women, and price lower than 50.00 dollars
+Last 5 Actions:
+- search[blue eco friendly cenglings sandals women] I have not yet searched for the desired sandals and this action will help me find them.
+- click[b09q5ybjl8] b09q5ybjl8 is a blue and eco friendly cenglings sandal for women and is priced lower than 50 dollars. I can check this item first.
+- click[blue] -> The webpage contents specify that we must choose a color and size before clicking buy now. Blue is the color specified in the instruction.
+Webpage Contents:
+  color
+  size
+  Cenglings Sandals for Women, Plus Size Open Toe Leather Wedges Shoes Casual Breathable Outdoor Ankle Strap Platform Sandals
+  Price: $13.51
+  Rating: N.A.
+Available Actions:
+  <action>back to search</action>
+  <action>< prev</action>
+  <action>description</action>
+  <action>features</action>
+  <action>reviews</action>
+  <action>buy now</action>
+  <action>blue</action>
+  <action>brown</action>
+  <action>grey</action>
+  <action>red</action>
+  <action>5.5</action>
+  <action>6</action>
+  <action>6.5</action>
+  <action>7</action>
+  <action>7.5</action>
+  <action>8</action>
+  <action>8.5</action>
+  <action>9</action>
+  <action>9.5</action>
+...
+
+
+Suggested <action>:
+click[8] -> The webpage contents specify that we must select a size in order to click buy now.
+***

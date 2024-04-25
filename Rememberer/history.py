@@ -499,10 +499,13 @@ class FilteredHistoryReplay(object):
         candidates = []
         for history in self._record.values():
             for rec in history:
+                if request[1] == rec.ins:
+                    print("NOT INCLUDING SAME TASK IN HISTORY",request[1], rec.ins)
+                    continue
                 ins, obs, avail_actions = rec.ins, rec.obs, rec.avail_actions
-                sim_score = matcher((obs, ins, "\n".join(avail_actions)))
+                sim_score = matcher((obs, ins, avail_actions))
                 candidates.append((rec, sim_score))
-        sorted(candidates, key=lambda x: x[1], reverse=True)
+        candidates = sorted(candidates, key=lambda x: x[1], reverse=True)
 
         return candidates
         #  }}} method __getitem__ # 
@@ -518,12 +521,16 @@ class FilteredHistoryReplay(object):
         obs, ins, avail_actions = step
         avail_actions = '\n'.join(avail_actions)
 
-        past_actions = [x.sugg_action for x in reversed(self._record[task_idx])]
+        past_actions = [(x.sugg_action, x.reason) for x in reversed(self._record[task_idx])]
         if done:
             # only record the buy now if this was a fully successful run
             if reward == 1.0:
                 assert action == 'click[buy now]', "last action on successful run should be buy now"
                 self._record[task_idx].append(MyRecord(ins, obs, avail_actions, action, reason, past_actions))
+                print("Saved trajectory to history", self._record[task_idx])
+            else:
+                print("Discarded trajectory from history", self._record[task_idx])
+                del self._record[task_idx]
         else:
             # if the same action was taken don't record that
             if len(self._record[task_idx]):

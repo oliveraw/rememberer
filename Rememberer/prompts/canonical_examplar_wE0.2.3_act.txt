@@ -1,0 +1,29 @@
+---
+Instruction: i want to find a small pair of men's pajama pants that's officially licensed with the joker, and price lower than 50.00 dollars
+Last 5 Actions:
+- search[small men's pajama pants officially licensed joker] The instruction asks for a specific type of pajama pants, so I should search for them.
+- click[b09391jq43] This item matches the desired description and is priced lower than $50.
+Webpage Contents:
+  size
+  DC Comics Men's The Joker Script Logo Classic Villain Adult Sleepwear Lounge Pajama Pants
+  Price: $24.99 to $26.99
+  Rating: N.A.
+Available Actions:
+  <action>back to search</action>
+  <action>< prev</action>
+  <action>description</action>
+  <action>features</action>
+  <action>reviews</action>
+  <action>buy now</action>
+  <action>small</action>
+  <action>medium</action>
+  <action>large</action>
+  <action>x-large</action>
+  <action>xx-large</action>
+  <action>3x-large</action>
+...
+
+
+Suggested <action>:
+click[small] -> The webpage contents specify that I must select a size. The instruction asks for size small. 
+***

@@ -1,0 +1,28 @@
+---
+Instruction: i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and price lower than 40.00 dollars
+Last 5 Actions:
+- search[3 ounce bottle bright citrus deodorant sensitive skin]
+Observation:
+  [Back to Search]
+  Page 1 (Total results: 50)
+  [Next >]
+  [B078GWRC1J]
+  Bright Citrus Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy and Breastfeeding, Contains Organic Calendula 3-Ounce
+  $10.99
+  [B078GTKVXY]
+  Ginger Fresh Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy and Breastfeeding, Contains Organic Calendula 3-Ounce
+  $10.99
+  [B08KBVJ4XN]
+  Barrel and Oak - Aluminum-Free Deodorant, Deodorant for Men, Essential Oil-Based Scent, 24-Hour Odor Protection, Cedar & Patchouli Blend, Gentle on Sensitive Skin (Mountain Sage, 2.7 oz, 2-Pack)
+  $15.95
+Available Actions:
+  <action>back to search</action>
+  <action>next ></action>
+  <action>b078gwrc1j</action>
+  <action>b078gtkvxy</action>
+  <action>b08kbvj4xn</action>
+...
+
+Suggested <action>:
+click[b078gwrc1j] -> b078gwrc1j and b078gtkvxy are bright citrus deodorant less then 50 dollars. I can check b078gwrc1j first.
+***

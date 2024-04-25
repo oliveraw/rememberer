@@ -1,0 +1,1008 @@
+!!python/object/apply:collections.defaultdict
+args:
+- !!python/name:builtins.list ''
+dictitems:
+  0:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i need a 10 pound back of parboiled brown rice that is easy
+      to prepare, and price lower than 50.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of rice, so I should search for
+      it.
+    sugg_action: search[10 pound bag parboiled brown rice easy to prepare]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b00m674k0g
+
+      b013llvo1i
+
+      b0010xrvr6
+
+      b087d93crx
+
+      b00b1h8vmu
+
+      b01gzi0jmy
+
+      b083x4gw6y
+
+      b09ml2wvbk
+
+      b09r4jvd58
+
+      b07gphfdvs'
+    ins: 'Instruction: i need a 10 pound back of parboiled brown rice that is easy
+      to prepare, and price lower than 50.00 dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B00M674K0G [button_]\nIberia Parboiled\
+      \ Brown, 10 Pounds, Rice, 160 Ounce\n$13.09\n\n[button] B013LLVO1I [button_]\n\
+      Bakery On Main Gluten-Free, Non GMO Granola, Cranberry Almond Maple, 2.5 Pound\n\
+      $100.0\n\n[button] B0010XRVR6 [button_]\nKnorr Rice Sides For a Tasty Rice Side\
+      \ Dish Creamy Chicken No Artificial Flavors, No Preservatives, No Added MSG\
+      \ 5.7 oz\n$100.0\n\n[button] B087D93CRX [button_]\nKosher Parve Mre, Meal Mart\
+      \ Amazing Meals Ready to Eat, Fillet of Salmon Rice & Pimentos (12 Pack) \u2013\
+      \ Travel, Military, Emergency Survival Food \u2013 Prepared Fully Cooked, Microwave\
+      \ Dinner, Shelf Stable\n$89.99\n\n[button] B00B1H8VMU [button_]\nBaron\u2019\
+      s Whole Wheat Orzo Pasta | 100% Natural Israeli Rice-Shaped Orzo for Soups,\
+      \ Casseroles & Salads | Cooks in 10 Minutes! | Kosher| 2 Pack 21.16oz Jars\n\
+      $14.99\n\n[button] B01GZI0JMY [button_]\nLundberg Organic Brown Rice Cakes,\
+      \ Honey Nut, 9.6oz(pack of 12), Gluten-Free, Whole Grain, Kosher, USDA Certified\
+      \ Organic, Non-GMO Verified\n$56.6\n\n[button] B083X4GW6Y [button_]\nBob's Red\
+      \ Mill Gluten Free Muffin Mix, 16 Oz\n$9.38\n\n[button] B09ML2WVBK [button_]\n\
+      National Foods Butter Chicken Recipe Mix 1.65 oz (47g) | South Asian Meat Curry\
+      \ Masala Powder | Traditional Spicy Food | Box Pack | Pack of 6\n$14.99\n\n\
+      [button] B09R4JVD58 [button_]\nRainbow Window Covering Stained Glass FilmSticker\
+      \ Heat Control Opaque Vinyl for Bathroom and Kids Bedroom17.5 x 78.7 Inch W23.6\
+      \ x L47.2 Sky Blue Black White\n$31.0\n\n[button] B07GPHFDVS [button_]\nSEEDS\
+      \ OF CHANGE Organic Rice Variety Pack, Quinoa Brown Rice & Red Rice with Flaxseed,\
+      \ Ready to Heat, 8.5 Ounce (Pack of 6)\n$19.74\n"
+    past_actions:
+    - !!python/tuple
+      - search[10 pound bag parboiled brown rice easy to prepare]
+      - The instruction asks for a specific type of rice, so I should search for it.
+    reason: This item matches the desired description and is priced lower than $50.
+      I can check this item first.
+    sugg_action: click[b00m674k0g]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now'
+    ins: 'Instruction: i need a 10 pound back of parboiled brown rice that is easy
+      to prepare, and price lower than 50.00 dollars'
+    obs: 'Iberia Parboiled Brown, 10 Pounds, Rice, 160 Ounce
+
+      Price: $13.09
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b00m674k0g]
+      - This item matches the desired description and is priced lower than $50. I
+        can check this item first.
+    - !!python/tuple
+      - search[10 pound bag parboiled brown rice easy to prepare]
+      - The instruction asks for a specific type of rice, so I should search for it.
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]
+  3:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i want gluten free sun tropics sea salt snack bites, and price
+      lower than 50.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of snack bites, so I should search
+      for them.
+    sugg_action: search[gluten free sun tropics sea salt snack bites]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b07vk1zcrg
+
+      b001d0dmme
+
+      b00fbczcws
+
+      b09jgswvjh
+
+      b07256gkz5
+
+      b07j4xncsz
+
+      b07fdl284n
+
+      b08642jyrv
+
+      b003i567w4
+
+      b07fz6xx2t'
+    ins: 'Instruction: i want gluten free sun tropics sea salt snack bites, and price
+      lower than 50.00 dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B07VK1ZCRG [button_]\nSun Tropics\
+      \ Mochi Snack Bites, Variety Pack, 3.5 oz (6 Pack), Gluten Free, Vegan, No MSG\
+      \ Added, Dairy Free, Crunchy Snack\n$19.99\n\n[button] B001D0DMME [button_]\n\
+      KIND Bars, Cranberry Almond, Gluten Free, Low Glycemic Index, 1.4 Ounce Bars,\
+      \ 12 Count\n$14.22\n\n[button] B00FBCZCWS [button_]\nKIND Bars, Maple Glazed\
+      \ Pecan & Sea Salt, Gluten Free, Low Glycemic Index, 1.4oz, 12 Count\n$14.22\n\
+      \n[button] B09JGSWVJH [button_]\nSand + Fog Scented Candles | Autumn Harvest\
+      \ | Soy Blend | 2 - 100% Cotton Lead-Free Wicks | 12 oz\n$12.99\n\n[button]\
+      \ B07256GKZ5 [button_]\nLight Grey Celtic Sea Salt Resealable Bags \u2013 Additive-Free,\
+      \ Delicious Sea Salt, Perfect for Cooking, Baking and More - Gluten-Free, Non-GMO\
+      \ Verified, Kosher and Paleo-Friendly, 1 Pound Bag (2 Count)\n$14.35\n\n[button]\
+      \ B07J4XNCSZ [button_]\nSun-Maid - Fruity Raisins Snacks for Kids - Sour Mixed\
+      \ Berry - 0.7 Ounce - Pack of 56 - Whole Natural Dried Fruit - No Artificial\
+      \ Flavors - Non-GMO\n$35.18\n\n[button] B07FDL284N [button_]\nRiceworks Sea\
+      \ Salt Rice Chips & Snacks, Non GMO, Gluten Free, 5.5 oz. per bag, 6 pack\n\
+      $29.99\n\n[button] B08642JYRV [button_]\nSiete Grain Free Tortilla Chips | Gluten\
+      \ Free Chips | Paleo & Vegan Snacks | Non GMO | Sea Salt, 5 Ounce (Pack of 6)\n\
+      $100.0\n\n[button] B003I567W4 [button_]\nBlue Diamond Almonds Nut Thins Gluten\
+      \ Free Cracker Crisps, Hint of Sea Salt, 4.25 Oz Boxes (Pack of 12)\n$34.44\n\
+      \n[button] B07FZ6XX2T [button_]\nMissy J's Organic Peanut Butter Carob Bar 3\
+      \ Ounce 2 Pack | Carob Made w/Coconut Sugar, Vegan and Gluten-Free | Healthy\
+      \ Caffeine Free Substitute for Chocolate, Perfect for Snacks and Treats\n$17.87\n"
+    past_actions:
+    - !!python/tuple
+      - search[gluten free sun tropics sea salt snack bites]
+      - The instruction asks for a specific type of snack bites, so I should search
+        for them.
+    reason: This item matches the desired description and is priced lower than $50.
+      I can check this item first.
+    sugg_action: click[b07vk1zcrg]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now
+
+      golden curry
+
+      sea salt
+
+      tamari teriyaki
+
+      thai bird sriracha
+
+      variety
+
+      .75 ounce (24 pack)
+
+      3.5 ounce (pack of 6)
+
+      3.5 ounce (6 pack)'
+    ins: 'Instruction: i want gluten free sun tropics sea salt snack bites, and price
+      lower than 50.00 dollars'
+    obs: 'flavor
+
+      size
+
+      Sun Tropics Mochi Snack Bites, Variety Pack, 3.5 oz (6 Pack), Gluten Free, Vegan,
+      No MSG Added, Dairy Free, Crunchy Snack
+
+      Price: $19.99
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b07vk1zcrg]
+      - This item matches the desired description and is priced lower than $50. I
+        can check this item first.
+    - !!python/tuple
+      - search[gluten free sun tropics sea salt snack bites]
+      - The instruction asks for a specific type of snack bites, so I should search
+        for them.
+    reason: The webpage contents specify that we must choose a flavor and size before
+      clicking buy now. Sea salt is the flavor specified in the instruction.
+    sugg_action: click[sea salt]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now
+
+      golden curry
+
+      sea salt
+
+      tamari teriyaki
+
+      thai bird sriracha
+
+      variety
+
+      .75 ounce (24 pack)
+
+      3.5 ounce (pack of 6)
+
+      3.5 ounce (6 pack)'
+    ins: 'Instruction: i want gluten free sun tropics sea salt snack bites, and price
+      lower than 50.00 dollars'
+    obs: 'You have clicked sea salt.
+
+      flavor
+
+      [clicked button] sea salt [clicked button_]
+
+      size
+
+      Sun Tropics Mochi Snack Bites, Variety Pack, 3.5 oz (6 Pack), Gluten Free, Vegan,
+      No MSG Added, Dairy Free, Crunchy Snack
+
+      Price: $19.99
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[sea salt]
+      - The webpage contents specify that we must choose a flavor and size before
+        clicking buy now. Sea salt is the flavor specified in the instruction.
+    - !!python/tuple
+      - click[b07vk1zcrg]
+      - This item matches the desired description and is priced lower than $50. I
+        can check this item first.
+    - !!python/tuple
+      - search[gluten free sun tropics sea salt snack bites]
+      - The instruction asks for a specific type of snack bites, so I should search
+        for them.
+    reason: The webpage contents specify that we must select a size in order to click
+      buy now. The instruction asks for a 3.5 ounce pack of snack bites.
+    sugg_action: click[3.5 ounce (6 pack)]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now
+
+      golden curry
+
+      sea salt
+
+      tamari teriyaki
+
+      thai bird sriracha
+
+      variety
+
+      .75 ounce (24 pack)
+
+      3.5 ounce (pack of 6)
+
+      3.5 ounce (6 pack)'
+    ins: 'Instruction: i want gluten free sun tropics sea salt snack bites, and price
+      lower than 50.00 dollars'
+    obs: 'You have clicked 3.5 ounce (6 pack).
+
+      You have clicked sea salt.
+
+      flavor
+
+      [clicked button] sea salt [clicked button_]
+
+      size
+
+      [clicked button] 3.5 ounce (6 pack) [clicked button_]
+
+      Sun Tropics Mochi Snack Bites, Variety Pack, 3.5 oz (6 Pack), Gluten Free, Vegan,
+      No MSG Added, Dairy Free, Crunchy Snack
+
+      Price: $19.99
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[3.5 ounce (6 pack)]
+      - The webpage contents specify that we must select a size in order to click
+        buy now. The instruction asks for a 3.5 ounce pack of snack bites.
+    - !!python/tuple
+      - click[sea salt]
+      - The webpage contents specify that we must choose a flavor and size before
+        clicking buy now. Sea salt is the flavor specified in the instruction.
+    - !!python/tuple
+      - click[b07vk1zcrg]
+      - This item matches the desired description and is priced lower than $50. I
+        can check this item first.
+    - !!python/tuple
+      - search[gluten free sun tropics sea salt snack bites]
+      - The instruction asks for a specific type of snack bites, so I should search
+        for them.
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]
+  4:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i want blue and eco friendly cenglings sandals for women, and
+      price lower than 40.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of sandals, so I should search
+      for them.
+    sugg_action: search[blue eco friendly cenglings sandals women]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b09q5ybjl8
+
+      b09cdsr86m
+
+      b09p59ggxn
+
+      b09pnrgynq
+
+      b09q9d1k69
+
+      b097zlkzcs
+
+      b09s8mfc3r
+
+      b098rx8416
+
+      b09s8kngz3
+
+      b09rzrt4qd'
+    ins: 'Instruction: i want blue and eco friendly cenglings sandals for women, and
+      price lower than 40.00 dollars'
+    obs: 'Page 1 (Total results: 50)
+
+
+      [button] B09Q5YBJL8 [button_]
+
+      Cenglings Sandals for Women, Plus Size Open Toe Leather Wedges Shoes Casual
+      Breathable Outdoor Ankle Strap Platform Sandals
+
+      $13.51
+
+
+      [button] B09CDSR86M [button_]
+
+      UMIYI Sandals for Women Casual Summer Woven Slip On Open Toe Wedge Sandals Womens
+      Flip Flops Girls Sandals
+
+      $7.99 to $25.99
+
+
+      [button] B09P59GGXN [button_]
+
+      NOLDARES Women''s High Heel Sandals, Close Toe High Block Heel Pumps Strappy
+      Lace Up Party Wedding Dressy Fashion Sandals
+
+      $15.99 to $25.99
+
+
+      [button] B09PNRGYNQ [button_]
+
+      NOLDARES Heeled Sandals for Women,Suede Block High Heel Buckle Sandals Mule
+      Ankle Strap Wedding Dress Pump Shoes
+
+      $12.99 to $27.99
+
+
+      [button] B09Q9D1K69 [button_]
+
+      Tongue Cleaner, Tongue Brush Silicone Plasitc Hygienic Ergonomic Freshen Breath
+      for Men Women for Oral Care for Home Travel
+
+      $6.59
+
+
+      [button] B097ZLKZCS [button_]
+
+      Wedge Sandals for Women Casual Summer Platform Espadrille High Heel Sandals
+      2021 Casual Sandals Shoes Open Toe Roman Shoes
+
+      $2.99 to $15.99
+
+
+      [button] B09S8MFC3R [button_]
+
+      Women''s Clear Square Open Toe Heeled Sandals Ankle Strap Chunky Block High
+      Heels Buckle Strappy Dressy Heeled Sandals
+
+      $1.01 to $36.04
+
+
+      [button] B098RX8416 [button_]
+
+      NLOMOCT Sandals for Women Casual Summer Open Toe Ankle Strap Snakeskin Wedge
+      Platform Sandals Outdoor Shoes Women''s Sandals
+
+      $5.99 to $12.99
+
+
+      [button] B09S8KNGZ3 [button_]
+
+      Clear Studded Rhinestone Heels for Women Sexy Chunky Block Square Toe Heels
+      Wedding Shoes Low Heels Open Toe Bridal Pumps Sandals
+
+      $7.55 to $38.11
+
+
+      [button] B09RZRT4QD [button_]
+
+      FAMOORE Women''s Ladies Fashion Solid Wedges Casual Buckle Strap Roman Shoes
+      Sandals
+
+      $11.08 to $51.98
+
+      '
+    past_actions:
+    - !!python/tuple
+      - search[blue eco friendly cenglings sandals women]
+      - The instruction asks for a specific type of sandals, so I should search for
+        them.
+    reason: This item matches the desired description and is priced lower than $40.
+      I can check this item first.
+    sugg_action: click[b09q5ybjl8]
+  5:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i would like a 0.25 fluid ounces of oil free 090 foundation,
+      and price lower than 40.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of foundation, so I should search
+      for it.
+    sugg_action: search[0.25 fluid ounces oil free 090 foundation]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b01j5uc1q6
+
+      b01hoi5e9m
+
+      b072j9spmr
+
+      b074vg3cd5
+
+      b002f3qyza
+
+      b07gxbj73p
+
+      b00028ot8y
+
+      b07t5b23nb
+
+      b076d9ds75
+
+      b07nv7d8vb'
+    ins: 'Instruction: i would like a 0.25 fluid ounces of oil free 090 foundation,
+      and price lower than 40.00 dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B01J5UC1Q6 [button_]\nLuminess Air\
+      \ Silk 4-in-1 Airbrush Foundation \u2013 Shade 040, 0.25 oz (COMINE3013823)\n\
+      $21.25\n\n[button] B01HOI5E9M [button_]\nNeutrogena Hydro Boost Hydrating Tint\
+      \ with Hyaluronic Acid, Lightweight Water Gel Formula, Moisturizing, Oil-Free\
+      \ & Non-Comedogenic Liquid Foundation Makeup, 30 Buff Color, 1.0 fl. oz\n$9.9\n\
+      \n[button] B072J9SPMR [button_]\nPhoto Finish Professional Airbrush Makeup-\
+      \ Foundation -1.0 Oz Cosmetic Face- Choose Color (Contour Set (3x.2oz))\n$14.95\n\
+      \n[button] B074VG3CD5 [button_]\nMaybelline Super Stay Full Coverage Liquid\
+      \ Foundation Makeup, Warm Nude, 1 Fl Oz\n$5.2\n\n[button] B002F3QYZA [button_]\n\
+      Neutrogena Oil-Free Acne Stress Control Triple-Action Toner, 8 Fluid Ounce\n\
+      $7.18\n\n[button] B07GXBJ73P [button_]\nMaybelline New York Super Stay Full\
+      \ Coverage Liquid Foundation Makeup, 336 Warm Bronze, 1 Fl Oz\n$9.21\n\n[button]\
+      \ B00028OT8Y [button_]\nGabriel Cosmetics Dual Powder Foundation (Extra Light\
+      \ Beige \u2013 Fair to Light/ Neutral Undertones), Natural Pressed mineral powder,\
+      \ Paraben Free, Vegan, Gluten-free, Cruelty-free, Non GMO, Enhanced with Sea\
+      \ Fennel, .32 oz.\n$24.49\n\n[button] B07T5B23NB [button_]\n2Pcs 30ml/1oz Empty\
+      \ Clear Square Glass Emulsion Essence Bottle With Black Pump Head Cosmetic Foundation\
+      \ Travel Vials Containers Holder For Lotion Cleanser Essential Oils Liquids\
+      \ Body Cream\n$11.77\n\n[button] B076D9DS75 [button_]\nBai Iced Tea, Supertea\
+      \ Variety Pack, Crafted with Black Tea and White Tea, 18 Fluid Ounce Bottles,\
+      \ 12 count, 3 each Socorro Sweet Tea, Narino Peach Tea, Tanzania Lemonade Tea,\
+      \ Rio Raspberry Tea\n$100.0\n\n[button] B07NV7D8VB [button_]\nYadah Cactus Toner\
+      \ Pads 5.07 Fluid Ounce 60 Count, Cruelty Free Facial Cleansing Exfoliator Toning\
+      \ Hydrating Treatment Wipes for Clear Pores Acne Prone Oily Dry Sensitive Skin\n\
+      $19.0\n"
+    past_actions:
+    - !!python/tuple
+      - search[0.25 fluid ounces oil free 090 foundation]
+      - The instruction asks for a specific type of foundation, so I should search
+        for it.
+    reason: This item matches the desired description and is priced lower than $40.
+      I can check this item first.
+    sugg_action: click[b01j5uc1q6]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now
+
+      010
+
+      030
+
+      040
+
+      050
+
+      060
+
+      070
+
+      080
+
+      090
+
+      100
+
+      110
+
+      120
+
+      0.25 ounce
+
+      0.25 ounce (pack of 1)
+
+      0.25 fl oz (pack of 1)'
+    ins: 'Instruction: i would like a 0.25 fluid ounces of oil free 090 foundation,
+      and price lower than 40.00 dollars'
+    obs: "color\nsize\nLuminess Air Silk 4-in-1 Airbrush Foundation \u2013 Shade 040,\
+      \ 0.25 oz (COMINE3013823)\nPrice: $21.25\nRating: N.A.\n"
+    past_actions:
+    - !!python/tuple
+      - click[b01j5uc1q6]
+      - This item matches the desired description and is priced lower than $40. I
+        can check this item first.
+    - !!python/tuple
+      - search[0.25 fluid ounces oil free 090 foundation]
+      - The instruction asks for a specific type of foundation, so I should search
+        for it.
+    reason: The webpage contents specify that we must select a size in order to click
+      buy now. The instruction asks for a 0.25 fluid ounce bottle, and this is the
+      closest option available.
+    sugg_action: click[0.25 fl oz (pack of 1)]
+  7:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i am looking for long lasting deep color colorstay concealer,
+      and price lower than 30.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of concealer, so I should search
+      for it.
+    sugg_action: search[long lasting deep color colorstay concealer]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b07kywgp65
+
+      b07gw9q8fh
+
+      b07gwdxwrh
+
+      b00j2apbzi
+
+      b072j9spmr
+
+      b001b2s32s
+
+      b074vg3cd5
+
+      b09ky9p8cd
+
+      b09p2r22lf
+
+      b07n33d4th'
+    ins: 'Instruction: i am looking for long lasting deep color colorstay concealer,
+      and price lower than 30.00 dollars'
+    obs: 'Page 1 (Total results: 50)
+
+
+      [button] B07KYWGP65 [button_]
+
+      Revlon ColorStay Concealer, Longwearing Full Coverage Color Correcting Makeup,
+      055 Chestnut, 0.21 oz
+
+      $9.49
+
+
+      [button] B07GW9Q8FH [button_]
+
+      IT Cosmetics Bye Bye Under Eye, 11.0 Light Nude (N) - Full-Coverage, Anti-Aging,
+      Waterproof Concealer - Improves the Appearance of Dark Circles, Wrinkles & Imperfections
+      - 0.4 fl oz
+
+      $29.0
+
+
+      [button] B07GWDXWRH [button_]
+
+      IT Cosmetics Bye Bye Under Eye, 14.5 Light Buff (N) - Full-Coverage, Anti-Aging,
+      Waterproof Concealer - Improves the Appearance of Dark Circles, Wrinkles & Imperfections
+      - 0.4 fl oz
+
+      $28.06
+
+
+      [button] B00J2APBZI [button_]
+
+      COVERGIRL Ready Set Gorgeous Fresh Complexion Concealer, Fair 105/110, 0.37
+      oz (Packaging May Vary)
+
+      $5.99
+
+
+      [button] B072J9SPMR [button_]
+
+      Photo Finish Professional Airbrush Makeup- Foundation -1.0 Oz Cosmetic Face-
+      Choose Color (Contour Set (3x.2oz))
+
+      $14.95
+
+
+      [button] B001B2S32S [button_]
+
+      Permanent Hair Color by Revlon, Permanent Hair Dye, Colorsilk with 100% Gray
+      Coverage, Ammonia-Free, Keratin and Amino Acids, 41 Medium Brown, 4.4 Oz (Pack
+      of 1)
+
+      $2.99
+
+
+      [button] B074VG3CD5 [button_]
+
+      Maybelline Super Stay Full Coverage Liquid Foundation Makeup, Warm Nude, 1 Fl
+      Oz
+
+      $5.2
+
+
+      [button] B09KY9P8CD [button_]
+
+      Mirror Effect Chrome Metallic Nail Polish Lacquer, Mirror Effect Long Lasting
+      Gorgeous Glossy Manicure Nail Art Decoration, Brilliant Manicure Effect Nail
+      Lacquers
+
+      $3.15
+
+
+      [button] B09P2R22LF [button_]
+
+      12A Grade Deep Wave Lace Frontal 13x4 Ear to Ear Lace Frontal Closure 18 Inch
+      100% Unprocessed Brazilian Virgin Human Hair Swiss Lace Frontal Closure Bleached
+      Knots 180% Density Pre Plucked With Baby Hair Natural Color
+
+      $86.79
+
+
+      [button] B07N33D4TH [button_]
+
+      Style Edit Root Concealer Touch Up Spray (Multiple Colors Available) - Instantly
+      Covers Greys And Roots - Professional Salon Quality Grays Cover Up Hair Products
+      for Women Medium Brown 2 Ounce PACK OF 4 PLUS 1 FREE (Total Of 5)
+
+      $99.49
+
+      '
+    past_actions:
+    - !!python/tuple
+      - search[long lasting deep color colorstay concealer]
+      - The instruction asks for a specific type of concealer, so I should search
+        for it.
+    reason: This item matches the desired description and is priced lower than $30.
+      I can check this item first.
+    sugg_action: click[b07kywgp65]
+  - !!python/object:history.MyRecord
+    avail_actions: "back to search\n< prev\ndescription\nfeatures\nreviews\nbuy now\n\
+      banana\nbiscuit\nbisque\ncaf\xE9\nchestnut\ncr\xE8me brulee\ndeep\nespresso\n\
+      fair\nhazelnut\nlight\nlight medium\nmedium\nmedium deep\nnutmeg\noat\nsand\n\
+      vanilla"
+    ins: 'Instruction: i am looking for long lasting deep color colorstay concealer,
+      and price lower than 30.00 dollars'
+    obs: 'color
+
+      Revlon ColorStay Concealer, Longwearing Full Coverage Color Correcting Makeup,
+      055 Chestnut, 0.21 oz
+
+      Price: $9.49
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b07kywgp65]
+      - This item matches the desired description and is priced lower than $30. I
+        can check this item first.
+    - !!python/tuple
+      - search[long lasting deep color colorstay concealer]
+      - The instruction asks for a specific type of concealer, so I should search
+        for it.
+    reason: The webpage contents specify that we must choose a color before clicking
+      buy now. Deep is the color specified in the instruction.
+    sugg_action: click[deep]
+  - !!python/object:history.MyRecord
+    avail_actions: "back to search\n< prev\ndescription\nfeatures\nreviews\nbuy now\n\
+      banana\nbiscuit\nbisque\ncaf\xE9\nchestnut\ncr\xE8me brulee\ndeep\nespresso\n\
+      fair\nhazelnut\nlight\nlight medium\nmedium\nmedium deep\nnutmeg\noat\nsand\n\
+      vanilla"
+    ins: 'Instruction: i am looking for long lasting deep color colorstay concealer,
+      and price lower than 30.00 dollars'
+    obs: 'You have clicked deep.
+
+      color
+
+      [clicked button] deep [clicked button_]
+
+      Revlon ColorStay Concealer, Longwearing Full Coverage Color Correcting Makeup,
+      055 Chestnut, 0.21 oz
+
+      Price: $9.49
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[deep]
+      - The webpage contents specify that we must choose a color before clicking buy
+        now. Deep is the color specified in the instruction.
+    - !!python/tuple
+      - click[b07kywgp65]
+      - This item matches the desired description and is priced lower than $30. I
+        can check this item first.
+    - !!python/tuple
+      - search[long lasting deep color colorstay concealer]
+      - The instruction asks for a specific type of concealer, so I should search
+        for it.
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]
+  8:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i am looking for a  masks for damaged hair, and price lower
+      than 120.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of mask for damaged hair, so
+      I should search for it.
+    sugg_action: search[masks damaged hair]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b09hwgb5lj
+
+      b0199wnjxy
+
+      b08nf5jl3f
+
+      b07q8vscw2
+
+      b08yfkcg9q
+
+      b09r82svcg
+
+      b07t9gkcpc
+
+      b09p4z74xn
+
+      b075pk2dsr
+
+      b08l81fylv'
+    ins: 'Instruction: i am looking for a  masks for damaged hair, and price lower
+      than 120.00 dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B09HWGB5LJ [button_]\nSoft-Sheen\
+      \ Carson Carol's Daughter Goddess Strength Repairing Cocoon Hydrating Hair Mask\
+      \ for Dry Damaged & Curly Hair, Restores Moisture, Made with Castor Oil, 12\
+      \ Oz, White\n$11.97\n\n[button] B0199WNJXY [button_]\nTRESemm\xE9 Expert Selection\
+      \ Hydrating Mask, Botanique Nourish and Replenish, 9.17 oz\n$14.98\n\n[button]\
+      \ B08NF5JL3F [button_]\nWella Professional Color Fresh Mask, Temporary Color\
+      \ Refresh Treatment, Chocolate Touch, 150 ml\n$23.99\n\n[button] B07Q8VSCW2\
+      \ [button_]\nPunky Hair Treatment Mask with Intrabond Hair Repairing Complex,\
+      \ Initiates Hair Repair, Strengthens Hair Fiber, Moisturizes and Conditions\
+      \ Hair - Ideal for Dry, Damaged, Chemically Treated Hair, 6 oz\n$22.95\n\n[button]\
+      \ B08YFKCG9Q [button_]\nGIRL+HAIR Curl Cloud and Cleanse Set, Conditioning Hair\
+      \ Mask and Tea Tree Oil Shampoo, Treat Scalp and Hair\n$100.0\n\n[button] B09R82SVCG\
+      \ [button_]\nGlow Witch Korean Skin Care Set - Deep Conditioning Hair Mask with\
+      \ Argan Oil for Dry and Damaged Hair Treatment (4 Pcs) & Face Sheet Masks Skincare\
+      \ (4 Pcs) with Probiotic & Mushroom Essence\n$100.0\n\n[button] B07T9GKCPC [button_]\n\
+      Yes To Tea Tree Scalp Relief Soothing Spray-On Hair Mask\n$6.99\n\n[button]\
+      \ B09P4Z74XN [button_]\n5 Pack Foot Peel Mask, Foot Exfoliator Peel Off Dry\
+      \ Cracked Feet Dead Skin Callus Remover, Natural Foot Socks, Baby Soft Smooth\
+      \ Touch, Removes & Repairs Dry Dead Skin and Rough Heels (Rose)\n$15.99\n\n\
+      [button] B075PK2DSR [button_]\nARABICA COFFEE BEAN OIL Brazilian. 100% Pure/Roasted/Premium\
+      \ Quality with incredible Coffee Aroma. For FACE, BODY, HANDS, FEET, NAILS &\
+      \ HAIR and LIP CARE. (0.5 Fl. oz. - 15 ml.)\n$21.95\n\n[button] B08L81FYLV [button_]\n\
+      4 Inch Silicone Facial Mask Mixing Bowl for Facial Mask, Mud Mask and Other\
+      \ Skincare Products Medium Multi colored 5 Pcs.\n$9.99\n"
+    past_actions:
+    - !!python/tuple
+      - search[masks damaged hair]
+      - The instruction asks for a specific type of mask for damaged hair, so I should
+        search for it.
+    reason: This item matches the desired description and is priced lower than $120.
+      I can check this item first.
+    sugg_action: click[b09hwgb5lj]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now
+
+      conditioner
+
+      gift set
+
+      hair mask
+
+      hair oil
+
+      leave in conditioner
+
+      leave in spray
+
+      pre-shampoo
+
+      shampoo'
+    ins: 'Instruction: i am looking for a  masks for damaged hair, and price lower
+      than 120.00 dollars'
+    obs: 'style
+
+      Soft-Sheen Carson Carol''s Daughter Goddess Strength Repairing Cocoon Hydrating
+      Hair Mask for Dry Damaged & Curly Hair, Restores Moisture, Made with Castor
+      Oil, 12 Oz, White
+
+      Price: $11.97
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b09hwgb5lj]
+      - This item matches the desired description and is priced lower than $120. I
+        can check this item first.
+    - !!python/tuple
+      - search[masks damaged hair]
+      - The instruction asks for a specific type of mask for damaged hair, so I should
+        search for it.
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]
+  9:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i want some freeze dried mangoes, and price lower than 40.00
+      dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for freeze dried mangoes and I have not yet searched
+      for them.
+    sugg_action: search[freeze dried mangoes]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b00ih0fyj2
+
+      b005m4g4li
+
+      b078mzpz8k
+
+      b005m4g23s
+
+      b09gt8jy8h
+
+      b097yhd3ps
+
+      b09pmfb9lh
+
+      b084h13nfv
+
+      b07nqjd1nn
+
+      b01n9vrk5o'
+    ins: 'Instruction: i want some freeze dried mangoes, and price lower than 40.00
+      dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B00IH0FYJ2 [button_]\n2 Pack Trader\
+      \ Joe's Freeze Dried Mango, 2 Pack Freeze Dried Strawberries, 2 Pack Freeze\
+      \ Dried Blueberries, 2 Pack David Sunflower Seeds - 8 Items Total\n$100.0\n\n\
+      [button] B005M4G4LI [button_]\nNatierra Nature's Organic Freeze-Dried Strawberries\
+      \ | Gluten Free & Vegan | 1.2 Ounce\n$5.79\n\n[button] B078MZPZ8K [button_]\n\
+      NATIERRA Organic Freeze-Dried Chocolate-Covered Strawberry Slices | Non-GMO\
+      \ & Vegan | 1.5 Ounce\n$5.99\n\n[button] B005M4G23S [button_]\nNATIERRA Nature's\
+      \ All Foods Organic Freeze-Dried Pineapples | Non-GMO & Vegan | 1.5 Ounce\n\
+      $5.79\n\n[button] B09GT8JY8H [button_]\nLIOMART DRY FRUIT SNACKS- Freeze dried\
+      \ mixed fruit. Perfect and healthy sugar free fruit snacks. Includes all your\
+      \ favorite Strawberry. Perfect dried mix fruit for snacks healthy, for baking,\
+      \ smoothies, topping breakfast and more. 11 Pack of .705oz each.\n$42.0\n\n\
+      [button] B097YHD3PS [button_]\nQueenbox Dried Mixes 8.8oz Fruit Snacks, Natural\
+      \ Vegan Sweet & Tart Vegetable Chunks Foods Kids Adult Gift in Resealable Bag\
+      \ for Festival Party Cake Hiking\n$39.71\n\n[button] B09PMFB9LH [button_]\n\
+      Dried Strawberry Chips, 3 PACK [ 100% Real Freeze Dried Fruits ] Korean Fruit\
+      \ Snack, Healthy Vegan Snacks for Kids [ Jeollanamdo Foods ]\n$12.99\n\n[button]\
+      \ B084H13NFV [button_]\nFruit for Thought Dried Persimmons | Dried Fruit Snack\
+      \ Packs | At Home, Work, or On The Go | Unsweetened Hachiya Persimmon | 12 Ounce\
+      \ Bags Pack of 2\n$26.35\n\n[button] B07NQJD1NN [button_]\nSOLELY Organic Pineapple\
+      \ with Coconut Fruit Jerky, 0.8 Ounce | Two Ingredients | Vegan | Non-GMO |\
+      \ Gluten-Free | No Sugar Added\u2026\n$100.0\n\n[button] B01N9VRK5O [button_]\n\
+      Northwest Wild Foods Dried Organic Tart Cherries - Healthy Antioxidants Fruit\
+      \ Diet - for Smoothies, Baking, Trail Mix Smoothies Pies Jams (1 lb)\n$39.99\n"
+    past_actions:
+    - !!python/tuple
+      - search[freeze dried mangoes]
+      - The instruction asks for freeze dried mangoes and I have not yet searched
+        for them.
+    reason: This item matches the desired description and is priced lower than $40.
+      I can check this item first.
+    sugg_action: click[b005m4g4li]

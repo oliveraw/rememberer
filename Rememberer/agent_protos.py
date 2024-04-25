@@ -168,7 +168,7 @@ class OpenAIClient(abc.ABC, Generic[A]):
                 completion: R = self._completor( model=self._model
                                                , prompt=prompt
                                                , max_tokens=self._max_tokens
-                                               , temperature=self._temperature
+                                               , temperature=0.25
                                                , stop=self._stop
                                                , request_timeout=self._request_timeout
                                                )

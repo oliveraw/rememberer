@@ -137,7 +137,7 @@ def traverse_environment( env: gym.Env
             continue
 
         model.reset()
-        observation: str = env.reset(session=i)[0]
+        last_observation: str = env.reset(session=i)[0]
         task: str = env.get_instruction_text()
         available_actions: List[str] = env.get_available_actions()["clickables"]
 
@@ -148,14 +148,17 @@ def traverse_environment( env: gym.Env
         reward = 0.
         total_reward = 0.
         succeeds = False
+        all_actions = []
         while nb_steps<max_nb_steps and nb_consecutive_nothings<max_nb_consective_nothings:
             action, reason = model( task
-                               , observation
+                               , last_observation
                                , available_actions
                                )
+            all_actions.append(action)
             if action!="NOTHINGG":
                 observation, reward, done, _ = env.step(action)
-                model._update_history(idx, task, observation, available_actions, action, reason, reward, done)
+                model._update_history(idx, task, last_observation, available_actions, action, reason, reward, done)
+                last_observation = observation
 
                 total_reward += reward
                 available_actions = env.get_available_actions()["clickables"]
@@ -175,6 +178,9 @@ def traverse_environment( env: gym.Env
         #          , total_reward
         #          , available_actions
         #          )
+
+        for action in all_actions:
+            print(action)
         
         # save replay every 10 tasks
         if idx % 10 == 0:
@@ -389,7 +395,7 @@ def main():
 
     if args.prompt_mode == 'default':
         base_prompt = "prompt_pthw.txt"
-        canonical_examples = ["canonical_examplar_wE0.1_act.txt", "canonical_examplar_wE0.2_act.txt", "canonical_examplar_wE3.1_act.txt", "canonical_examplar_wE3.2_act.txt"]
+        canonical_examples = ["canonical_examplar_wE0.1_act.txt", "canonical_examplar_wE0.2.1_act.txt", "canonical_examplar_wE0.2.2_act.txt", "canonical_examplar_wE0.2.3_act.txt", "canonical_examplar_wE3.1_act.txt", "canonical_examplar_wE3.2_act.txt"]
     elif args.prompt_mode == 'actiontrajectories':
         base_prompt = "prompt_pthw_act_traj.txt"
         canonical_examples = ["canonical_examplar_wE0.1.txt", "canonical_examplar_wE0.2.txt"]
@@ -442,12 +448,13 @@ def main():
                                    )
     #model = webshop_agent.ManualAgent(args.observation_mode)
 
-    env = gym.make( "WebAgentTextEnv-v0"
+    env = gym.make( "WebAgentSiteEnv-v0"
                   , observation_mode=args.observation_mode
                   , file_path=(args.file_path if args.file_path is not None and args.file_path != ""
                                             else DEFAULT_FILE_PATH)
                   , num_products=None
                   , human_goals=True
+                  , render=True
                 #   , human_goals=False
                   , num_prev_actions=args.prev_actions
                   , num_prev_obs=args.prev_observations

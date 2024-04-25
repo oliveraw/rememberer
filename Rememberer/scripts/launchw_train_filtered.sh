@@ -19,11 +19,10 @@ date_str=$(date +%Y-%m-%dT%H:%M:%S)
 
 python webshop.py --log-dir logs\
 				  --observation-mode text_rich\
-				  --load-replay init_pool.wq.filtered.1task.yaml\
+				  --load-replay history-pools/init_pool.wq.yaml\
 				  --save-replay history-pools/init_pool.wqu."$date_str".%d.a.yaml\
-				  --save-replay history-pools/init_pool.wqu."$date_str".%d.b.yaml\
-				  --load-filtered-replay history-pools/init_pool.wq.filtered.yaml\
-				  --save-filtered-replay history-pools/init_pool.wqu."$date_str".%d.filtered.yaml\
+				  --load-filtered-replay history-pools/init_pool.wq.filtered.10tasks.yaml\
+				  --save-filtered-replay history-pools/init_pool.wqu."$date_str".%d.filtered.new.yaml\
 				  --item-capacity 500\
 				  --action-capacity 20\
 				  --matcher pgpat+insrel\
@@ -33,10 +32,10 @@ python webshop.py --log-dir logs\
 				  --request-timeout 10.\
 				  --starts-from 0\
 				  --epochs 1\
-				  --trainseta 0\
-				  --trainsetb 21\
+				  --trainseta 10\
+				  --trainsetb 31\
 				  --testseta 0\
-				  --testsetb 20\
+				  --testsetb 0\
 				  \
 				  --train\
 				  --prompt-mode default\

@@ -19,7 +19,7 @@ if __name__ == '__main__':
     #env = gym.make('WebAgentSite-v0')
     #env = WebAgentSiteEnv(render=True, pause=2.0)
     #env = WebAgentSiteEnv(observation_mode='html', render=False)
-    env = WebAgentSiteEnv(observation_mode='text', render=False, num_products=DEBUG_PROD_SIZE)
+    env = WebAgentSiteEnv(observation_mode='text', render=True, num_products=DEBUG_PROD_SIZE)
     global_step = 0
     
     try:

@@ -1,0 +1,1111 @@
+!!python/object/apply:collections.defaultdict
+args:
+- !!python/name:builtins.list ''
+dictitems:
+  0:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i need a 10 pound back of parboiled brown rice that is easy
+      to prepare, and price lower than 50.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of rice, so I should search for
+      it.
+    sugg_action: search[10 pound bag parboiled brown rice easy to prepare]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b00m674k0g
+
+      b013llvo1i
+
+      b0010xrvr6
+
+      b087d93crx
+
+      b00b1h8vmu
+
+      b01gzi0jmy
+
+      b083x4gw6y
+
+      b09ml2wvbk
+
+      b09r4jvd58
+
+      b07gphfdvs'
+    ins: 'Instruction: i need a 10 pound back of parboiled brown rice that is easy
+      to prepare, and price lower than 50.00 dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B00M674K0G [button_]\nIberia Parboiled\
+      \ Brown, 10 Pounds, Rice, 160 Ounce\n$13.09\n\n[button] B013LLVO1I [button_]\n\
+      Bakery On Main Gluten-Free, Non GMO Granola, Cranberry Almond Maple, 2.5 Pound\n\
+      $100.0\n\n[button] B0010XRVR6 [button_]\nKnorr Rice Sides For a Tasty Rice Side\
+      \ Dish Creamy Chicken No Artificial Flavors, No Preservatives, No Added MSG\
+      \ 5.7 oz\n$100.0\n\n[button] B087D93CRX [button_]\nKosher Parve Mre, Meal Mart\
+      \ Amazing Meals Ready to Eat, Fillet of Salmon Rice & Pimentos (12 Pack) \u2013\
+      \ Travel, Military, Emergency Survival Food \u2013 Prepared Fully Cooked, Microwave\
+      \ Dinner, Shelf Stable\n$89.99\n\n[button] B00B1H8VMU [button_]\nBaron\u2019\
+      s Whole Wheat Orzo Pasta | 100% Natural Israeli Rice-Shaped Orzo for Soups,\
+      \ Casseroles & Salads | Cooks in 10 Minutes! | Kosher| 2 Pack 21.16oz Jars\n\
+      $14.99\n\n[button] B01GZI0JMY [button_]\nLundberg Organic Brown Rice Cakes,\
+      \ Honey Nut, 9.6oz(pack of 12), Gluten-Free, Whole Grain, Kosher, USDA Certified\
+      \ Organic, Non-GMO Verified\n$56.6\n\n[button] B083X4GW6Y [button_]\nBob's Red\
+      \ Mill Gluten Free Muffin Mix, 16 Oz\n$9.38\n\n[button] B09ML2WVBK [button_]\n\
+      National Foods Butter Chicken Recipe Mix 1.65 oz (47g) | South Asian Meat Curry\
+      \ Masala Powder | Traditional Spicy Food | Box Pack | Pack of 6\n$14.99\n\n\
+      [button] B09R4JVD58 [button_]\nRainbow Window Covering Stained Glass FilmSticker\
+      \ Heat Control Opaque Vinyl for Bathroom and Kids Bedroom17.5 x 78.7 Inch W23.6\
+      \ x L47.2 Sky Blue Black White\n$31.0\n\n[button] B07GPHFDVS [button_]\nSEEDS\
+      \ OF CHANGE Organic Rice Variety Pack, Quinoa Brown Rice & Red Rice with Flaxseed,\
+      \ Ready to Heat, 8.5 Ounce (Pack of 6)\n$19.74\n"
+    past_actions:
+    - !!python/tuple
+      - search[10 pound bag parboiled brown rice easy to prepare]
+      - The instruction asks for a specific type of rice, so I should search for it.
+    reason: This item matches the desired description and is priced lower than $50.
+      I can check this item first.
+    sugg_action: click[b00m674k0g]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now'
+    ins: 'Instruction: i need a 10 pound back of parboiled brown rice that is easy
+      to prepare, and price lower than 50.00 dollars'
+    obs: 'Iberia Parboiled Brown, 10 Pounds, Rice, 160 Ounce
+
+      Price: $13.09
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b00m674k0g]
+      - This item matches the desired description and is priced lower than $50. I
+        can check this item first.
+    - !!python/tuple
+      - search[10 pound bag parboiled brown rice easy to prepare]
+      - The instruction asks for a specific type of rice, so I should search for it.
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i want to buy a waterproof security camera with an optical
+      zoom and motion detection, and price lower than 280.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[buy now]
+      - I have already selected the required attributes and am ready to purchase the
+        item.
+    - !!python/tuple
+      - click[b00m674k0g]
+      - This item matches the desired description and is priced lower than $50. I
+        can check this item first.
+    - !!python/tuple
+      - search[10 pound bag parboiled brown rice easy to prepare]
+      - The instruction asks for a specific type of rice, so I should search for it.
+    reason: The instruction asks for a specific type of security camera with certain
+      features, so I should search for it.
+    sugg_action: search[waterproof security camera optical zoom motion detection]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b08v134qwr
+
+      b08qd45phz
+
+      b0000645c9
+
+      b09rv3sfjm
+
+      b07fyb92qr
+
+      b004ho58l6
+
+      b0011n17ru
+
+      b08jpbq73s
+
+      b086dkshq4
+
+      b000aofvzk'
+    ins: 'Instruction: i want to buy a waterproof security camera with an optical
+      zoom and motion detection, and price lower than 280.00 dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B08V134QWR [button_]\nPTZ Security\
+      \ Camera Outdoor 30X Optical Zoom Camera WiFi Wireless 5MP RTSP IP Camera 1000FT\
+      \ Night Vision Auto Tracking Emergency Strobe Light Alarm Human Detection 2-Way\
+      \ Audio IP66 Waterproof\n$249.99\n\n[button] B08QD45PHZ [button_]\nPTZ Camera\
+      \ Outdoor,Compatible with Hikvision, 4K PoE IP Camera Speed Dome for Home Security,2022\
+      \ Upgrade,18x Optical Zoom,4.7~84.6mm Motorized Lens, Auto Tracking,165ft NightVision\
+      \ IP66 Waterproof\n$269.0\n\n[button] B0000645C9 [button_]\nCanon PowerShot\
+      \ S200 2MP Digital ELPH Camera w/ 2x Optical Zoom\n$49.9\n\n[button] B09RV3SFJM\
+      \ [button_]\nCelestron 52238 C70 Mini Mak Spotting Scope, 25-75x, Black & NexYZ\
+      \ 3-Axis Smartphone Adapter, Black\n$190.89\n\n[button] B07FYB92QR [button_]\n\
+      Nikon (26522 COOLPIX P1000 16MP 125x Super-Zoom Digital Camera + 64GB Memory\
+      \ & Accessory Bundle\n$100.0\n\n[button] B004HO58L6 [button_]\nFujifilm FinePix\
+      \ Z90 14 MP Digital Camera with Fujinon 5x Wide Angle Optical Zoom Lens and\
+      \ 3-Inch Touch-Screen LCD (Black)\n$100.0\n\n[button] B0011N17RU [button_]\n\
+      Nikon Coolpix S550 10 MP Digital Camera with 5x Optical Zoom (Graphite Black)\n\
+      $45.9\n\n[button] B08JPBQ73S [button_]\nBlink Outdoor and Indoor \u2013 wireless,\
+      \ HD security cameras with two-year battery life and motion detection \u2013\
+      \ 6 camera kit\n$459.96\n\n[button] B086DKSHQ4 [button_]\nBlink Outdoor - wireless,\
+      \ weather-resistant HD security camera, two-year battery life, motion detection,\
+      \ set up in minutes \u2013 3 camera kit\n$249.99\n\n[button] B000AOFVZK [button_]\n\
+      Konica Minolta Dimage Z6 6MP Digital Camera with 12x Anti-Shake Zoom\n$69.95\n"
+    past_actions:
+    - !!python/tuple
+      - search[waterproof security camera optical zoom motion detection]
+      - The instruction asks for a specific type of security camera with certain features,
+        so I should search for it.
+    - !!python/tuple
+      - click[buy now]
+      - I have already selected the required attributes and am ready to purchase the
+        item.
+    - !!python/tuple
+      - click[b00m674k0g]
+      - This item matches the desired description and is priced lower than $50. I
+        can check this item first.
+    - !!python/tuple
+      - search[10 pound bag parboiled brown rice easy to prepare]
+      - The instruction asks for a specific type of rice, so I should search for it.
+    reason: This item matches the desired description and is priced lower than $280.
+      I can check this item first.
+    sugg_action: click[b08v134qwr]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now'
+    ins: 'Instruction: i want to buy a waterproof security camera with an optical
+      zoom and motion detection, and price lower than 280.00 dollars'
+    obs: 'PTZ Security Camera Outdoor 30X Optical Zoom Camera WiFi Wireless 5MP RTSP
+      IP Camera 1000FT Night Vision Auto Tracking Emergency Strobe Light Alarm Human
+      Detection 2-Way Audio IP66 Waterproof
+
+      Price: $249.99
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b08v134qwr]
+      - This item matches the desired description and is priced lower than $280. I
+        can check this item first.
+    - !!python/tuple
+      - search[waterproof security camera optical zoom motion detection]
+      - The instruction asks for a specific type of security camera with certain features,
+        so I should search for it.
+    - !!python/tuple
+      - click[buy now]
+      - I have already selected the required attributes and am ready to purchase the
+        item.
+    - !!python/tuple
+      - click[b00m674k0g]
+      - This item matches the desired description and is priced lower than $50. I
+        can check this item first.
+    - !!python/tuple
+      - search[10 pound bag parboiled brown rice easy to prepare]
+      - The instruction asks for a specific type of rice, so I should search for it.
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]
+  1:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i want fluoride free ayurvedic herbal toothpaste, and price
+      lower than 30.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of toothpaste, so I should search
+      for it.
+    sugg_action: search[fluoride free ayurvedic herbal toothpaste]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b000774dqi
+
+      b0792n9j4s
+
+      b0791rwm8m
+
+      b07m7ldgxb
+
+      b07mnm28zn
+
+      b09htzz45v
+
+      b08thnsp6n
+
+      b097gvr1zk
+
+      b00j7g0i8m
+
+      b09c1r93ch'
+    ins: 'Instruction: i want fluoride free ayurvedic herbal toothpaste, and price
+      lower than 30.00 dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B000774DQI [button_]\nAuromere Ayurvedic\
+      \ Herbal Toothpaste, Classic Licorice Flavour - Vegan, Natural, Non GMO, Fluoride\
+      \ Free, Gluten Free, with Neem & Peelu (4.16 oz), 1 Pack\n$6.76\n\n[button]\
+      \ B0792N9J4S [button_]\nNatural Toothgel (Peppermint) by Herbal Choice Mari;\
+      \ 4 fl oz BPA-Free Plastic Bottle\n$11.99\n\n[button] B0791RWM8M [button_]\n\
+      Herbal Choice Mari Natural Toothgel, Ginger; 4floz\n$11.99\n\n[button] B07M7LDGXB\
+      \ [button_]\nCoral Nano Silver Mint Toothpaste, Natural Fluoride Free Teeth\
+      \ Whitening Toothpaste, Coral Calcium Nano Silver Infused SLS Free - 4 Ounces\n\
+      $9.95\n\n[button] B07MNM28ZN [button_]\nHello Nature Apple Flavor Kids Fluoride\
+      \ Free Training Toothpaste and Toothbrush, For Kids Age 2 Months to 3 Years,\
+      \ Safe to Swallow for Baby and Toddlers, Vegan, SLS Free, Gluten Free, 1.5 Ounce\n\
+      $100.0\n\n[button] B09HTZZ45V [button_]\n60ML Kids Foam Toothpaste,Fluoride\
+      \ Free Natural Formula with Strawberry/Lemon Flavor,Children Foam Toothpaste,Provide\
+      \ Fresh Breath and Healthier Gums for Kids (Strawberry)\n$6.75\n\n[button] B08THNSP6N\
+      \ [button_]\nDiabetes Prevention Daily Homeopathic Toothpaste | Fluoride Free\
+      \ Natural | for Bleeding Gums and Calcus | 3.4 Ounce - INFANETIM Technology\
+      \ Brown Line (2 Pack)\n$69.99\n\n[button] B097GVR1ZK [button_]\nKids Foam Toothpaste,\
+      \ Fluoride Free Natural Formula\uFF0COrange Flavor, 3Pack for Toddler, Kids\
+      \ and Children\u2019s Teeth Cleaning\n$25.99\n\n[button] B00J7G0I8M [button_]\n\
+      Jason All-Natural Toothpaste, Sea Fresh - 6 oz - 2 pk\n$100.0\n\n[button] B09C1R93CH\
+      \ [button_]\nPalarn Brightify Deep Cleaning Foam Toothpaste Tooth-Cleaning Toothpaste\
+      \ Teeth Whitening Oral Hygiene Mousse Foam Toothpaste 60ml (B, 1PC)\n$1.68\n"
+    past_actions:
+    - !!python/tuple
+      - search[fluoride free ayurvedic herbal toothpaste]
+      - The instruction asks for a specific type of toothpaste, so I should search
+        for it.
+    reason: This item matches the desired description and is priced lower than $30.
+      I can check this item first.
+    sugg_action: click[b000774dqi]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now'
+    ins: 'Instruction: i want fluoride free ayurvedic herbal toothpaste, and price
+      lower than 30.00 dollars'
+    obs: 'Auromere Ayurvedic Herbal Toothpaste, Classic Licorice Flavour - Vegan,
+      Natural, Non GMO, Fluoride Free, Gluten Free, with Neem & Peelu (4.16 oz), 1
+      Pack
+
+      Price: $6.76
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b000774dqi]
+      - This item matches the desired description and is priced lower than $30. I
+        can check this item first.
+    - !!python/tuple
+      - search[fluoride free ayurvedic herbal toothpaste]
+      - The instruction asks for a specific type of toothpaste, so I should search
+        for it.
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]
+  4:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i want blue and eco friendly cenglings sandals for women, and
+      price lower than 40.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of sandals, so I should search
+      for them.
+    sugg_action: search[blue eco friendly cenglings sandals women]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b09q5ybjl8
+
+      b09cdsr86m
+
+      b09p59ggxn
+
+      b09pnrgynq
+
+      b09q9d1k69
+
+      b097zlkzcs
+
+      b09s8mfc3r
+
+      b098rx8416
+
+      b09s8kngz3
+
+      b09rzrt4qd'
+    ins: 'Instruction: i want blue and eco friendly cenglings sandals for women, and
+      price lower than 40.00 dollars'
+    obs: 'Page 1 (Total results: 50)
+
+
+      [button] B09Q5YBJL8 [button_]
+
+      Cenglings Sandals for Women, Plus Size Open Toe Leather Wedges Shoes Casual
+      Breathable Outdoor Ankle Strap Platform Sandals
+
+      $13.51
+
+
+      [button] B09CDSR86M [button_]
+
+      UMIYI Sandals for Women Casual Summer Woven Slip On Open Toe Wedge Sandals Womens
+      Flip Flops Girls Sandals
+
+      $7.99 to $25.99
+
+
+      [button] B09P59GGXN [button_]
+
+      NOLDARES Women''s High Heel Sandals, Close Toe High Block Heel Pumps Strappy
+      Lace Up Party Wedding Dressy Fashion Sandals
+
+      $15.99 to $25.99
+
+
+      [button] B09PNRGYNQ [button_]
+
+      NOLDARES Heeled Sandals for Women,Suede Block High Heel Buckle Sandals Mule
+      Ankle Strap Wedding Dress Pump Shoes
+
+      $12.99 to $27.99
+
+
+      [button] B09Q9D1K69 [button_]
+
+      Tongue Cleaner, Tongue Brush Silicone Plasitc Hygienic Ergonomic Freshen Breath
+      for Men Women for Oral Care for Home Travel
+
+      $6.59
+
+
+      [button] B097ZLKZCS [button_]
+
+      Wedge Sandals for Women Casual Summer Platform Espadrille High Heel Sandals
+      2021 Casual Sandals Shoes Open Toe Roman Shoes
+
+      $2.99 to $15.99
+
+
+      [button] B09S8MFC3R [button_]
+
+      Women''s Clear Square Open Toe Heeled Sandals Ankle Strap Chunky Block High
+      Heels Buckle Strappy Dressy Heeled Sandals
+
+      $1.01 to $36.04
+
+
+      [button] B098RX8416 [button_]
+
+      NLOMOCT Sandals for Women Casual Summer Open Toe Ankle Strap Snakeskin Wedge
+      Platform Sandals Outdoor Shoes Women''s Sandals
+
+      $5.99 to $12.99
+
+
+      [button] B09S8KNGZ3 [button_]
+
+      Clear Studded Rhinestone Heels for Women Sexy Chunky Block Square Toe Heels
+      Wedding Shoes Low Heels Open Toe Bridal Pumps Sandals
+
+      $7.55 to $38.11
+
+
+      [button] B09RZRT4QD [button_]
+
+      FAMOORE Women''s Ladies Fashion Solid Wedges Casual Buckle Strap Roman Shoes
+      Sandals
+
+      $11.08 to $51.98
+
+      '
+    past_actions:
+    - !!python/tuple
+      - search[blue eco friendly cenglings sandals women]
+      - The instruction asks for a specific type of sandals, so I should search for
+        them.
+    reason: This item matches the desired description and is priced lower than $40.
+      I can check this item first.
+    sugg_action: click[b09q5ybjl8]
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: find me a long handled body brush that is double sided, and
+      price lower than 30.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b09q5ybjl8]
+      - This item matches the desired description and is priced lower than $40. I
+        can check this item first.
+    - !!python/tuple
+      - search[blue eco friendly cenglings sandals women]
+      - The instruction asks for a specific type of sandals, so I should search for
+        them.
+    reason: The instruction asks for a specific type of body brush, so I should search
+      for it.
+    sugg_action: search[long handled body brush double sided]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b092mh5rfm
+
+      b09p7wwp61
+
+      b09dt9g2fr
+
+      b082d247qb
+
+      b0744mqdvz
+
+      b09dd313b3
+
+      b087v3gk1q
+
+      b09bknll1g
+
+      b09j2g581p
+
+      b09k3sxtj1'
+    ins: 'Instruction: find me a long handled body brush that is double sided, and
+      price lower than 30.00 dollars'
+    obs: 'Page 1 (Total results: 50)
+
+
+      [button] B092MH5RFM [button_]
+
+      VITAKE Double-Sided Bath Brush,Painless Powerful Bathing Artifact Back Rubbing
+      Exfoliating Massage Shower Brush Long Handle(Blue)
+
+      $8.12
+
+
+      [button] B09P7WWP61 [button_]
+
+      Bath Brush Bath Accessories Long Handle Wet Or Dry Scrubbing Body Brush Set
+      Gift 5 in 1 Skin Care Exfoliating Back Wooden Massage Shower Bath Towel
+
+      $41.81
+
+
+      [button] B09DT9G2FR [button_]
+
+      LINLILO Silicone Body Scrubber,Bath Brush Body Exfoliator&Hair Shampoo Brush,All
+      in One,Long Handle Back Scrubber for Shower (Set of 2)
+
+      $9.99
+
+
+      [button] B082D247QB [button_]
+
+      Yisella Shower Brush With Long Handle,Loofah Back Scrubber Blue and White
+
+      $15.99
+
+
+      [button] B0744MQDVZ [button_]
+
+      Arswin Back Scrubber for Shower,Loofah Long Handle Bath Body Brush,Soft Nylon
+      Mesh Sponge for Shower,Loofah On a Stick for Men Women,Exfoliating Scrub Cleaning
+      Luffa for Elderly
+
+      $7.39
+
+
+      [button] B09DD313B3 [button_]
+
+      Beaupretty 4 PCS Loofah Back Scrubber Wooden Handle Anti- slip Brush Bathroom
+      Accessories Bath Shower Accessories for Home
+
+      $14.99
+
+
+      [button] B087V3GK1Q [button_]
+
+      interjunzhan Bath Shower Brush with Anti-slip Long Wooden Handle, Body Exfoliating
+      Scrubber Good for Health and Beauty Green
+
+      $5.24
+
+
+      [button] B09BKNLL1G [button_]
+
+      Minkissy 4pcs Loofah Back Scrubber Mesh Body Exfoliators Long Handle Brush with
+      Sponge Balls for Women Men Bathing Accessories
+
+      $14.89
+
+
+      [button] B09J2G581P [button_]
+
+      4PCS Tongue Scraper Tongue Brush, BPA Free Oral Hygiene Tool to Help Resist
+      Bad Breath and Freshen The Breath, Great for Adult Kids Remove Tongue Coating
+
+      $4.99
+
+
+      [button] B09K3SXTJ1 [button_]
+
+      6 Pack Kids U Shaped Toothbrush with Silicone Brush Manual Training Tooth Brush
+      U-Type Toothbrush Whole Mouth Toothbrush with Handle for Kids 2-8 Years Old
+      (Paw Handle, Long Handle, Blue Pink Yellow)
+
+      $8.69
+
+      '
+    past_actions:
+    - !!python/tuple
+      - search[long handled body brush double sided]
+      - The instruction asks for a specific type of body brush, so I should search
+        for it.
+    - !!python/tuple
+      - click[b09q5ybjl8]
+      - This item matches the desired description and is priced lower than $40. I
+        can check this item first.
+    - !!python/tuple
+      - search[blue eco friendly cenglings sandals women]
+      - The instruction asks for a specific type of sandals, so I should search for
+        them.
+    reason: This item matches the desired description and is priced lower than $30.
+      I can check this item first.
+    sugg_action: click[b092mh5rfm]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now
+
+      blue
+
+      green
+
+      pink'
+    ins: 'Instruction: find me a long handled body brush that is double sided, and
+      price lower than 30.00 dollars'
+    obs: 'color
+
+      VITAKE Double-Sided Bath Brush,Painless Powerful Bathing Artifact Back Rubbing
+      Exfoliating Massage Shower Brush Long Handle(Blue)
+
+      Price: $8.12
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b092mh5rfm]
+      - This item matches the desired description and is priced lower than $30. I
+        can check this item first.
+    - !!python/tuple
+      - search[long handled body brush double sided]
+      - The instruction asks for a specific type of body brush, so I should search
+        for it.
+    - !!python/tuple
+      - click[b09q5ybjl8]
+      - This item matches the desired description and is priced lower than $40. I
+        can check this item first.
+    - !!python/tuple
+      - search[blue eco friendly cenglings sandals women]
+      - The instruction asks for a specific type of sandals, so I should search for
+        them.
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]
+  9:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i want some freeze dried mangoes, and price lower than 40.00
+      dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for freeze dried mangoes and I have not yet searched
+      for them.
+    sugg_action: search[freeze dried mangoes]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b00ih0fyj2
+
+      b005m4g4li
+
+      b078mzpz8k
+
+      b005m4g23s
+
+      b09gt8jy8h
+
+      b097yhd3ps
+
+      b09pmfb9lh
+
+      b084h13nfv
+
+      b07nqjd1nn
+
+      b01n9vrk5o'
+    ins: 'Instruction: i want some freeze dried mangoes, and price lower than 40.00
+      dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B00IH0FYJ2 [button_]\n2 Pack Trader\
+      \ Joe's Freeze Dried Mango, 2 Pack Freeze Dried Strawberries, 2 Pack Freeze\
+      \ Dried Blueberries, 2 Pack David Sunflower Seeds - 8 Items Total\n$100.0\n\n\
+      [button] B005M4G4LI [button_]\nNatierra Nature's Organic Freeze-Dried Strawberries\
+      \ | Gluten Free & Vegan | 1.2 Ounce\n$5.79\n\n[button] B078MZPZ8K [button_]\n\
+      NATIERRA Organic Freeze-Dried Chocolate-Covered Strawberry Slices | Non-GMO\
+      \ & Vegan | 1.5 Ounce\n$5.99\n\n[button] B005M4G23S [button_]\nNATIERRA Nature's\
+      \ All Foods Organic Freeze-Dried Pineapples | Non-GMO & Vegan | 1.5 Ounce\n\
+      $5.79\n\n[button] B09GT8JY8H [button_]\nLIOMART DRY FRUIT SNACKS- Freeze dried\
+      \ mixed fruit. Perfect and healthy sugar free fruit snacks. Includes all your\
+      \ favorite Strawberry. Perfect dried mix fruit for snacks healthy, for baking,\
+      \ smoothies, topping breakfast and more. 11 Pack of .705oz each.\n$42.0\n\n\
+      [button] B097YHD3PS [button_]\nQueenbox Dried Mixes 8.8oz Fruit Snacks, Natural\
+      \ Vegan Sweet & Tart Vegetable Chunks Foods Kids Adult Gift in Resealable Bag\
+      \ for Festival Party Cake Hiking\n$39.71\n\n[button] B09PMFB9LH [button_]\n\
+      Dried Strawberry Chips, 3 PACK [ 100% Real Freeze Dried Fruits ] Korean Fruit\
+      \ Snack, Healthy Vegan Snacks for Kids [ Jeollanamdo Foods ]\n$12.99\n\n[button]\
+      \ B084H13NFV [button_]\nFruit for Thought Dried Persimmons | Dried Fruit Snack\
+      \ Packs | At Home, Work, or On The Go | Unsweetened Hachiya Persimmon | 12 Ounce\
+      \ Bags Pack of 2\n$26.35\n\n[button] B07NQJD1NN [button_]\nSOLELY Organic Pineapple\
+      \ with Coconut Fruit Jerky, 0.8 Ounce | Two Ingredients | Vegan | Non-GMO |\
+      \ Gluten-Free | No Sugar Added\u2026\n$100.0\n\n[button] B01N9VRK5O [button_]\n\
+      Northwest Wild Foods Dried Organic Tart Cherries - Healthy Antioxidants Fruit\
+      \ Diet - for Smoothies, Baking, Trail Mix Smoothies Pies Jams (1 lb)\n$39.99\n"
+    past_actions:
+    - !!python/tuple
+      - search[freeze dried mangoes]
+      - The instruction asks for freeze dried mangoes and I have not yet searched
+        for them.
+    reason: This item matches the desired description and is priced lower than $40.
+      I can check this item first.
+    sugg_action: click[b005m4g4li]
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i am looking for a sconce light with a black metal base and
+      a wood finish, and price lower than 90.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b005m4g4li]
+      - This item matches the desired description and is priced lower than $40. I
+        can check this item first.
+    - !!python/tuple
+      - search[freeze dried mangoes]
+      - The instruction asks for freeze dried mangoes and I have not yet searched
+        for them.
+    reason: The instruction asks for a specific type of sconce light, so I should
+      search for it.
+    sugg_action: search[sconce light black metal base wood finish]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b08dgqdx38
+
+      b078hypvtq
+
+      b08nphtbxb
+
+      b0030y7mls
+
+      b097slksd3
+
+      b09dgg7h6h
+
+      b08t5z2r23
+
+      b07gnc5fpv
+
+      b08fmtlwh5
+
+      b0912y7z5r'
+    ins: 'Instruction: i am looking for a sconce light with a black metal base and
+      a wood finish, and price lower than 90.00 dollars'
+    obs: 'Page 1 (Total results: 50)
+
+
+      [button] B08DGQDX38 [button_]
+
+      Rustic Vanity Light,3-Light Industrial Wood Finish Farmhouse Bathroom Lighting,Clear
+      Glass and Black Metal Base Wall Sconce Lighting Fixtures.
+
+      $75.99
+
+
+      [button] B078HYPVTQ [button_]
+
+      Globe Electric 65931 Williamsburg 1-Light Wall Sconce, Dark Bronze, Dark Wood
+      Finish Accents, Seeded Glass Shade
+
+      $43.98
+
+
+      [button] B08NPHTBXB [button_]
+
+      2-Light Matte Black Bathroom Vanity Light Fixtures, Modern Bathroom Wall Sconces,
+      Industrial Wall Sconce Lighting for Bathroom Bedroom Living Room Hallway(2 Pack)
+
+      $59.99
+
+
+      [button] B0030Y7MLS [button_]
+
+      Hudson Valley Lighting 371-PN Everett - One Light Wall Sconce - 4.75 Inches
+      Wide by 14.25 Inches High, Polished Nickel Finish with Opal/Glossy
+
+      $344.0
+
+
+      [button] B097SLKSD3 [button_]
+
+      VINLUZ Farmhouse Bathroom Light Fixtures Over Mirror Black Finish,4 Light Metal
+      Indoor Vanity Lights with Clear Glass Shade sconces Wall Lighting
+
+      $139.99
+
+
+      [button] B09DGG7H6H [button_]
+
+      Diyel Bathroom Vanity Light Fixture 3-Light Bathroom Wall Sconce Modern Indoor
+      Wall Light Wall Mount Lighting with Clear Glass Shade, Matte Black Finish Bath
+      Wall Lamp, 2128-W3
+
+      $84.99
+
+
+      [button] B08T5Z2R23 [button_]
+
+      Modern Gold Bathroom Vanity Light Brass Wall Sconces Set of 2 Cylinder Sconce
+      Lighting
+
+      $115.0
+
+
+      [button] B07GNC5FPV [button_]
+
+      Tangkula AM1826HM 3 Bathroom Brushed Chrome Mounted with White Alabaster Glass
+      Shade Bath Wall Sconce Pendant Lamp Polished Vanity Light
+
+      $45.99
+
+
+      [button] B08FMTLWH5 [button_]
+
+      Bathroom Vanity Light Fixtures Matte Black Vanity Light 24inch 14W LED 3000K
+      Modern Metal Wall Sconce
+
+      $49.99
+
+
+      [button] B0912Y7Z5R [button_]
+
+      Wood Drum Chandelier for Dining Room, 4-Light Silver Chrome & Brown Farmhouse
+      Rustic Traditional Chandeliers Pendant Lighting, Round Metal Kitchen Foyer Light
+      Fixtures Ceiling Hanging for Living Room
+
+      $189.99
+
+      '
+    past_actions:
+    - !!python/tuple
+      - search[sconce light black metal base wood finish]
+      - The instruction asks for a specific type of sconce light, so I should search
+        for it.
+    - !!python/tuple
+      - click[b005m4g4li]
+      - This item matches the desired description and is priced lower than $40. I
+        can check this item first.
+    - !!python/tuple
+      - search[freeze dried mangoes]
+      - The instruction asks for freeze dried mangoes and I have not yet searched
+        for them.
+    reason: This item matches the desired description and is priced lower than $90.
+      I can check this item first.
+    sugg_action: click[b08dgqdx38]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now'
+    ins: 'Instruction: i am looking for a sconce light with a black metal base and
+      a wood finish, and price lower than 90.00 dollars'
+    obs: 'Rustic Vanity Light,3-Light Industrial Wood Finish Farmhouse Bathroom Lighting,Clear
+      Glass and Black Metal Base Wall Sconce Lighting Fixtures.
+
+      Price: $75.99
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b08dgqdx38]
+      - This item matches the desired description and is priced lower than $90. I
+        can check this item first.
+    - !!python/tuple
+      - search[sconce light black metal base wood finish]
+      - The instruction asks for a specific type of sconce light, so I should search
+        for it.
+    - !!python/tuple
+      - click[b005m4g4li]
+      - This item matches the desired description and is priced lower than $40. I
+        can check this item first.
+    - !!python/tuple
+      - search[freeze dried mangoes]
+      - The instruction asks for freeze dried mangoes and I have not yet searched
+        for them.
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]
+  12:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i am looking for a slip loafer with vinyl acetate. also choose
+      dark khaki suede color and 7 narrow size, and price lower than 90.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of loafer, so I should click
+      on it to check its features.
+    sugg_action: click[slip loafer with vinyl acetate]
+  13:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i am looking for organic blueberries, and price lower than
+      40.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for organic blueberries and I have not yet searched
+      for them.
+    sugg_action: search[organic blueberries]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b005m4g23s
+
+      b07vblhd8c
+
+      b078mzpz8k
+
+      b09mzqv3qb
+
+      b089dlmn63
+
+      b005m4g4li
+
+      b08l769zs8
+
+      b01n9vrk5o
+
+      b08w7x86d4
+
+      b013i738k0'
+    ins: 'Instruction: i am looking for organic blueberries, and price lower than
+      40.00 dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B005M4G23S [button_]\nNATIERRA Nature's\
+      \ All Foods Organic Freeze-Dried Pineapples | Non-GMO & Vegan | 1.5 Ounce\n\
+      $5.79\n\n[button] B07VBLHD8C [button_]\nMaud's Dark Hot Chocolate (Loco Hot\
+      \ Cocoa), 50ct. Solar Energy Produced Recyclable Single Serve Gluten Free Dairy\
+      \ Free Hot Cocoa Pods, 100% California Blended Hot Chocolate, KCup Compatible\n\
+      $29.7\n\n[button] B078MZPZ8K [button_]\nNATIERRA Organic Freeze-Dried Chocolate-Covered\
+      \ Strawberry Slices | Non-GMO & Vegan | 1.5 Ounce\n$5.99\n\n[button] B09MZQV3QB\
+      \ [button_]\nCerebelly Toddler Snack Bars \u2013 Peppa Pig Blueberry Banana\
+      \ Sweet Potato (Pack of 30), Healthy & Organic Whole Grain Bars with Veggies\
+      \ & Fruit, 15 Brain-supporting Nutrients from Superfoods, Nut & Gluten Free,\
+      \ No Added Sugar\n$29.99\n\n[button] B089DLMN63 [button_]\nSkout Organic Real\
+      \ Food Bars for Kids Fruit Variety Pack (36 Pack) | Organic Snacks for Kids\
+      \ | Plant-Based Nutrition, No Refined Sugar | Vegan | Gluten, Dairy, Grain &\
+      \ Soy Free\n$39.99\n\n[button] B005M4G4LI [button_]\nNatierra Nature's Organic\
+      \ Freeze-Dried Strawberries | Gluten Free & Vegan | 1.2 Ounce\n$5.79\n\n[button]\
+      \ B08L769ZS8 [button_]\nNaturalvert Organic, gluten-free, vegan granola (Bulk)\
+      \ (Raspberry Cacao, 25 lbs)\n$89.07\n\n[button] B01N9VRK5O [button_]\nNorthwest\
+      \ Wild Foods Dried Organic Tart Cherries - Healthy Antioxidants Fruit Diet -\
+      \ for Smoothies, Baking, Trail Mix Smoothies Pies Jams (1 lb)\n$39.99\n\n[button]\
+      \ B08W7X86D4 [button_]\nElemental Superfood Refrigerated Seedbars, Currant Cacao\
+      \ + Hemp Seed, 1.8 Ounce - 12 Pack, Non-GMO Verified, Organic Ingredients, Gluten\
+      \ Free, Dairy Free, Plant Based\n$34.0\n\n[button] B013I738K0 [button_]\nSensible\
+      \ Foods Fruit Snacks, Cherry Berry, 48 Count (Pack of 48)\n$43.99\n"
+    past_actions:
+    - !!python/tuple
+      - search[organic blueberries]
+      - The instruction asks for organic blueberries and I have not yet searched for
+        them.
+    reason: This item matches the desired description and is priced lower than $40.
+      I can check this item first.
+    sugg_action: click[b005m4g23s]
+  18:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i am looking for an eco friendly wood bedside shelf for a bed,
+      and price lower than 60.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of bedside shelf, so I should
+      search for it.
+    sugg_action: search[eco friendly wood bedside shelf]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b08gy8hnl9
+
+      b07d7jghmg
+
+      b074rvn91q
+
+      b09bddb9hf
+
+      b09q3nvjnm
+
+      b09d2yldz9
+
+      b01mqhe1b0
+
+      b08s33j873
+
+      b09p4r6vxr
+
+      b084jqfvlx'
+    ins: 'Instruction: i am looking for an eco friendly wood bedside shelf for a bed,
+      and price lower than 60.00 dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B08GY8HNL9 [button_]\nNightstand\
+      \ Bedroom Accent Table Bedside Table|Old Wooden Cabinet|Locker Bedside Cabinet|Large\
+      \ Drawer Large Capacity Locker|Bedroom Wooden Cabinet Frame Structure\n$319.86\n\
+      \n[button] B07D7JGHMG [button_]\nStony-Edge, Espresso Nightstand Two Shelf End\
+      \ Table with Storage -\_Bedside Tables & Glass Door Wooden Side Table for Living\
+      \ Room, Bedroom - Easy Assemble - 26\"\n$139.95\n\n[button] B074RVN91Q [button_]\n\
+      BedShelfie Wood Bedside Shelf for Bed & Bunk Bed Shelf Tray Table Caddy for\
+      \ Top Bunk Organizer As Seen On Business Insider College Dorm Room Essentials\
+      \ Clip-On Nightstand (Original Size, White Bamboo)\n$38.24\n\n[button] B09BDDB9HF\
+      \ [button_]\nSignature Design by Ashley Shamryn 1 Drawer Night Stand, Dark Brown\n\
+      $100.0\n\n[button] B09Q3NVJNM [button_]\nVECELO Nightstand Modern Side End Tables\
+      \ Night Stand with Bin Drawer for Living Room Bedroom, Set of 2, Industrial\
+      \ Metal Frame, Nightstands, Vintage Black\n$99.99\n\n[button] B09D2YLDZ9 [button_]\n\
+      42 x 96\" Clear Plastic Dining Table Protector PVC Vinyl Desk Pad Mat Wooden\
+      \ Furniture Coffee Entry Entryway Tall Hallway Console Corner Bar Cabinet End\
+      \ Side Tablecloth Top Protection Cover Waterproof\n$82.99\n\n[button] B01MQHE1B0\
+      \ [button_]\nQueen Size Futon Bed Sofa - (Natural Hardwood Frame and Green Mattress\
+      \ Set), Armless Convertible, Couch, Bed, Lounger\n$488.0\n\n[button] B08S33J873\
+      \ [button_]\nICEFIRE 44 Inch Round Table Top Cover Protector Plastic Clear Round\
+      \ Tablecloth Easy Clean Waterproof Furniture Topper for Dining Coffee Conference\
+      \ Tables Circle Desk Pad Protector\n$42.89\n\n[button] B09P4R6VXR [button_]\n\
+      Deepclaoto Mobile Desk Adjustable Height on Wheels,Desk with Wheels,Mobile Work\
+      \ Table,Workstation Desk,Desks for Home Office Small Space,Bedside Laptop Table\n\
+      $50.65\n\n[button] B084JQFVLX [button_]\nConsole Table Sofa Table Easy Assembly\
+      \ with 4 Storage Drawers and Bottom Shelf for Living Room Entryway, 4 Drawers\
+      \ Console Sofa Entry Table with Shelf Wood Side Tables/Rustic Entryway Table\
+      \ (Oak)\n$100.0\n"
+    past_actions:
+    - !!python/tuple
+      - search[eco friendly wood bedside shelf]
+      - The instruction asks for a specific type of bedside shelf, so I should search
+        for it.
+    reason: This item matches the desired description and is priced lower than $60.
+      I can check this item first.
+    sugg_action: click[b074rvn91q]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now'
+    ins: 'Instruction: i am looking for an eco friendly wood bedside shelf for a bed,
+      and price lower than 60.00 dollars'
+    obs: 'BedShelfie Wood Bedside Shelf for Bed & Bunk Bed Shelf Tray Table Caddy
+      for Top Bunk Organizer As Seen On Business Insider College Dorm Room Essentials
+      Clip-On Nightstand (Original Size, White Bamboo)
+
+      Price: $38.24
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b074rvn91q]
+      - This item matches the desired description and is priced lower than $60. I
+        can check this item first.
+    - !!python/tuple
+      - search[eco friendly wood bedside shelf]
+      - The instruction asks for a specific type of bedside shelf, so I should search
+        for it.
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]

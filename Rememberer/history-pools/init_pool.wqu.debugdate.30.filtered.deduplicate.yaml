@@ -1,0 +1,2160 @@
+!!python/object/apply:collections.defaultdict
+args:
+- !!python/name:builtins.list ''
+dictitems:
+  0:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i need a 10 pound back of parboiled brown rice that is easy
+      to prepare, and price lower than 40.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of rice, so I should search for
+      it.
+    sugg_action: search[10 pound bag parboiled brown rice easy to prepare]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b00m674k0g
+
+      b013llvo1i
+
+      b0010xrvr6
+
+      b087d93crx
+
+      b00b1h8vmu
+
+      b01gzi0jmy
+
+      b083x4gw6y
+
+      b09ml2wvbk
+
+      b09r4jvd58
+
+      b07gphfdvs'
+    ins: 'Instruction: i need a 10 pound back of parboiled brown rice that is easy
+      to prepare, and price lower than 40.00 dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B00M674K0G [button_]\nIberia Parboiled\
+      \ Brown, 10 Pounds, Rice, 160 Ounce\n$13.09\n\n[button] B013LLVO1I [button_]\n\
+      Bakery On Main Gluten-Free, Non GMO Granola, Cranberry Almond Maple, 2.5 Pound\n\
+      $100.0\n\n[button] B0010XRVR6 [button_]\nKnorr Rice Sides For a Tasty Rice Side\
+      \ Dish Creamy Chicken No Artificial Flavors, No Preservatives, No Added MSG\
+      \ 5.7 oz\n$100.0\n\n[button] B087D93CRX [button_]\nKosher Parve Mre, Meal Mart\
+      \ Amazing Meals Ready to Eat, Fillet of Salmon Rice & Pimentos (12 Pack) \u2013\
+      \ Travel, Military, Emergency Survival Food \u2013 Prepared Fully Cooked, Microwave\
+      \ Dinner, Shelf Stable\n$89.99\n\n[button] B00B1H8VMU [button_]\nBaron\u2019\
+      s Whole Wheat Orzo Pasta | 100% Natural Israeli Rice-Shaped Orzo for Soups,\
+      \ Casseroles & Salads | Cooks in 10 Minutes! | Kosher| 2 Pack 21.16oz Jars\n\
+      $14.99\n\n[button] B01GZI0JMY [button_]\nLundberg Organic Brown Rice Cakes,\
+      \ Honey Nut, 9.6oz(pack of 12), Gluten-Free, Whole Grain, Kosher, USDA Certified\
+      \ Organic, Non-GMO Verified\n$56.6\n\n[button] B083X4GW6Y [button_]\nBob's Red\
+      \ Mill Gluten Free Muffin Mix, 16 Oz\n$9.38\n\n[button] B09ML2WVBK [button_]\n\
+      National Foods Butter Chicken Recipe Mix 1.65 oz (47g) | South Asian Meat Curry\
+      \ Masala Powder | Traditional Spicy Food | Box Pack | Pack of 6\n$14.99\n\n\
+      [button] B09R4JVD58 [button_]\nRainbow Window Covering Stained Glass FilmSticker\
+      \ Heat Control Opaque Vinyl for Bathroom and Kids Bedroom17.5 x 78.7 Inch W23.6\
+      \ x L47.2 Sky Blue Black White\n$31.0\n\n[button] B07GPHFDVS [button_]\nSEEDS\
+      \ OF CHANGE Organic Rice Variety Pack, Quinoa Brown Rice & Red Rice with Flaxseed,\
+      \ Ready to Heat, 8.5 Ounce (Pack of 6)\n$19.74\n"
+    past_actions:
+    - !!python/tuple
+      - search[10 pound bag parboiled brown rice easy to prepare]
+      - The instruction asks for a specific type of rice, so I should search for it.
+    reason: This item matches the desired description and is priced lower than $40.
+      I can check this item first.
+    sugg_action: click[b00m674k0g]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now'
+    ins: 'Instruction: i need a 10 pound back of parboiled brown rice that is easy
+      to prepare, and price lower than 40.00 dollars'
+    obs: 'Iberia Parboiled Brown, 10 Pounds, Rice, 160 Ounce
+
+      Price: $13.09
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b00m674k0g]
+      - This item matches the desired description and is priced lower than $40. I
+        can check this item first.
+    - !!python/tuple
+      - search[10 pound bag parboiled brown rice easy to prepare]
+      - The instruction asks for a specific type of rice, so I should search for it.
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i want to buy a waterproof security camera with an optical
+      zoom and motion detection, and price lower than 280.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[buy now]
+      - I have already selected the required attributes and am ready to purchase the
+        item.
+    - !!python/tuple
+      - click[b00m674k0g]
+      - This item matches the desired description and is priced lower than $40. I
+        can check this item first.
+    - !!python/tuple
+      - search[10 pound bag parboiled brown rice easy to prepare]
+      - The instruction asks for a specific type of rice, so I should search for it.
+    reason: The instruction asks for a specific type of security camera with certain
+      features, so I should search for it.
+    sugg_action: search[waterproof security camera optical zoom motion detection]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now'
+    ins: 'Instruction: i want to buy a waterproof security camera with an optical
+      zoom and motion detection, and price lower than 280.00 dollars'
+    obs: 'PTZ Security Camera Outdoor 30X Optical Zoom Camera WiFi Wireless 5MP RTSP
+      IP Camera 1000FT Night Vision Auto Tracking Emergency Strobe Light Alarm Human
+      Detection 2-Way Audio IP66 Waterproof
+
+      Price: $249.99
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b08v134qwr]
+      - This item matches the desired description and is priced lower than $280. I
+        can check this item first.
+    - !!python/tuple
+      - search[waterproof security camera optical zoom motion detection]
+      - The instruction asks for a specific type of security camera with certain features,
+        so I should search for it.
+    - !!python/tuple
+      - click[buy now]
+      - I have already selected the required attributes and am ready to purchase the
+        item.
+    - !!python/tuple
+      - click[b00m674k0g]
+      - This item matches the desired description and is priced lower than $40. I
+        can check this item first.
+    - !!python/tuple
+      - search[10 pound bag parboiled brown rice easy to prepare]
+      - The instruction asks for a specific type of rice, so I should search for it.
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]
+  1:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i want fluoride free ayurvedic herbal toothpaste, and price
+      lower than 20.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of toothpaste, so I should search
+      for it.
+    sugg_action: search[fluoride free ayurvedic herbal toothpaste]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b000774dqi
+
+      b0792n9j4s
+
+      b0791rwm8m
+
+      b07m7ldgxb
+
+      b07mnm28zn
+
+      b09htzz45v
+
+      b08thnsp6n
+
+      b097gvr1zk
+
+      b00j7g0i8m
+
+      b09c1r93ch'
+    ins: 'Instruction: i want fluoride free ayurvedic herbal toothpaste, and price
+      lower than 20.00 dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B000774DQI [button_]\nAuromere Ayurvedic\
+      \ Herbal Toothpaste, Classic Licorice Flavour - Vegan, Natural, Non GMO, Fluoride\
+      \ Free, Gluten Free, with Neem & Peelu (4.16 oz), 1 Pack\n$6.76\n\n[button]\
+      \ B0792N9J4S [button_]\nNatural Toothgel (Peppermint) by Herbal Choice Mari;\
+      \ 4 fl oz BPA-Free Plastic Bottle\n$11.99\n\n[button] B0791RWM8M [button_]\n\
+      Herbal Choice Mari Natural Toothgel, Ginger; 4floz\n$11.99\n\n[button] B07M7LDGXB\
+      \ [button_]\nCoral Nano Silver Mint Toothpaste, Natural Fluoride Free Teeth\
+      \ Whitening Toothpaste, Coral Calcium Nano Silver Infused SLS Free - 4 Ounces\n\
+      $9.95\n\n[button] B07MNM28ZN [button_]\nHello Nature Apple Flavor Kids Fluoride\
+      \ Free Training Toothpaste and Toothbrush, For Kids Age 2 Months to 3 Years,\
+      \ Safe to Swallow for Baby and Toddlers, Vegan, SLS Free, Gluten Free, 1.5 Ounce\n\
+      $100.0\n\n[button] B09HTZZ45V [button_]\n60ML Kids Foam Toothpaste,Fluoride\
+      \ Free Natural Formula with Strawberry/Lemon Flavor,Children Foam Toothpaste,Provide\
+      \ Fresh Breath and Healthier Gums for Kids (Strawberry)\n$6.75\n\n[button] B08THNSP6N\
+      \ [button_]\nDiabetes Prevention Daily Homeopathic Toothpaste | Fluoride Free\
+      \ Natural | for Bleeding Gums and Calcus | 3.4 Ounce - INFANETIM Technology\
+      \ Brown Line (2 Pack)\n$69.99\n\n[button] B097GVR1ZK [button_]\nKids Foam Toothpaste,\
+      \ Fluoride Free Natural Formula\uFF0COrange Flavor, 3Pack for Toddler, Kids\
+      \ and Children\u2019s Teeth Cleaning\n$25.99\n\n[button] B00J7G0I8M [button_]\n\
+      Jason All-Natural Toothpaste, Sea Fresh - 6 oz - 2 pk\n$100.0\n\n[button] B09C1R93CH\
+      \ [button_]\nPalarn Brightify Deep Cleaning Foam Toothpaste Tooth-Cleaning Toothpaste\
+      \ Teeth Whitening Oral Hygiene Mousse Foam Toothpaste 60ml (B, 1PC)\n$1.68\n"
+    past_actions:
+    - !!python/tuple
+      - search[fluoride free ayurvedic herbal toothpaste]
+      - The instruction asks for a specific type of toothpaste, so I should search
+        for it.
+    reason: This item matches the desired description and is priced lower than $20.
+      I can check this item first.
+    sugg_action: click[b000774dqi]
+  4:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: find me a long handled body brush that is double sided, and
+      price lower than 40.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of body brush, so I should search
+      for it.
+    sugg_action: search[long handled body brush double sided]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b092mh5rfm
+
+      b09p7wwp61
+
+      b09dt9g2fr
+
+      b082d247qb
+
+      b0744mqdvz
+
+      b09dd313b3
+
+      b087v3gk1q
+
+      b09bknll1g
+
+      b09j2g581p
+
+      b09k3sxtj1'
+    ins: 'Instruction: find me a long handled body brush that is double sided, and
+      price lower than 40.00 dollars'
+    obs: 'Page 1 (Total results: 50)
+
+
+      [button] B092MH5RFM [button_]
+
+      VITAKE Double-Sided Bath Brush,Painless Powerful Bathing Artifact Back Rubbing
+      Exfoliating Massage Shower Brush Long Handle(Blue)
+
+      $8.12
+
+
+      [button] B09P7WWP61 [button_]
+
+      Bath Brush Bath Accessories Long Handle Wet Or Dry Scrubbing Body Brush Set
+      Gift 5 in 1 Skin Care Exfoliating Back Wooden Massage Shower Bath Towel
+
+      $41.81
+
+
+      [button] B09DT9G2FR [button_]
+
+      LINLILO Silicone Body Scrubber,Bath Brush Body Exfoliator&Hair Shampoo Brush,All
+      in One,Long Handle Back Scrubber for Shower (Set of 2)
+
+      $9.99
+
+
+      [button] B082D247QB [button_]
+
+      Yisella Shower Brush With Long Handle,Loofah Back Scrubber Blue and White
+
+      $15.99
+
+
+      [button] B0744MQDVZ [button_]
+
+      Arswin Back Scrubber for Shower,Loofah Long Handle Bath Body Brush,Soft Nylon
+      Mesh Sponge for Shower,Loofah On a Stick for Men Women,Exfoliating Scrub Cleaning
+      Luffa for Elderly
+
+      $7.39
+
+
+      [button] B09DD313B3 [button_]
+
+      Beaupretty 4 PCS Loofah Back Scrubber Wooden Handle Anti- slip Brush Bathroom
+      Accessories Bath Shower Accessories for Home
+
+      $14.99
+
+
+      [button] B087V3GK1Q [button_]
+
+      interjunzhan Bath Shower Brush with Anti-slip Long Wooden Handle, Body Exfoliating
+      Scrubber Good for Health and Beauty Green
+
+      $5.24
+
+
+      [button] B09BKNLL1G [button_]
+
+      Minkissy 4pcs Loofah Back Scrubber Mesh Body Exfoliators Long Handle Brush with
+      Sponge Balls for Women Men Bathing Accessories
+
+      $14.89
+
+
+      [button] B09J2G581P [button_]
+
+      4PCS Tongue Scraper Tongue Brush, BPA Free Oral Hygiene Tool to Help Resist
+      Bad Breath and Freshen The Breath, Great for Adult Kids Remove Tongue Coating
+
+      $4.99
+
+
+      [button] B09K3SXTJ1 [button_]
+
+      6 Pack Kids U Shaped Toothbrush with Silicone Brush Manual Training Tooth Brush
+      U-Type Toothbrush Whole Mouth Toothbrush with Handle for Kids 2-8 Years Old
+      (Paw Handle, Long Handle, Blue Pink Yellow)
+
+      $8.69
+
+      '
+    past_actions:
+    - !!python/tuple
+      - search[long handled body brush double sided]
+      - The instruction asks for a specific type of body brush, so I should search
+        for it.
+    reason: This item matches the desired description and is priced lower than $40.
+      I can check this item first.
+    sugg_action: click[b092mh5rfm]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now
+
+      blue
+
+      green
+
+      pink'
+    ins: 'Instruction: find me a long handled body brush that is double sided, and
+      price lower than 40.00 dollars'
+    obs: 'color
+
+      VITAKE Double-Sided Bath Brush,Painless Powerful Bathing Artifact Back Rubbing
+      Exfoliating Massage Shower Brush Long Handle(Blue)
+
+      Price: $8.12
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b092mh5rfm]
+      - This item matches the desired description and is priced lower than $40. I
+        can check this item first.
+    - !!python/tuple
+      - search[long handled body brush double sided]
+      - The instruction asks for a specific type of body brush, so I should search
+        for it.
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]
+  5:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i would like a 0.25 fluid ounces of oil free 090 foundation,
+      and price lower than 50.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of foundation, so I should search
+      for it.
+    sugg_action: search[0.25 fluid ounces oil free 090 foundation]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b01j5uc1q6
+
+      b01hoi5e9m
+
+      b072j9spmr
+
+      b074vg3cd5
+
+      b002f3qyza
+
+      b07gxbj73p
+
+      b00028ot8y
+
+      b07t5b23nb
+
+      b076d9ds75
+
+      b07nv7d8vb'
+    ins: 'Instruction: i would like a 0.25 fluid ounces of oil free 090 foundation,
+      and price lower than 50.00 dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B01J5UC1Q6 [button_]\nLuminess Air\
+      \ Silk 4-in-1 Airbrush Foundation \u2013 Shade 040, 0.25 oz (COMINE3013823)\n\
+      $21.25\n\n[button] B01HOI5E9M [button_]\nNeutrogena Hydro Boost Hydrating Tint\
+      \ with Hyaluronic Acid, Lightweight Water Gel Formula, Moisturizing, Oil-Free\
+      \ & Non-Comedogenic Liquid Foundation Makeup, 30 Buff Color, 1.0 fl. oz\n$9.9\n\
+      \n[button] B072J9SPMR [button_]\nPhoto Finish Professional Airbrush Makeup-\
+      \ Foundation -1.0 Oz Cosmetic Face- Choose Color (Contour Set (3x.2oz))\n$14.95\n\
+      \n[button] B074VG3CD5 [button_]\nMaybelline Super Stay Full Coverage Liquid\
+      \ Foundation Makeup, Warm Nude, 1 Fl Oz\n$5.2\n\n[button] B002F3QYZA [button_]\n\
+      Neutrogena Oil-Free Acne Stress Control Triple-Action Toner, 8 Fluid Ounce\n\
+      $7.18\n\n[button] B07GXBJ73P [button_]\nMaybelline New York Super Stay Full\
+      \ Coverage Liquid Foundation Makeup, 336 Warm Bronze, 1 Fl Oz\n$9.21\n\n[button]\
+      \ B00028OT8Y [button_]\nGabriel Cosmetics Dual Powder Foundation (Extra Light\
+      \ Beige \u2013 Fair to Light/ Neutral Undertones), Natural Pressed mineral powder,\
+      \ Paraben Free, Vegan, Gluten-free, Cruelty-free, Non GMO, Enhanced with Sea\
+      \ Fennel, .32 oz.\n$24.49\n\n[button] B07T5B23NB [button_]\n2Pcs 30ml/1oz Empty\
+      \ Clear Square Glass Emulsion Essence Bottle With Black Pump Head Cosmetic Foundation\
+      \ Travel Vials Containers Holder For Lotion Cleanser Essential Oils Liquids\
+      \ Body Cream\n$11.77\n\n[button] B076D9DS75 [button_]\nBai Iced Tea, Supertea\
+      \ Variety Pack, Crafted with Black Tea and White Tea, 18 Fluid Ounce Bottles,\
+      \ 12 count, 3 each Socorro Sweet Tea, Narino Peach Tea, Tanzania Lemonade Tea,\
+      \ Rio Raspberry Tea\n$100.0\n\n[button] B07NV7D8VB [button_]\nYadah Cactus Toner\
+      \ Pads 5.07 Fluid Ounce 60 Count, Cruelty Free Facial Cleansing Exfoliator Toning\
+      \ Hydrating Treatment Wipes for Clear Pores Acne Prone Oily Dry Sensitive Skin\n\
+      $19.0\n"
+    past_actions:
+    - !!python/tuple
+      - search[0.25 fluid ounces oil free 090 foundation]
+      - The instruction asks for a specific type of foundation, so I should search
+        for it.
+    reason: This item matches the desired description and is priced lower than $50.
+    sugg_action: click[b01j5uc1q6]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now
+
+      010
+
+      030
+
+      040
+
+      050
+
+      060
+
+      070
+
+      080
+
+      090
+
+      100
+
+      110
+
+      120
+
+      0.25 ounce
+
+      0.25 ounce (pack of 1)
+
+      0.25 fl oz (pack of 1)'
+    ins: 'Instruction: i would like a 0.25 fluid ounces of oil free 090 foundation,
+      and price lower than 50.00 dollars'
+    obs: "color\nsize\nLuminess Air Silk 4-in-1 Airbrush Foundation \u2013 Shade 040,\
+      \ 0.25 oz (COMINE3013823)\nPrice: $21.25\nRating: N.A.\n"
+    past_actions:
+    - !!python/tuple
+      - click[b01j5uc1q6]
+      - This item matches the desired description and is priced lower than $50.
+    - !!python/tuple
+      - search[0.25 fluid ounces oil free 090 foundation]
+      - The instruction asks for a specific type of foundation, so I should search
+        for it.
+    reason: The webpage contents specify that we must select a size before clicking
+      buy now. The instruction asks for a 0.25 ounce bottle.
+    sugg_action: click[0.25 ounce]
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i am looking for cappucino coconut and low sugar instant coffee
+      for energy boost, and price lower than 50.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[0.25 ounce]
+      - The webpage contents specify that we must select a size before clicking buy
+        now. The instruction asks for a 0.25 ounce bottle.
+    - !!python/tuple
+      - click[b01j5uc1q6]
+      - This item matches the desired description and is priced lower than $50.
+    - !!python/tuple
+      - search[0.25 fluid ounces oil free 090 foundation]
+      - The instruction asks for a specific type of foundation, so I should search
+        for it.
+    reason: The instruction asks for a specific type of coffee, so I should search
+      for it.
+    sugg_action: search[cappucino coconut and low sugar instant coffee]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b08d9mgfn3
+
+      b000e1hvca
+
+      b07g3pxtkt
+
+      b076mh2rs8
+
+      b07wty16lh
+
+      b00cwtz8sq
+
+      b08kfs44g1
+
+      b07mxplfsh
+
+      b089z43q8h
+
+      b00cwtz6gu'
+    ins: 'Instruction: i am looking for cappucino coconut and low sugar instant coffee
+      for energy boost, and price lower than 50.00 dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B08D9MGFN3 [button_]\nTRUNG NGUYEN\
+      \ LEGEND G7 PREMIUM CAPPUCINO MOCHA Instant Coffee for Energy Boost - Rich Cocoa\
+      \ Aroma, Thick & Soft Foam Milk - Strong and Pure Vietnamese Coffee (12 Sticks/Box)\n\
+      $11.03\n\n[button] B000E1HVCA [button_]\nJell-O Instant White Chocolate Sugar-Free\
+      \ Fat Free Pudding & Pie Filling Mix (1 oz Boxes, Pack of 24)\n$24.0\n\n[button]\
+      \ B07G3PXTKT [button_]\nVital Proteins Collagen Coffee Creamer, No Dairy & Low\
+      \ Sugar Powder with Collagen Peptides Supplement - Supporting Healthy Hair,\
+      \ Skin, Nails with Energy-Boosting MCTs - Coconut 10.3oz\n$22.5\n\n[button]\
+      \ B076MH2RS8 [button_]\nGramZero Banana Sugar Free Pudding Mix 12-Pack, Great\
+      \ For Nutrition Club Meal Replacement Shakes, Low Calorie Dessert, Stevia Sweetened\n\
+      $19.95\n\n[button] B07WTY16LH [button_]\nCollagen Creamer | Grass Fed Hydrolyzed\
+      \ Collagen Peptides with Coconut Powder Creamer | Hair, Skin, Nails, Bone &\
+      \ Joint Support | 15-Pack\u2026 (Mocha)\n$19.95\n\n[button] B00CWTZ8SQ [button_]\n\
+      Torani Sugar Free Syrup, Sweetener, 25.4 Fl Oz (Pack of 4)\n$34.99\n\n[button]\
+      \ B08KFS44G1 [button_]\nMunk Pack Keto Granola Bars 48 Pack Bundle (12 Pack\
+      \ Coconut Cocoa Chip, 12 Pack Almond Butter Cocoa Chip, 12 Pack Peanut Butter\
+      \ & 12 Pack Maple Pecan)\n$89.96\n\n[button] B07MXPLFSH [button_]\nCusa Tea\
+      \ & Coffee, Spicy Chai Tea. Premium Instant Tea Made With Real Fruit and Spices,\
+      \ Organic Leaves, No Added Sugar. Drink Mix Packets Ready in Seconds, Makes\
+      \ Hot or Iced Tea (30 Servings)\n$22.99\n\n[button] B089Z43Q8H [button_]\nDaVinci\
+      \ Gourmet Sugar-Free Amaretto Syrup, 25.4 Ounce (Pack of 4)\n$24.48\n\n[button]\
+      \ B00CWTZ6GU [button_]\nTorani Sugar Free Syrup, Hazelnut, 25.4 Oz, Pack of\
+      \ 4\n$29.89\n"
+    past_actions:
+    - !!python/tuple
+      - search[cappucino coconut and low sugar instant coffee]
+      - The instruction asks for a specific type of coffee, so I should search for
+        it.
+    - !!python/tuple
+      - click[0.25 ounce]
+      - The webpage contents specify that we must select a size before clicking buy
+        now. The instruction asks for a 0.25 ounce bottle.
+    - !!python/tuple
+      - click[b01j5uc1q6]
+      - This item matches the desired description and is priced lower than $50.
+    - !!python/tuple
+      - search[0.25 fluid ounces oil free 090 foundation]
+      - The instruction asks for a specific type of foundation, so I should search
+        for it.
+    reason: This item matches the desired description and is priced lower than $50.
+      I can check this item first.
+    sugg_action: click[b08d9mgfn3]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now
+
+      0.56 ounce (pack of 14)
+
+      0.59 ounce (pack of 12)
+
+      0.59 ounce (pack of 24)
+
+      0.59 ounce (pack of 46)
+
+      0.88 ounce (pack of 5)
+
+      0.88 ounce (pack of 9)
+
+      0.88 ounce (pack of 12)
+
+      0.88 ounce (pack of 18)
+
+      1.3 oz (15 sticks | box)
+
+      7oz (100 sachets | bag)
+
+      7.6 oz (12 sticks | box)
+
+      8oz (12 sticks | box)
+
+      gift box (13 oz)
+
+      14 oz (200 sachets | bag)
+
+      21oz (24 sticks | bag)
+
+      50 count (pack of 1)
+
+      56oz (100 sticks | bag)
+
+      passiona
+
+      classic
+
+      cafe sua da
+
+      special edition
+
+      g7 espresso
+
+      g7 pure black
+
+      g7 cappucino hazelnut
+
+      g7 cappucino mocha
+
+      cappucino coconut
+
+      cappucino hazelnut
+
+      cappucino mocha
+
+      strong x2
+
+      g7 3 in 1'
+    ins: 'Instruction: i am looking for cappucino coconut and low sugar instant coffee
+      for energy boost, and price lower than 50.00 dollars'
+    obs: 'size
+
+      color
+
+      TRUNG NGUYEN LEGEND G7 PREMIUM CAPPUCINO MOCHA Instant Coffee for Energy Boost
+      - Rich Cocoa Aroma, Thick & Soft Foam Milk - Strong and Pure Vietnamese Coffee
+      (12 Sticks/Box)
+
+      Price: $11.03
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b08d9mgfn3]
+      - This item matches the desired description and is priced lower than $50. I
+        can check this item first.
+    - !!python/tuple
+      - search[cappucino coconut and low sugar instant coffee]
+      - The instruction asks for a specific type of coffee, so I should search for
+        it.
+    - !!python/tuple
+      - click[0.25 ounce]
+      - The webpage contents specify that we must select a size before clicking buy
+        now. The instruction asks for a 0.25 ounce bottle.
+    - !!python/tuple
+      - click[b01j5uc1q6]
+      - This item matches the desired description and is priced lower than $50.
+    - !!python/tuple
+      - search[0.25 fluid ounces oil free 090 foundation]
+      - The instruction asks for a specific type of foundation, so I should search
+        for it.
+    reason: The webpage contents specify that we must select a flavor before clicking
+      buy now. The instruction asks for a cappucino coconut flavor.
+    sugg_action: click[cappucino coconut]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now
+
+      0.56 ounce (pack of 14)
+
+      0.59 ounce (pack of 12)
+
+      0.59 ounce (pack of 24)
+
+      0.59 ounce (pack of 46)
+
+      0.88 ounce (pack of 5)
+
+      0.88 ounce (pack of 9)
+
+      0.88 ounce (pack of 12)
+
+      0.88 ounce (pack of 18)
+
+      1.3 oz (15 sticks | box)
+
+      7oz (100 sachets | bag)
+
+      7.6 oz (12 sticks | box)
+
+      8oz (12 sticks | box)
+
+      gift box (13 oz)
+
+      14 oz (200 sachets | bag)
+
+      21oz (24 sticks | bag)
+
+      50 count (pack of 1)
+
+      56oz (100 sticks | bag)
+
+      passiona
+
+      classic
+
+      cafe sua da
+
+      special edition
+
+      g7 espresso
+
+      g7 pure black
+
+      g7 cappucino hazelnut
+
+      g7 cappucino mocha
+
+      cappucino coconut
+
+      cappucino hazelnut
+
+      cappucino mocha
+
+      strong x2
+
+      g7 3 in 1'
+    ins: 'Instruction: i am looking for cappucino coconut and low sugar instant coffee
+      for energy boost, and price lower than 50.00 dollars'
+    obs: 'You have clicked cappucino coconut.
+
+      size
+
+      color
+
+      [clicked button] cappucino coconut [clicked button_]
+
+      TRUNG NGUYEN LEGEND G7 PREMIUM CAPPUCINO MOCHA Instant Coffee for Energy Boost
+      - Rich Cocoa Aroma, Thick & Soft Foam Milk - Strong and Pure Vietnamese Coffee
+      (12 Sticks/Box)
+
+      Price: $11.03
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[cappucino coconut]
+      - The webpage contents specify that we must select a flavor before clicking
+        buy now. The instruction asks for a cappucino coconut flavor.
+    - !!python/tuple
+      - click[b08d9mgfn3]
+      - This item matches the desired description and is priced lower than $50. I
+        can check this item first.
+    - !!python/tuple
+      - search[cappucino coconut and low sugar instant coffee]
+      - The instruction asks for a specific type of coffee, so I should search for
+        it.
+    - !!python/tuple
+      - click[0.25 ounce]
+      - The webpage contents specify that we must select a size before clicking buy
+        now. The instruction asks for a 0.25 ounce bottle.
+    - !!python/tuple
+      - click[b01j5uc1q6]
+      - This item matches the desired description and is priced lower than $50.
+    - !!python/tuple
+      - search[0.25 fluid ounces oil free 090 foundation]
+      - The instruction asks for a specific type of foundation, so I should search
+        for it.
+    reason: This item matches the desired description and is priced lower than $50.
+      I can check this item first.
+    sugg_action: click[b08d9mgfn3]
+  7:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i am looking for long lasting deep color colorstay concealer,
+      and price lower than 40.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of concealer, so I should search
+      for it.
+    sugg_action: search[long lasting deep color colorstay concealer]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b07kywgp65
+
+      b07gw9q8fh
+
+      b07gwdxwrh
+
+      b00j2apbzi
+
+      b072j9spmr
+
+      b001b2s32s
+
+      b074vg3cd5
+
+      b09ky9p8cd
+
+      b09p2r22lf
+
+      b07n33d4th'
+    ins: 'Instruction: i am looking for long lasting deep color colorstay concealer,
+      and price lower than 40.00 dollars'
+    obs: 'Page 1 (Total results: 50)
+
+
+      [button] B07KYWGP65 [button_]
+
+      Revlon ColorStay Concealer, Longwearing Full Coverage Color Correcting Makeup,
+      055 Chestnut, 0.21 oz
+
+      $9.49
+
+
+      [button] B07GW9Q8FH [button_]
+
+      IT Cosmetics Bye Bye Under Eye, 11.0 Light Nude (N) - Full-Coverage, Anti-Aging,
+      Waterproof Concealer - Improves the Appearance of Dark Circles, Wrinkles & Imperfections
+      - 0.4 fl oz
+
+      $29.0
+
+
+      [button] B07GWDXWRH [button_]
+
+      IT Cosmetics Bye Bye Under Eye, 14.5 Light Buff (N) - Full-Coverage, Anti-Aging,
+      Waterproof Concealer - Improves the Appearance of Dark Circles, Wrinkles & Imperfections
+      - 0.4 fl oz
+
+      $28.06
+
+
+      [button] B00J2APBZI [button_]
+
+      COVERGIRL Ready Set Gorgeous Fresh Complexion Concealer, Fair 105/110, 0.37
+      oz (Packaging May Vary)
+
+      $5.99
+
+
+      [button] B072J9SPMR [button_]
+
+      Photo Finish Professional Airbrush Makeup- Foundation -1.0 Oz Cosmetic Face-
+      Choose Color (Contour Set (3x.2oz))
+
+      $14.95
+
+
+      [button] B001B2S32S [button_]
+
+      Permanent Hair Color by Revlon, Permanent Hair Dye, Colorsilk with 100% Gray
+      Coverage, Ammonia-Free, Keratin and Amino Acids, 41 Medium Brown, 4.4 Oz (Pack
+      of 1)
+
+      $2.99
+
+
+      [button] B074VG3CD5 [button_]
+
+      Maybelline Super Stay Full Coverage Liquid Foundation Makeup, Warm Nude, 1 Fl
+      Oz
+
+      $5.2
+
+
+      [button] B09KY9P8CD [button_]
+
+      Mirror Effect Chrome Metallic Nail Polish Lacquer, Mirror Effect Long Lasting
+      Gorgeous Glossy Manicure Nail Art Decoration, Brilliant Manicure Effect Nail
+      Lacquers
+
+      $3.15
+
+
+      [button] B09P2R22LF [button_]
+
+      12A Grade Deep Wave Lace Frontal 13x4 Ear to Ear Lace Frontal Closure 18 Inch
+      100% Unprocessed Brazilian Virgin Human Hair Swiss Lace Frontal Closure Bleached
+      Knots 180% Density Pre Plucked With Baby Hair Natural Color
+
+      $86.79
+
+
+      [button] B07N33D4TH [button_]
+
+      Style Edit Root Concealer Touch Up Spray (Multiple Colors Available) - Instantly
+      Covers Greys And Roots - Professional Salon Quality Grays Cover Up Hair Products
+      for Women Medium Brown 2 Ounce PACK OF 4 PLUS 1 FREE (Total Of 5)
+
+      $99.49
+
+      '
+    past_actions:
+    - !!python/tuple
+      - search[long lasting deep color colorstay concealer]
+      - The instruction asks for a specific type of concealer, so I should search
+        for it.
+    reason: This item matches the desired description and is priced lower than $40.
+      I can check this item first.
+    sugg_action: click[b07kywgp65]
+  - !!python/object:history.MyRecord
+    avail_actions: "back to search\n< prev\ndescription\nfeatures\nreviews\nbuy now\n\
+      banana\nbiscuit\nbisque\ncaf\xE9\nchestnut\ncr\xE8me brulee\ndeep\nespresso\n\
+      fair\nhazelnut\nlight\nlight medium\nmedium\nmedium deep\nnutmeg\noat\nsand\n\
+      vanilla"
+    ins: 'Instruction: i am looking for long lasting deep color colorstay concealer,
+      and price lower than 40.00 dollars'
+    obs: 'color
+
+      Revlon ColorStay Concealer, Longwearing Full Coverage Color Correcting Makeup,
+      055 Chestnut, 0.21 oz
+
+      Price: $9.49
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b07kywgp65]
+      - This item matches the desired description and is priced lower than $40. I
+        can check this item first.
+    - !!python/tuple
+      - search[long lasting deep color colorstay concealer]
+      - The instruction asks for a specific type of concealer, so I should search
+        for it.
+    reason: The webpage contents specify that we must choose a color before clicking
+      buy now. Deep is the color specified in the instruction.
+    sugg_action: click[deep]
+  - !!python/object:history.MyRecord
+    avail_actions: "back to search\n< prev\ndescription\nfeatures\nreviews\nbuy now\n\
+      banana\nbiscuit\nbisque\ncaf\xE9\nchestnut\ncr\xE8me brulee\ndeep\nespresso\n\
+      fair\nhazelnut\nlight\nlight medium\nmedium\nmedium deep\nnutmeg\noat\nsand\n\
+      vanilla"
+    ins: 'Instruction: i am looking for long lasting deep color colorstay concealer,
+      and price lower than 40.00 dollars'
+    obs: 'You have clicked deep.
+
+      color
+
+      [clicked button] deep [clicked button_]
+
+      Revlon ColorStay Concealer, Longwearing Full Coverage Color Correcting Makeup,
+      055 Chestnut, 0.21 oz
+
+      Price: $9.49
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[deep]
+      - The webpage contents specify that we must choose a color before clicking buy
+        now. Deep is the color specified in the instruction.
+    - !!python/tuple
+      - click[b07kywgp65]
+      - This item matches the desired description and is priced lower than $40. I
+        can check this item first.
+    - !!python/tuple
+      - search[long lasting deep color colorstay concealer]
+      - The instruction asks for a specific type of concealer, so I should search
+        for it.
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i am looking for a 2.1 ounce (pack of 4) of gluten free and
+      non gmo  candy & chocolate bars, and price lower than 50.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[buy now]
+      - I have already selected the required attributes and am ready to purchase the
+        item.
+    - !!python/tuple
+      - click[deep]
+      - The webpage contents specify that we must choose a color before clicking buy
+        now. Deep is the color specified in the instruction.
+    - !!python/tuple
+      - click[b07kywgp65]
+      - This item matches the desired description and is priced lower than $40. I
+        can check this item first.
+    - !!python/tuple
+      - search[long lasting deep color colorstay concealer]
+      - The instruction asks for a specific type of concealer, so I should search
+        for it.
+    reason: The instruction asks for a specific type of candy and chocolate bars,
+      so I should search for it.
+    sugg_action: search[2.1 ounce (pack of 4) gluten free non gmo candy & chocolate
+      bars]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b07dmbcvly
+
+      b08r4tgcyj
+
+      b07qy3bqcg
+
+      b005vp1wa6
+
+      b07fz6xx2t
+
+      b08w7x86d4
+
+      b07l75y8md
+
+      b08nhbjp12
+
+      b081d973zf
+
+      b00wfdkdio'
+    ins: 'Instruction: i am looking for a 2.1 ounce (pack of 4) of gluten free and
+      non gmo  candy & chocolate bars, and price lower than 50.00 dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B07DMBCVLY [button_]\nHu Dark Chocolate\
+      \ Bars | Natural Organic Vegan Chocolate, Gluten Free, Paleo, Non GMO, Fair\
+      \ Trade Dark Chocolate (Cashew Butter, 4 pack)\n$19.99\n\n[button] B08R4TGCYJ\
+      \ [button_]\nEnjoy Life Mini Chocolate Candy Variety Pack, Nut Free, Soy Free,\
+      \ Dairy Free Chocolate, 6 Packs\n$100.0\n\n[button] B07QY3BQCG [button_]\nKate\u2019\
+      s Real Food Organic Energy Bars, Non-GMO, All-Natural Ingredients, Gluten-Free\
+      \ and Soy-Free Healthy Snack with Natural Flavors, Mango Coconut (Pack of 12)\n\
+      $31.88\n\n[button] B005VP1WA6 [button_]\nRise Energy Plus Bar, Almond Honey,\
+      \ 2.1 Ounce (Pack of 12)\n$44.99\n\n[button] B07FZ6XX2T [button_]\nMissy J's\
+      \ Organic Peanut Butter Carob Bar 3 Ounce 2 Pack | Carob Made w/Coconut Sugar,\
+      \ Vegan and Gluten-Free | Healthy Caffeine Free Substitute for Chocolate, Perfect\
+      \ for Snacks and Treats\n$17.87\n\n[button] B08W7X86D4 [button_]\nElemental\
+      \ Superfood Refrigerated Seedbars, Currant Cacao + Hemp Seed, 1.8 Ounce - 12\
+      \ Pack, Non-GMO Verified, Organic Ingredients, Gluten Free, Dairy Free, Plant\
+      \ Based\n$34.0\n\n[button] B07L75Y8MD [button_]\nExo Protein Bars, Chocolate\
+      \ Chip Cookie Dough, 12 Count, 14g Protein, Gluten Free, Dairy Free, Sustainable\
+      \ Protein Bar\n$29.99\n\n[button] B08NHBJP12 [button_]\nAngie's BOOMCHICKAPOP\
+      \ Kettle Corn Bundle: Hot Cocoa Marshmallow, Dark Chocolate, Frosted Sugar Cookie\
+      \ (Set of 3)\n$21.97\n\n[button] B081D973ZF [button_]\nNature's Garden Heart\
+      \ Healthy Trail Mix - Heart Healthy Snack Mix, Dark Chocolate, Nuts, Seeds,\
+      \ Raisins, Gluten-Free, Non-GMO - 26 oz (Pack of 3)\n$32.29\n\n[button] B00WFDKDIO\
+      \ [button_]\nNature's Bakery Gluten Free Fig Bars, Raspberry, Real Fruit, Vegan,\
+      \ Non-GMO, Snack bar, 1 box with 6 twin packs (6 twin packs)\n$2.99\n"
+    past_actions:
+    - !!python/tuple
+      - search[2.1 ounce (pack of 4) gluten free non gmo candy & chocolate bars]
+      - The instruction asks for a specific type of candy and chocolate bars, so I
+        should search for it.
+    - !!python/tuple
+      - click[buy now]
+      - I have already selected the required attributes and am ready to purchase the
+        item.
+    - !!python/tuple
+      - click[deep]
+      - The webpage contents specify that we must choose a color before clicking buy
+        now. Deep is the color specified in the instruction.
+    - !!python/tuple
+      - click[b07kywgp65]
+      - This item matches the desired description and is priced lower than $40. I
+        can check this item first.
+    - !!python/tuple
+      - search[long lasting deep color colorstay concealer]
+      - The instruction asks for a specific type of concealer, so I should search
+        for it.
+    reason: This item matches the desired description and is priced lower than $50.
+      I can check this item first.
+    sugg_action: click[b07dmbcvly]
+  9:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i want some freeze dried mangoes, and price lower than 20.00
+      dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of product, so I should search
+      for it.
+    sugg_action: search[freeze dried mangoes]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b00ih0fyj2
+
+      b005m4g4li
+
+      b078mzpz8k
+
+      b005m4g23s
+
+      b09gt8jy8h
+
+      b097yhd3ps
+
+      b09pmfb9lh
+
+      b084h13nfv
+
+      b07nqjd1nn
+
+      b01n9vrk5o'
+    ins: 'Instruction: i want some freeze dried mangoes, and price lower than 20.00
+      dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B00IH0FYJ2 [button_]\n2 Pack Trader\
+      \ Joe's Freeze Dried Mango, 2 Pack Freeze Dried Strawberries, 2 Pack Freeze\
+      \ Dried Blueberries, 2 Pack David Sunflower Seeds - 8 Items Total\n$100.0\n\n\
+      [button] B005M4G4LI [button_]\nNatierra Nature's Organic Freeze-Dried Strawberries\
+      \ | Gluten Free & Vegan | 1.2 Ounce\n$5.79\n\n[button] B078MZPZ8K [button_]\n\
+      NATIERRA Organic Freeze-Dried Chocolate-Covered Strawberry Slices | Non-GMO\
+      \ & Vegan | 1.5 Ounce\n$5.99\n\n[button] B005M4G23S [button_]\nNATIERRA Nature's\
+      \ All Foods Organic Freeze-Dried Pineapples | Non-GMO & Vegan | 1.5 Ounce\n\
+      $5.79\n\n[button] B09GT8JY8H [button_]\nLIOMART DRY FRUIT SNACKS- Freeze dried\
+      \ mixed fruit. Perfect and healthy sugar free fruit snacks. Includes all your\
+      \ favorite Strawberry. Perfect dried mix fruit for snacks healthy, for baking,\
+      \ smoothies, topping breakfast and more. 11 Pack of .705oz each.\n$42.0\n\n\
+      [button] B097YHD3PS [button_]\nQueenbox Dried Mixes 8.8oz Fruit Snacks, Natural\
+      \ Vegan Sweet & Tart Vegetable Chunks Foods Kids Adult Gift in Resealable Bag\
+      \ for Festival Party Cake Hiking\n$39.71\n\n[button] B09PMFB9LH [button_]\n\
+      Dried Strawberry Chips, 3 PACK [ 100% Real Freeze Dried Fruits ] Korean Fruit\
+      \ Snack, Healthy Vegan Snacks for Kids [ Jeollanamdo Foods ]\n$12.99\n\n[button]\
+      \ B084H13NFV [button_]\nFruit for Thought Dried Persimmons | Dried Fruit Snack\
+      \ Packs | At Home, Work, or On The Go | Unsweetened Hachiya Persimmon | 12 Ounce\
+      \ Bags Pack of 2\n$26.35\n\n[button] B07NQJD1NN [button_]\nSOLELY Organic Pineapple\
+      \ with Coconut Fruit Jerky, 0.8 Ounce | Two Ingredients | Vegan | Non-GMO |\
+      \ Gluten-Free | No Sugar Added\u2026\n$100.0\n\n[button] B01N9VRK5O [button_]\n\
+      Northwest Wild Foods Dried Organic Tart Cherries - Healthy Antioxidants Fruit\
+      \ Diet - for Smoothies, Baking, Trail Mix Smoothies Pies Jams (1 lb)\n$39.99\n"
+    past_actions:
+    - !!python/tuple
+      - search[freeze dried mangoes]
+      - The instruction asks for a specific type of product, so I should search for
+        it.
+    reason: This item matches the desired description and is priced lower than $20.
+      I can check this item first.
+    sugg_action: click[b005m4g4li]
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i am looking for a sconce light with a black metal base and
+      a wood finish, and price lower than 90.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b005m4g4li]
+      - This item matches the desired description and is priced lower than $20. I
+        can check this item first.
+    - !!python/tuple
+      - search[freeze dried mangoes]
+      - The instruction asks for a specific type of product, so I should search for
+        it.
+    reason: The instruction asks for a specific type of sconce light, so I should
+      search for it.
+    sugg_action: search[sconce light black metal base wood finish]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now'
+    ins: 'Instruction: i am looking for a sconce light with a black metal base and
+      a wood finish, and price lower than 90.00 dollars'
+    obs: 'Rustic Vanity Light,3-Light Industrial Wood Finish Farmhouse Bathroom Lighting,Clear
+      Glass and Black Metal Base Wall Sconce Lighting Fixtures.
+
+      Price: $75.99
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b08dgqdx38]
+      - This item matches the desired description and is priced lower than $90. I
+        can check this item first.
+    - !!python/tuple
+      - search[sconce light black metal base wood finish]
+      - The instruction asks for a specific type of sconce light, so I should search
+        for it.
+    - !!python/tuple
+      - click[b005m4g4li]
+      - This item matches the desired description and is priced lower than $20. I
+        can check this item first.
+    - !!python/tuple
+      - search[freeze dried mangoes]
+      - The instruction asks for a specific type of product, so I should search for
+        it.
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]
+  13:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i am looking for organic blueberries, and price lower than
+      30.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of product, so I should search
+      for it.
+    sugg_action: search[organic blueberries]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b005m4g23s
+
+      b07vblhd8c
+
+      b078mzpz8k
+
+      b09mzqv3qb
+
+      b089dlmn63
+
+      b005m4g4li
+
+      b08l769zs8
+
+      b01n9vrk5o
+
+      b08w7x86d4
+
+      b013i738k0'
+    ins: 'Instruction: i am looking for organic blueberries, and price lower than
+      30.00 dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B005M4G23S [button_]\nNATIERRA Nature's\
+      \ All Foods Organic Freeze-Dried Pineapples | Non-GMO & Vegan | 1.5 Ounce\n\
+      $5.79\n\n[button] B07VBLHD8C [button_]\nMaud's Dark Hot Chocolate (Loco Hot\
+      \ Cocoa), 50ct. Solar Energy Produced Recyclable Single Serve Gluten Free Dairy\
+      \ Free Hot Cocoa Pods, 100% California Blended Hot Chocolate, KCup Compatible\n\
+      $29.7\n\n[button] B078MZPZ8K [button_]\nNATIERRA Organic Freeze-Dried Chocolate-Covered\
+      \ Strawberry Slices | Non-GMO & Vegan | 1.5 Ounce\n$5.99\n\n[button] B09MZQV3QB\
+      \ [button_]\nCerebelly Toddler Snack Bars \u2013 Peppa Pig Blueberry Banana\
+      \ Sweet Potato (Pack of 30), Healthy & Organic Whole Grain Bars with Veggies\
+      \ & Fruit, 15 Brain-supporting Nutrients from Superfoods, Nut & Gluten Free,\
+      \ No Added Sugar\n$29.99\n\n[button] B089DLMN63 [button_]\nSkout Organic Real\
+      \ Food Bars for Kids Fruit Variety Pack (36 Pack) | Organic Snacks for Kids\
+      \ | Plant-Based Nutrition, No Refined Sugar | Vegan | Gluten, Dairy, Grain &\
+      \ Soy Free\n$39.99\n\n[button] B005M4G4LI [button_]\nNatierra Nature's Organic\
+      \ Freeze-Dried Strawberries | Gluten Free & Vegan | 1.2 Ounce\n$5.79\n\n[button]\
+      \ B08L769ZS8 [button_]\nNaturalvert Organic, gluten-free, vegan granola (Bulk)\
+      \ (Raspberry Cacao, 25 lbs)\n$89.07\n\n[button] B01N9VRK5O [button_]\nNorthwest\
+      \ Wild Foods Dried Organic Tart Cherries - Healthy Antioxidants Fruit Diet -\
+      \ for Smoothies, Baking, Trail Mix Smoothies Pies Jams (1 lb)\n$39.99\n\n[button]\
+      \ B08W7X86D4 [button_]\nElemental Superfood Refrigerated Seedbars, Currant Cacao\
+      \ + Hemp Seed, 1.8 Ounce - 12 Pack, Non-GMO Verified, Organic Ingredients, Gluten\
+      \ Free, Dairy Free, Plant Based\n$34.0\n\n[button] B013I738K0 [button_]\nSensible\
+      \ Foods Fruit Snacks, Cherry Berry, 48 Count (Pack of 48)\n$43.99\n"
+    past_actions:
+    - !!python/tuple
+      - search[organic blueberries]
+      - The instruction asks for a specific type of product, so I should search for
+        it.
+    reason: This item matches the desired description and is priced lower than $30.
+      I can check this item first.
+    sugg_action: click[b005m4g23s]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now
+
+      bag
+
+      bundle
+
+      apples
+
+      bananas
+
+      bananas & strawberries
+
+      bananas and strawberries
+
+      beets
+
+      blueberries
+
+      chocolate banana slices
+
+      chocolate covered mango slices
+
+      chocolate mango slices
+
+      chocolate strawberry slices
+
+      mango cheeks
+
+      mango strips
+
+      mangoes
+
+      peas
+
+      pineapples
+
+      pomegranate arils
+
+      raspberries
+
+      roasted corn
+
+      strawberries
+
+      tropical fruits
+
+      strawberries + apples
+
+      strawberries + bananas
+
+      strawberries + blueberries
+
+      strawberries + corn
+
+      strawberries + mangos
+
+      strawberries + peas
+
+      strawberries + pineapple
+
+      strawberries + pomegranate arils
+
+      strawberries + raspberries
+
+      strawberries + tropical fruits
+
+      0.7 ounce (pack of 8)
+
+      1.5 ounce (pack of 1)
+
+      1.5 ounce (pack of 12)
+
+      1.3 ounce (pack of 4)
+
+      1.3 ounce (pack of 8)
+
+      2.5 ounce (pack of 1)
+
+      2.5 ounce (pack of 12)
+
+      1.8 ounce (pack of 1)
+
+      1.2 ounce (pack of 4)
+
+      1.2 ounce (pack of 8)
+
+      1.8 ounce (pack of 12)
+
+      1 ounce (pack of 1)
+
+      1 ounce (pack of 12)
+
+      1.2 ounce
+
+      1.2 ounce (pack of 1)
+
+      1.2 ounce (pack of 12)
+
+      3 ounce (pack of 1)
+
+      8 ounce (pack of 1)
+
+      8 ounce (pack of 6)
+
+      0.7 ounce (pack of 4)
+
+      2.2 ounce (pack of 1)
+
+      2.2 ounce (pack of 12)
+
+      1.3 ounce (pack of 1)
+
+      1.3 ounce (pack of 12)
+
+      1.6 ounce (pack of 1)
+
+      1 count (pack of 1)
+
+      strawberries 1.2 ounce & apples 1.3 ounc...
+
+      strawberries 1.2 ounce & bananas 2.5 oun...
+
+      strawberries 1.2 ounce & blueberries 1.2...
+
+      strawberries 1.2 ounce & roasted corn 1....
+
+      strawberries 1.2 ounce & mangoes 1.5 oun...
+
+      strawberries 1.2 ounce & peas 2.2 ounce
+
+      strawberries 1.2 ounce & pineapples 1.5 ...
+
+      strawberries 1.2 ounce & pomegranate ari...
+
+      strawberries 1.2 ounce & raspberries 1.3...
+
+      strawberries 1.2 ounce & tropical fruits...'
+    ins: 'Instruction: i am looking for organic blueberries, and price lower than
+      30.00 dollars'
+    obs: 'style
+
+      flavor
+
+      size
+
+      NATIERRA Nature''s All Foods Organic Freeze-Dried Pineapples | Non-GMO & Vegan
+      | 1.5 Ounce
+
+      Price: $5.79
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b005m4g23s]
+      - This item matches the desired description and is priced lower than $30. I
+        can check this item first.
+    - !!python/tuple
+      - search[organic blueberries]
+      - The instruction asks for a specific type of product, so I should search for
+        it.
+    reason: The webpage contents specify that we must select a flavor before clicking
+      buy now. The instruction asks for organic blueberries.
+    sugg_action: click[blueberries]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now
+
+      bag
+
+      bundle
+
+      apples
+
+      bananas
+
+      bananas & strawberries
+
+      bananas and strawberries
+
+      beets
+
+      blueberries
+
+      chocolate banana slices
+
+      chocolate covered mango slices
+
+      chocolate mango slices
+
+      chocolate strawberry slices
+
+      mango cheeks
+
+      mango strips
+
+      mangoes
+
+      peas
+
+      pineapples
+
+      pomegranate arils
+
+      raspberries
+
+      roasted corn
+
+      strawberries
+
+      tropical fruits
+
+      strawberries + apples
+
+      strawberries + bananas
+
+      strawberries + blueberries
+
+      strawberries + corn
+
+      strawberries + mangos
+
+      strawberries + peas
+
+      strawberries + pineapple
+
+      strawberries + pomegranate arils
+
+      strawberries + raspberries
+
+      strawberries + tropical fruits
+
+      0.7 ounce (pack of 8)
+
+      1.5 ounce (pack of 1)
+
+      1.5 ounce (pack of 12)
+
+      1.3 ounce (pack of 4)
+
+      1.3 ounce (pack of 8)
+
+      2.5 ounce (pack of 1)
+
+      2.5 ounce (pack of 12)
+
+      1.8 ounce (pack of 1)
+
+      1.2 ounce (pack of 4)
+
+      1.2 ounce (pack of 8)
+
+      1.8 ounce (pack of 12)
+
+      1 ounce (pack of 1)
+
+      1 ounce (pack of 12)
+
+      1.2 ounce
+
+      1.2 ounce (pack of 1)
+
+      1.2 ounce (pack of 12)
+
+      3 ounce (pack of 1)
+
+      8 ounce (pack of 1)
+
+      8 ounce (pack of 6)
+
+      0.7 ounce (pack of 4)
+
+      2.2 ounce (pack of 1)
+
+      2.2 ounce (pack of 12)
+
+      1.3 ounce (pack of 1)
+
+      1.3 ounce (pack of 12)
+
+      1.6 ounce (pack of 1)
+
+      1 count (pack of 1)
+
+      strawberries 1.2 ounce & apples 1.3 ounc...
+
+      strawberries 1.2 ounce & bananas 2.5 oun...
+
+      strawberries 1.2 ounce & blueberries 1.2...
+
+      strawberries 1.2 ounce & roasted corn 1....
+
+      strawberries 1.2 ounce & mangoes 1.5 oun...
+
+      strawberries 1.2 ounce & peas 2.2 ounce
+
+      strawberries 1.2 ounce & pineapples 1.5 ...
+
+      strawberries 1.2 ounce & pomegranate ari...
+
+      strawberries 1.2 ounce & raspberries 1.3...
+
+      strawberries 1.2 ounce & tropical fruits...'
+    ins: 'Instruction: i am looking for organic blueberries, and price lower than
+      30.00 dollars'
+    obs: 'You have clicked blueberries.
+
+      style
+
+      flavor
+
+      [clicked button] blueberries [clicked button_]
+
+      size
+
+      NATIERRA Nature''s All Foods Organic Freeze-Dried Pineapples | Non-GMO & Vegan
+      | 1.5 Ounce
+
+      Price: $5.79
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[blueberries]
+      - The webpage contents specify that we must select a flavor before clicking
+        buy now. The instruction asks for organic blueberries.
+    - !!python/tuple
+      - click[b005m4g23s]
+      - This item matches the desired description and is priced lower than $30. I
+        can check this item first.
+    - !!python/tuple
+      - search[organic blueberries]
+      - The instruction asks for a specific type of product, so I should search for
+        it.
+    reason: The instruction states that I should only search if "search" is listed
+      as an available action. Since "search" is not listed, I should click "back to
+      search" to return to the previous page and select a different item.
+    sugg_action: click[back to search]
+  16:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i''m looking for cakes it contains high protein and the low
+      fat, and price lower than 50.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of product, so I should search
+      for it.
+    sugg_action: search[cakes high protein low fat]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b071dv6h98
+
+      b091qc3sf7
+
+      b002xulcb6
+
+      b002xulcam
+
+      b08zgzzdcj
+
+      b086qnnl78
+
+      b08y8j5ztr
+
+      b076b2qyzz
+
+      b0086ui36o
+
+      b01mydibac'
+    ins: 'Instruction: i''m looking for cakes it contains high protein and the low
+      fat, and price lower than 50.00 dollars'
+    obs: 'Page 1 (Total results: 50)
+
+
+      [button] B071DV6H98 [button_]
+
+      Peanut Butter & Co. Pure Peanut Powder, Non-GMO Project Verified, Gluten Free,
+      Vegan, 6.5 oz Jar
+
+      $8.78
+
+
+      [button] B091QC3SF7 [button_]
+
+      BestMed - High Protein Nutrition Bar - Low-Carb, 15g Protein, Low Sugar, High
+      Fiber, Low Calorie, Meal Replacement Bar (Vanilla Caramel, 1 Box - 7 Count)
+
+      $13.99
+
+
+      [button] B002XULCB6 [button_]
+
+      Pure Protein Vanilla Cream Protein Shake | 35g Complete Protein | Ready to Drink
+      and Keto-Friendly | Excellent Source of Calcium | 11oz Cans | 12 Pack
+
+      $24.56
+
+
+      [button] B002XULCAM [button_]
+
+      Pure Protein Strawberry Cream Protein Shake, 35g Complete Protein, Ready to
+      Drink and Keto-Friendly, Excellent Source of Calcium, 11oz Cans, 12 Pack
+
+      $53.0
+
+
+      [button] B08ZGZZDCJ [button_]
+
+      Heavenly Waffles Chef Developed Revolutionary Waffle Mix - 22 Ounce Bag - 40%
+      Dry Yogurt, High-Protein, Low-Fat, Healthy, Light, Fluffy, Delicious, Belgian
+      Waffles, Pancakes, For Dinner or Breakfast
+
+      $15.0
+
+
+      [button] B086QNNL78 [button_]
+
+      Lenny & Larry''s The Complete Cookie, 8 Flavor Variety Pack, Soft Baked, 16g
+      Plant Protein, Vegan, Non-GMO, 4 Ounce Cookie (Pack of 16)
+
+      $29.5
+
+
+      [button] B08Y8J5ZTR [button_]
+
+      Wyoming Authentic All-Natural Grass-Fed Angus BEEF STICK BITES, High-Protein
+      Low-Carb Low-Fat Gluten-Free Nitrate Free. Jerky Meat Snacks exclusively from
+      WYOMING USA RANCHES. (Cowboy Hickory Smoked, 3 Pack)
+
+      $19.95
+
+
+      [button] B076B2QYZZ [button_]
+
+      Pit-Smoked Beef Jerky by Dublin Jerky | Smoked With Whole Logs of Apple & Cherry
+      Wood - 8 Ounce
+
+      $19.5
+
+
+      [button] B0086UI36O [button_]
+
+      Kay''s Naturals Protein Cookie Bites, Cinnamon Almond, Gluten-Free, Low Fat,
+      Diabetes Friendly, All Natural Flavorings, 1.2 Ounce (Pack of 6)
+
+      $8.94
+
+
+      [button] B01MYDIBAC [button_]
+
+      Kay''s Naturals Protein Chips, Chili Nacho Cheese, Gluten-Free, Low Fat, Diabetes
+      Friendly, All Natural Flavorings, 1.2 Ounce (Pack of 6)
+
+      $8.94
+
+      '
+    past_actions:
+    - !!python/tuple
+      - search[cakes high protein low fat]
+      - The instruction asks for a specific type of product, so I should search for
+        it.
+    reason: This item matches the desired description and is priced lower than $50.
+      I can check this item first.
+    sugg_action: click[b091qc3sf7]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now
+
+      caramel cocoa
+
+      chocolate almond
+
+      cinnamon
+
+      dark chocolate s''mores
+
+      double berry
+
+      fudge graham
+
+      peanut
+
+      peppermint cocoa
+
+      vanilla caramel
+
+      variety pack
+
+      shortbread cookie
+
+      1 box - 7 count
+
+      2 box - 14 count
+
+      3 box - 21 count
+
+      4 box - 28 count'
+    ins: 'Instruction: i''m looking for cakes it contains high protein and the low
+      fat, and price lower than 50.00 dollars'
+    obs: 'flavor name
+
+      size
+
+      BestMed - High Protein Nutrition Bar - Low-Carb, 15g Protein, Low Sugar, High
+      Fiber, Low Calorie, Meal Replacement Bar (Vanilla Caramel, 1 Box - 7 Count)
+
+      Price: $13.99
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b091qc3sf7]
+      - This item matches the desired description and is priced lower than $50. I
+        can check this item first.
+    - !!python/tuple
+      - search[cakes high protein low fat]
+      - The instruction asks for a specific type of product, so I should search for
+        it.
+    reason: The instruction states that I should only search if "search" is listed
+      as an available action. Since "search" is not listed, I should click "back to
+      search" to return to the previous page and select a different item.
+    sugg_action: click[back to search]
+  17:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i need noise cancelling headphones for my daily running routine,
+      and price lower than 80.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of product, so I should search
+      for it.
+    sugg_action: search[noise cancelling headphones]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b07j5lmt7l
+
+      b09mk2bwkx
+
+      b08jtz145x
+
+      b0032hm6jg
+
+      b09lsqx8mh
+
+      b08cd2njph
+
+      b09m6nl5f7
+
+      b07tw4hn5w
+
+      b09mjz214x
+
+      b09743dfjc'
+    ins: 'Instruction: i need noise cancelling headphones for my daily running routine,
+      and price lower than 80.00 dollars'
+    obs: 'Page 1 (Total results: 50)
+
+
+      [button] B07J5LMT7L [button_]
+
+      Noise Cancelling Headphones Bluetooth Headset, ANC Over Ear Wireless Bluetooth
+      Headphones With Mic, Dual 40 mm Drivers, HIFI Deep Bass Foldable Bluetooth Headphones
+      With15Hrs Playtime 3.5mm Audio Jack
+
+      $69.99
+
+
+      [button] B09MK2BWKX [button_]
+
+      Wireless Sport Earphones IPX5 Waterproof, Noise Cancelling Bt Headphones for
+      Running and Workout, Wireless Earbuds with TF Card Slot(Black)
+
+      $59.99
+
+
+      [button] B08JTZ145X [button_]
+
+      USB Headset with Microphone Noise Cancelling, Stereo Computer Headphones for
+      PC Laptop SoftPhone Skype Business Call Center Office, Audio Controls, Crystal
+      Clear Chat, Ultra Comfort
+
+      $29.95
+
+
+      [button] B0032HM6JG [button_]
+
+      Panasonic Comfort Fit Headset for TCA Series Cordless Landline Phones, Foldable
+      Headset with Flexible Noise-Cancelling Microphone and Volume Control, 2.5 mm
+      Plug, Grey/Silver KX-TCA430
+
+      $19.05
+
+
+      [button] B09LSQX8MH [button_]
+
+      Pro Hands-Free Headset Works for Samsung Galaxy S III AT&T with Adjustable Boom
+      V5.0 Bluetooth Single Noise Reduction & Cancelling Features Portable Slim (Black)
+
+      $54.99
+
+
+      [button] B08CD2NJPH [button_]
+
+      Gaming Headset PS4 Headset 3.5mm Stereo Wired Over-Head Gaming Headphone,RGB
+      Rainbow Backlit, Professional Headphone Stereo Surround Sound,Noise Canceling
+      Microphone Compatible with PC,PS4,Xbox(Black)
+
+      $21.99
+
+
+      [button] B09M6NL5F7 [button_]
+
+      Hstore Life M22 Wireless Bluetooth 5.1 Sports Earphone Bass Sound in-Ear Noise
+      Canceling Touch Driving Business 2000mAh Earphone Stereo Waterproof Headset
+      Headphone for iOS Android
+
+      $100.0
+
+
+      [button] B07TW4HN5W [button_]
+
+      Purple Gaming Headset for Xbox One PS4 Noise Cancelling Over-Ear Headphones
+      with Microphone for Kids
+
+      $14.99
+
+
+      [button] B09MJZ214X [button_]
+
+      Libratone Track+ 2 (2nd Gen) Wireless Neckband, Sport Headphones with Active
+      Noise Cancelling, Running Mode, Magnetic, Bluetooth 5.2, IP54 Sweat Resistant,
+      Up to 14 Hours Playback for Workout Sports
+
+      $159.0
+
+
+      [button] B09743DFJC [button_]
+
+      Jinpei Cute Panda Wireless Earphones, Waterproof, Noise Cancelling in-Ear erbuds,
+      TWS Stereo Headphones, Built in mic Headset Premium Sound with deep Bass
+
+      $39.9
+
+      '
+    past_actions:
+    - !!python/tuple
+      - search[noise cancelling headphones]
+      - The instruction asks for a specific type of product, so I should search for
+        it.
+    reason: This item matches the desired description and is priced lower than $80.
+      I can check this item first.
+    sugg_action: click[b07j5lmt7l]
+  18:
+  - !!python/object:history.MyRecord
+    avail_actions: search
+    ins: 'Instruction: i am looking for an eco friendly wood bedside shelf for a bed,
+      and price lower than 50.00 dollars'
+    obs: 'WebShop
+
+      '
+    past_actions: []
+    reason: The instruction asks for a specific type of product, so I should search
+      for it.
+    sugg_action: search[eco friendly wood bedside shelf]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      next >
+
+      b08gy8hnl9
+
+      b07d7jghmg
+
+      b074rvn91q
+
+      b09bddb9hf
+
+      b09q3nvjnm
+
+      b09d2yldz9
+
+      b01mqhe1b0
+
+      b08s33j873
+
+      b09p4r6vxr
+
+      b084jqfvlx'
+    ins: 'Instruction: i am looking for an eco friendly wood bedside shelf for a bed,
+      and price lower than 50.00 dollars'
+    obs: "Page 1 (Total results: 50)\n\n[button] B08GY8HNL9 [button_]\nNightstand\
+      \ Bedroom Accent Table Bedside Table|Old Wooden Cabinet|Locker Bedside Cabinet|Large\
+      \ Drawer Large Capacity Locker|Bedroom Wooden Cabinet Frame Structure\n$319.86\n\
+      \n[button] B07D7JGHMG [button_]\nStony-Edge, Espresso Nightstand Two Shelf End\
+      \ Table with Storage -\_Bedside Tables & Glass Door Wooden Side Table for Living\
+      \ Room, Bedroom - Easy Assemble - 26\"\n$139.95\n\n[button] B074RVN91Q [button_]\n\
+      BedShelfie Wood Bedside Shelf for Bed & Bunk Bed Shelf Tray Table Caddy for\
+      \ Top Bunk Organizer As Seen On Business Insider College Dorm Room Essentials\
+      \ Clip-On Nightstand (Original Size, White Bamboo)\n$38.24\n\n[button] B09BDDB9HF\
+      \ [button_]\nSignature Design by Ashley Shamryn 1 Drawer Night Stand, Dark Brown\n\
+      $100.0\n\n[button] B09Q3NVJNM [button_]\nVECELO Nightstand Modern Side End Tables\
+      \ Night Stand with Bin Drawer for Living Room Bedroom, Set of 2, Industrial\
+      \ Metal Frame, Nightstands, Vintage Black\n$99.99\n\n[button] B09D2YLDZ9 [button_]\n\
+      42 x 96\" Clear Plastic Dining Table Protector PVC Vinyl Desk Pad Mat Wooden\
+      \ Furniture Coffee Entry Entryway Tall Hallway Console Corner Bar Cabinet End\
+      \ Side Tablecloth Top Protection Cover Waterproof\n$82.99\n\n[button] B01MQHE1B0\
+      \ [button_]\nQueen Size Futon Bed Sofa - (Natural Hardwood Frame and Green Mattress\
+      \ Set), Armless Convertible, Couch, Bed, Lounger\n$488.0\n\n[button] B08S33J873\
+      \ [button_]\nICEFIRE 44 Inch Round Table Top Cover Protector Plastic Clear Round\
+      \ Tablecloth Easy Clean Waterproof Furniture Topper for Dining Coffee Conference\
+      \ Tables Circle Desk Pad Protector\n$42.89\n\n[button] B09P4R6VXR [button_]\n\
+      Deepclaoto Mobile Desk Adjustable Height on Wheels,Desk with Wheels,Mobile Work\
+      \ Table,Workstation Desk,Desks for Home Office Small Space,Bedside Laptop Table\n\
+      $50.65\n\n[button] B084JQFVLX [button_]\nConsole Table Sofa Table Easy Assembly\
+      \ with 4 Storage Drawers and Bottom Shelf for Living Room Entryway, 4 Drawers\
+      \ Console Sofa Entry Table with Shelf Wood Side Tables/Rustic Entryway Table\
+      \ (Oak)\n$100.0\n"
+    past_actions:
+    - !!python/tuple
+      - search[eco friendly wood bedside shelf]
+      - The instruction asks for a specific type of product, so I should search for
+        it.
+    reason: This item matches the desired description and is priced lower than $50.
+      I can check this item first.
+    sugg_action: click[b074rvn91q]
+  - !!python/object:history.MyRecord
+    avail_actions: 'back to search
+
+      < prev
+
+      description
+
+      features
+
+      reviews
+
+      buy now'
+    ins: 'Instruction: i am looking for an eco friendly wood bedside shelf for a bed,
+      and price lower than 50.00 dollars'
+    obs: 'BedShelfie Wood Bedside Shelf for Bed & Bunk Bed Shelf Tray Table Caddy
+      for Top Bunk Organizer As Seen On Business Insider College Dorm Room Essentials
+      Clip-On Nightstand (Original Size, White Bamboo)
+
+      Price: $38.24
+
+      Rating: N.A.
+
+      '
+    past_actions:
+    - !!python/tuple
+      - click[b074rvn91q]
+      - This item matches the desired description and is priced lower than $50. I
+        can check this item first.
+    - !!python/tuple
+      - search[eco friendly wood bedside shelf]
+      - The instruction asks for a specific type of product, so I should search for
+        it.
+    reason: I have already selected the required attributes and am ready to purchase
+      the item.
+    sugg_action: click[buy now]

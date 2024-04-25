@@ -38,9 +38,8 @@ def remove_instruction(obs: str) -> List[str]:
     obs = [x for x in obs if not x.startswith("[button]") or x.startswith("[button] B0")]  # remove all buttons except the product code ones
     if "Instruction:" in obs:
         ins_idx = obs.index("Instruction:")
-        return obs[:ins_idx] + obs[ins_idx+2:]
-    else:   # mturk end screen, every page besides that should have instruction:
-        return obs
+        obs = obs[:ins_idx] + obs[ins_idx+2:]
+    return '\n'.join(obs)
 
 class Agent(abc.ABC):
     #  class Agent {{{ # 
@@ -331,7 +330,7 @@ class AutoAgent( Agent
             + self._instantiate_input_template( task=rec.ins
                                               , observation=rec.obs
                                               , action_history=rec.past_actions     # idk i didn't implement this yet
-                                              , available_actions='\n'.join(rec.avail_actions))\
+                                              , available_actions=rec.avail_actions)\
             + "\n"\
             + self._prompt_templates.advice_template.safe_substitute(encouraged=self._action_to_string((rec.sugg_action, rec.reason), 0.0))
         return examplar
@@ -347,7 +346,7 @@ class AutoAgent( Agent
                    , available_actions: List[str]
                    ) -> Action:
         #  method _get_action {{{ # 
-        observation: str = "\n".join(observation)
+        # observation: str = "\n".join(observation)
         available_actions: str = "\n".join(available_actions)
 
         #  Construct New Input {{{ # 
@@ -393,7 +392,7 @@ class AutoAgent( Agent
         if self._train:
             self._history_replay.update((observation, task, available_actions), reward, (taken_action, reason))
             self._filtered_history_replay.update(task_idx
-                                       , (observation, task, available_actions)
+                                       , (self._preprocess_observation(observation), task, available_actions)
                                        , reward
                                        , taken_action
                                        , reason
