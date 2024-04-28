@@ -1,0 +1,144 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww19600\viewh10780\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Rememberer\
+\
+to work:\
+- pip install Werkzeug==2.2.2 spacy~=3.2.6 \
+	- pip install spacy==3.7.2 pydantic==2.4.1\
+- change flask port\
+- mkdir log in rememberer\
+- export TIKTOKEN_CACHE_DIR=\'93\'94\
+\
+./scripts/launchw_test_action_trajectories.sh | tee -a output_act_traj/output.txt\
+\
+human instructions overlap with 1000 subset: [74, 120, 180, 189, 232, 310, 411, 433, 544, 616, 634, 645, 784]\
+\
+\
+- remove q values\
+- see how actions + q values are saved\
+- see how observations are stored\
+- print out similarity scores\
+\
+- RUN OVER ENTIRE TEST SET, RECORD SUCCESS RATE\
+- graph # of train examples to test accuracy\
+- graph # of epochs vs test accuracy\
+\
+PROJECT:\
+- swap out GPT for llama, measure performance\
+- ablate Q values, discouraged, dynamic history, see if we can get same performance\
+- tune input prompt\
+	- don't repeat yourself\
+	- bias towards clicking buy now\
+		- add a line in instruction\
+		- add an example with a full trajectory\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs48 \cf0 RESULTS
+\fs24 \
+below: all without any training\
+0 train examples, 50 test examples: default settings: avg steps: 7.66, avg reward: 0.386, avg. success rate: 0.180\
+default with <action> tags:  \uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 9.08\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.145\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.060\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+adding fixed "successful action trajectories" in the prompt: avg steps: 6.98 avg reward: 0.528, avg success rate: 0.400\
+you + xml + added prompt: \uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 7.66\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.424\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.280\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\
+with training\
+10 train examples, 1 epoch, train performance: \uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 5.60\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.533\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.400\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+20 train examples, 1 epoch, train performance: \uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 6.30\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.525\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.400\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+	- 8/20 examples correct\
+\
+removing buttons from observations, except for the product tag ones (essentially was duplicating actions)\
+\
+\
+removing q values, discouraged, then using the history from before this change: near zero accuracy on test set: 0.095%\
+	\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 7.90\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.160\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.095\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+removing q values and discouraged naively, regenerating the history: task 25 acc: 15.38%\
+\
+static exemplars: acc: \uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 5.45\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.621\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.455\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+train 10 tasks, test 11 tasks: \uc0\u9472 \u9472 \u9472 test:\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 5.64\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.561\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.364\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+	- from 10 tasks we save 22 records\
+train 20 tasks  \uc0\u9472 \u9472 \u9472 train:\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 4.91\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.676\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.545\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+	test: \uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 5.91\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.561\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.364\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs36 \cf0 organized results
+\fs24 \
+default -qvals -discouraged: 0.095 avg success rate\
+static exemplars: 5.45 steps, 0.621 avg reward, 0.455 success rate\
+	- alternate run: 5.73 steps, 0.591 avg reward, 0.364 success rate\
+With filtering:\
+	train 10 tasks, test 19: \uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 4.00\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.528\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.158\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+	train 20 tasks, test 19:\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 5.00\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.471\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 0.211\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+	train 30 tasks, test:\
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs48 \cf0 Things to Investigate
+\fs24 \
+- inspect how the similar exemplar fetching works, if this is actually working rn\
+- accuracy getting worse over time in the last run\
+- make the <> [] tags in the prompt line up more sensibly\
+- remove the observation buttons from the prompt, just leave them as buttons showing in Available Actions\
+- suggestion is focusing too much on the click[] things in the last 5 history\
+	- instead, summarize the past 5 history using another gpt call:\
+	- "Current state: I have already selected the item 123123123 and the color red....\
+1. making the similarity work (i think this is actually important)\
+	- would be best to show an old prompt where the intended type of action is taken\
+		- involves knowing what you have already done\
+		- like if I have already searched and selected and item and I\'92m looking for [brown], I could show another example where I\'92ve searched and selected and just need to choose the size or whatever\
+		- and then if I have already chosen\
+\
+- record an action into the history only if its action history doesn\'92t already contain the same item (discourage repeats)\
+- put only the successful trajectories into the history, and they must be concise as well\
+- only match similarities within pages of the same type\
+\
+\
+\
+\
+Add to instruction prompt:\
+- if you have selected the required options, do not select further options. instead select 'buy now'\
+- listen to your own past advice from the action suggestions\
+- [clicked button] indicates that an option is already selected\
+-------------------------------------------------------------------\
+- encourage 'buy now' -- sometimes model will have options selected but then just swap between them\
+- this is likely because the "available actions" just says what buttons are clickable but not their effects\
+ex: \
+Last 5 Actions:\
+- click[5pcs] I have clicked for '3pcs' and haven't clicked for '5pcs'. I need to first click '5pcs' and then buy this item.\
+- click[1pcs] I have clicked for 'b09py89b1s' and haven't clicked for '1pcs'. I need to first click '1pcs' and then buy this item.\
+- click[1pcs] I have clicked for 'b09py89b1s' and haven't clicked for '1pcs'. I need to first click '1pcs' and then buy this item.\
+- click[3pcs] I have clicked for '1pcs' and haven't clicked for '3pcs'. I need to first click '3pcs' and then buy this item.\
+- click[1pcs] I have clicked for '3pcs' and '5pcs' and haven't clicked for '1pcs'. I need to first click '1pcs' and then buy this item.\
+--------------------------------------------------------------------\
+clicking on button that doesn't exist\
+ex: saying to click on a product when its not in the available actions section (already on a product page just need to click buy now)\
+\
+\
+\
+\
+\
+Structure\
+AutoAgent\
+	OpenAI client\
+		- handles requests to openai\
+		- takes prompt as input, gives action as output\
+	HistoryReplay client\
+		- _get_examplars()\
+			- calls HistoryReplay[key], which makes a matcher inited with the key, then compares everything in the history to that given key\
+			- gives all some candidate actions sorted by highest similarity score first (candidates)\
+			- then just take the first 2 of these candidates and put them in the prompt\
+	- _get_action() constructs a new template, uses _get_examplars from history replay client\
+	- history is updated after an action is given, but only if train is activated. \
+\
+\
+\
+}
