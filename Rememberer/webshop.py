@@ -262,6 +262,7 @@ def main():
     parser.add_argument("--prompt-template", type=str)
     parser.add_argument("--max-tokens", default=20, type=int)
     parser.add_argument("--temperature", default=0.1, type=float)
+    parser.add_argument("--top-p", default=0.9, type=float)
     parser.add_argument("--stop", type=str)
     parser.add_argument("--request-timeout", default=3., type=float)
     parser.add_argument("--static", action="store_true")
@@ -447,7 +448,19 @@ def main():
                                    , norandom=args.norandom
                                    )
     #model = webshop_agent.ManualAgent(args.observation_mode)
-
+    #model = webshop_agent.AutoAgent_Llama(history_replay=history_replay
+    #                               , prompt_templates=template_group
+    #                               , max_tokens=args.max_tokens
+    #                               , temperature=args.temperature
+    #                               , top_p = args.top_p
+    #                               , stop=args.stop
+    #                               , request_timeout=args.request_timeout
+    #                               , static=args.static
+    #                               , manual=args.manual
+    #                               , train=args.train
+    #                               , env_mode=args.observation_mode
+    #                               , norandom=args.norandom
+    #                               )
     env = gym.make( "WebAgentSiteEnv-v0"
                   , observation_mode=args.observation_mode
                   , file_path=(args.file_path if args.file_path is not None and args.file_path != ""
