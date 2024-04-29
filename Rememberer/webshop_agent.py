@@ -16,6 +16,7 @@
 
 import abc
 import logging
+from llama import Dialog
 
 from typing import List, Tuple
 from typing import Callable, Optional
@@ -404,3 +405,253 @@ class AutoAgent( Agent
         super(agent_protos.OpenAIClient, self).train(train)
         #self._temperature = self._config_temperature if self._train else 0.
     #  }}} class AutoAgent # 
+class AutoAgent_Llama(Agent
+               , agent_protos.LlamaModel[Action]
+               , agent_protos.LlamaHistoryReplayClient[Key, Action]
+               ):
+    def __init__( self
+                , history_replay: history.HistoryReplay[Key, Action]
+                , prompt_templates: agent_protos.TemplateGroup
+                , ckpt_dir: str = "../Meta-Llama-3-8B-Instruct/"
+                , max_tokens: int = 20
+                , temperature: float = 0.1
+                , top_p: float = 0.9
+                , stop: Optional[str] = None
+                , request_timeout: float = 5.
+                , static: bool = False
+                , manual: bool = False
+                , train: bool = True
+                , env_mode: str = "text_rich"
+                , norandom: bool = False
+                ):
+        #  method __init__ {{{ # 
+        super(AutoAgent_Llama, self).__init__(env_mode)
+
+        self._config_temperature: float = temperature
+        #temperature = self._config_temperature if train else 0.
+        super(Agent, self).__init__( prompt_templates
+                                   , ckpt_dir
+                                   , max_tokens
+                                   , temperature
+                                   , top_p
+                                   , stop
+                                   , request_timeout
+                                   , 3.1
+                                   , manual
+                                   )
+
+        self._input_length_limit: int = 8192
+
+        super(agent_protos.LlamaModel, self).__init__( history_replay
+                                                       , train
+                                                       , self.model.tokenizer
+                                                       , norandom
+                                                       )
+
+        self._static: bool = static
+        #  }}} method __init__ # 
+
+    def reset(self):
+        super(AutoAgent_Llama,self).reset()
+        #self._history_replay.new_trajectory()
+    def end( self
+           , task: str
+           , observation: str
+           , reward: float
+           , total_reward: float
+           , available_actions: List[str]
+           ):
+        #  method end {{{ # 
+        observation: str = "\n".join(self._preprocess_observation(observation))
+        available_actions: str = "\n".join(available_actions)
+        if self._train:
+            last_action: Optional[Action] = self._action_history[-1]\
+                                            if len(self._action_history)>0\
+                                          else None
+            self._history_replay.update( (observation, task, available_actions)
+                                       , reward
+                                       , last_action
+                                       , last_step=True
+                                       )
+        #  }}} method end # 
+
+    def _instantiate_input_template( self
+                                   , task: str
+                                   , observation: str
+                                   , action_history: List[Action]
+                                   , reward: float
+                                   , total_reward: float
+                                   , available_actions: str
+                                   ):
+        #  method _instantiate_input_template {{{ # 
+        return self._prompt_templates.input_template.safe_substitute(
+                                                        task=task
+                                                      , observation=\
+                                                              "\n".join(
+                                                                  map( lambda l: "  " + l
+                                                                     , observation.splitlines()
+                                                                     )
+                                                                )
+                                                      , actions=\
+                                                              "\n".join(
+                                                                  map( lambda act: "- " + act
+                                                                     , map( " ".join
+                                                                          , action_history[-min(5, len(action_history)):]
+                                                                          )
+                                                                     )
+                                                                )
+                                                      , reward="{:.1f}".format(reward)
+                                                      , total_reward="{:.1f}".format(total_reward)
+                                                      , available_actions=\
+                                                              "\n".join(
+                                                                  map( lambda act: "- " + act
+                                                                     , available_actions.splitlines()
+                                                                     )
+                                                                )
+                                                      )
+        #  }}} method _instantiate_input_template # 
+
+    def _random_action(self, key: Key, encourages: bool = False) -> Action:
+        #  method _random_action {{{ # 
+        available_actions: List[str] = key[-1].splitlines()
+        action: np.int64 = self._rng.integers(len(available_actions))
+        if encourages:
+            if available_actions[action]=="search":
+                action_str: str = "search[{:}]".format(key[1])
+                reason: str = ""
+            else:
+                action_str: str = "click[{:}]".format(available_actions[action])
+                if available_actions[action]=="< prev":
+                    reason: str = "The current item doesn't offer the desired options and I need to go back to check other items."
+                elif available_actions[action]=="back to search":
+                    reason: str = "The current item doesn't offer the desired options and I need to search for other items."
+                elif available_actions[action]=="buy now":
+                    reason: str = "All the options are ready now and I will click \"buy now\" to complete the shopping."
+                else:
+                    reason: str = "{:} conforms to the instruction.".format(available_actions[action])
+        else:
+            action_str: str = "click[{:}]".format(available_actions[action])
+            if available_actions[action]=="search":
+                reason: str = "The search button shouldn't be clicked."
+            elif available_actions[action]=="features":
+                reason: str = "There is no need to check the features."
+            elif available_actions[action]=="description":
+                reason: str = "There is no need to check the description."
+            elif available_actions[action]=="reviews":
+                reason: str = "There is no need to review."
+            elif available_actions[action]=="buy now":
+                reason: str = "Not all the requirements are ready now."
+            elif available_actions[action]=="< prev":
+                reason: str = "The current item offers the desired options and I don't need to go back to check other items."
+            elif available_actions[action]=="back to search":
+                reason: str = "The current item offers the desired options and I don't need to search for other items."
+            else:
+                reason: str = "{:} is not the desired item.".format(available_actions[action])
+        return (action_str, reason)
+        #  }}} method _random_action # 
+
+    def _action_to_string(self, action: Action, value: float) -> str:
+        return "{:} -> {:.1f} {:}".format(action[0], value, action[1])
+
+    def _examplar_to_string( self
+                           , index: int
+                           , key: Key
+                           , info_dict: history.HistoryReplay.InfoDict[Action]
+                           , encouraged: str
+                           , discouraged: str
+                           ) -> str:
+        #  method _examplar_to_string {{{ # 
+        examplar: str = "Example {:d}:\n\n".format(index+1)\
+                      + self._instantiate_input_template( task=key[1]
+                                                        , observation=key[0]
+                                                        , action_history=info_dict["action_history"]
+                                                        , reward=info_dict["last_reward"]
+                                                        , total_reward=info_dict["total_reward"]
+                                                        , available_actions=key[2]
+                                                        )\
+                      + "\n"\
+                      + self._prompt_templates.advice_template.safe_substitute(
+                                                                encouraged=encouraged
+                                                              , discouraged=discouraged
+                                                              )
+        return examplar
+        #  }}} method _examplar_to_string # 
+
+    def _parse_action(self, response: str) -> Action:
+        #  method _parse_action {{{ # 
+        return agent_protos.parse_action_with_optional(response)
+        #  }}} method _parse_action # 
+
+    def _get_action( self
+                   , task: str
+                   , observation: List[str]
+                   , reward: float
+                   , total_reward: float
+                   , available_actions: List[str]
+                   ) -> Action:
+        #  method _get_action {{{ # 
+        observation: str = "\n".join(observation)
+        available_actions: str = "\n".join(available_actions)
+
+        #  Replay Updating {{{ # 
+        if self._train:
+            last_action: Optional[Action] = self._action_history[-1]\
+                                            if len(self._action_history)>0\
+                                          else None
+            self._history_replay.update( (observation, task, available_actions)
+                                       , reward
+                                       , last_action
+                                       )
+        #  }}} Replay Updating # 
+
+        #  Construct New Input {{{ # 
+        new_input: str = self._instantiate_input_template( task=task
+                                                         , observation=observation
+                                                         , action_history=self._action_history
+                                                         , reward=reward
+                                                         , total_reward=total_reward
+                                                         , available_actions=available_actions
+                                                         )
+        
+        nb_new_input_tokens: int = len(self._tokenizer.encode(new_input,bos=True,eos=True,allowed_special="all"))
+        example_tokens_limit: int = self._input_length_limit - nb_new_input_tokens
+        #  }}} Construct New Input # 
+        # print("observation: ", observation)
+        # print("task: ", task)
+        # print("available_actions: ", available_actions)
+        #  Construct Examplars {{{ # 
+        if self._static:
+            examplars: List[str] = [ "Example 2:\n\n" + self._prompt_templates.canonical2
+                                   , "Example 1:\n\n" + self._prompt_templates.canonical1
+                                   ]
+        else:
+            examplars: List[str] = self._get_examplars( (observation, task, available_actions)
+                                                      , example_tokens_limit
+                                                      , 2
+                                                      )
+
+        example_str: str = "\n".join(reversed(examplars)).strip()
+        #  }}} Construct Examplars # 
+
+        prompt: str = self._prompt_templates.whole_template.safe_substitute( examples=example_str
+                                                                           , new_input=new_input
+                                                                           )
+        message_content = prompt.split('role')
+        dialogs: List[Dialog] = [[{'role':'user', 'content': message_content[0]},{'role':'system', 'content': message_content[1]},{'role':'user', 'content': message_content[2]}]]
+        
+        action: Optional[Action] = self._get_response(dialogs)
+        
+        if action is None:
+            action_text: str = "NOTHINGG"
+            reason: str = ""
+        else:
+            action_text: str
+            reason: str
+            action_text, reason = action
+
+        logger.debug("Action: %s %s", action_text, reason)
+        return (action_text, reason)
+        #  }}} method _get_action # 
+
+    def train(self, train: bool):
+        super(agent_protos.LlamaModel, self).train(train)
